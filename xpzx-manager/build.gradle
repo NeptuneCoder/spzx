@@ -21,12 +21,15 @@ dependencies {
     implementation 'com.github.pagehelper:pagehelper-spring-boot-starter:1.4.2'
     //依赖service模块
     implementation project(':xpzx-common:xpzx-service')
+    compileOnly project(':xpzx-common:xpzx-utils')
     implementation("com.github.xiaoymin:knife4j-openapi3-jakarta-spring-boot-starter:4.5.0")
     //操作redis
     //spring-boot-starter-data-redis
     implementation 'org.springframework.boot:spring-boot-starter-data-redis:provided'
     //fastjson
     implementation 'com.alibaba:fastjson:1.2.78'
+    //生成验证码
+    implementation("cn.hutool:hutool-all:5.5.2")
 
 
 }

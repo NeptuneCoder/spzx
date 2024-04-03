@@ -809,3 +809,61 @@ io.lettuce.core.RedisCommandTimeoutException: Command timed out after 10 second(
 2024-04-03 20:27:19 Initializing Servlet 'dispatcherServlet'
 2024-04-03 20:27:19 Completed initialization in 2 ms
 2024-04-03 20:27:20 Init duration for springdoc-openapi is: 183 ms
+2024-04-03 20:47:30 Starting XpzxManagerApp using Java 17.0.5 with PID 14101 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-03 20:47:30 The following 1 profile is active: "dev"
+2024-04-03 20:47:30 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-03 20:47:30 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-03 20:47:30 Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-04-03 20:47:31 Tomcat initialized with port 8501 (http)
+2024-04-03 20:47:31 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-03 20:47:31 Starting service [Tomcat]
+2024-04-03 20:47:31 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03 20:47:31 Initializing Spring embedded WebApplicationContext
+2024-04-03 20:47:31 Root WebApplicationContext: initialization completed in 1345 ms
+2024-04-03 20:47:32 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-03 20:47:32 Tomcat started on port 8501 (http) with context path ''
+2024-04-03 20:47:32 Started XpzxManagerApp in 3.28 seconds (process running for 3.899)
+2024-04-03 20:47:37 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03 20:47:37 Initializing Servlet 'dispatcherServlet'
+2024-04-03 20:47:37 Completed initialization in 2 ms
+2024-04-03 20:47:38 Init duration for springdoc-openapi is: 194 ms
+2024-04-03 20:47:47 HikariPool-1 - Starting...
+2024-04-03 20:47:47 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45225a6d
+2024-04-03 20:47:47 HikariPool-1 - Start completed.
+2024-04-03 21:02:08 Starting XpzxManagerApp using Java 17.0.5 with PID 18074 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-03 21:02:08 The following 1 profile is active: "dev"
+2024-04-03 21:02:09 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-03 21:02:09 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-03 21:02:09 Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-04-03 21:02:09 Tomcat initialized with port 8501 (http)
+2024-04-03 21:02:09 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-03 21:02:09 Starting service [Tomcat]
+2024-04-03 21:02:09 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03 21:02:09 Initializing Spring embedded WebApplicationContext
+2024-04-03 21:02:09 Root WebApplicationContext: initialization completed in 1336 ms
+2024-04-03 21:02:10 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-03 21:02:10 Tomcat started on port 8501 (http) with context path ''
+2024-04-03 21:02:10 Started XpzxManagerApp in 2.872 seconds (process running for 3.359)
+2024-04-03 21:02:20 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03 21:02:20 Initializing Servlet 'dispatcherServlet'
+2024-04-03 21:02:20 Completed initialization in 1 ms
+2024-04-03 21:02:20 HikariPool-1 - Starting...
+2024-04-03 21:02:20 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@325bb098
+2024-04-03 21:02:20 HikariPool-1 - Start completed.
+2024-04-03 21:39:39 Starting XpzxManagerApp using Java 17.0.5 with PID 25608 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-03 21:39:39 The following 1 profile is active: "dev"
+2024-04-03 21:39:40 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-03 21:39:40 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-03 21:39:40 Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-04-03 21:39:41 Tomcat initialized with port 8501 (http)
+2024-04-03 21:39:41 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-03 21:39:41 Starting service [Tomcat]
+2024-04-03 21:39:41 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03 21:39:41 Initializing Spring embedded WebApplicationContext
+2024-04-03 21:39:41 Root WebApplicationContext: initialization completed in 1817 ms
+2024-04-03 21:39:42 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-03 21:39:42 Tomcat started on port 8501 (http) with context path ''
+2024-04-03 21:39:42 Started XpzxManagerApp in 3.45 seconds (process running for 4.12)
+2024-04-03 21:39:43 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03 21:39:43 Initializing Servlet 'dispatcherServlet'
+2024-04-03 21:39:43 Completed initialization in 1 ms
