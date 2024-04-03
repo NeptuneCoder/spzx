@@ -2,6 +2,7 @@ package com.atguigu.spzx.manager.service.impl;
 
 import cn.hutool.captcha.CaptchaUtil;
 import cn.hutool.captcha.CircleCaptcha;
+import com.atguigu.spzx.common.constant.RedisConstantKey;
 import com.atguigu.spzx.manager.service.ValidateCodeService;
 import com.atguigu.spzx.model.vo.system.ValidateCodeVo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +33,7 @@ public class ValidateCodeServiceImpl implements ValidateCodeService {
         String codeKey = UUID.randomUUID().toString().replace("-", "");
 
         // 将验证码存储到Redis中
-        redisTemplate.opsForValue().set("user:login:validatecode:" + codeKey, codeValue, 5, TimeUnit.MINUTES);
+        redisTemplate.opsForValue().set(RedisConstantKey.codeKey+ codeKey, codeValue, 5, TimeUnit.MINUTES);
 
         // 构建响应结果数据
         ValidateCodeVo validateCodeVo = new ValidateCodeVo();

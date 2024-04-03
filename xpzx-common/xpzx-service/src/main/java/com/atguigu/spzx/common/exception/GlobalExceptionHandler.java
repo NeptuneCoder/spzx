@@ -13,6 +13,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     @ResponseBody
     public Result handleException(Exception e) {
+        e.printStackTrace();
         return Result.build(null, ResultCodeEnum.SYSTEM_ERROR);
     }
 

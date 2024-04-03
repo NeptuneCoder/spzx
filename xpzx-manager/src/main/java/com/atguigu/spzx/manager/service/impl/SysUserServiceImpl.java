@@ -2,6 +2,7 @@ package com.atguigu.spzx.manager.service.impl;
 
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
+import com.atguigu.spzx.common.constant.RedisConstantKey;
 import com.atguigu.spzx.common.exception.GuiguException;
 import com.atguigu.spzx.manager.mapper.SysUserMapper;
 import com.atguigu.spzx.manager.service.SysUserService;
@@ -35,13 +36,13 @@ public class SysUserServiceImpl implements SysUserService {
         //增加校验验证码逻辑
         String captcha = loginDto.getCaptcha();
         String codeKey = loginDto.getCodeKey();
-        String cacheCode = redisTemplate.opsForValue().get("user:login:validatecode:" + codeKey);
+        String cacheCode = redisTemplate.opsForValue().get(RedisConstantKey.codeKey + codeKey);
         //如果不相等，要删除
         if (StrUtil.isEmpty(cacheCode) || !StrUtil.equals(captcha, cacheCode)) {
-            throw new GuiguException(ResultCodeEnum.LOGIN_ERROR);
+            throw new GuiguException(ResultCodeEnum.VALIDATECODE_ERROR);
         }
         if (captcha.equals(cacheCode)) {
-            redisTemplate.delete("user:login:validatecode:" + codeKey);
+            redisTemplate.delete(RedisConstantKey.codeKey + codeKey);
         }
 
         //1. 查询用户是否存在
@@ -60,10 +61,17 @@ public class SysUserServiceImpl implements SysUserService {
         //3. 生成token
         String token = UUID.randomUUID().toString().replaceAll("-", "");
         //4. 将token存入redis,并设置7天过期时间
-        redisTemplate.opsForValue().set("user:login" + token, JSON.toJSONString(user), 7, TimeUnit.DAYS);
+        redisTemplate.opsForValue().set(RedisConstantKey.userTokenKey + token, JSON.toJSONString(user), 7, TimeUnit.DAYS);
         //5. 返回登录结果
         LoginVo loginVo = new LoginVo();
         loginVo.setToken(token);
         return loginVo;
+    }
+
+    @Override
+    public SysUser getUserInfo(String token) {
+        String result = redisTemplate.opsForValue().get(RedisConstantKey.userTokenKey + token);
+        SysUser user = JSON.parseObject(result, SysUser.class);
+        return user;
     }
 }
