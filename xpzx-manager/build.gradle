@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group 'com.atguigu'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(path: ':xpzx-model')
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'org.springframework.boot:spring-boot-starter-web:3.2.4'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis:3.2.4'
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
+    implementation 'mysql:mysql-connector-java:8.0.25'
+    implementation 'org.springframework.boot:spring-boot-starter-test:3.2.4'
+    implementation 'com.github.pagehelper:pagehelper-spring-boot-starter:1.4.2'
+    //依赖service模块
+    implementation project(':xpzx-common:xpzx-service')
+    implementation("com.github.xiaoymin:knife4j-openapi3-jakarta-spring-boot-starter:4.5.0")
+    //操作redis
+    //spring-boot-starter-data-redis
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis:provided'
+    //fastjson
+    implementation 'com.alibaba:fastjson:1.2.78'
+
+
+}
+
+test {
+    useJUnitPlatform()
+}

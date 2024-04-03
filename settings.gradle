@@ -1,0 +1,9 @@
+rootProject.name = 'spzx-parent'
+include 'xpzx-common'
+include 'xpzx-model'
+include 'xpzx-manager'
+include 'xpzx-common:xpzx-utils'
+findProject(':xpzx-common:xpzx-utils')?.name = 'xpzx-utils'
+include 'xpzx-common:xpzx-service'
+findProject(':xpzx-common:xpzx-service')?.name = 'xpzx-service'
+
