@@ -967,3 +967,150 @@ io.lettuce.core.RedisCommandTimeoutException: Command timed out after 10 second(
 2024-04-03 22:30:14 HikariPool-1 - Start completed.
 2024-04-03 22:39:55 Reconnecting, last destination was /14.103.49.141:6379
 2024-04-03 22:39:55 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-03 22:48:19 Starting XpzxManagerApp using Java 17.0.5 with PID 39376 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-03 22:48:19 The following 1 profile is active: "dev"
+2024-04-03 22:48:20 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-03 22:48:20 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-03 22:48:20 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-03 22:48:20 Tomcat initialized with port 8501 (http)
+2024-04-03 22:48:20 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-03 22:48:20 Starting service [Tomcat]
+2024-04-03 22:48:20 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03 22:48:20 Initializing Spring embedded WebApplicationContext
+2024-04-03 22:48:20 Root WebApplicationContext: initialization completed in 1403 ms
+2024-04-03 22:48:21 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-03 22:48:21 Tomcat started on port 8501 (http) with context path ''
+2024-04-03 22:48:22 Started XpzxManagerApp in 2.89 seconds (process running for 3.58)
+2024-04-03 22:48:49 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03 22:48:49 Initializing Servlet 'dispatcherServlet'
+2024-04-03 22:48:49 Completed initialization in 1 ms
+2024-04-03 22:50:48 Starting XpzxManagerApp using Java 17.0.5 with PID 39839 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-03 22:50:48 The following 1 profile is active: "dev"
+2024-04-03 22:50:49 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-03 22:50:49 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-03 22:50:49 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-03 22:50:49 Tomcat initialized with port 8501 (http)
+2024-04-03 22:50:49 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-03 22:50:49 Starting service [Tomcat]
+2024-04-03 22:50:49 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03 22:50:49 Initializing Spring embedded WebApplicationContext
+2024-04-03 22:50:49 Root WebApplicationContext: initialization completed in 1512 ms
+2024-04-03 22:50:51 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-03 22:50:51 Tomcat started on port 8501 (http) with context path ''
+2024-04-03 22:50:51 Started XpzxManagerApp in 3.497 seconds (process running for 4.026)
+2024-04-03 22:50:52 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03 22:50:52 Initializing Servlet 'dispatcherServlet'
+2024-04-03 22:50:52 Completed initialization in 1 ms
+2024-04-03 22:51:08 HikariPool-1 - Starting...
+2024-04-03 22:51:08 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@172eb816
+2024-04-03 22:51:08 HikariPool-1 - Start completed.
+2024-04-03 23:54:59 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-03 23:54:59 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-03 23:55:03 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s406ms).
+2024-04-04 00:11:27 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s360ms).
+2024-04-04 00:18:52 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m55s48ms).
+2024-04-04 00:19:24 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-04 00:19:24 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-04 00:35:17 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s415ms).
+2024-04-04 00:51:41 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s399ms).
+2024-04-04 01:08:05 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s375ms).
+2024-04-04 01:24:00 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s377ms).
+2024-04-04 01:40:24 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s393ms).
+2024-04-04 01:56:48 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s370ms).
+2024-04-04 02:12:43 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s690ms).
+2024-04-04 02:19:43 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m29s842ms).
+2024-04-04 02:36:21 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m7s543ms).
+2024-04-04 02:52:49 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s585ms).
+2024-04-04 03:03:40 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m20s923ms).
+2024-04-04 03:20:09 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s608ms).
+2024-04-04 03:36:38 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s583ms).
+2024-04-04 03:52:37 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m59s824ms).
+2024-04-04 04:09:06 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s575ms).
+2024-04-04 04:21:10 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m34s278ms).
+2024-04-04 04:37:39 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s527ms).
+2024-04-04 04:54:07 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s613ms).
+2024-04-04 05:10:06 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s612ms).
+2024-04-04 05:22:13 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m37s171ms).
+2024-04-04 05:38:42 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s603ms).
+2024-04-04 05:55:10 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s542ms).
+2024-04-04 06:11:12 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m1s193ms).
+2024-04-04 06:23:16 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m34s293ms).
+2024-04-04 06:39:44 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s573ms).
+2024-04-04 06:56:13 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s586ms).
+2024-04-04 07:12:42 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s589ms).
+2024-04-04 07:24:17 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m35s763ms).
+2024-04-04 07:40:46 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s594ms).
+2024-04-04 07:57:15 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s596ms).
+2024-04-04 08:13:43 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s609ms).
+2024-04-04 08:25:22 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m38s592ms).
+2024-04-04 08:41:50 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s574ms).
+2024-04-04 08:58:20 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m59s471ms).
+2024-04-04 09:14:49 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s619ms).
+2024-04-04 09:26:28 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m39s416ms).
+2024-04-04 09:42:57 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s588ms).
+2024-04-04 09:59:25 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s590ms).
+2024-04-04 10:15:54 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s590ms).
+2024-04-04 10:23:25 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m31s50ms).
+2024-04-04 10:24:19 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s703ms).
+2024-04-04 10:27:30 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m11s676ms).
+2024-04-04 10:43:55 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s212ms).
+2024-04-04 11:00:20 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s383ms).
+2024-04-04 11:16:44 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s323ms).
+2024-04-04 11:28:34 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m49s939ms).
+2024-04-04 11:44:58 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s378ms).
+2024-04-04 12:01:23 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s372ms).
+2024-04-04 12:17:47 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s389ms).
+2024-04-04 12:20:41 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m53s882ms).
+2024-04-04 12:30:00 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m18s992ms).
+2024-04-04 13:30:54 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h23s903ms).
+2024-04-04 14:31:48 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h23s865ms).
+2024-04-04 15:32:42 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h23s855ms).
+2024-04-04 16:34:06 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h23s861ms).
+2024-04-04 17:34:59 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h23s832ms).
+2024-04-04 18:35:53 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h23s941ms).
+2024-04-04 19:29:34 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m10s167ms).
+2024-04-04 19:37:09 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m35s874ms).
+2024-04-04 20:38:03 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h23s932ms).
+2024-04-04 21:38:57 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h23s889ms).
+2024-04-04 22:40:21 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h23s949ms).
+2024-04-04 22:44:08 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m17s151ms).
+2024-04-04 22:44:51 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-04 22:44:51 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-04 22:44:58 Starting XpzxManagerApp using Java 17.0.5 with PID 64688 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-04 22:44:58 The following 1 profile is active: "dev"
+2024-04-04 22:44:59 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-04 22:44:59 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-04 22:44:59 Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-04-04 22:45:00 Tomcat initialized with port 8501 (http)
+2024-04-04 22:45:00 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-04 22:45:00 Starting service [Tomcat]
+2024-04-04 22:45:00 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-04 22:45:00 Initializing Spring embedded WebApplicationContext
+2024-04-04 22:45:00 Root WebApplicationContext: initialization completed in 1465 ms
+2024-04-04 22:45:01 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-04 22:45:01 Tomcat started on port 8501 (http) with context path ''
+2024-04-04 22:45:01 Started XpzxManagerApp in 3.183 seconds (process running for 4.001)
+2024-04-04 22:46:37 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-04 22:46:37 Initializing Servlet 'dispatcherServlet'
+2024-04-04 22:46:37 Completed initialization in 1 ms
+2024-04-04 22:46:52 HikariPool-1 - Starting...
+2024-04-04 22:46:52 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@101d275c
+2024-04-04 22:46:52 HikariPool-1 - Start completed.
+2024-04-04 23:19:55 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-04 23:19:55 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-04 23:20:46 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s635ms).
+2024-04-04 23:22:19 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m33s468ms).
+2024-04-04 23:47:21 Starting XpzxManagerApp using Java 17.0.5 with PID 73690 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-04 23:47:21 The following 1 profile is active: "dev"
+2024-04-04 23:47:21 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-04 23:47:21 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-04 23:47:21 Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-04-04 23:47:22 Tomcat initialized with port 8501 (http)
+2024-04-04 23:47:22 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-04 23:47:22 Starting service [Tomcat]
+2024-04-04 23:47:22 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-04 23:47:22 Initializing Spring embedded WebApplicationContext
+2024-04-04 23:47:22 Root WebApplicationContext: initialization completed in 1447 ms
+2024-04-04 23:47:23 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-04 23:47:23 Tomcat started on port 8501 (http) with context path ''
+2024-04-04 23:47:23 Started XpzxManagerApp in 3.156 seconds (process running for 3.786)

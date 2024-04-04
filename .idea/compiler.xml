@@ -9,6 +9,7 @@
         </processorPath>
         <module name="spzx-parent.xpzx-model.main" />
         <module name="spzx-parent.xpzx-common.xpzx-service.main" />
+        <module name="spzx-parent.xpzx-manager.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17" />
