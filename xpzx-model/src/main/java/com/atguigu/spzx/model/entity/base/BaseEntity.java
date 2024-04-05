@@ -13,7 +13,7 @@ public class BaseEntity implements Serializable {
     @Schema(description = "唯一标识")
     private Long id;
 
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")//该注解用于格式化时间
     @Schema(description = "创建时间")
     private Date createTime;
 

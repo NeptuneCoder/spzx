@@ -1,7 +1,10 @@
 package com.atguigu.spzx.manager.mapper;
 
+import com.atguigu.spzx.model.dto.system.SysUserDto;
 import com.atguigu.spzx.model.entity.system.SysUser;
 import org.apache.ibatis.annotations.Mapper;
+
+import java.util.List;
 
 //@Mapper注解用于标识这是一个mybatis的mapper接口
 
@@ -15,4 +18,13 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface SysUserMapper {
     SysUser selectByUsername(String userName);
+
+
+    List<SysUser> queryUsersByPage(SysUserDto sysUserDto);
+
+    Long save(SysUser sysUser);
+
+    void update(SysUser sysUser);
+
+    void delete(Integer id);
 }

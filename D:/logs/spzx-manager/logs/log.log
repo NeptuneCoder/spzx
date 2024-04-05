@@ -1273,3 +1273,712 @@ io.lettuce.core.RedisCommandTimeoutException: Command timed out after 10 second(
 2024-04-05 11:41:55 HikariPool-1 - Starting...
 2024-04-05 11:41:55 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c0bcda4
 2024-04-05 11:41:55 HikariPool-1 - Start completed.
+2024-04-05 12:02:35 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-05 12:02:36 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-05 12:33:47 Starting XpzxManagerApp using Java 17.0.5 with PID 47753 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 12:33:47 The following 1 profile is active: "dev"
+2024-04-05 12:33:48 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 12:33:48 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 12:33:48 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-05 12:33:49 Tomcat initialized with port 8501 (http)
+2024-04-05 12:33:49 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 12:33:49 Starting service [Tomcat]
+2024-04-05 12:33:49 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 12:33:49 Initializing Spring embedded WebApplicationContext
+2024-04-05 12:33:49 Root WebApplicationContext: initialization completed in 1348 ms
+2024-04-05 12:33:49 Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexController': Unsatisfied dependency expressed through field 'sysUserService': Error creating bean with name 'sysUserServiceImpl': Unsatisfied dependency expressed through field 'sysUserMapper': Error creating bean with name 'sysUserMapper' defined in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main/com/atguigu/spzx/manager/mapper/SysUserMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'
+2024-04-05 12:33:49 Stopping service [Tomcat]
+2024-04-05 12:33:49 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-05 12:33:49 Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexController': Unsatisfied dependency expressed through field 'sysUserService': Error creating bean with name 'sysUserServiceImpl': Unsatisfied dependency expressed through field 'sysUserMapper': Error creating bean with name 'sysUserMapper' defined in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main/com/atguigu/spzx/manager/mapper/SysUserMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.atguigu.spzx.manager.XpzxManagerApp.main(XpzxManagerApp.java:15)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysUserServiceImpl': Unsatisfied dependency expressed through field 'sysUserMapper': Error creating bean with name 'sysUserMapper' defined in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main/com/atguigu/spzx/manager/mapper/SysUserMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sysUserMapper' defined in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main/com/atguigu/spzx/manager/mapper/SysUserMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1685)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1434)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/role/SysRoleMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/role/SysRoleMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 57 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/role/SysRoleMapper.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 71 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/role/SysRoleMapper.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:700)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:577)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:720)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:189)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 72 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/role/SysRoleMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'sysRoleMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: sysRoleMap
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:100)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:698)
+	... 80 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'sysRoleMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: sysRoleMap
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:103)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:105)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:143)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:125)
+	... 82 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'sysRoleMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: sysRoleMap
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:128)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:132)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:101)
+	... 86 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: sysRoleMap
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:226)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:103)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:322)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:124)
+	... 88 common frames omitted
+2024-04-05 12:38:56 Starting XpzxManagerApp using Java 17.0.5 with PID 48803 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 12:38:56 The following 1 profile is active: "dev"
+2024-04-05 12:38:56 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 12:38:56 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 12:38:56 Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-04-05 12:38:57 Tomcat initialized with port 8501 (http)
+2024-04-05 12:38:57 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 12:38:57 Starting service [Tomcat]
+2024-04-05 12:38:57 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 12:38:57 Initializing Spring embedded WebApplicationContext
+2024-04-05 12:38:57 Root WebApplicationContext: initialization completed in 1448 ms
+2024-04-05 12:38:58 Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexController': Unsatisfied dependency expressed through field 'sysUserService': Error creating bean with name 'sysUserServiceImpl': Unsatisfied dependency expressed through field 'sysUserMapper': Error creating bean with name 'sysUserMapper' defined in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main/com/atguigu/spzx/manager/mapper/SysUserMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'
+2024-04-05 12:38:58 Stopping service [Tomcat]
+2024-04-05 12:38:58 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-05 12:38:58 Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexController': Unsatisfied dependency expressed through field 'sysUserService': Error creating bean with name 'sysUserServiceImpl': Unsatisfied dependency expressed through field 'sysUserMapper': Error creating bean with name 'sysUserMapper' defined in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main/com/atguigu/spzx/manager/mapper/SysUserMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.atguigu.spzx.manager.XpzxManagerApp.main(XpzxManagerApp.java:15)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sysUserServiceImpl': Unsatisfied dependency expressed through field 'sysUserMapper': Error creating bean with name 'sysUserMapper' defined in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main/com/atguigu/spzx/manager/mapper/SysUserMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sysUserMapper' defined in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main/com/atguigu/spzx/manager/mapper/SysUserMapper.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1685)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1434)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+	... 34 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/sysRole/SysRoleMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:365)
+	... 47 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/sysRole/SysRoleMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 57 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/sysRole/SysRoleMapper.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 71 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/sysRole/SysRoleMapper.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:700)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:577)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:720)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:189)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 72 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/sysRole/SysRoleMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'sysRoleMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: sysRoleMap
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:127)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:100)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:698)
+	... 80 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'sysRoleMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: sysRoleMap
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:103)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:105)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:143)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:125)
+	... 82 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'sysRoleMap'.  Cause: java.lang.ClassNotFoundException: Cannot find class: sysRoleMap
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:128)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:132)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:101)
+	... 86 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: sysRoleMap
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:226)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:103)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:322)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:124)
+	... 88 common frames omitted
+2024-04-05 12:46:56 Starting XpzxManagerApp using Java 17.0.5 with PID 50400 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 12:46:56 The following 1 profile is active: "dev"
+2024-04-05 12:46:56 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 12:46:57 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 12:46:57 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-05 12:46:57 Tomcat initialized with port 8501 (http)
+2024-04-05 12:46:57 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 12:46:57 Starting service [Tomcat]
+2024-04-05 12:46:57 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 12:46:57 Initializing Spring embedded WebApplicationContext
+2024-04-05 12:46:57 Root WebApplicationContext: initialization completed in 1460 ms
+2024-04-05 12:46:58 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 12:46:58 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 12:46:58 Started XpzxManagerApp in 3.154 seconds (process running for 3.823)
+2024-04-05 12:47:10 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 12:47:10 Initializing Servlet 'dispatcherServlet'
+2024-04-05 12:47:10 Completed initialization in 4 ms
+2024-04-05 12:47:18 HikariPool-1 - Starting...
+2024-04-05 12:47:19 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48f2dd8a
+2024-04-05 12:47:19 HikariPool-1 - Start completed.
+2024-04-05 13:02:47 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-05 13:02:47 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-05 13:28:24 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-05 13:28:24 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-05 13:36:53 Starting XpzxManagerApp using Java 17.0.5 with PID 61007 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 13:36:53 The following 1 profile is active: "dev"
+2024-04-05 13:36:54 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 13:36:54 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 13:36:54 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-05 13:36:55 Tomcat initialized with port 8501 (http)
+2024-04-05 13:36:55 Root WebApplicationContext: initialization completed in 1449 ms
+2024-04-05 13:36:56 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 13:36:56 Started XpzxManagerApp in 3.109 seconds (process running for 3.679)
+2024-04-05 13:37:00 Starting XpzxManagerApp using Java 17.0.5 with PID 61032 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 13:37:00 The following 1 profile is active: "dev"
+2024-04-05 13:37:01 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 13:37:01 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 13:37:01 Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-04-05 13:37:01 Tomcat initialized with port 8501 (http)
+2024-04-05 13:37:01 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 13:37:01 Starting service [Tomcat]
+2024-04-05 13:37:01 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 13:37:02 Initializing Spring embedded WebApplicationContext
+2024-04-05 13:37:02 Root WebApplicationContext: initialization completed in 1423 ms
+2024-04-05 13:37:03 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 13:37:03 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 13:37:03 Started XpzxManagerApp in 3.13 seconds (process running for 3.608)
+2024-04-05 13:37:08 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 13:37:08 Initializing Servlet 'dispatcherServlet'
+2024-04-05 13:37:08 Completed initialization in 5 ms
+2024-04-05 13:37:16 HikariPool-1 - Starting...
+2024-04-05 13:37:16 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c17b689
+2024-04-05 13:37:16 HikariPool-1 - Start completed.
+2024-04-05 14:11:36 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-05 14:11:36 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-05 14:27:01 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m13s828ms).
+2024-04-05 14:27:12 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-05 14:27:12 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-05 14:29:03 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@394c2db7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 14:29:08 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5c551d26 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 14:29:13 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6fd03e04 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 14:29:18 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@372997dc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 14:29:20 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@cefdc44 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 14:29:23 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@34fb9d3f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 14:29:25 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5dfc1568 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 14:29:28 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@40b30aab (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 14:29:30 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7ddf5e7a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 14:54:21 Starting XpzxManagerApp using Java 17.0.5 with PID 74035 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 14:54:21 The following 1 profile is active: "dev"
+2024-04-05 14:54:22 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 14:54:22 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 14:54:22 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-05 14:54:23 Tomcat initialized with port 8501 (http)
+2024-04-05 14:54:23 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 14:54:23 Starting service [Tomcat]
+2024-04-05 14:54:23 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 14:54:23 Initializing Spring embedded WebApplicationContext
+2024-04-05 14:54:23 Root WebApplicationContext: initialization completed in 1915 ms
+2024-04-05 14:54:24 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 14:54:24 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 14:54:24 Started XpzxManagerApp in 3.94 seconds (process running for 4.592)
+2024-04-05 14:54:32 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 14:54:32 Initializing Servlet 'dispatcherServlet'
+2024-04-05 14:54:32 Completed initialization in 2 ms
+2024-04-05 14:54:39 HikariPool-1 - Starting...
+2024-04-05 14:54:39 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7491a741
+2024-04-05 14:54:39 HikariPool-1 - Start completed.
+2024-04-05 15:33:59 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-05 15:33:59 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-05 15:38:30 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@598d9ca8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 15:38:30 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1c0a7038 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 15:38:30 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@49ab87d3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 15:38:30 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7cf63a92 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 15:38:30 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6d5ac12b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 15:38:30 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@221ef708 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 15:38:30 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@379e6987 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 15:38:30 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7a71f74c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 15:38:30 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@419932b0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 15:38:30 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@146a3b3c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-05 16:06:13 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-05 16:06:14 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-05 16:09:16 Starting XpzxManagerApp using Java 17.0.5 with PID 89724 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 16:09:16 The following 1 profile is active: "dev"
+2024-04-05 16:09:17 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 16:09:17 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 16:09:17 Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-04-05 16:09:17 Tomcat initialized with port 8501 (http)
+2024-04-05 16:09:17 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 16:09:17 Starting service [Tomcat]
+2024-04-05 16:09:17 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 16:09:17 Initializing Spring embedded WebApplicationContext
+2024-04-05 16:09:17 Root WebApplicationContext: initialization completed in 1352 ms
+2024-04-05 16:09:19 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 16:09:19 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 16:09:19 Started XpzxManagerApp in 3.048 seconds (process running for 3.672)
+2024-04-05 16:09:23 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 16:09:23 Initializing Servlet 'dispatcherServlet'
+2024-04-05 16:09:23 Completed initialization in 1 ms
+2024-04-05 16:09:24 HikariPool-1 - Starting...
+2024-04-05 16:09:24 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51f88e9a
+2024-04-05 16:09:24 HikariPool-1 - Start completed.
+2024-04-05 16:11:09 Starting XpzxManagerApp using Java 17.0.5 with PID 90119 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 16:11:09 The following 1 profile is active: "dev"
+2024-04-05 16:11:10 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 16:11:10 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 16:11:10 Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-04-05 16:11:10 Tomcat initialized with port 8501 (http)
+2024-04-05 16:11:10 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 16:11:10 Starting service [Tomcat]
+2024-04-05 16:11:10 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 16:11:11 Initializing Spring embedded WebApplicationContext
+2024-04-05 16:11:11 Root WebApplicationContext: initialization completed in 1345 ms
+2024-04-05 16:11:12 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 16:11:12 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 16:11:12 Started XpzxManagerApp in 2.892 seconds (process running for 3.416)
+2024-04-05 16:11:17 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 16:11:17 Initializing Servlet 'dispatcherServlet'
+2024-04-05 16:11:17 Completed initialization in 2 ms
+2024-04-05 16:11:19 HikariPool-1 - Starting...
+2024-04-05 16:11:19 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@12a60eee
+2024-04-05 16:11:19 HikariPool-1 - Start completed.
+2024-04-05 16:52:34 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-05 16:52:34 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-05 17:27:04 Starting XpzxManagerApp using Java 17.0.5 with PID 7626 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 17:27:04 The following 1 profile is active: "dev"
+2024-04-05 17:27:05 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 17:27:05 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 17:27:05 Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-04-05 17:27:06 Tomcat initialized with port 8501 (http)
+2024-04-05 17:27:06 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 17:27:06 Starting service [Tomcat]
+2024-04-05 17:27:06 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 17:27:06 Initializing Spring embedded WebApplicationContext
+2024-04-05 17:27:06 Root WebApplicationContext: initialization completed in 1548 ms
+2024-04-05 17:27:07 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 17:27:07 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 17:27:07 Started XpzxManagerApp in 3.275 seconds (process running for 3.991)
+2024-04-05 17:27:17 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 17:27:17 Initializing Servlet 'dispatcherServlet'
+2024-04-05 17:27:17 Completed initialization in 1 ms
+2024-04-05 17:27:19 HikariPool-1 - Starting...
+2024-04-05 17:27:19 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2ceb1166
+2024-04-05 17:27:19 HikariPool-1 - Start completed.
+2024-04-05 17:32:54 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-05 17:32:54 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-05 17:37:53 Starting XpzxManagerApp using Java 17.0.5 with PID 9765 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 17:37:53 The following 1 profile is active: "dev"
+2024-04-05 17:37:54 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 17:37:54 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 17:37:54 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-05 17:37:55 Tomcat initialized with port 8501 (http)
+2024-04-05 17:37:55 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 17:37:55 Starting service [Tomcat]
+2024-04-05 17:37:55 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 17:37:55 Initializing Spring embedded WebApplicationContext
+2024-04-05 17:37:55 Root WebApplicationContext: initialization completed in 1511 ms
+2024-04-05 17:37:56 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 17:37:56 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 17:37:56 Started XpzxManagerApp in 3.259 seconds (process running for 3.951)
+2024-04-05 17:38:00 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 17:38:00 Initializing Servlet 'dispatcherServlet'
+2024-04-05 17:38:00 Completed initialization in 2 ms
+2024-04-05 17:38:02 HikariPool-1 - Starting...
+2024-04-05 17:38:02 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@779ce0cd
+2024-04-05 17:38:02 HikariPool-1 - Start completed.
+2024-04-05 17:51:47 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-05 17:51:48 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-05 18:06:59 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-05 18:06:59 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-05 18:09:04 Starting XpzxManagerApp using Java 17.0.5 with PID 16092 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 18:09:04 The following 1 profile is active: "dev"
+2024-04-05 18:09:05 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 18:09:05 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 18:09:05 Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-04-05 18:09:06 Tomcat initialized with port 8501 (http)
+2024-04-05 18:09:06 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:09:06 Starting service [Tomcat]
+2024-04-05 18:09:06 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 18:09:06 Initializing Spring embedded WebApplicationContext
+2024-04-05 18:09:06 Root WebApplicationContext: initialization completed in 1429 ms
+2024-04-05 18:09:07 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:09:07 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 18:09:07 Started XpzxManagerApp in 3.264 seconds (process running for 3.891)
+2024-04-05 18:09:16 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 18:09:16 Initializing Servlet 'dispatcherServlet'
+2024-04-05 18:09:16 Completed initialization in 0 ms
+2024-04-05 18:20:40 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-05 18:20:40 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-05 18:25:58 Starting XpzxManagerApp using Java 17.0.5 with PID 19623 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 18:25:58 The following 1 profile is active: "dev"
+2024-04-05 18:25:59 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 18:25:59 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 18:25:59 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-05 18:26:00 Tomcat initialized with port 8501 (http)
+2024-04-05 18:26:00 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:26:00 Starting service [Tomcat]
+2024-04-05 18:26:00 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 18:26:00 Initializing Spring embedded WebApplicationContext
+2024-04-05 18:26:00 Root WebApplicationContext: initialization completed in 1874 ms
+2024-04-05 18:26:01 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:26:02 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 18:26:02 Started XpzxManagerApp in 3.587 seconds (process running for 4.135)
+2024-04-05 18:26:21 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 18:26:21 Initializing Servlet 'dispatcherServlet'
+2024-04-05 18:26:21 Completed initialization in 1 ms
+2024-04-05 18:29:45 Starting XpzxManagerApp using Java 17.0.5 with PID 20371 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 18:29:45 The following 1 profile is active: "dev"
+2024-04-05 18:29:45 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 18:29:45 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 18:29:45 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-05 18:29:46 Tomcat initialized with port 8501 (http)
+2024-04-05 18:29:46 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:29:46 Starting service [Tomcat]
+2024-04-05 18:29:46 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 18:29:46 Initializing Spring embedded WebApplicationContext
+2024-04-05 18:29:46 Root WebApplicationContext: initialization completed in 1306 ms
+2024-04-05 18:29:47 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:29:47 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 18:29:47 Started XpzxManagerApp in 2.831 seconds (process running for 3.401)
+2024-04-05 18:29:54 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 18:29:54 Initializing Servlet 'dispatcherServlet'
+2024-04-05 18:29:54 Completed initialization in 1 ms
+2024-04-05 18:30:07 HikariPool-1 - Starting...
+2024-04-05 18:30:08 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@29d08c49
+2024-04-05 18:30:08 HikariPool-1 - Start completed.
+2024-04-05 18:31:38 Starting XpzxManagerApp using Java 17.0.5 with PID 20769 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 18:31:38 The following 1 profile is active: "dev"
+2024-04-05 18:31:39 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 18:31:39 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 18:31:39 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-05 18:31:39 Tomcat initialized with port 8501 (http)
+2024-04-05 18:31:40 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:31:40 Starting service [Tomcat]
+2024-04-05 18:31:40 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 18:31:40 Initializing Spring embedded WebApplicationContext
+2024-04-05 18:31:40 Root WebApplicationContext: initialization completed in 1450 ms
+2024-04-05 18:31:41 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:31:41 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 18:31:41 Started XpzxManagerApp in 3.12 seconds (process running for 3.678)
+2024-04-05 18:31:54 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 18:31:54 Initializing Servlet 'dispatcherServlet'
+2024-04-05 18:31:54 Completed initialization in 1 ms
+2024-04-05 18:33:46 Starting XpzxManagerApp using Java 17.0.5 with PID 21267 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 18:33:46 The following 1 profile is active: "dev"
+2024-04-05 18:33:47 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 18:33:47 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 18:33:47 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-05 18:33:48 Tomcat initialized with port 8501 (http)
+2024-04-05 18:33:48 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:33:48 Starting service [Tomcat]
+2024-04-05 18:33:48 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 18:33:48 Initializing Spring embedded WebApplicationContext
+2024-04-05 18:33:48 Root WebApplicationContext: initialization completed in 1403 ms
+2024-04-05 18:33:49 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:33:49 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 18:33:49 Started XpzxManagerApp in 3.072 seconds (process running for 3.62)
+2024-04-05 18:34:00 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 18:34:00 Initializing Servlet 'dispatcherServlet'
+2024-04-05 18:34:00 Completed initialization in 1 ms
+2024-04-05 18:38:03 Starting XpzxManagerApp using Java 17.0.5 with PID 22104 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 18:38:03 The following 1 profile is active: "dev"
+2024-04-05 18:38:03 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 18:38:03 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 18:38:03 Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-04-05 18:38:04 Tomcat initialized with port 8501 (http)
+2024-04-05 18:38:04 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:38:04 Starting service [Tomcat]
+2024-04-05 18:38:04 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 18:38:04 Initializing Spring embedded WebApplicationContext
+2024-04-05 18:38:04 Root WebApplicationContext: initialization completed in 1343 ms
+2024-04-05 18:38:05 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:38:05 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 18:38:05 Started XpzxManagerApp in 2.889 seconds (process running for 3.491)
+2024-04-05 18:38:14 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 18:38:14 Initializing Servlet 'dispatcherServlet'
+2024-04-05 18:38:14 Completed initialization in 1 ms
+2024-04-05 18:40:11 Starting XpzxManagerApp using Java 17.0.5 with PID 22536 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 18:40:11 The following 1 profile is active: "dev"
+2024-04-05 18:40:12 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 18:40:12 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 18:40:12 Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-04-05 18:40:13 Tomcat initialized with port 8501 (http)
+2024-04-05 18:40:13 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:40:13 Starting service [Tomcat]
+2024-04-05 18:40:13 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 18:40:13 Initializing Spring embedded WebApplicationContext
+2024-04-05 18:40:13 Root WebApplicationContext: initialization completed in 1351 ms
+2024-04-05 18:40:14 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:40:14 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 18:40:14 Started XpzxManagerApp in 2.922 seconds (process running for 3.533)
+2024-04-05 18:40:21 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 18:40:21 Initializing Servlet 'dispatcherServlet'
+2024-04-05 18:40:21 Completed initialization in 1 ms
+2024-04-05 18:40:27 HikariPool-1 - Starting...
+2024-04-05 18:40:27 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7cf148d6
+2024-04-05 18:40:27 HikariPool-1 - Start completed.
+2024-04-05 18:45:14 Starting XpzxManagerApp using Java 17.0.5 with PID 23590 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 18:45:14 The following 1 profile is active: "dev"
+2024-04-05 18:45:15 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 18:45:15 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 18:45:15 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-05 18:45:15 Tomcat initialized with port 8501 (http)
+2024-04-05 18:45:15 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:45:15 Starting service [Tomcat]
+2024-04-05 18:45:15 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 18:45:15 Initializing Spring embedded WebApplicationContext
+2024-04-05 18:45:15 Root WebApplicationContext: initialization completed in 1404 ms
+2024-04-05 18:45:16 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:45:16 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 18:45:16 Started XpzxManagerApp in 2.977 seconds (process running for 3.521)
+2024-04-05 18:45:20 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 18:45:20 Initializing Servlet 'dispatcherServlet'
+2024-04-05 18:45:20 Completed initialization in 1 ms
+2024-04-05 18:55:07 Starting XpzxManagerApp using Java 17.0.5 with PID 25554 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 18:55:07 The following 1 profile is active: "dev"
+2024-04-05 18:55:08 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 18:55:08 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 18:55:08 Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-04-05 18:55:09 Tomcat initialized with port 8501 (http)
+2024-04-05 18:55:09 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:55:09 Starting service [Tomcat]
+2024-04-05 18:55:09 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 18:55:09 Initializing Spring embedded WebApplicationContext
+2024-04-05 18:55:09 Root WebApplicationContext: initialization completed in 1670 ms
+2024-04-05 18:55:10 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 18:55:10 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 18:55:10 Started XpzxManagerApp in 3.39 seconds (process running for 3.929)
+2024-04-05 18:56:39 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 18:56:39 Initializing Servlet 'dispatcherServlet'
+2024-04-05 18:56:39 Completed initialization in 1 ms
+2024-04-05 18:56:48 HikariPool-1 - Starting...
+2024-04-05 18:56:48 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e61a4d
+2024-04-05 18:56:48 HikariPool-1 - Start completed.
+2024-04-05 19:11:29 Starting XpzxManagerApp using Java 17.0.5 with PID 28883 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 19:11:29 The following 1 profile is active: "dev"
+2024-04-05 19:11:31 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 19:11:31 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 19:11:31 Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-04-05 19:11:31 Tomcat initialized with port 8501 (http)
+2024-04-05 19:11:31 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 19:11:31 Starting service [Tomcat]
+2024-04-05 19:11:31 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 19:11:31 Initializing Spring embedded WebApplicationContext
+2024-04-05 19:11:31 Root WebApplicationContext: initialization completed in 1993 ms
+2024-04-05 19:11:32 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 19:11:32 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 19:11:32 Started XpzxManagerApp in 3.877 seconds (process running for 4.387)
+2024-04-05 19:26:52 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 19:26:52 Initializing Servlet 'dispatcherServlet'
+2024-04-05 19:26:52 Completed initialization in 3 ms
+2024-04-05 19:40:25 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-05 19:40:25 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-05 19:40:31 HikariPool-1 - Starting...
+2024-04-05 19:40:31 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3af01c25
+2024-04-05 19:40:31 HikariPool-1 - Start completed.
+2024-04-05 19:42:56 HikariPool-1 - Shutdown initiated...
+2024-04-05 19:42:56 HikariPool-1 - Shutdown completed.
+2024-04-05 19:43:04 Starting XpzxManagerApp using Java 17.0.5 with PID 32957 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 19:43:04 The following 1 profile is active: "dev"
+2024-04-05 19:43:04 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 19:43:04 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 19:43:04 Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-04-05 19:43:05 Tomcat initialized with port 8501 (http)
+2024-04-05 19:43:05 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 19:43:05 Starting service [Tomcat]
+2024-04-05 19:43:05 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 19:43:05 Initializing Spring embedded WebApplicationContext
+2024-04-05 19:43:05 Root WebApplicationContext: initialization completed in 1663 ms
+2024-04-05 19:43:07 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 19:43:07 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 19:43:07 Started XpzxManagerApp in 3.502 seconds (process running for 4.009)
+2024-04-05 19:43:13 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 19:43:13 Initializing Servlet 'dispatcherServlet'
+2024-04-05 19:43:13 Completed initialization in 2 ms
+2024-04-05 19:43:14 HikariPool-1 - Starting...
+2024-04-05 19:43:14 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f5014b3
+2024-04-05 19:43:14 HikariPool-1 - Start completed.
+2024-04-05 20:25:51 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-05 20:25:51 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-05 20:26:08 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s644ms).
+2024-04-05 20:32:40 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m32s33ms).
+2024-04-05 21:00:43 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-05 21:00:43 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-05 21:07:14 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-05 21:07:14 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-04-05 21:10:40 Starting XpzxManagerApp using Java 17.0.5 with PID 49458 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-05 21:10:40 The following 1 profile is active: "dev"
+2024-04-05 21:10:41 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-05 21:10:41 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-05 21:10:41 Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-04-05 21:10:42 Tomcat initialized with port 8501 (http)
+2024-04-05 21:10:42 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-05 21:10:42 Starting service [Tomcat]
+2024-04-05 21:10:42 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-05 21:10:42 Initializing Spring embedded WebApplicationContext
+2024-04-05 21:10:42 Root WebApplicationContext: initialization completed in 1727 ms
+2024-04-05 21:10:43 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-05 21:10:43 Tomcat started on port 8501 (http) with context path ''
+2024-04-05 21:10:43 Started XpzxManagerApp in 3.766 seconds (process running for 4.436)
+2024-04-05 21:10:49 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-05 21:10:49 Initializing Servlet 'dispatcherServlet'
+2024-04-05 21:10:49 Completed initialization in 1 ms
+2024-04-05 21:10:50 HikariPool-1 - Starting...
+2024-04-05 21:10:50 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13702314
+2024-04-05 21:10:50 HikariPool-1 - Start completed.
+2024-04-05 21:24:41 Reconnecting, last destination was /14.103.49.141:6379
+2024-04-05 21:24:41 Reconnected to 14.103.49.141/<unresolved>:6379
