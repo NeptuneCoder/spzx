@@ -2,6 +2,7 @@ package com.atguigu.spzx.manager.interceptor;
 
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
+import com.atguigu.spzx.common.constant.RedisConstantKey;
 import com.atguigu.spzx.model.entity.system.SysUser;
 import com.atguigu.spzx.model.vo.common.Result;
 import com.atguigu.spzx.model.vo.common.ResultCodeEnum;
@@ -32,15 +33,18 @@ public class LoginAuthInterceptor implements HandlerInterceptor {
             return true;
         }
 
+
         // 获取token
         String token = request.getHeader("token");
+        System.out.println("token  ：" + token);
         if (StrUtil.isEmpty(token)) {
             responseNoLoginInfo(response);//返回208状态码给前端
             return false;
         }
 
         // 如果token不为空，那么此时验证token的合法性
-        String sysUserInfoJson = redisTemplate.opsForValue().get("user:login:" + token);
+        String sysUserInfoJson = redisTemplate.opsForValue().get(RedisConstantKey.userTokenKey + token);
+        System.out.println("tokesysUserInfoJsonn  ：" + sysUserInfoJson);
         if (StrUtil.isEmpty(sysUserInfoJson)) {
             responseNoLoginInfo(response);
             return false;
@@ -51,7 +55,7 @@ public class LoginAuthInterceptor implements HandlerInterceptor {
         AuthContextUtil.set(sysUser);
 
         // 重置Redis中的用户数据的有效时间
-        redisTemplate.expire("user:login:" + token, 30, TimeUnit.MINUTES);
+        redisTemplate.expire(RedisConstantKey.userTokenKey + token, 30, TimeUnit.MINUTES);
 
         // 放行
         return true;

@@ -9,6 +9,7 @@ import com.atguigu.spzx.model.vo.common.Result;
 import com.atguigu.spzx.model.vo.common.ResultCodeEnum;
 import com.atguigu.spzx.model.vo.system.LoginVo;
 import com.atguigu.spzx.model.vo.system.ValidateCodeVo;
+import com.atguigu.xpzx.utils.AuthContextUtil;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,9 +37,16 @@ public class IndexController {
         return Result.build(validateCodeVo, ResultCodeEnum.SUCCESS);
     }
 
+    //每次都从请求头中获取token，不安全，后续优化
+    //    @GetMapping(value = "/getUserInfo")
+    //    public Result<SysUser> getUserInfo(@RequestHeader(name = "token") String token) {
+    //        SysUser sysUser = sysUserService.getUserInfo(token);
+    //        return Result.build(sysUser, ResultCodeEnum.SUCCESS);
+    //    }
+    //优化后
     @GetMapping(value = "/getUserInfo")
-    public Result<SysUser> getUserInfo(@RequestHeader(name = "token") String token) {
-        SysUser sysUser = sysUserService.getUserInfo(token);
+    public Result<SysUser> getUserInfo() {
+        SysUser sysUser = AuthContextUtil.get();
         return Result.build(sysUser, ResultCodeEnum.SUCCESS);
     }
 
