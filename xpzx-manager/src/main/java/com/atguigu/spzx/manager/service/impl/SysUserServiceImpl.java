@@ -5,7 +5,9 @@ import com.alibaba.fastjson.JSON;
 import com.atguigu.spzx.common.constant.RedisConstantKey;
 import com.atguigu.spzx.common.exception.GuiguException;
 import com.atguigu.spzx.manager.mapper.SysUserMapper;
+import com.atguigu.spzx.manager.mapper.SysUserRoleMapper;
 import com.atguigu.spzx.manager.service.SysUserService;
+import com.atguigu.spzx.model.dto.system.AssginRoleDto;
 import com.atguigu.spzx.model.dto.system.LoginDto;
 import com.atguigu.spzx.model.dto.system.SysUserDto;
 import com.atguigu.spzx.model.entity.system.SysUser;
@@ -34,6 +36,9 @@ public class SysUserServiceImpl implements SysUserService {
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
 
+    @Autowired
+    private SysUserRoleMapper sysUserRoleMapper;
+
     @Override
     public LoginVo login(LoginDto loginDto) {
 
@@ -51,6 +56,7 @@ public class SysUserServiceImpl implements SysUserService {
 
         //1. 查询用户是否存在
         SysUser user = sysUserMapper.selectByUsername(loginDto.getUserName());
+        System.out.println("user:" + user);
         if (user == null) {
             throw new GuiguException(ResultCodeEnum.LOGIN_ERROR);
         }
@@ -58,6 +64,8 @@ public class SysUserServiceImpl implements SysUserService {
         String dbPassword = user.getPassword();
         //加密后的用户密码
         String inputPassword = DigestUtils.md5DigestAsHex(loginDto.getPassword().getBytes());
+        System.out.println("inputPassword:" + inputPassword);
+        System.out.println("dbPassword:" + dbPassword);
         if (!dbPassword.equals(inputPassword)) {
             throw new GuiguException(ResultCodeEnum.LOGIN_ERROR);
         }
@@ -101,6 +109,7 @@ public class SysUserServiceImpl implements SysUserService {
         }
 
         sysUser.setPassword(DigestUtils.md5DigestAsHex(sysUser.getPassword().getBytes()));
+        sysUser.setStatus(1);
         return sysUserMapper.save(sysUser);
 
     }
@@ -113,6 +122,15 @@ public class SysUserServiceImpl implements SysUserService {
     @Override
     public void delete(Integer id) {
         sysUserMapper.delete(id);
+    }
 
+    @Override
+    public void doAssign(AssginRoleDto assginRoleDto) {
+        //根据userid删除原有角色关系
+        sysUserRoleMapper.deleteByUserId(assginRoleDto.getUserId());
+        //保存新关系
+        for (Long roleId : assginRoleDto.getRoleIdList()) {
+            sysUserRoleMapper.save(assginRoleDto.getUserId(), roleId);
+        }
     }
 }

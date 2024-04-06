@@ -1,6 +1,7 @@
 package com.atguigu.spzx.manager.service.impl;
 
 import com.atguigu.spzx.manager.mapper.SysRoleMapper;
+import com.atguigu.spzx.manager.mapper.SysUserRoleMapper;
 import com.atguigu.spzx.manager.service.SysRoleService;
 import com.atguigu.spzx.model.dto.system.SysRoleDto;
 import com.atguigu.spzx.model.entity.system.SysRole;
@@ -10,12 +11,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class SysRoleServiceImpl implements SysRoleService {
     @Autowired
     private SysRoleMapper sysRoleMapper;
 
+
+    @Autowired
+    private SysUserRoleMapper sysUserRoleMapper;
 
     @Override
     public PageInfo<SysRole> findByPage(SysRoleDto sysRoleDto, Integer pageNum, Integer pageSize) {
@@ -39,5 +44,16 @@ public class SysRoleServiceImpl implements SysRoleService {
     public void delete(Integer id) {
         sysRoleMapper.deleteByLogic(id);
 
+    }
+
+    @Override
+    public Map<String, Object> findAllRoles(Integer userId) {
+        List<SysRole> allRolesList = sysRoleMapper.findAll();
+        Map<String, Object> result = new java.util.HashMap<>();
+        result.put("allRolesList", allRolesList);
+        List<Long> roleIdList = sysUserRoleMapper.queryUserRoleByUserId(userId);
+        result.put("roleIdList", roleIdList);
+        //TODO 查询当前用户已拥有的角色
+        return result;
     }
 }

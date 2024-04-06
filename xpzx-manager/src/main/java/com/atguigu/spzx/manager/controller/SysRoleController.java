@@ -1,6 +1,7 @@
 package com.atguigu.spzx.manager.controller;
 
 import com.atguigu.spzx.manager.service.SysRoleService;
+import com.atguigu.spzx.model.dto.system.AssginRoleDto;
 import com.atguigu.spzx.model.dto.system.SysRoleDto;
 import com.atguigu.spzx.model.entity.system.SysRole;
 import com.atguigu.spzx.model.vo.common.Result;
@@ -10,6 +11,8 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
+
 @Tag(name = "角色接口")
 @RestController
 @RequestMapping(value = "/admin/system/sysRole")
@@ -17,6 +20,15 @@ public class SysRoleController {
 
     @Autowired
     private SysRoleService sysRoleService;
+
+
+    @GetMapping(value = "/findAllRoles/{userId}")
+    public Result<Map<String, Object>> findAllRoles(@PathVariable(value = "userId") Integer userId) {
+        Map<String, Object> resultMap = sysRoleService.findAllRoles(userId);
+        return Result.build(resultMap, ResultCodeEnum.SUCCESS);
+    }
+
+
 
     @PostMapping("/findByPage/{pageNum}/{pageSize}")
     public Result<PageInfo<SysRole>> findByPage(@RequestBody SysRoleDto sysRoleDto,

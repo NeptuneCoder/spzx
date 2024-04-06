@@ -13,7 +13,8 @@
     <resultMap id="sysRoleMap" type="com.atguigu.spzx.model.entity.system.SysRole" autoMapping="true"></resultMap>
     <!-- 用于select查询公用抽取的列 -->
     <sql id="columns">
-        id,role_name,role_code,description,create_time,update_time,is_deleted
+        id
+        ,role_name,role_code,description,create_time,update_time,is_deleted
     </sql>
 
     <sql id="findPageWhere">
@@ -31,7 +32,6 @@
     </insert>
 
 
-
     <select id="findByPage" resultMap="sysRoleMap">
         SELECT
         <include refid="columns"/>
@@ -39,6 +39,7 @@
         <include refid="findPageWhere"/>
         ORDER BY id DESC
     </select>
+
     <update id="updateByPrimaryKeySelective">
         UPDATE sys_role
         <set>
@@ -58,4 +59,12 @@
         WHERE id = #{id}
     </update>
 
+
+    <select id="findAll" resultType="com.atguigu.spzx.model.entity.system.SysRole">
+        SELECT
+        <include refid="columns"/>
+        FROM sys_role
+        WHERE is_deleted = 0
+        ORDER BY id DESC
+    </select>
 </mapper>

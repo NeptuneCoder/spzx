@@ -16,4 +16,6 @@ public interface SysRoleMapper {
     void updateByPrimaryKeySelective(SysRole sysRole);
 
     void deleteByLogic(Integer id);
+
+    List<SysRole> findAll();
 }

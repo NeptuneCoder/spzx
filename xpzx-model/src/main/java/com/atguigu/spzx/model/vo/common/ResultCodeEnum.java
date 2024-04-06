@@ -16,6 +16,9 @@ public enum ResultCodeEnum {
     ACCOUNT_STOP(216, "账号已停用"),
 
     STOCK_LESS(219, "库存不足"),
+    UPLOAD_ERROR(220, "文件上传失败"),
+    FILE_SERVICE_IP_ERROR(221, "文件服务IP地址错误"),
+    FILE_SERVICE_ERROR(223, ""),
     ;
 
     private Integer code;      // 业务状态码

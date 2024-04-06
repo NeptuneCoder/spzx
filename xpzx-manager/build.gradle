@@ -23,7 +23,7 @@ dependencies {
     implementation 'com.github.pagehelper:pagehelper-spring-boot-starter:1.4.2'
     //依赖service模块
     implementation project(':xpzx-common:xpzx-service')
-    compileOnly project(':xpzx-common:xpzx-utils')
+    implementation project(':xpzx-common:xpzx-utils')
     implementation("com.github.xiaoymin:knife4j-openapi3-jakarta-spring-boot-starter:4.5.0")
     //操作redis
     //spring-boot-starter-data-redis
@@ -32,6 +32,9 @@ dependencies {
     implementation 'com.alibaba:fastjson:1.2.78'
     //生成验证码
     implementation("cn.hutool:hutool-all:5.5.2")
+    //minio
+    implementation("io.minio:minio:8.0.3")
+    //swagger
 
 
 }
