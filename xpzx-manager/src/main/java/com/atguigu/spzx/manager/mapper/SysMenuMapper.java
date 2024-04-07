@@ -20,4 +20,7 @@ public interface SysMenuMapper {
     int findSubMenuCountByParentId(@Param("id") Integer id);
 
     List<SysMenu> selectListByUserId(Long userId);
+
+
+    SysMenu findParentMenu(Long parentId);
 }

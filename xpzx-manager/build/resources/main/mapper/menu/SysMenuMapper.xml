@@ -31,6 +31,12 @@
         WHERE ur.user_id = #{userId}
           and m.is_deleted = 0
     </select>
+    <select id="findParentMenu" resultType="com.atguigu.spzx.model.entity.system.SysMenu">
+        SELECT <include refid="columns"/>
+        FROM sys_menu
+        WHERE id = #{parentId}
+          and is_deleted = 0
+    </select>
 
     <insert id="saveMenu" useGeneratedKeys="true" keyProperty="id">
         insert into sys_menu (id,
@@ -65,5 +71,11 @@
         update sys_menu
         set is_deleted = 1
         where id = #{id}
+    </update>
+    <update id="updateParentIsHalf">
+        update sys_menu
+        set is_half = 1
+        where parent_id = #{id}
+          and is_half = 0
     </update>
 </mapper>

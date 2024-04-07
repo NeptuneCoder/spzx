@@ -14,4 +14,6 @@ public interface SysRoleMenuMapper {
     void deleteSysRoleMenuByRoleId(Long roleId);
 
     void saveSysRoleMenu(AssginMenuDto assginMenuDto);
+
+    void updateParentIsHalf(Long menuid);
 }

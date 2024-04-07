@@ -55,7 +55,7 @@ public class LoginAuthInterceptor implements HandlerInterceptor {
         AuthContextUtil.set(sysUser);
 
         // 重置Redis中的用户数据的有效时间
-        redisTemplate.expire(RedisConstantKey.userTokenKey + token, 30, TimeUnit.MINUTES);
+        redisTemplate.expire(RedisConstantKey.userTokenKey + token, 7, TimeUnit.DAYS);
 
         // 放行
         return true;

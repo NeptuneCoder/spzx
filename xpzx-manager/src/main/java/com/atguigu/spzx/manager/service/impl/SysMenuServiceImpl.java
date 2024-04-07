@@ -2,6 +2,7 @@ package com.atguigu.spzx.manager.service.impl;
 
 import com.atguigu.spzx.common.exception.GuiguException;
 import com.atguigu.spzx.manager.mapper.SysMenuMapper;
+import com.atguigu.spzx.manager.mapper.SysRoleMenuMapper;
 import com.atguigu.spzx.manager.service.SysMenuService;
 import com.atguigu.spzx.model.entity.system.SysMenu;
 import com.atguigu.spzx.model.entity.system.SysUser;
@@ -22,6 +23,9 @@ public class SysMenuServiceImpl implements SysMenuService {
     @Autowired
     private SysMenuMapper sysMenuMapper;
 
+    @Autowired
+    private SysRoleMenuMapper sysRoleMenuMapper;
+
 
     @Override
     public List<SysMenu> findMenuNodes() {
@@ -32,8 +36,20 @@ public class SysMenuServiceImpl implements SysMenuService {
 
     @Override
     public Long saveMenu(SysMenu sysMenu) {
+        //当添加新菜单时，将父菜单的isHalf为true字段设置为true
+        Long aLong = sysMenuMapper.saveMenu(sysMenu);
+        updateParentIsHalf(sysMenu.getParentId());
+        return aLong;
 
-        return sysMenuMapper.saveMenu(sysMenu);
+    }
+
+    private void updateParentIsHalf(Long parentId) {
+        SysMenu parentMenu = sysMenuMapper.findParentMenu(parentId);
+        if (parentMenu != null) {
+            sysRoleMenuMapper.updateParentIsHalf(parentMenu.getId());
+             //递归更新父菜单的isHalf字段
+            updateParentIsHalf(parentMenu.getParentId());
+        }
     }
 
     @Override
