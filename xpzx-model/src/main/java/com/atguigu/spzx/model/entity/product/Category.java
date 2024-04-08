@@ -6,6 +6,10 @@ import lombok.Data;
 
 import java.util.List;
 
+/**
+ * id
+ *         ,name,image_url,parent_id,status,order_num,create_time,update_time,is_deleted
+ */
 @Data
 @Schema(description = "分类实体类")
 public class Category extends BaseEntity {
@@ -17,7 +21,7 @@ public class Category extends BaseEntity {
 	private String imageUrl;
 
 	@Schema(description = "父节点id")
-	private Long parentId;
+	private Integer parentId;
 
 	@Schema(description = "分类状态: 是否显示[0-不显示，1显示]")
 	private Integer status;

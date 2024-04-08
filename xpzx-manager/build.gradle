@@ -35,6 +35,9 @@ dependencies {
     //minio
     implementation("io.minio:minio:8.0.3")
     //swagger
+    //easyexcel
+    implementation("com.alibaba:easyexcel:3.1.0")
+    //swagger ui
 
 
 }
