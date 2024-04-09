@@ -7,8 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
+@EnableScheduling
 @ComponentScan(basePackages = {"com.atguigu.spzx"})//配置扫描路径，解决swagger不生效的问题
 @EnableConfigurationProperties(value = {UserAuthProperties.class, FileServiceProperties.class})
 public class XpzxManagerApp {

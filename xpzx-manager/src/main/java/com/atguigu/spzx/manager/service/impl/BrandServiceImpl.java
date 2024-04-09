@@ -36,4 +36,9 @@ public class BrandServiceImpl implements BrandService {
     public void update(Brand brand) {
         brandMapper.updateByPrimaryKeySelective(brand);
     }
+
+    @Override
+    public List<Brand> findAll() {
+        return brandMapper.findAll();
+    }
 }

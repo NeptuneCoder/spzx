@@ -34,6 +34,13 @@
         where is_deleted = 0
         order by id desc
     </select>
+    <select id="findAll" resultType="com.atguigu.spzx.model.entity.product.Brand">
+        select
+        <include refid="columns"/>
+        from brand
+        where is_deleted = 0
+        order by id desc
+    </select>
 
     <update id="deleteByPrimaryKey">
         update brand
