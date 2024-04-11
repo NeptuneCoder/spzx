@@ -1,0 +1,20 @@
+ext {
+    mysqlVersion = '8.0.25'
+    starterWebVersion = '3.2.4'
+    mybatisVersion = '3.0.3'
+    //spring-cloud-starter-alibaba-nacos-discovery
+
+    nacosDiscoveryVersion = '2023.0.0.0-RC1'
+    alibabaSentinelVersion = '2023.0.0.0-RC1'
+}
+//implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-sentinel:2022.0.0.0-RC2'
+
+/**
+ implementation 'org.springframework.boot:spring-boot-starter-web:3.2.4'
+ implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
+ implementation "mysql:mysql-connector-java:${mysqlVersion}"
+ implementation 'org.springframework.boot:spring-boot-configuration-processor:3.2.4'
+ implementation 'com.github.pagehelper:pagehelper-spring-boot-starter:1.4.3'
+ implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery'
+ implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-sentinel'
+ */

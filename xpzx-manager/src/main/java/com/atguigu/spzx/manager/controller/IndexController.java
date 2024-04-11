@@ -1,6 +1,7 @@
 package com.atguigu.spzx.manager.controller;
 
 
+import com.atguigu.spzx.common.log.annotation.Log;
 import com.atguigu.spzx.manager.service.SysMenuService;
 import com.atguigu.spzx.manager.service.SysUserService;
 import com.atguigu.spzx.manager.service.ValidateCodeService;
@@ -30,6 +31,7 @@ public class IndexController {
     @Autowired
     private SysMenuService sysMenuService;
 
+    @Log(title = "用户登录", businessType = 0)
     @Operation(summary = "登录接口")
     @PostMapping(value = "/login")
     public Result<LoginVo> login(@RequestBody LoginDto loginDto) {

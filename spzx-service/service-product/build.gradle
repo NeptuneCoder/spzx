@@ -1,0 +1,49 @@
+plugins {
+    id 'java'
+}
+
+group 'com.atguigu'
+version '1.0-SNAPSHOT'
+
+//导入根目录的version.gradle文件
+apply from: '../../version.gradle'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    //全局工程依赖
+    implementation 'com.alipay.sdk:alipay-sdk-java:4.8.73.ALL'
+
+    //spzx-service 模块依赖
+    implementation 'org.springframework.boot:spring-boot-starter-web:3.2.4'
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
+    implementation 'mysql:mysql-connector-java:8.0.25'
+    implementation 'org.springframework.boot:spring-boot-configuration-processor:3.2.4'
+    implementation 'com.github.pagehelper:pagehelper-spring-boot-starter:1.4.3'
+
+//    implementation "org.springframework.cloud:spring-cloud-dependencies:2023.0.1"
+//    implementation "com.alibaba.cloud:spring-cloud-alibaba-dependencies:2021.0.5.0"
+    implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery:${nacosDiscoveryVersion}"
+//    implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-sentinel:${alibabaSentinelVersion}"
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis:provided'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis:3.2.4'
+    //starter-cache依赖
+    implementation 'org.springframework.boot:spring-boot-starter-cache:2.6.3'
+    //starter-actuator依赖
+
+    implementation project(':xpzx-common:xpzx-service')
+    implementation project(':xpzx-model')
+
+    //swagger2
+    implementation("com.github.xiaoymin:knife4j-openapi3-jakarta-spring-boot-starter:4.5.0")
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'com.atguigu'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    implementation 'org.springframework.boot:spring-boot-starter-web:3.2.4'
+    implementation 'org.springframework.boot:spring-boot-starter-aop:3.2.4'
+
+    implementation project(path: ':xpzx-model')
+    implementation project(':xpzx-common:xpzx-utils')
+    implementation 'com.alibaba:fastjson:1.2.78'
+}
+
+test {
+    useJUnitPlatform()
+}

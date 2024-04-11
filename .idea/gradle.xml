@@ -10,7 +10,16 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/spzx-server-gateway" />
+            <option value="$PROJECT_DIR$/spzx-service" />
+            <option value="$PROJECT_DIR$/spzx-service-client" />
+            <option value="$PROJECT_DIR$/spzx-service-client/service-product-client" />
+            <option value="$PROJECT_DIR$/spzx-service-client/service-user-client" />
+            <option value="$PROJECT_DIR$/spzx-service/service-order" />
+            <option value="$PROJECT_DIR$/spzx-service/service-product" />
+            <option value="$PROJECT_DIR$/spzx-service/service-user" />
             <option value="$PROJECT_DIR$/xpzx-common" />
+            <option value="$PROJECT_DIR$/xpzx-common/common-log" />
             <option value="$PROJECT_DIR$/xpzx-common/xpzx-service" />
             <option value="$PROJECT_DIR$/xpzx-common/xpzx-utils" />
             <option value="$PROJECT_DIR$/xpzx-manager" />

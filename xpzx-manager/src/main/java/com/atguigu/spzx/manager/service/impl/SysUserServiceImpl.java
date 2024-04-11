@@ -4,6 +4,7 @@ import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
 import com.atguigu.spzx.common.constant.RedisConstantKey;
 import com.atguigu.spzx.common.exception.GuiguException;
+import com.atguigu.spzx.common.log.annotation.Log;
 import com.atguigu.spzx.manager.mapper.SysUserMapper;
 import com.atguigu.spzx.manager.mapper.SysUserRoleMapper;
 import com.atguigu.spzx.manager.service.SysUserService;
@@ -18,6 +19,7 @@ import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.DigestUtils;
 import org.springframework.util.StringUtils;
 
@@ -124,6 +126,8 @@ public class SysUserServiceImpl implements SysUserService {
         sysUserMapper.delete(id);
     }
 
+    @Log(title = "分配角色", businessType = 0)
+    @Transactional
     @Override
     public void doAssign(AssginRoleDto assginRoleDto) {
         //根据userid删除原有角色关系

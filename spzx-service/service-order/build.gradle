@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.atguigu'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    //全局工程依赖
+    implementation "org.springframework.cloud:spring-cloud-dependencies:2022.0.2"
+    implementation 'com.alibaba.cloud:spring-cloud-alibaba-dependencies:2022.0.0.0-RC2'
+    implementation 'com.alipay.sdk:alipay-sdk-java:4.8.73.ALL'
+}
+
+test {
+    useJUnitPlatform()
+}

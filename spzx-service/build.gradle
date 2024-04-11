@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+//导入根目录的version.gradle文件
+apply from: '../version.gradle'
+
+group 'com.atguigu'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    //spring-cloud-dependencies
+    //spring-cloud-alibaba-dependencies
+    //alipay-sdk-java
+
+//    implementation 'org.springframework.boot:spring-boot-starter-web:3.2.4'
+//    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
+//    implementation "mysql:mysql-connector-java:${mysqlVersion}"
+//    implementation 'org.springframework.boot:spring-boot-configuration-processor:3.2.4'
+//    implementation 'com.github.pagehelper:pagehelper-spring-boot-starter:1.4.3'
+//    implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery:${nacosDiscoveryVersion}"
+//    implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-sentinel:${alibabaSentinelVersion}"
+}
+
+test {
+    useJUnitPlatform()
+}

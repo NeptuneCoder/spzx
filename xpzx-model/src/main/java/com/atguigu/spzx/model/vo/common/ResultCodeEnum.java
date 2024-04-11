@@ -19,6 +19,8 @@ public enum ResultCodeEnum {
     UPLOAD_ERROR(220, "文件上传失败"),
     FILE_SERVICE_IP_ERROR(221, "文件服务IP地址错误"),
     FILE_SERVICE_ERROR(223, ""),
+    PHONE_FORMAT_ERROR(224, "手机号格式错误"),
+    USER_NOT_EXISTS(225, "用户名不存在"),
     ;
 
     private Integer code;      // 业务状态码
