@@ -12,6 +12,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import com.atguigu.xpzx.utils.AuthContextUtil;
 
+/**
+ * getToken方法中，从redis中获取用户信息，并设置到AuthContextUtil中，供后续业务使用。
+ */
 @Component
 public class UserLoginAuthInterceptor implements HandlerInterceptor {
 
@@ -20,7 +23,6 @@ public class UserLoginAuthInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-
         // 如果token不为空，那么此时验证token的合法性
         String userInfoJSON = redisTemplate.opsForValue().get(RedisConstantKey.USER_TOKEN_KEY + request.getHeader("token"));
         AuthContextUtil.setUserInfo(JSON.parseObject(userInfoJSON, UserInfo.class));

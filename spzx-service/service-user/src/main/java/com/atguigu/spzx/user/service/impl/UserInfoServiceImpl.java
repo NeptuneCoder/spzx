@@ -106,6 +106,7 @@ public class UserInfoServiceImpl implements UserInfoService {
 
         String token = UUID.randomUUID().toString().replaceAll("-", "");
         redisTemplate.opsForValue().set(RedisConstantKey.USER_TOKEN_KEY + token, JSON.toJSONString(userInfo), 30, TimeUnit.DAYS);
+        
         return token;
     }
 

@@ -14,7 +14,7 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public Result handleException(Exception e) {
         e.printStackTrace();
-        return Result.build(null, ResultCodeEnum.SYSTEM_ERROR);
+        return Result.build(null, ResultCodeEnum.SYSTEM_ERROR, e.getMessage());
     }
 
     //指定发生GuiguException类型的异常时执行该方法，自定义的异常处理

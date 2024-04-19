@@ -13,9 +13,13 @@
             <option value="$PROJECT_DIR$/spzx-server-gateway" />
             <option value="$PROJECT_DIR$/spzx-service" />
             <option value="$PROJECT_DIR$/spzx-service-client" />
+            <option value="$PROJECT_DIR$/spzx-service-client/service-cart-client" />
+            <option value="$PROJECT_DIR$/spzx-service-client/service-order-client" />
             <option value="$PROJECT_DIR$/spzx-service-client/service-product-client" />
             <option value="$PROJECT_DIR$/spzx-service-client/service-user-client" />
+            <option value="$PROJECT_DIR$/spzx-service/service-cart" />
             <option value="$PROJECT_DIR$/spzx-service/service-order" />
+            <option value="$PROJECT_DIR$/spzx-service/service-pay" />
             <option value="$PROJECT_DIR$/spzx-service/service-product" />
             <option value="$PROJECT_DIR$/spzx-service/service-user" />
             <option value="$PROJECT_DIR$/xpzx-common" />

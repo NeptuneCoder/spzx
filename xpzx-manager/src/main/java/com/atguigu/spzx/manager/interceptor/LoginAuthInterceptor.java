@@ -33,10 +33,8 @@ public class LoginAuthInterceptor implements HandlerInterceptor {
             return true;
         }
 
-
         // 获取token
         String token = request.getHeader("token");
-        System.out.println("token  ：" + token);
         if (StrUtil.isEmpty(token)) {
             responseNoLoginInfo(response);//返回208状态码给前端
             return false;

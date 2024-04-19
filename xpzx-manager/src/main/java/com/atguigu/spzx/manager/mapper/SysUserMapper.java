@@ -3,6 +3,7 @@ package com.atguigu.spzx.manager.mapper;
 import com.atguigu.spzx.model.dto.system.SysUserDto;
 import com.atguigu.spzx.model.entity.system.SysUser;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -27,4 +28,6 @@ public interface SysUserMapper {
     void update(SysUser sysUser);
 
     void delete(Integer id);
+
+    SysUser queryByUserId(@Param("userId") Integer id);
 }

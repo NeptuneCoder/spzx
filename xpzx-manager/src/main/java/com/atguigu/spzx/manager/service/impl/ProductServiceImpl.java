@@ -1,5 +1,6 @@
 package com.atguigu.spzx.manager.service.impl;
 
+import com.atguigu.spzx.common.exception.GuiguException;
 import com.atguigu.spzx.manager.mapper.ProductDetailsMapper;
 import com.atguigu.spzx.manager.mapper.ProductMapper;
 import com.atguigu.spzx.manager.mapper.ProductSkuMapper;
@@ -8,6 +9,7 @@ import com.atguigu.spzx.model.dto.product.ProductDto;
 import com.atguigu.spzx.model.entity.product.Product;
 import com.atguigu.spzx.model.entity.product.ProductDetails;
 import com.atguigu.spzx.model.entity.product.ProductSku;
+import com.atguigu.spzx.model.vo.common.ResultCodeEnum;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,7 +48,6 @@ public class ProductServiceImpl implements ProductService {
         // 保存商品sku数据
         List<ProductSku> productSkuList = product.getProductSkuList();
         for (int i = 0, size = productSkuList.size(); i < size; i++) {
-
             // 获取ProductSku对象
             ProductSku productSku = productSkuList.get(i);
             productSku.setSkuCode(product.getId() + "_" + i);       // 构建skuCode
@@ -55,6 +56,7 @@ public class ProductServiceImpl implements ProductService {
             productSku.setSkuName(product.getName() + productSku.getSkuSpec());
             productSku.setSaleNum(0);                               // 设置销量
             productSku.setStatus(0);
+            Integer stockNum = productSku.getStockNum();// 设置排序
             productSkuMapper.save(productSku);                    // 保存数据
 
         }

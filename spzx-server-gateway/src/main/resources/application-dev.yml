@@ -1,13 +1,15 @@
 server:
   port: 8500
 spring:
+  main:
+    web-application-type: reactive
   application:
     name: spzx-server-gateway
-#  data:
-#    redis:
-#      host: 14.103.49.141
-#      port: 6379
-#      timeout: 20000
+  data:
+    redis:
+      host: 14.103.49.141
+      port: 6379
+      timeout: 20000
   cloud:
     nacos:
       discovery:
@@ -36,3 +38,16 @@ spring:
           uri: lb://service-user
           predicates: # 路由条件根据下面的路由规则访问上面的服务
             - Path=/*/user/**
+        - id: service-cart
+          uri: lb://service-cart
+          predicates:
+            - Path=/api/order/cart/**
+        - id: service-order
+          uri: lb://service-order
+          predicates:
+            - Path=/api/order/orderInfo/**
+        - id: service-pay
+          uri: lb://service-pay
+          predicates:
+            - Path=/api/order/alipay/**
+

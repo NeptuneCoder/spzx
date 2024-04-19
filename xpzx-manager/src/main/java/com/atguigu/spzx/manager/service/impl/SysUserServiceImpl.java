@@ -12,8 +12,10 @@ import com.atguigu.spzx.model.dto.system.AssginRoleDto;
 import com.atguigu.spzx.model.dto.system.LoginDto;
 import com.atguigu.spzx.model.dto.system.SysUserDto;
 import com.atguigu.spzx.model.entity.system.SysUser;
+import com.atguigu.spzx.model.entity.user.UserInfo;
 import com.atguigu.spzx.model.vo.common.ResultCodeEnum;
 import com.atguigu.spzx.model.vo.system.LoginVo;
+import com.atguigu.xpzx.utils.AuthContextUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -123,6 +125,16 @@ public class SysUserServiceImpl implements SysUserService {
 
     @Override
     public void delete(Integer id) {
+        SysUser sysUser = AuthContextUtil.get();
+
+        SysUser dbSysUser = sysUserMapper.queryByUserId(id);
+        System.out.println("dbSysUser:" + dbSysUser);
+        if (dbSysUser != null && dbSysUser.getUserName().equals(sysUser.getUserName())) {
+            throw new GuiguException(ResultCodeEnum.DELETE_SELF_USER_ERROR);
+        }
+        if (sysUser.getUserName().equals("admin")) {
+            throw new GuiguException(ResultCodeEnum.DELETE_ADMIN_USER_ERROR);
+        }
         sysUserMapper.delete(id);
     }
 

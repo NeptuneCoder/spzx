@@ -12,6 +12,13 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    //提供远程调用
+    //spring-cloud-starter-openfeign
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:4.1.1'
+    implementation 'org.springframework.cloud:spring-cloud-loadbalancer:4.1.2'
+    implementation project(':xpzx-common:xpzx-utils')
+    implementation project(':xpzx-model')
 }
 
 test {

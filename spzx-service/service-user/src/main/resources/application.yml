@@ -1,3 +1,13 @@
+#spring:
+#  cloud:
+#    nacos:
+#      config:
+#        server-addr: 14.103.49.141:8848
+#  config:
+#    import:
+#      - nacos:service-user-dev.yml
+
 spring:
   profiles:
     active: dev
+

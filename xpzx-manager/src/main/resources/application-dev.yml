@@ -11,7 +11,13 @@ spring:
     redis:
       host: 14.103.49.141
       port: 6379
-      timeout: 20000
+      timeout: 20000 # milliseconds
+      jedis:
+        pool:
+          max-active: 10 # 连接池最大连接数
+          max-idle: 10 # 连接池最大空闲连接数
+          min-idle: 5 # 连接池最小空闲连接数
+          max-wait: 20000 # milliseconds 等待连接池返回连接的最大时间
 
 mybatis:
   mapper-locations: classpath:/mapper/*/*.xml

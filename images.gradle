@@ -1,0 +1,29 @@
+plugins {
+    id 'org.springframework.boot' version '2.5.0'
+    id 'com.palantir.docker' version '0.28.0'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    dockerRepository = '192.168.6.131'
+    dockerRegistryName = 'spzx'
+}
+
+springBoot {
+    buildInfo()
+}
+
+docker {
+    name "${dockerRepository}/${dockerRegistryName}/${project.name}:${project.version}"
+    files "$buildDir/libs/${project.name}-${project.version}.jar", 'Dockerfile'
+    buildArgs(['JAR_FILE': "${project.name}-${project.version}.jar"])
+}
+
+tasks.buildImage.dependsOn bootJar

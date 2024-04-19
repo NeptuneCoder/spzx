@@ -1,0 +1,5 @@
+**/build/*
+*/build/*
+./gradle/*
+xpzx-model/build/*
+*/*.class

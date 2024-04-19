@@ -36,7 +36,7 @@
     </select>
 
 
-    <insert id="batchInsert">
+    <insert id="batchInsert" useGeneratedKeys="true" keyProperty="id">
         insert into category (
         id,
         `name`,
@@ -60,5 +60,13 @@
             0
             )
         </foreach>
+        on duplicate key update
+        `name` = values(`name`),
+        image_url = values(image_url),
+        parent_id = values(parent_id),
+        status = values(status),
+        order_num = values(order_num),
+        update_time = values(update_time),
+        is_deleted = values(is_deleted)
     </insert>
 </mapper>

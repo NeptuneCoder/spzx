@@ -24,10 +24,12 @@ dependencies {
     implementation project(':xpzx-common:xpzx-utils')
     implementation project(':xpzx-model')
     //spring-cloud-starter-openfeign
-    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:3.0.3'
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:4.1.1'
 
     //fastjson
     implementation 'com.alibaba:fastjson:1.2.78'
+    //用于处理远程调用不能传递token的问题，通过拦截器进行解决
+    implementation("org.springframework.cloud:spring-cloud-starter-openfeign:4.1.1")
 
 }
 

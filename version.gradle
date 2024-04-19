@@ -5,6 +5,7 @@ ext {
     //spring-cloud-starter-alibaba-nacos-discovery
 
     nacosDiscoveryVersion = '2023.0.0.0-RC1'
+    nacosConfigVersion = '2023.0.0.0-RC1'
     alibabaSentinelVersion = '2023.0.0.0-RC1'
 }
 //implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-sentinel:2022.0.0.0-RC2'

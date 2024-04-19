@@ -36,7 +36,6 @@ public class IndexController {
     @PostMapping(value = "/login")
     public Result<LoginVo> login(@RequestBody LoginDto loginDto) {
         LoginVo loginVo = sysUserService.login(loginDto);
-
         return Result.build(loginVo, ResultCodeEnum.SUCCESS);
     }
 

@@ -1,9 +1,16 @@
+//apply(plugin = "com.bmuschko.docker-remote-api")
 plugins {
     id 'java'
+    id 'org.springframework.boot' version '3.2.4'
+    id 'io.spring.dependency-management' version '1.1.4'
 }
+apply plugin: 'com.bmuschko.docker-remote-api'
 
 group 'com.atguigu'
 version '1.0-SNAPSHOT'
+java {
+    sourceCompatibility = '17'
+}
 
 repositories {
     mavenCentral()
@@ -42,8 +49,11 @@ dependencies {
     implementation 'org.apache.httpcomponents:httpclient:4.2.1'
     //httpcore
     implementation 'org.apache.httpcomponents:httpcore:4.2.1'
-
+    //nacos注册中心
     implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery:${nacosDiscoveryVersion}"
+    //nacos配置中心
+//    implementation "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config:${nacosConfigVersion}"
+    //sentinel熔断降级
 }
 
 test {

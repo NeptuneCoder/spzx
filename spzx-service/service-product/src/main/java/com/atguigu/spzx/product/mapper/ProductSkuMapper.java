@@ -3,6 +3,7 @@ package com.atguigu.spzx.product.mapper;
 import com.atguigu.spzx.model.dto.h5.ProductSkuDto;
 import com.atguigu.spzx.model.entity.product.ProductSku;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -16,4 +17,5 @@ public interface ProductSkuMapper {
 
     List<ProductSku> findByProductId(Long productId);
 
+    void updateSale(@Param("skuId") Long skuId, @Param("num") Integer num);
 }

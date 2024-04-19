@@ -25,6 +25,8 @@ public class ProductSku extends BaseEntity {
 
 	@Schema(description = "售价")
 	private BigDecimal salePrice;
+	@Schema(description = "儿童售价")
+	private BigDecimal childSalePrice;
 
 	@Schema(description = "市场价")
 	private BigDecimal marketPrice;
