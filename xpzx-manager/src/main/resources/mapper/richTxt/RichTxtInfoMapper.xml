@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.spzx.manager.mapper.RichTxtInfoMapper">
+    <resultMap id="idTypeInfoResultMap" type="com.atguigu.spzx.model.entity.richTxt.RichTxtInfo"/>
+    <sql id="columns">
+        id
+        , title, content,`type`, remark,create_time,update_time, is_deleted
+    </sql>
+    <insert id="save">
+        insert into desc_info
+        (id, title, content, `type`, remark, create_time, update_time, is_deleted)
+        values (#{id},
+                #{title},
+                #{content},
+                #{type},
+                #{remark},
+                now(),
+                now(),
+                0)
+    </insert>
+
+    <update id="delete">
+        update desc_info
+        set is_deleted = 1
+        where id = #{id}
+    </update>
+    <update id="update">
+        update desc_info
+        <set>
+            <if test="title!= null">
+                title = #{title},
+            </if>
+            <if test="content!= null">
+                content = #{content},
+            </if>
+            <if test="remark!= null">
+                remark = #{remark},
+            </if>
+            update_time = now()
+        </set>
+        where id = #{id}
+    </update>
+    <resultMap id="richTxtMap" type="com.atguigu.spzx.model.entity.richTxt.RichTxtInfo"/>
+    <select id="findAll" resultMap="richTxtMap">
+        select
+        <include refid="columns"/>
+        from desc_info
+        where is_deleted = 0
+
+    </select>
+</mapper>

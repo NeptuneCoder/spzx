@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.spzx.manager.mapper.AssembleLocMapper">
+
+    <sql id="cloumns">
+        id
+        , city_id, address,remark,create_time,update_time, is_deleted
+    </sql>
+    <insert id="save">
+        insert into assemble_location_info (id,
+                               city_id,
+                               address,
+                               remark,
+                               create_time,
+                               update_time,
+                               is_deleted)
+        values (#{id},
+                #{cityId},
+                #{address},
+                #{remark},
+                now(),
+                now(),
+                0)
+    </insert>
+    <update id="delete">
+        update assemble_location_info
+        set is_deleted = 1
+        where id = #{id}
+    </update>
+    <update id="update">
+        update assemble_location_info
+        <set>
+            <if test="cityId!= null">
+                city_id = #{cityId},
+            </if>
+            <if test="address!= null">
+                address = #{address},
+            </if>
+            <if test="remark!= null">
+                remark = #{remark},
+            </if>
+            update_time = now()
+        </set>
+        where id = #{id}
+    </update>
+    <resultMap id="cityInfoMap" type="com.atguigu.spzx.model.entity.assemble.AssembleLoc" autoMapping="true">
+        <!--        <result column="city_name" property="cityName"/>-->
+    </resultMap>
+
+    <select id="findByPage" resultMap="cityInfoMap">
+        select ci.city_name as cityName, ali.*
+        from assemble_location_info ali
+                 inner join city_info ci on ali.city_id = ci.id
+        where ali.is_deleted = 0
+    </select>
+
+
+</mapper>

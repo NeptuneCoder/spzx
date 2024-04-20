@@ -49,4 +49,8 @@ public class Result<T> {
     public static Result success() {
         return build(null, ResultCodeEnum.SUCCESS);
     }
+
+    public static <T> Result success(T body) {
+        return build(body, ResultCodeEnum.SUCCESS);
+    }
 }

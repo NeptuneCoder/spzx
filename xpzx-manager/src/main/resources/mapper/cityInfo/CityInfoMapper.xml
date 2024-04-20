@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.spzx.manager.mapper.CityInfoMapper">
+
+    <sql id="cloumns">
+        id
+        , city_name, remark,create_time,update_time, is_deleted
+    </sql>
+    <insert id="save">
+        insert into city_info (id,
+                               city_name,
+                               remark,
+                               create_time,
+                               update_time,
+                               is_deleted)
+        values (#{id},
+                #{cityName},
+                #{remark},
+                now(),
+                now(),
+                0)
+    </insert>
+    <update id="delete">
+        update city_info
+        set is_deleted = 1
+        where id = #{id}
+    </update>
+    <update id="update">
+        update city_info
+        <set>
+            <if test="cityName!= null">
+                city_name = #{cityName},
+            </if>
+            <if test="remark!= null">
+                remark = #{remark},
+            </if>
+            update_time = now()
+        </set>
+        where id = #{id}
+    </update>
+    <resultMap id="cityInfoMap" type="com.atguigu.spzx.model.entity.city.CityInfo" autoMapping="true">
+<!--        <result column="city_name" property="cityName"/>-->
+    </resultMap>
+
+    <select id="findByPage" resultMap="cityInfoMap">
+        select
+        <include refid="cloumns"/>
+        from city_info
+        where is_deleted = 0
+    </select>
+    <select id="findByCityName" resultMap="cityInfoMap">
+        select
+        <include refid="cloumns"/>
+        from city_info
+        where city_name like #{cityName}
+        and is_deleted = 0
+    </select>
+
+
+</mapper>
