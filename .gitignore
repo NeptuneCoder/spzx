@@ -3,3 +3,7 @@
 ./gradle/*
 xpzx-model/build/*
 */*.class
+.gradle/*
+.idea/*
+.project
+.settings/*

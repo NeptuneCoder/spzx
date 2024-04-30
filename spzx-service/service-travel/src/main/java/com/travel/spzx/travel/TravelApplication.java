@@ -2,8 +2,11 @@ package com.travel.spzx.travel;
 
 import com.travel.spzx.common.anno.EnableUserLoginAuthInterceptor;
 import com.travel.spzx.common.anno.EnableUserTokenFeignInterceptor;
+import com.travel.spzx.travel.properties.FileServiceProperties;
+import com.travel.spzx.travel.properties.UserAuthProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.ComponentScan;
 
@@ -12,6 +15,7 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableCaching
 @ComponentScan(basePackages = {"com.travel.spzx"})
 @SpringBootApplication
+@EnableConfigurationProperties(value = {UserAuthProperties.class, FileServiceProperties.class})
 public class TravelApplication {
     public static void main(String[] args) {
         SpringApplication.run(TravelApplication.class, args);

@@ -12,6 +12,7 @@
         <module name="spzx-parent.spzx-service.service-pay.main" />
         <module name="spzx-parent.spzx-server-gateway.main" />
         <module name="spzx-parent.xpzx-common.xpzx-service.main" />
+        <module name="spzx-parent.spzx-service.service-travel.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17" />

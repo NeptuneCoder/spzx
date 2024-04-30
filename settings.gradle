@@ -1,6 +1,5 @@
 rootProject.name = 'spzx-parent'
 
-//include 'xpzx-common'
 include 'xpzx-model'
 include 'xpzx-manager'
 include 'xpzx-common:xpzx-utils'
@@ -10,7 +9,7 @@ findProject(':xpzx-common:xpzx-service')?.name = 'xpzx-service'
 include 'xpzx-common:common-log'
 findProject(':xpzx-common:common-log')?.name = 'common-log'
 include 'spzx-server-gateway'
-//include 'spzx-service'
+
 
 include 'spzx-service:service-user'
 findProject(':spzx-service:service-user')?.name = 'service-user'
@@ -27,7 +26,6 @@ findProject(':spzx-service:service-cart')?.name = 'service-cart'
 include 'spzx-service:service-travel'
 findProject(':spzx-service:service-travel')?.name = 'service-travel'
 
-//include 'spzx-service-client'
 
 include 'spzx-service-client:service-product-client'
 findProject(':spzx-service-client:service-product-client')?.name = 'service-product-client'
