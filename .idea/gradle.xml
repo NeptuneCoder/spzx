@@ -21,6 +21,7 @@
             <option value="$PROJECT_DIR$/spzx-service/service-order" />
             <option value="$PROJECT_DIR$/spzx-service/service-pay" />
             <option value="$PROJECT_DIR$/spzx-service/service-product" />
+            <option value="$PROJECT_DIR$/spzx-service/service-travel" />
             <option value="$PROJECT_DIR$/spzx-service/service-user" />
             <option value="$PROJECT_DIR$/xpzx-common" />
             <option value="$PROJECT_DIR$/xpzx-common/common-log" />

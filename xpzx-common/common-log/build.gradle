@@ -18,7 +18,7 @@ dependencies {
 
     implementation project(path: ':xpzx-model')
     implementation project(':xpzx-common:xpzx-utils')
-    implementation 'com.alibaba:fastjson:1.2.78'
+    implementation 'com.alibaba:fastjson:2.0.29'
 }
 
 test {

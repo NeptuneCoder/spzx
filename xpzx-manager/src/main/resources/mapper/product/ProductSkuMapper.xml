@@ -9,6 +9,7 @@
                                  product_id,
                                  thumb_img,
                                  sale_price,
+                                 child_sale_price,
                                  market_price,
                                  cost_price,
                                  stock_num,
@@ -26,6 +27,7 @@
                 #{productId},
                 #{thumbImg},
                 #{salePrice},
+                #{childSalePrice},
                 #{marketPrice},
                 #{costPrice},
                 #{stockNum},
@@ -54,6 +56,9 @@
         </if>
         <if test="salePrice != null and salePrice != ''">
             sale_price = #{salePrice},
+        </if>
+        <if test="childSalePrice != null and childSalePrice != ''">
+            child_sale_price = #{childSalePrice},
         </if>
         <if test="marketPrice != null and marketPrice != ''">
             market_price = #{marketPrice},
@@ -94,7 +99,7 @@
     <!-- 用于select查询公用抽取的列 -->
     <sql id="columns">
         id
-        ,sku_code,sku_name,product_id,thumb_img,sale_price,market_price,cost_price,stock_num,sku_spec,weight,volume,status,create_time,update_time,is_deleted
+        ,sku_code,sku_name,product_id,thumb_img,sale_price,child_sale_price,market_price,cost_price,stock_num,sku_spec,weight,volume,status,create_time,update_time,is_deleted
     </sql>
 
     <select id="selectByProductId" resultMap="productSkuMap">

@@ -22,7 +22,7 @@ public class SmsServiceImpl implements SmsService {
     private RedisTemplate<String, String> redisTemplate;
 
     @Override
-    public void sendValidateCode(String phone) {
+    public void sendValidateCode(String phone, String type) {
         boolean matches = phone.matches("^1[3456789]\\d{9}$");
         if (!matches) {
             throw new GuiguException(ResultCodeEnum.PHONE_FORMAT_ERROR);
@@ -34,7 +34,7 @@ public class SmsServiceImpl implements SmsService {
         }
 
         String validateCode = RandomStringUtils.randomNumeric(4);      // 生成验证码
-        redisTemplate.opsForValue().set(RedisConstantKey.PHONE_CODE_KEY + phone, validateCode, 5, TimeUnit.MINUTES);
+        redisTemplate.opsForValue().set(RedisConstantKey.PHONE_CODE_KEY + type + ":" + phone, validateCode, 5, TimeUnit.MINUTES);
         sendSms(phone, validateCode);
     }
 

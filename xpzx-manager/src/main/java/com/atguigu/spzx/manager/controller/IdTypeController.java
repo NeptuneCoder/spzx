@@ -31,6 +31,12 @@ public class IdTypeController {
         return Result.success(idTypeService.findAll(page, limit));
     }
 
+    @Operation(summary = "获取所有证件类型列表")
+    @GetMapping("/getAllList")
+    public Result<PageInfo<IdTypeInfo>> findAllList() {
+        return Result.success(idTypeService.getAllList());
+    }
+
     @Operation(summary = "删除证件类型信息")
     @DeleteMapping("/delete/{id}")
     public Result delete(@PathVariable("id") Integer id) {

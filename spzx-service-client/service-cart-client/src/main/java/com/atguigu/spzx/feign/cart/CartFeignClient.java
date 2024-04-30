@@ -10,7 +10,7 @@ import java.util.List;
 public interface CartFeignClient {
     //这里的地址需要完整的地址，否者调用不到
     @GetMapping(value = "/api/order/cart/auth/getAllCkecked")
-    public List<CartInfo> getAllCkecked();
+    public List<CartInfo> getAllChecked();
 
     @GetMapping("/api/order/cart/auth/deleteChecked")
     void deleteChecked();

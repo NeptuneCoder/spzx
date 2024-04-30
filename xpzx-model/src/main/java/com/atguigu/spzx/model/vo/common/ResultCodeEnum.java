@@ -26,6 +26,9 @@ public enum ResultCodeEnum {
     DELETE_SELF_USER_ERROR(228, "不能删除自己"),//
 
     ADDRESS_DUPLICATION_ERROR(229, "城市不能重复"),//
+    TOUR_LEVEL_EXISTS_ERROR(300, "有领队使用该等级，不能修改"),//
+    LEVEL_DUPLICATION_ERROR(301, "等级不能重复"),//
+    PARAM_ERROR(302, "参数错误"),//
     ;
 
     private Integer code;      // 业务状态码

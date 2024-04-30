@@ -31,7 +31,8 @@ public class ValidateCodeServiceImpl implements ValidateCodeService {
 
         // 生成uuid作为图片验证码的key
         String codeKey = UUID.randomUUID().toString().replace("-", "");
-
+        System.out.println("验证码key：" + codeKey);
+        System.out.println("验证码值：" + codeValue);
         // 将验证码存储到Redis中
         redisTemplate.opsForValue().set(RedisConstantKey.codeKey + codeKey, codeValue, 5, TimeUnit.MINUTES);
 

@@ -6,6 +6,10 @@ import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
+/**
+ * 该拦截器的作用：
+ * 1. 实现Feign客户端的请求拦截器，在Feign客户端发起请求之前，将token添加到请求头中
+ */
 public class UserTokenFeignInterceptor implements RequestInterceptor {
 
     @Override

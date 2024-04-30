@@ -29,6 +29,11 @@ public class IdTypeServiceImpl implements IdTypeService {
         return pageInfo;
     }
 
+    @Override
+    public List<IdTypeInfo> getAllList() {
+        return idTypeInfoMapper.findAll();
+    }
+
 
     @Override
     public void delete(Integer id) {

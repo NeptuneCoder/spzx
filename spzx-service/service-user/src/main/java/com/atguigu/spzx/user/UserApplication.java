@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.atguigu.spzx"})
-@EnableUserLoginAuthInterceptor
+@EnableUserLoginAuthInterceptor//利用该注解可以将用户信息写入到ThreadLocal中，供后续的拦截器使用
 public class UserApplication {
     public static void main(String[] args) {
         SpringApplication.run(UserApplication.class, args);

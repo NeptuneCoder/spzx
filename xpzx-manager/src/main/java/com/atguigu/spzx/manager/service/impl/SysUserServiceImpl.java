@@ -20,6 +20,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.DigestUtils;
@@ -45,11 +46,18 @@ public class SysUserServiceImpl implements SysUserService {
 
     @Override
     public LoginVo login(LoginDto loginDto) {
-
+        RedisSerializer<?> keySerializer = redisTemplate.getDefaultSerializer();
+        RedisSerializer<?> valueSerializer = redisTemplate.getValueSerializer();
+        System.out.println("keySerializer:" + keySerializer.getClass().getName());
+        System.out.println("valueSerializer:" + valueSerializer.getClass().getName());
         //增加校验验证码逻辑
         String captcha = loginDto.getCaptcha();
         String codeKey = loginDto.getCodeKey();
+        System.out.println("captcha:" + captcha);
+        System.out.println("codeKey:" + codeKey);
+
         String cacheCode = redisTemplate.opsForValue().get(RedisConstantKey.codeKey + codeKey);
+        System.out.println("cacheCode:" + cacheCode);
         //如果不相等，要删除
         if (StrUtil.isEmpty(cacheCode) || !StrUtil.equals(captcha, cacheCode)) {
             throw new GuiguException(ResultCodeEnum.VALIDATECODE_ERROR);

@@ -4,7 +4,8 @@ plugins {
 
 group 'com.atguigu'
 version '1.0-SNAPSHOT'
-
+//导入根目录的version.gradle文件
+apply from: '../../version.gradle'
 repositories {
     mavenCentral()
 }

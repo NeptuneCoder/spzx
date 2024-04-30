@@ -46,9 +46,10 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
         String path = request.getURI().getPath();
         log.info("path {}", path);
 
-        UserInfo userInfo = this.getUserInfo(request);
+
         //api接口，异步请求，校验用户必须登录
         if (antPathMatcher.match("/api/**/auth/**", path)) {
+            UserInfo userInfo = this.getUserInfo(request);
             if (null == userInfo) {
                 ServerHttpResponse response = exchange.getResponse();
                 return out(response, ResultCodeEnum.LOGIN_AUTH);
@@ -75,7 +76,7 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
     private UserInfo getUserInfo(ServerHttpRequest request) {
         String token = "";
         List<String> tokenList = request.getHeaders().get("token");
-        if (null != tokenList) {
+        if (null != tokenList && !tokenList.isEmpty()) {
             token = tokenList.get(0);
         }
         if (!StringUtils.isEmpty(token)) {

@@ -37,10 +37,13 @@
     </update>
     <resultMap id="idTypeMap" type="com.atguigu.spzx.model.entity.IdType.IdTypeInfo"/>
     <select id="findAll" resultMap="idTypeMap">
-        select
-        <include refid="columns"/>
-        from id_type_info
-        where is_deleted = 0
-
+        select iti.id,
+               iti.id_type_name,
+               iti.remark,
+               iti.create_time,
+               iti.update_time,
+            iti.id  id_type_id
+        from id_type_info iti
+        where iti.is_deleted = 0
     </select>
 </mapper>

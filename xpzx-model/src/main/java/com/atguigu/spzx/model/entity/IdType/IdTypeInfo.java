@@ -9,6 +9,8 @@ import lombok.Data;
 public class IdTypeInfo extends BaseEntity {
     @Schema(description = "证件类型名称")
     private String idTypeName;
+    @Schema(description = "证件类型代码")
+    private String idTypeId;
     @Schema(description = "证件类型描述")
     private String remark;
 }

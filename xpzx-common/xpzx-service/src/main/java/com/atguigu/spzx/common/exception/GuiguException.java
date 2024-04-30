@@ -16,9 +16,20 @@ public class GuiguException extends RuntimeException {
         this.message = resultCodeEnum.getMessage();
     }
 
+    public static GuiguException build(String message) {
+        return new GuiguException(message);
+    }
+
+    public GuiguException(String message) {
+        this.code = ResultCodeEnum.PARAM_ERROR.getCode();
+        this.message = message;
+        this.resultCodeEnum = ResultCodeEnum.PARAM_ERROR;
+    }
+
     public GuiguException(Integer code, String message) {
         this.code = code;
         this.message = message;
+        this.resultCodeEnum = ResultCodeEnum.PARAM_ERROR;
     }
 
     public GuiguException(ResultCodeEnum code, String message) {

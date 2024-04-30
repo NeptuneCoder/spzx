@@ -1,0 +1,28 @@
+server:
+  port: 8516
+
+spring:
+  application:
+    name: service-travel
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 14.103.49.141:8848
+
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://14.103.49.141:3306/db_spzx?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 1234
+  data:
+    redis:
+      host: 14.103.49.141
+      port: 6379
+      timeout: 20000
+  config:
+    import: application-alipay.yml
+
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath:/mapper/*/*.xml

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.spzx.manager.mapper.TourLevelMapper">
+    <resultMap id="idTypeInfoResultMap" type="com.atguigu.spzx.model.entity.guide.TourLevel"/>
+    <sql id="columns">
+        id
+        , `name`, `level`,remark,create_time,update_time, is_deleted
+    </sql>
+    <insert id="save">
+        insert into tour_guide_level
+            (id, name, level, remark, create_time, update_time, is_deleted)
+        values (#{id},
+                #{name},
+                #{level},
+                #{remark},
+                now(),
+                now(),
+                0)
+    </insert>
+
+    <update id="delete">
+        update tour_guide_level
+        set is_deleted = 1
+        where id = #{id}
+    </update>
+    <update id="update">
+        update tour_guide_level
+        <set>
+            <if test="name!= null">
+                name = #{name},
+            </if>
+            <if test="level!= null">
+                level = #{level},
+            </if>
+            <if test="remark!= null">
+                remark = #{remark},
+            </if>
+            update_time = now()
+        </set>
+        where id = #{id}
+    </update>
+    <resultMap id="tourLevelResultMap" type="com.atguigu.spzx.model.entity.guide.TourLevel"/>
+    <select id="findAll" resultMap="tourLevelResultMap">
+        select
+        <include refid="columns"/>
+        from tour_guide_level
+        where is_deleted = 0
+
+    </select>
+    <select id="queryByLevel" resultMap="tourLevelResultMap">
+        select
+        <include refid="columns"/>
+        from tour_guide_level
+        where level = #{level}
+        and is_deleted = 0
+
+    </select>
+</mapper>

@@ -10,7 +10,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 利用该注解，可以启用UserLoginAuthInterceptor拦截器，并将其注册到Spring MVC的拦截器链中。
+ * 利用该注解，可以启用UserLoginAuthInterceptor拦截器,并注册到SpringMVC的拦截器链中
  */
 @Retention(value = RetentionPolicy.RUNTIME)
 @Target(value = ElementType.TYPE)

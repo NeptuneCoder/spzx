@@ -1,12 +1,165 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.atguigu.spzx.manager.mapper.TourGuideInfoMapper">
-
+    <sql id="columns">
+        id
+        ,
+            `name`,
+            nickname,
+            phone,
+            id_type_id,
+            id_type_no,
+            tour_certificate,
+            tour_certificate_no,
+            `level`,
+            score,
+            lead_times,
+            remark,
+            create_time,
+            update_time,
+            is_deleted
+    </sql>
 
     <insert id="save">
+        INSERT INTO tourist_guide_info (
+        <include refid="columns"/>
+        ) VALUES (
+        #{id},
+        #{name},
+        #{nickname},
+        #{phone},
+        #{idTypeId},
+        #{idTypeNo},
+        #{tourCertificate},
+        #{tourCertificateNo},
+        #{level},
+        #{score},
+        #{leadTimes},
+        #{remark},
+        NOW(),
+        NOW(),
+        0
+        )
 
     </insert>
-    <select id="findList" resultType="com.atguigu.spzx.model.entity.guide.TourGuideInfo">
+    <update id="delete">
+        UPDATE tourist_guide_info
+        SET is_deleted = 1
+        WHERE id = #{id}
+    </update>
+    <update id="update" keyProperty="id" useGeneratedKeys="true">
+        UPDATE tourist_guide_info
+        <set>
+            <if test="name != null">
+                name = #{name},
+            </if>
 
+            <if test="nickname != null">
+                nickname = #{nickname},
+            </if>
+            <if test="phone != null">
+                phone = #{phone},
+
+            </if>
+            <if test="idTypeId != null">
+                id_type_id = #{idTypeId},
+            </if>
+
+            <if test="idTypeNo != null">
+                id_type_no = #{idTypeNo},
+            </if>
+            <if test="tourCertificate != null">
+                tour_certificate = #{tourCertificate},
+
+            </if>
+            <if test="tourCertificateNo != null">
+                tour_certificate_no = #{tourCertificateNo},
+            </if>
+
+            <if test="level != null">
+                level = #{level},
+            </if>
+            <if test="score != null">
+                score = #{score},
+
+            </if>
+            <if test="leadTimes != null">
+                lead_times = #{leadTimes},
+            </if>
+
+            <if test="remark != null">
+                remark = #{remark},
+            </if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <resultMap id="tourGuideInfoMap" type="com.atguigu.spzx.model.entity.guide.TourGuideInfo"/>
+    <select id="findList" resultMap="tourGuideInfoMap">
+
+        SELECT
+        DISTINCT tgi.id tgi_id,
+        tgi.name,
+        tgi.nickname,
+        tgi.phone,
+        tgi.id_type_no,
+        tgi.tour_certificate,
+        tgi.tour_certificate_no,
+        tgi.level,
+        tgi.score,
+        tgi.lead_times,
+        tgi.remark,
+        tgi.create_time,
+        tgi.update_time,
+        iti.id as id_type_id,
+        tgl.name as level_name,
+        iti.id_type_name
+        FROM tourist_guide_info tgi
+        inner join id_type_info iti on tgi.id_type_id = iti.id
+        inner join tour_guide_level tgl on tgl.level = tgi.level
+        <where>
+            <if test="name!= null and name!= ''">
+                AND tgi.name LIKE CONCAT('%', #{name}, '%')
+            </if>
+            <if test="nickname!= null and nickname!= ''">
+                AND tgi.nickname LIKE CONCAT('%', #{nickname}, '%')
+            </if>
+            <if test="phone!= null and phone!= ''">
+                AND tgi.phone LIKE CONCAT('%', #{phone}, '%')
+            </if>
+            <if test="remark!= null and remark!= ''">
+                AND tgi.remark LIKE CONCAT('%', #{remark}, '%')
+            </if>
+            and tgi.is_deleted = 0
+        </where>
+        order by tgi.id desc
+    </select>
+    <select id="queryGuideByLevel" resultMap="tourGuideInfoMap">
+        SELECT
+        <include refid="columns"/>
+        FROM tourist_guide_info tgi
+        WHERE tgi.level = #{level} AND tgi.is_deleted = 0
+    </select>
+    <select id="findByNickname" resultType="com.atguigu.spzx.model.entity.guide.TourGuideInfo">
+        SELECT
+        <include refid="columns"/>
+        FROM tourist_guide_info tgi
+        WHERE tgi.nickname = #{nickname}
+        AND tgi.is_deleted = 0
+    </select>
+    <select id="findByTourCertificateNo" resultType="com.atguigu.spzx.model.entity.guide.TourGuideInfo">
+        SELECT
+        <include refid="columns"/>
+        FROM tourist_guide_info tgi
+        WHERE tgi.tour_certificate_no = #{tourCertificateNo}
+        AND tgi.is_deleted = 0
+    </select>
+    <select id="findByIdTypeNo" resultType="com.atguigu.spzx.model.entity.guide.TourGuideInfo">
+
+        SELECT
+        <include refid="columns"/>
+        FROM tourist_guide_info tgi
+        WHERE tgi.id_type_no = #{idTypeNo}
+        AND tgi.is_deleted = 0
     </select>
 </mapper>

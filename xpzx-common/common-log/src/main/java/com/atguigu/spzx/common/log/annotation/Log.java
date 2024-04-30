@@ -14,7 +14,7 @@ public @interface Log {
 
     public OperatorType operatorType() default OperatorType.MANAGE;    // 操作人类别
 
-    public int businessType();     // 业务类型（0其它 1新增 2修改 3删除）
+    public int businessType() default 0;     // 业务类型（0其它 1新增 2修改 3删除）
 
     public boolean isSaveRequestData() default true;   // 是否保存请求的参数
 

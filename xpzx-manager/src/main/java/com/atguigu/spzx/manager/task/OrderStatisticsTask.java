@@ -25,8 +25,8 @@ public class OrderStatisticsTask {
     public void helloWorldTask() {
         String createTime = DateUtil.offsetDay(new Date(), -1).toString(new SimpleDateFormat("yyyy-MM-dd"));
         OrderStatistics orderStatistics = orderInfoMapper.selectOrderStatistics(createTime);
-        if (orderStatistics != null) {
-            orderStatisticsMapper.insert(orderStatistics);
-        }
+//        if (orderStatistics != null) {
+//            orderStatisticsMapper.insert(orderStatistics);
+//        }
     }
 }

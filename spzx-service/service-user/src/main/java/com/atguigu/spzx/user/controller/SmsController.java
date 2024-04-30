@@ -17,9 +17,9 @@ public class SmsController {
     @Autowired
     private SmsService smsService;
 
-    @GetMapping(value = "/sendCode/{phone}")
-    public Result sendValidateCode(@PathVariable("phone") String phone) {
-        smsService.sendValidateCode(phone);
+    @GetMapping(value = "/sendCode/{phone}/{type}")
+    public Result sendValidateCode(@PathVariable("phone") String phone, @PathVariable("type") String type) {
+        smsService.sendValidateCode(phone, type);
         return Result.build(null, ResultCodeEnum.SUCCESS);
     }
 

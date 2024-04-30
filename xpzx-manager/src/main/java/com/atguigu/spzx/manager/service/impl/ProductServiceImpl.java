@@ -1,11 +1,13 @@
 package com.atguigu.spzx.manager.service.impl;
 
 import com.atguigu.spzx.common.exception.GuiguException;
+import com.atguigu.spzx.manager.mapper.BatchInfoMapper;
 import com.atguigu.spzx.manager.mapper.ProductDetailsMapper;
 import com.atguigu.spzx.manager.mapper.ProductMapper;
 import com.atguigu.spzx.manager.mapper.ProductSkuMapper;
 import com.atguigu.spzx.manager.service.ProductService;
 import com.atguigu.spzx.model.dto.product.ProductDto;
+import com.atguigu.spzx.model.entity.product.BatchItem;
 import com.atguigu.spzx.model.entity.product.Product;
 import com.atguigu.spzx.model.entity.product.ProductDetails;
 import com.atguigu.spzx.model.entity.product.ProductSku;
@@ -18,6 +20,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+import static cn.hutool.poi.excel.sax.ElementName.v;
+
 @Service
 public class ProductServiceImpl implements ProductService {
     @Autowired
@@ -26,6 +30,8 @@ public class ProductServiceImpl implements ProductService {
 
     @Autowired
     private ProductSkuMapper productSkuMapper;
+    @Autowired
+    private BatchInfoMapper batchInfoMapper;
 
     @Autowired
     private ProductDetailsMapper productDetailsMapper;
@@ -43,10 +49,21 @@ public class ProductServiceImpl implements ProductService {
         // 保存商品数据
         product.setStatus(0);              // 设置上架状态为0
         product.setAuditStatus(0);         // 设置审核状态为0
-        productMapper.save(product);
+        int productId = productMapper.save(product);
+        System.out.println("productId=" + productId);
+        List<BatchItem> batchInfo = product.getBatchInfo();
+        batchInfo.forEach(v -> {
+            System.out.println("批次信息:" + v);
+            v.setProductId(product.getId());
+            batchInfoMapper.save(v);
+            System.out.println("插入批次后返回id：" + v.getId());
+        });
 
         // 保存商品sku数据
         List<ProductSku> productSkuList = product.getProductSkuList();
+        if (productSkuList == null || productSkuList.size() == 0) {
+            throw GuiguException.build("商品sku不能为空");
+        }
         for (int i = 0, size = productSkuList.size(); i < size; i++) {
             // 获取ProductSku对象
             ProductSku productSku = productSkuList.get(i);
@@ -56,6 +73,7 @@ public class ProductServiceImpl implements ProductService {
             productSku.setSkuName(product.getName() + productSku.getSkuSpec());
             productSku.setSaleNum(0);                               // 设置销量
             productSku.setStatus(0);
+
             Integer stockNum = productSku.getStockNum();// 设置排序
             productSkuMapper.save(productSku);                    // 保存数据
 
@@ -78,7 +96,10 @@ public class ProductServiceImpl implements ProductService {
         // 根据商品的id查询sku数据
         List<ProductSku> productSkuList = productSkuMapper.selectByProductId(id);
         product.setProductSkuList(productSkuList);
-
+        List<BatchItem> batchItems = batchInfoMapper.selectByProductId(id);
+        System.out.println("productId:" + id);
+        System.out.println("批次结果batchItems:" + batchItems.toString());
+        product.setBatchInfo(batchItems);
         // 根据商品的id查询商品详情数据
         ProductDetails productDetails = productDetailsMapper.selectByProductId(product.getId());
         product.setDetailsImageUrls(productDetails.getImageUrls());
@@ -100,6 +121,17 @@ public class ProductServiceImpl implements ProductService {
             productSkuMapper.updateById(productSku);
         });
 
+        product.getBatchInfo()
+                .forEach(v -> {
+                    System.out.println("批次信息:" + v);
+                    if (v.getId() == null) {
+                        v.setProductId(product.getId());
+                        batchInfoMapper.save(v);
+                    } else {
+                        batchInfoMapper.updateById(v);
+                    }
+
+                });
         // 修改商品的详情数据
         ProductDetails productDetails = productDetailsMapper.selectByProductId(product.getId());
         productDetails.setImageUrls(product.getDetailsImageUrls());

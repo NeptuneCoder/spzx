@@ -21,8 +21,12 @@ public class LogUtil {
     public static void afterHandleLog(Log sysLog, Object proceed, SysOperLog sysOperLog, int status, String errorMsg) {
         if (sysLog.isSaveResponseData()) {
             try {
-                sysOperLog.setJsonResult(JSON.toJSONString(proceed));
+                String s = proceed.toString();
+                System.out.println("proceed:" + s);
+//                sysOperLog.setJsonResult(JSON.toJSONString(proceed));
             } catch (Exception e) {
+                e.printStackTrace();
+            } catch (Throwable e) {
                 e.printStackTrace();
             }
         }

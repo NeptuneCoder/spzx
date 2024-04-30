@@ -68,11 +68,10 @@
         id = #{id}
     </update>
     <update id="deleteById">
-        update product set
-                           update_time = now() ,
-                           is_deleted = 1
-        where
-            id = #{id}
+        update product
+        set update_time = now(),
+            is_deleted  = 1
+        where id = #{id}
     </update>
 
 
@@ -92,7 +91,11 @@
     </select>
 
 
-    <insert id="save" useGeneratedKeys="true" keyProperty="id">
+    <insert id="save"
+            useGeneratedKeys="true"
+            keyProperty="id"
+            parameterType="com.atguigu.spzx.model.entity.product.Product"
+    >
         insert into product (id,
                              name,
                              brand_id,

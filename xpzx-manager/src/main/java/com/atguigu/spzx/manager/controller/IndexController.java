@@ -31,7 +31,7 @@ public class IndexController {
     @Autowired
     private SysMenuService sysMenuService;
 
-    @Log(title = "用户登录", businessType = 0)
+    @Log(title = "用户登录")
     @Operation(summary = "登录接口")
     @PostMapping(value = "/login")
     public Result<LoginVo> login(@RequestBody LoginDto loginDto) {
