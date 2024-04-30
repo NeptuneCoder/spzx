@@ -19,7 +19,7 @@ plugins {
 }
 
 
-group 'com.atguigu'
+group 'com.travel'
 version '1.0-SNAPSHOT'
 
 repositories {

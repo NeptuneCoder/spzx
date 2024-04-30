@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.atguigu.spzx.manager.mapper.SysMenuMapper">
+<mapper namespace="com.travel.spzx.manager.mapper.SysMenuMapper">
     <sql id="columns">
         id
         ,parent_id,title,component,sort_value,status,create_time,update_time,is_deleted
     </sql>
 
 
-    <resultMap id="SysMenuResultMap" type="com.atguigu.spzx.model.entity.system.SysMenu"/>
+    <resultMap id="SysMenuResultMap" type="com.travel.spzx.model.entity.system.SysMenu"/>
     <select id="findMenuNodes" resultMap="SysMenuResultMap">
         SELECT
         <include refid="columns"/>
@@ -22,7 +22,7 @@
         WHERE parent_id = #{id}
           and is_deleted = 0
     </select>
-    <resultMap id="sysMenuMap" type="com.atguigu.spzx.model.entity.system.SysMenu" autoMapping="true"></resultMap>
+    <resultMap id="sysMenuMap" type="com.travel.spzx.model.entity.system.SysMenu" autoMapping="true"></resultMap>
     <select id="selectListByUserId" resultMap="sysMenuMap">
         SELECT DISTINCT m.*
         FROM sys_menu m
@@ -31,7 +31,7 @@
         WHERE ur.user_id = #{userId}
           and m.is_deleted = 0
     </select>
-    <select id="findParentMenu" resultType="com.atguigu.spzx.model.entity.system.SysMenu">
+    <select id="findParentMenu" resultType="com.travel.spzx.model.entity.system.SysMenu">
         SELECT <include refid="columns"/>
         FROM sys_menu
         WHERE id = #{parentId}

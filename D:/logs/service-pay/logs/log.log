@@ -54,7 +54,7 @@
 2024-04-29 19:17:52 Multiple Spring Data modules found, entering strict repository configuration mode
 2024-04-29 19:17:52 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
 2024-04-29 19:17:52 Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-2024-04-29 19:17:52 No MyBatis mapper was found in '[com.atguigu.spzx.travel]' package. Please check your configuration.
+2024-04-29 19:17:52 No MyBatis mapper was found in '[com.travel.spzx.travel]' package. Please check your configuration.
 2024-04-29 19:17:52 BeanFactory id=f02c8b5a-1477-32ba-880e-fe82f941bd07
 2024-04-29 19:17:52 Tomcat initialized with port 8512 (http)
 2024-04-29 19:17:52 Initializing ProtocolHandler ["http-nio-8512"]
@@ -101,7 +101,7 @@
 2024-04-29 19:18:04 Multiple Spring Data modules found, entering strict repository configuration mode
 2024-04-29 19:18:04 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
 2024-04-29 19:18:04 Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
-2024-04-29 19:18:05 No MyBatis mapper was found in '[com.atguigu.spzx.travel]' package. Please check your configuration.
+2024-04-29 19:18:05 No MyBatis mapper was found in '[com.travel.spzx.travel]' package. Please check your configuration.
 2024-04-29 19:18:05 BeanFactory id=f02c8b5a-1477-32ba-880e-fe82f941bd07
 2024-04-29 19:18:06 Tomcat initialized with port 8516 (http)
 2024-04-29 19:18:06 Initializing ProtocolHandler ["http-nio-8516"]
@@ -227,7 +227,7 @@
 2024-04-29 19:19:03 Multiple Spring Data modules found, entering strict repository configuration mode
 2024-04-29 19:19:03 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
 2024-04-29 19:19:03 Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-2024-04-29 19:19:03 No MyBatis mapper was found in '[com.atguigu.spzx.travel]' package. Please check your configuration.
+2024-04-29 19:19:03 No MyBatis mapper was found in '[com.travel.spzx.travel]' package. Please check your configuration.
 2024-04-29 19:19:03 BeanFactory id=f02c8b5a-1477-32ba-880e-fe82f941bd07
 2024-04-29 19:19:03 Tomcat initialized with port 8516 (http)
 2024-04-29 19:19:03 Initializing ProtocolHandler ["http-nio-8516"]
@@ -281,7 +281,7 @@
 2024-04-29 19:20:18 Multiple Spring Data modules found, entering strict repository configuration mode
 2024-04-29 19:20:18 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
 2024-04-29 19:20:18 Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-2024-04-29 19:20:18 No MyBatis mapper was found in '[com.atguigu.spzx.travel]' package. Please check your configuration.
+2024-04-29 19:20:18 No MyBatis mapper was found in '[com.travel.spzx.travel]' package. Please check your configuration.
 2024-04-29 19:20:18 BeanFactory id=f02c8b5a-1477-32ba-880e-fe82f941bd07
 2024-04-29 19:20:18 Tomcat initialized with port 8516 (http)
 2024-04-29 19:20:19 Initializing ProtocolHandler ["http-nio-8516"]

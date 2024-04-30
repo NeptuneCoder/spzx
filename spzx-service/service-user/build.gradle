@@ -7,7 +7,7 @@ plugins {
 apply plugin: 'com.bmuschko.docker-remote-api'
 //导入根目录的version.gradle文件
 apply from: '../../version.gradle'
-group 'com.atguigu'
+group 'com.travel'
 version '1.0-SNAPSHOT'
 java {
     sourceCompatibility = '17'

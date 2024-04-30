@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.atguigu.spzx.manager.mapper.TourGuideInfoMapper">
+<mapper namespace="com.travel.spzx.manager.mapper.TourGuideInfoMapper">
     <sql id="columns">
         id
         ,
@@ -94,7 +94,7 @@
         WHERE id = #{id}
     </update>
 
-    <resultMap id="tourGuideInfoMap" type="com.atguigu.spzx.model.entity.guide.TourGuideInfo"/>
+    <resultMap id="tourGuideInfoMap" type="com.travel.spzx.model.entity.guide.TourGuideInfo"/>
     <select id="findList" resultMap="tourGuideInfoMap">
 
         SELECT
@@ -140,21 +140,21 @@
         FROM tourist_guide_info tgi
         WHERE tgi.level = #{level} AND tgi.is_deleted = 0
     </select>
-    <select id="findByNickname" resultType="com.atguigu.spzx.model.entity.guide.TourGuideInfo">
+    <select id="findByNickname" resultType="com.travel.spzx.model.entity.guide.TourGuideInfo">
         SELECT
         <include refid="columns"/>
         FROM tourist_guide_info tgi
         WHERE tgi.nickname = #{nickname}
         AND tgi.is_deleted = 0
     </select>
-    <select id="findByTourCertificateNo" resultType="com.atguigu.spzx.model.entity.guide.TourGuideInfo">
+    <select id="findByTourCertificateNo" resultType="com.travel.spzx.model.entity.guide.TourGuideInfo">
         SELECT
         <include refid="columns"/>
         FROM tourist_guide_info tgi
         WHERE tgi.tour_certificate_no = #{tourCertificateNo}
         AND tgi.is_deleted = 0
     </select>
-    <select id="findByIdTypeNo" resultType="com.atguigu.spzx.model.entity.guide.TourGuideInfo">
+    <select id="findByIdTypeNo" resultType="com.travel.spzx.model.entity.guide.TourGuideInfo">
 
         SELECT
         <include refid="columns"/>

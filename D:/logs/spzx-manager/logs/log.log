@@ -33,3 +33,25 @@
 2024-04-29 19:18:20 HikariPool-1 - Starting...
 2024-04-29 19:18:20 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78f7ab56
 2024-04-29 19:18:20 HikariPool-1 - Start completed.
+2024-04-30 15:18:34 HV000001: Hibernate Validator 8.0.1.Final
+2024-04-30 15:18:34 Starting XpzxManagerApp using Java 17.0.5 with PID 49548 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-30 15:18:34 The following 1 profile is active: "dev"
+2024-04-30 15:18:35 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-30 15:18:35 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-30 15:18:35 Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-04-30 15:18:35 BeanFactory id=b4df6d2c-58f2-39e5-b742-73cffab4f868
+2024-04-30 15:18:36 Tomcat initialized with port 8501 (http)
+2024-04-30 15:18:36 Initializing ProtocolHandler ["http-nio-8501"]
+2024-04-30 15:18:36 Starting service [Tomcat]
+2024-04-30 15:18:36 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-30 15:18:36 Initializing Spring embedded WebApplicationContext
+2024-04-30 15:18:36 Root WebApplicationContext: initialization completed in 1707 ms
+2024-04-30 15:18:37 Starting ProtocolHandler ["http-nio-8501"]
+2024-04-30 15:18:37 Tomcat started on port 8501 (http) with context path ''
+2024-04-30 15:18:37 Started XpzxManagerApp in 3.668 seconds (process running for 4.202)
+2024-04-30 15:18:40 HikariPool-1 - Starting...
+2024-04-30 15:18:40 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@577dbba7
+2024-04-30 15:18:40 HikariPool-1 - Start completed.
+2024-04-30 15:21:18 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 15:21:18 Initializing Servlet 'dispatcherServlet'
+2024-04-30 15:21:18 Completed initialization in 2 ms

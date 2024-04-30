@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.atguigu.spzx.manager.mapper.IdTypeInfoMapper">
-    <resultMap id="idTypeInfoResultMap" type="com.atguigu.spzx.model.entity.IdType.IdTypeInfo"/>
+<mapper namespace="com.travel.spzx.manager.mapper.IdTypeInfoMapper">
+    <resultMap id="idTypeInfoResultMap" type="com.travel.spzx.model.entity.IdType.IdTypeInfo"/>
     <sql id="columns">
         id
         , id_type_name, remark,create_time,update_time, is_deleted
@@ -35,7 +35,7 @@
         </set>
         where id = #{id}
     </update>
-    <resultMap id="idTypeMap" type="com.atguigu.spzx.model.entity.IdType.IdTypeInfo"/>
+    <resultMap id="idTypeMap" type="com.travel.spzx.model.entity.IdType.IdTypeInfo"/>
     <select id="findAll" resultMap="idTypeMap">
         select iti.id,
                iti.id_type_name,

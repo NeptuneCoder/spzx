@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.atguigu.spzx.manager.mapper.BatchInfoMapper">
+<mapper namespace="com.travel.spzx.manager.mapper.BatchInfoMapper">
 
     <sql id="columns">
         id
@@ -34,7 +34,7 @@
 
     </insert>
 
-    <resultMap id="batchMap" type="com.atguigu.spzx.model.entity.product.BatchItem"/>
+    <resultMap id="batchMap" type="com.travel.spzx.model.entity.product.BatchItem"/>
     <select id="selectByProductId" resultMap="batchMap">
         select
         <include refid="columns"/>
