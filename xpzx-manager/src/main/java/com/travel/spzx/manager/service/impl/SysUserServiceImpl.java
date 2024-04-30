@@ -83,7 +83,7 @@ public class SysUserServiceImpl implements SysUserService {
         //3. 生成token
         String token = UUID.randomUUID().toString().replaceAll("-", "");
         //4. 将token存入redis,并设置7天过期时间
-        redisTemplate.opsForValue().set(RedisConstantKey.userTokenKey + token, JSON.toJSONString(user), 7, TimeUnit.DAYS);
+        redisTemplate.opsForValue().set(RedisConstantKey.USER_TOKEN_KEY + token, JSON.toJSONString(user), 7, TimeUnit.DAYS);
         //5. 返回登录结果
         LoginVo loginVo = new LoginVo();
         loginVo.setToken(token);
@@ -92,14 +92,14 @@ public class SysUserServiceImpl implements SysUserService {
 
     @Override
     public SysUser getUserInfo(String token) {
-        String result = redisTemplate.opsForValue().get(RedisConstantKey.userTokenKey + token);
+        String result = redisTemplate.opsForValue().get(RedisConstantKey.USER_TOKEN_KEY + token);
         SysUser user = JSON.parseObject(result, SysUser.class);
         return user;
     }
 
     @Override
     public void logout(String token) {
-        redisTemplate.delete(RedisConstantKey.userTokenKey + token);
+        redisTemplate.delete(RedisConstantKey.USER_TOKEN_KEY + token);
     }
 
     @Override

@@ -31,6 +31,7 @@ spzx:
   auth:
     noAuthUrls:
       - '/api/user/sms/sendCode/*'
+      - '/api/user/userInfo/login/code'
       - "/api/upload/fileUpload"
   config:
     fileServiceInfo:

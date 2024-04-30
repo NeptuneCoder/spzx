@@ -3,11 +3,13 @@ package com.travel.spzx.travel.controller;
 import com.travel.spzx.model.dto.h5.UserLoginCodeDto;
 import com.travel.spzx.model.dto.h5.UserLoginDto;
 import com.travel.spzx.model.dto.h5.UserRegisterDto;
+import com.travel.spzx.model.entity.user.UserInfo;
 import com.travel.spzx.model.vo.common.Result;
 import com.travel.spzx.model.vo.common.ResultCodeEnum;
 import com.travel.spzx.model.vo.h5.UserInfoVo;
 
 import com.travel.spzx.travel.service.UserInfoService;
+import com.travel.xpzx.utils.AuthContextUtil;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
@@ -51,9 +53,11 @@ public class UserInfoController {
 
 
     @Operation(summary = "获取当前登录用户信息")
-    @GetMapping("auth/getCurrentUserInfo")
+    @GetMapping("auth/profile")
     public Result<UserInfoVo> getCurrentUserInfo(HttpServletRequest request) {
         String token = request.getHeader("token");
+        UserInfo userInfo = AuthContextUtil.getUserInfo();
+        System.out.println("profile 获取用户信息:" + userInfo);
         UserInfoVo userInfoVo = userInfoService.getCurrentUserInfo(token);
         return Result.build(userInfoVo, ResultCodeEnum.SUCCESS);
     }

@@ -46,7 +46,7 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
         String path = request.getURI().getPath();
         log.info("path {}", path);
 
-
+        System.out.println("match == " + antPathMatcher.match("/api/**/auth/**", path));
         //api接口，异步请求，校验用户必须登录
         if (antPathMatcher.match("/api/**/auth/**", path)) {
             UserInfo userInfo = this.getUserInfo(request);
@@ -77,11 +77,13 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
     private UserInfo getUserInfo(ServerHttpRequest request) {
         String token = "";
         List<String> tokenList = request.getHeaders().get("token");
+        System.out.println("网关获取token == " + tokenList);
         if (null != tokenList && !tokenList.isEmpty()) {
             token = tokenList.get(0);
         }
         if (!StringUtils.isEmpty(token)) {
             String userInfoJSON = redisTemplate.opsForValue().get(RedisConstantKey.USER_TOKEN_KEY + token);
+            System.out.println("网关获取获取用户信息 == " + userInfoJSON);
             if (StringUtils.isEmpty(userInfoJSON)) {
                 return null;
             } else {
