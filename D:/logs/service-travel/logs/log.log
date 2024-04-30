@@ -3835,3 +3835,324 @@ org.apache.ibatis.binding.BindingException: Invalid bound statement (not found):
 2024-04-30 16:01:55 [REGISTER-SERVICE] public registering service service-travel with instance Instance{instanceId='null', ip='192.168.1.3', port=8516, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
 2024-04-30 16:01:55 nacos registry, DEFAULT_GROUP service-travel 192.168.1.3:8516 register finished
 2024-04-30 16:01:55 Started TravelApplication in 4.324 seconds (process running for 4.94)
+2024-04-30 16:27:48 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 16:27:48 Initializing Servlet 'dispatcherServlet'
+2024-04-30 16:27:48 Completed initialization in 11 ms
+2024-04-30 16:32:32 [NotifyCenter] Start destroying Publisher
+2024-04-30 16:32:32 [HttpClientBeanHolder] Start destroying common HttpClient
+2024-04-30 16:32:32 [NotifyCenter] Destruction of the end
+2024-04-30 16:32:32 [HttpClientBeanHolder] Destruction of the end
+2024-04-30 16:32:37 Starting TravelApplication using Java 17.0.5 with PID 53566 (/Users/yh/AndroidStudioProjects/spzx-parent/spzx-service/service-travel/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-30 16:32:37 The following 1 profile is active: "dev"
+2024-04-30 16:32:38 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-30 16:32:38 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-30 16:32:38 Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-04-30 16:32:38 BeanFactory id=b6f6e585-ca75-3875-8983-cff91d7961d6
+2024-04-30 16:32:39 Tomcat initialized with port 8516 (http)
+2024-04-30 16:32:39 Initializing ProtocolHandler ["http-nio-8516"]
+2024-04-30 16:32:39 Starting service [Tomcat]
+2024-04-30 16:32:39 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-30 16:32:39 Initializing Spring embedded WebApplicationContext
+2024-04-30 16:32:39 Root WebApplicationContext: initialization completed in 1587 ms
+2024-04-30 16:32:40 Starting ProtocolHandler ["http-nio-8516"]
+2024-04-30 16:32:40 Tomcat started on port 8516 (http) with context path ''
+2024-04-30 16:32:40 initializer namespace from ans.namespace attribute : null
+2024-04-30 16:32:40 initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2024-04-30 16:32:40 initializer namespace from namespace attribute :null
+2024-04-30 16:32:40 null No credential found
+2024-04-30 16:32:40 [settings] [req-serv] nacos-server port:8848
+2024-04-30 16:32:40 [settings] [http-client] connect timeout:1000
+2024-04-30 16:32:40 PER_TASK_CONFIG_SIZE: 3000.0
+2024-04-30 16:32:40 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-04-30 16:32:40 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-04-30 16:32:40 [RpcClientFactory] create a new rpc client of 985da657-0619-4baa-9870-88c0cfdb3753
+2024-04-30 16:32:40 Create naming rpc client for uuid->985da657-0619-4baa-9870-88c0cfdb3753
+2024-04-30 16:32:40 [985da657-0619-4baa-9870-88c0cfdb3753] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-04-30 16:32:40 [985da657-0619-4baa-9870-88c0cfdb3753] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-04-30 16:32:40 [985da657-0619-4baa-9870-88c0cfdb3753] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-04-30 16:32:40 [985da657-0619-4baa-9870-88c0cfdb3753] Try to connect to server on start up, server: {serverIp = '14.103.49.141', server main port = 8848}
+2024-04-30 16:32:40 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-04-30 16:32:41 Ready to get current node abilities...
+2024-04-30 16:32:41 Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2024-04-30 16:32:41 Initialize current abilities finish...
+2024-04-30 16:32:41 [AbilityControlManager] Successfully initialize AbilityControlManager
+2024-04-30 16:32:41 [985da657-0619-4baa-9870-88c0cfdb3753] Success to connect to server [14.103.49.141:8848] on start up, connectionId = 1714465961606_183.192.230.83_1030
+2024-04-30 16:32:41 [985da657-0619-4baa-9870-88c0cfdb3753] Notify connected event to listeners.
+2024-04-30 16:32:41 Grpc connection connect
+2024-04-30 16:32:41 [985da657-0619-4baa-9870-88c0cfdb3753] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-04-30 16:32:41 [985da657-0619-4baa-9870-88c0cfdb3753] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1350/0x0000000801498e60
+2024-04-30 16:32:41 [REGISTER-SERVICE] public registering service service-travel with instance Instance{instanceId='null', ip='192.168.1.3', port=8516, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2024-04-30 16:32:41 nacos registry, DEFAULT_GROUP service-travel 192.168.1.3:8516 register finished
+2024-04-30 16:32:41 Started TravelApplication in 4.49 seconds (process running for 5.017)
+2024-04-30 16:32:45 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 16:32:45 Initializing Servlet 'dispatcherServlet'
+2024-04-30 16:32:45 Completed initialization in 1 ms
+2024-04-30 16:34:19 [HttpClientBeanHolder] Start destroying common HttpClient
+2024-04-30 16:34:19 [NotifyCenter] Start destroying Publisher
+2024-04-30 16:34:19 [NotifyCenter] Destruction of the end
+2024-04-30 16:34:19 [HttpClientBeanHolder] Destruction of the end
+2024-04-30 16:34:22 Starting TravelApplication using Java 17.0.5 with PID 53657 (/Users/yh/AndroidStudioProjects/spzx-parent/spzx-service/service-travel/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-30 16:34:22 The following 1 profile is active: "dev"
+2024-04-30 16:34:23 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-30 16:34:23 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-30 16:34:23 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-30 16:34:24 BeanFactory id=b6f6e585-ca75-3875-8983-cff91d7961d6
+2024-04-30 16:34:24 Tomcat initialized with port 8516 (http)
+2024-04-30 16:34:24 Initializing ProtocolHandler ["http-nio-8516"]
+2024-04-30 16:34:24 Starting service [Tomcat]
+2024-04-30 16:34:24 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-30 16:34:24 Initializing Spring embedded WebApplicationContext
+2024-04-30 16:34:24 Root WebApplicationContext: initialization completed in 1629 ms
+2024-04-30 16:34:26 Starting ProtocolHandler ["http-nio-8516"]
+2024-04-30 16:34:26 Tomcat started on port 8516 (http) with context path ''
+2024-04-30 16:34:26 initializer namespace from ans.namespace attribute : null
+2024-04-30 16:34:26 initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2024-04-30 16:34:26 initializer namespace from namespace attribute :null
+2024-04-30 16:34:26 [settings] [req-serv] nacos-server port:8848
+2024-04-30 16:34:26 [settings] [http-client] connect timeout:1000
+2024-04-30 16:34:26 null No credential found
+2024-04-30 16:34:26 PER_TASK_CONFIG_SIZE: 3000.0
+2024-04-30 16:34:26 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-04-30 16:34:26 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-04-30 16:34:26 [RpcClientFactory] create a new rpc client of 4850de77-8643-425b-950f-f1fd09ad6c3f
+2024-04-30 16:34:26 Create naming rpc client for uuid->4850de77-8643-425b-950f-f1fd09ad6c3f
+2024-04-30 16:34:26 [4850de77-8643-425b-950f-f1fd09ad6c3f] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-04-30 16:34:26 [4850de77-8643-425b-950f-f1fd09ad6c3f] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-04-30 16:34:26 [4850de77-8643-425b-950f-f1fd09ad6c3f] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-04-30 16:34:26 [4850de77-8643-425b-950f-f1fd09ad6c3f] Try to connect to server on start up, server: {serverIp = '14.103.49.141', server main port = 8848}
+2024-04-30 16:34:26 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-04-30 16:34:26 Ready to get current node abilities...
+2024-04-30 16:34:26 Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2024-04-30 16:34:26 Initialize current abilities finish...
+2024-04-30 16:34:26 [AbilityControlManager] Successfully initialize AbilityControlManager
+2024-04-30 16:34:26 [4850de77-8643-425b-950f-f1fd09ad6c3f] Success to connect to server [14.103.49.141:8848] on start up, connectionId = 1714466066734_183.192.230.83_1073
+2024-04-30 16:34:26 [4850de77-8643-425b-950f-f1fd09ad6c3f] Notify connected event to listeners.
+2024-04-30 16:34:26 Grpc connection connect
+2024-04-30 16:34:26 [4850de77-8643-425b-950f-f1fd09ad6c3f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-04-30 16:34:26 [4850de77-8643-425b-950f-f1fd09ad6c3f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1351/0x000000080149a3d0
+2024-04-30 16:34:26 [REGISTER-SERVICE] public registering service service-travel with instance Instance{instanceId='null', ip='192.168.1.3', port=8516, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2024-04-30 16:34:26 nacos registry, DEFAULT_GROUP service-travel 192.168.1.3:8516 register finished
+2024-04-30 16:34:26 Started TravelApplication in 4.62 seconds (process running for 5.288)
+2024-04-30 16:36:00 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 16:36:00 Initializing Servlet 'dispatcherServlet'
+2024-04-30 16:36:00 Completed initialization in 1 ms
+2024-04-30 16:36:43 [1714466066734_183.192.230.83_1073]Request stream error, switch server,error={}
+com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at com.alibaba.nacos.shaded.io.grpc.Status.asRuntimeException(Status.java:537)
+	at com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:491)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:567)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:71)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:735)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:716)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-04-30 16:36:43 [4850de77-8643-425b-950f-f1fd09ad6c3f] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-04-30 16:36:43 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-04-30 16:36:43 [4850de77-8643-425b-950f-f1fd09ad6c3f] Success to connect a server [14.103.49.141:8848], connectionId = 1714466203597_183.192.230.83_1107
+2024-04-30 16:36:43 [4850de77-8643-425b-950f-f1fd09ad6c3f] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1714466066734_183.192.230.83_1073
+2024-04-30 16:36:43 Close current connection 1714466066734_183.192.230.83_1073
+2024-04-30 16:36:43 [4850de77-8643-425b-950f-f1fd09ad6c3f] Notify disconnected event to listeners
+2024-04-30 16:36:43 Grpc connection disconnect, mark to redo
+2024-04-30 16:36:43 mark to redo completed
+2024-04-30 16:36:43 [4850de77-8643-425b-950f-f1fd09ad6c3f] Notify connected event to listeners.
+2024-04-30 16:36:43 Grpc connection connect
+2024-04-30 16:36:44 Redo instance operation REGISTER for DEFAULT_GROUP@@service-travel
+2024-04-30 16:38:22 [HttpClientBeanHolder] Start destroying common HttpClient
+2024-04-30 16:38:22 [NotifyCenter] Start destroying Publisher
+2024-04-30 16:38:22 [NotifyCenter] Destruction of the end
+2024-04-30 16:38:22 [HttpClientBeanHolder] Destruction of the end
+2024-04-30 16:38:25 Starting TravelApplication using Java 17.0.5 with PID 53821 (/Users/yh/AndroidStudioProjects/spzx-parent/spzx-service/service-travel/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-30 16:38:25 The following 1 profile is active: "dev"
+2024-04-30 16:38:26 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-30 16:38:26 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-30 16:38:26 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-30 16:38:26 BeanFactory id=b6f6e585-ca75-3875-8983-cff91d7961d6
+2024-04-30 16:38:27 Tomcat initialized with port 8516 (http)
+2024-04-30 16:38:27 Initializing ProtocolHandler ["http-nio-8516"]
+2024-04-30 16:38:27 Starting service [Tomcat]
+2024-04-30 16:38:27 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-30 16:38:27 Initializing Spring embedded WebApplicationContext
+2024-04-30 16:38:27 Root WebApplicationContext: initialization completed in 1515 ms
+2024-04-30 16:38:28 Starting ProtocolHandler ["http-nio-8516"]
+2024-04-30 16:38:28 Tomcat started on port 8516 (http) with context path ''
+2024-04-30 16:38:28 initializer namespace from ans.namespace attribute : null
+2024-04-30 16:38:28 initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2024-04-30 16:38:28 initializer namespace from namespace attribute :null
+2024-04-30 16:38:28 null No credential found
+2024-04-30 16:38:28 [settings] [req-serv] nacos-server port:8848
+2024-04-30 16:38:28 [settings] [http-client] connect timeout:1000
+2024-04-30 16:38:28 PER_TASK_CONFIG_SIZE: 3000.0
+2024-04-30 16:38:28 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-04-30 16:38:28 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-04-30 16:38:28 [RpcClientFactory] create a new rpc client of 63cc8f80-fc91-43a7-9fc7-8a5d68c540a3
+2024-04-30 16:38:28 Create naming rpc client for uuid->63cc8f80-fc91-43a7-9fc7-8a5d68c540a3
+2024-04-30 16:38:28 [63cc8f80-fc91-43a7-9fc7-8a5d68c540a3] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-04-30 16:38:28 [63cc8f80-fc91-43a7-9fc7-8a5d68c540a3] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-04-30 16:38:28 [63cc8f80-fc91-43a7-9fc7-8a5d68c540a3] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-04-30 16:38:28 [63cc8f80-fc91-43a7-9fc7-8a5d68c540a3] Try to connect to server on start up, server: {serverIp = '14.103.49.141', server main port = 8848}
+2024-04-30 16:38:28 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-04-30 16:38:29 Ready to get current node abilities...
+2024-04-30 16:38:29 Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2024-04-30 16:38:29 Initialize current abilities finish...
+2024-04-30 16:38:29 [AbilityControlManager] Successfully initialize AbilityControlManager
+2024-04-30 16:38:29 [63cc8f80-fc91-43a7-9fc7-8a5d68c540a3] Success to connect to server [14.103.49.141:8848] on start up, connectionId = 1714466309105_183.192.230.83_1130
+2024-04-30 16:38:29 [63cc8f80-fc91-43a7-9fc7-8a5d68c540a3] Notify connected event to listeners.
+2024-04-30 16:38:29 Grpc connection connect
+2024-04-30 16:38:29 [63cc8f80-fc91-43a7-9fc7-8a5d68c540a3] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-04-30 16:38:29 [63cc8f80-fc91-43a7-9fc7-8a5d68c540a3] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1351/0x0000000801498e60
+2024-04-30 16:38:29 [REGISTER-SERVICE] public registering service service-travel with instance Instance{instanceId='null', ip='192.168.1.3', port=8516, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2024-04-30 16:38:29 nacos registry, DEFAULT_GROUP service-travel 192.168.1.3:8516 register finished
+2024-04-30 16:38:29 Started TravelApplication in 4.173 seconds (process running for 4.681)
+2024-04-30 16:38:37 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 16:38:37 Initializing Servlet 'dispatcherServlet'
+2024-04-30 16:38:37 Completed initialization in 1 ms
+2024-04-30 16:39:48 [HttpClientBeanHolder] Start destroying common HttpClient
+2024-04-30 16:39:48 [NotifyCenter] Start destroying Publisher
+2024-04-30 16:39:48 [NotifyCenter] Destruction of the end
+2024-04-30 16:39:48 [HttpClientBeanHolder] Destruction of the end
+2024-04-30 16:39:51 Starting TravelApplication using Java 17.0.5 with PID 53940 (/Users/yh/AndroidStudioProjects/spzx-parent/spzx-service/service-travel/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-30 16:39:51 The following 1 profile is active: "dev"
+2024-04-30 16:39:52 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-30 16:39:52 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-30 16:39:52 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-30 16:39:52 BeanFactory id=b6f6e585-ca75-3875-8983-cff91d7961d6
+2024-04-30 16:39:53 Tomcat initialized with port 8516 (http)
+2024-04-30 16:39:53 Initializing ProtocolHandler ["http-nio-8516"]
+2024-04-30 16:39:53 Starting service [Tomcat]
+2024-04-30 16:39:53 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-30 16:39:53 Initializing Spring embedded WebApplicationContext
+2024-04-30 16:39:53 Root WebApplicationContext: initialization completed in 1499 ms
+2024-04-30 16:39:54 Starting ProtocolHandler ["http-nio-8516"]
+2024-04-30 16:39:54 Tomcat started on port 8516 (http) with context path ''
+2024-04-30 16:39:54 initializer namespace from ans.namespace attribute : null
+2024-04-30 16:39:54 initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2024-04-30 16:39:54 initializer namespace from namespace attribute :null
+2024-04-30 16:39:54 null No credential found
+2024-04-30 16:39:54 [settings] [req-serv] nacos-server port:8848
+2024-04-30 16:39:54 [settings] [http-client] connect timeout:1000
+2024-04-30 16:39:54 PER_TASK_CONFIG_SIZE: 3000.0
+2024-04-30 16:39:54 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-04-30 16:39:54 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-04-30 16:39:54 [RpcClientFactory] create a new rpc client of 46a55558-3faf-47cd-906e-554b752e2524
+2024-04-30 16:39:54 Create naming rpc client for uuid->46a55558-3faf-47cd-906e-554b752e2524
+2024-04-30 16:39:54 [46a55558-3faf-47cd-906e-554b752e2524] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-04-30 16:39:54 [46a55558-3faf-47cd-906e-554b752e2524] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-04-30 16:39:54 [46a55558-3faf-47cd-906e-554b752e2524] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-04-30 16:39:54 [46a55558-3faf-47cd-906e-554b752e2524] Try to connect to server on start up, server: {serverIp = '14.103.49.141', server main port = 8848}
+2024-04-30 16:39:54 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-04-30 16:39:55 Ready to get current node abilities...
+2024-04-30 16:39:55 Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2024-04-30 16:39:55 Initialize current abilities finish...
+2024-04-30 16:39:55 [AbilityControlManager] Successfully initialize AbilityControlManager
+2024-04-30 16:39:55 [46a55558-3faf-47cd-906e-554b752e2524] Success to connect to server [14.103.49.141:8848] on start up, connectionId = 1714466395197_183.192.230.83_1151
+2024-04-30 16:39:55 [46a55558-3faf-47cd-906e-554b752e2524] Notify connected event to listeners.
+2024-04-30 16:39:55 [46a55558-3faf-47cd-906e-554b752e2524] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-04-30 16:39:55 Grpc connection connect
+2024-04-30 16:39:55 [46a55558-3faf-47cd-906e-554b752e2524] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1351/0x0000000801498450
+2024-04-30 16:39:55 [REGISTER-SERVICE] public registering service service-travel with instance Instance{instanceId='null', ip='192.168.1.3', port=8516, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2024-04-30 16:39:55 nacos registry, DEFAULT_GROUP service-travel 192.168.1.3:8516 register finished
+2024-04-30 16:39:55 Started TravelApplication in 4.196 seconds (process running for 4.734)
+2024-04-30 16:40:01 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 16:40:01 Initializing Servlet 'dispatcherServlet'
+2024-04-30 16:40:01 Completed initialization in 1 ms
+2024-04-30 16:44:09 [HttpClientBeanHolder] Start destroying common HttpClient
+2024-04-30 16:44:09 [NotifyCenter] Start destroying Publisher
+2024-04-30 16:44:09 [NotifyCenter] Destruction of the end
+2024-04-30 16:44:09 [HttpClientBeanHolder] Destruction of the end
+2024-04-30 16:44:13 Starting TravelApplication using Java 17.0.5 with PID 54127 (/Users/yh/AndroidStudioProjects/spzx-parent/spzx-service/service-travel/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-30 16:44:13 The following 1 profile is active: "dev"
+2024-04-30 16:44:14 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-30 16:44:14 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-30 16:44:14 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-30 16:44:14 BeanFactory id=b6f6e585-ca75-3875-8983-cff91d7961d6
+2024-04-30 16:44:15 Tomcat initialized with port 8516 (http)
+2024-04-30 16:44:15 Initializing ProtocolHandler ["http-nio-8516"]
+2024-04-30 16:44:15 Starting service [Tomcat]
+2024-04-30 16:44:15 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-30 16:44:15 Initializing Spring embedded WebApplicationContext
+2024-04-30 16:44:15 Root WebApplicationContext: initialization completed in 1550 ms
+2024-04-30 16:44:16 Starting ProtocolHandler ["http-nio-8516"]
+2024-04-30 16:44:16 Tomcat started on port 8516 (http) with context path ''
+2024-04-30 16:44:16 initializer namespace from ans.namespace attribute : null
+2024-04-30 16:44:16 initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2024-04-30 16:44:16 initializer namespace from namespace attribute :null
+2024-04-30 16:44:16 null No credential found
+2024-04-30 16:44:16 [settings] [req-serv] nacos-server port:8848
+2024-04-30 16:44:16 [settings] [http-client] connect timeout:1000
+2024-04-30 16:44:16 PER_TASK_CONFIG_SIZE: 3000.0
+2024-04-30 16:44:16 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-04-30 16:44:16 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-04-30 16:44:16 [RpcClientFactory] create a new rpc client of 62f89beb-cf6e-4ffb-b95c-cdd5a6e5b307
+2024-04-30 16:44:16 Create naming rpc client for uuid->62f89beb-cf6e-4ffb-b95c-cdd5a6e5b307
+2024-04-30 16:44:16 [62f89beb-cf6e-4ffb-b95c-cdd5a6e5b307] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-04-30 16:44:16 [62f89beb-cf6e-4ffb-b95c-cdd5a6e5b307] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-04-30 16:44:16 [62f89beb-cf6e-4ffb-b95c-cdd5a6e5b307] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-04-30 16:44:16 [62f89beb-cf6e-4ffb-b95c-cdd5a6e5b307] Try to connect to server on start up, server: {serverIp = '14.103.49.141', server main port = 8848}
+2024-04-30 16:44:16 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-04-30 16:44:17 Ready to get current node abilities...
+2024-04-30 16:44:17 Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2024-04-30 16:44:17 Initialize current abilities finish...
+2024-04-30 16:44:17 [AbilityControlManager] Successfully initialize AbilityControlManager
+2024-04-30 16:44:17 [62f89beb-cf6e-4ffb-b95c-cdd5a6e5b307] Success to connect to server [14.103.49.141:8848] on start up, connectionId = 1714466657111_183.192.230.83_1260
+2024-04-30 16:44:17 [62f89beb-cf6e-4ffb-b95c-cdd5a6e5b307] Notify connected event to listeners.
+2024-04-30 16:44:17 Grpc connection connect
+2024-04-30 16:44:17 [62f89beb-cf6e-4ffb-b95c-cdd5a6e5b307] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-04-30 16:44:17 [62f89beb-cf6e-4ffb-b95c-cdd5a6e5b307] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1351/0x0000000801498680
+2024-04-30 16:44:17 [REGISTER-SERVICE] public registering service service-travel with instance Instance{instanceId='null', ip='192.168.1.3', port=8516, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2024-04-30 16:44:17 nacos registry, DEFAULT_GROUP service-travel 192.168.1.3:8516 register finished
+2024-04-30 16:44:17 Started TravelApplication in 4.312 seconds (process running for 4.83)
+2024-04-30 16:44:22 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 16:44:22 Initializing Servlet 'dispatcherServlet'
+2024-04-30 16:44:22 Completed initialization in 1 ms
+2024-04-30 16:45:49 [HttpClientBeanHolder] Start destroying common HttpClient
+2024-04-30 16:45:49 [NotifyCenter] Start destroying Publisher
+2024-04-30 16:45:49 [NotifyCenter] Destruction of the end
+2024-04-30 16:45:49 [HttpClientBeanHolder] Destruction of the end
+2024-04-30 16:45:52 Starting TravelApplication using Java 17.0.5 with PID 54235 (/Users/yh/AndroidStudioProjects/spzx-parent/spzx-service/service-travel/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-04-30 16:45:52 The following 1 profile is active: "dev"
+2024-04-30 16:45:53 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-04-30 16:45:53 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-04-30 16:45:53 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-04-30 16:45:53 BeanFactory id=b6f6e585-ca75-3875-8983-cff91d7961d6
+2024-04-30 16:45:54 Tomcat initialized with port 8516 (http)
+2024-04-30 16:45:54 Initializing ProtocolHandler ["http-nio-8516"]
+2024-04-30 16:45:54 Starting service [Tomcat]
+2024-04-30 16:45:54 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-30 16:45:54 Initializing Spring embedded WebApplicationContext
+2024-04-30 16:45:54 Root WebApplicationContext: initialization completed in 1511 ms
+2024-04-30 16:45:55 Starting ProtocolHandler ["http-nio-8516"]
+2024-04-30 16:45:55 Tomcat started on port 8516 (http) with context path ''
+2024-04-30 16:45:55 initializer namespace from ans.namespace attribute : null
+2024-04-30 16:45:55 initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2024-04-30 16:45:55 initializer namespace from namespace attribute :null
+2024-04-30 16:45:55 null No credential found
+2024-04-30 16:45:55 [settings] [req-serv] nacos-server port:8848
+2024-04-30 16:45:55 [settings] [http-client] connect timeout:1000
+2024-04-30 16:45:55 PER_TASK_CONFIG_SIZE: 3000.0
+2024-04-30 16:45:55 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-04-30 16:45:55 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-04-30 16:45:55 [RpcClientFactory] create a new rpc client of c2c3cf9c-8357-40f9-9fd4-0e48b1bccebd
+2024-04-30 16:45:55 Create naming rpc client for uuid->c2c3cf9c-8357-40f9-9fd4-0e48b1bccebd
+2024-04-30 16:45:55 [c2c3cf9c-8357-40f9-9fd4-0e48b1bccebd] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-04-30 16:45:55 [c2c3cf9c-8357-40f9-9fd4-0e48b1bccebd] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-04-30 16:45:55 [c2c3cf9c-8357-40f9-9fd4-0e48b1bccebd] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-04-30 16:45:55 [c2c3cf9c-8357-40f9-9fd4-0e48b1bccebd] Try to connect to server on start up, server: {serverIp = '14.103.49.141', server main port = 8848}
+2024-04-30 16:45:55 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-04-30 16:45:56 Ready to get current node abilities...
+2024-04-30 16:45:56 Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2024-04-30 16:45:56 Initialize current abilities finish...
+2024-04-30 16:45:56 [AbilityControlManager] Successfully initialize AbilityControlManager
+2024-04-30 16:45:56 [c2c3cf9c-8357-40f9-9fd4-0e48b1bccebd] Success to connect to server [14.103.49.141:8848] on start up, connectionId = 1714466756237_183.192.230.83_1273
+2024-04-30 16:45:56 [c2c3cf9c-8357-40f9-9fd4-0e48b1bccebd] Notify connected event to listeners.
+2024-04-30 16:45:56 Grpc connection connect
+2024-04-30 16:45:56 [c2c3cf9c-8357-40f9-9fd4-0e48b1bccebd] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-04-30 16:45:56 [c2c3cf9c-8357-40f9-9fd4-0e48b1bccebd] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1351/0x0000000801499af0
+2024-04-30 16:45:56 [REGISTER-SERVICE] public registering service service-travel with instance Instance{instanceId='null', ip='192.168.1.3', port=8516, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2024-04-30 16:45:56 nacos registry, DEFAULT_GROUP service-travel 192.168.1.3:8516 register finished
+2024-04-30 16:45:56 Started TravelApplication in 4.252 seconds (process running for 4.732)
+2024-04-30 16:46:05 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-30 16:46:05 Initializing Servlet 'dispatcherServlet'
+2024-04-30 16:46:05 Completed initialization in 1 ms

@@ -28,6 +28,8 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
     //添加拦截器，表示那些请求需要拦截，哪些请求不需要拦截
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
+        //打印l不拦截的地址：
+        userAuthProperties.getNoAuthUrls().forEach(System.out::println);
         registry.addInterceptor(loginInterceptor)
                 .excludePathPatterns(userAuthProperties.getNoAuthUrls())// 不拦截登录请求
                 .addPathPatterns("/**");// 拦截所有请求

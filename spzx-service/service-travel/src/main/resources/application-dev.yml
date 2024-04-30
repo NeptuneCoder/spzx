@@ -30,11 +30,8 @@ mybatis:
 spzx:
   auth:
     noAuthUrls:
-      - "/admin/system/index/login"
-      - "/admin/system/index/generateValidateCode"
-      - "/admin/system/index/register"
-      - "/admin/system/index/forgetPassword"
-      - "/admin/system/fileUpload"
+      - '/api/user/sms/sendCode/*'
+      - "/api/upload/fileUpload"
   config:
     fileServiceInfo:
       url: "http://14.103.49.141:9001"
