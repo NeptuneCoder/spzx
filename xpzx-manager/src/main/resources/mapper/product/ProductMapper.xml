@@ -6,7 +6,22 @@
     <!-- 用于select查询公用抽取的列 -->
     <sql id="columns">
         id
-        ,name,brand_id,category1_id,category2_id,category3_id,unit_name,slider_urls,spec_value,status,audit_status,audit_message,create_time,update_time,is_deleted
+        ,name,
+            brand_id,
+            category1_id,
+            category2_id,
+            category3_id,
+            unit_name,
+            slider_urls,
+            spec_value,
+            status,
+            audit_status,
+            audit_message,
+            create_time,
+            update_time,
+            is_deleted,
+            recommend_level,
+
     </sql>
 
 
@@ -63,6 +78,21 @@
         <if test="auditMessage != null and auditMessage != ''">
             audit_message = #{auditMessage},
         </if>
+        <if test="recommendLevel != null and recommendLevel != ''">
+            recommend_level = #{recommendLevel},
+        </if>
+        <if test="placeToStartId != null and placeToStartId != ''">
+            place_to_start_id = #{placeToStartId},
+        </if>
+        <if test="feature != null and feature != ''">
+            feature = #{feature},
+        </if>
+        <if test="description != null and description != ''">
+            description = #{description},
+        </if>
+            <if test="assembleTime != null and assembleTime != ''">
+            assemble_time = #{assembleTime},
+        </if>
         update_time = now()
         where
         id = #{id}
@@ -77,15 +107,40 @@
 
     <select id="findByPage" resultMap="productMap">
         select
-        p.id, p.name , p.brand_id , p.category1_id , p.category2_id , p.category3_id, p.unit_name,
-        p.slider_urls , p.spec_value , p.status , p.audit_status , p.audit_message , p.create_time , p.update_time ,
+        p.id,
+        p.name ,
+        p.brand_id ,
+        p.category1_id ,
+        p.category2_id ,
+        p.category3_id,
+        p.unit_name,
+        p.slider_urls ,
+        p.spec_value ,
+        p.status ,
+        p.audit_status ,
+        p.audit_message ,
+        p.create_time ,
+        p.update_time ,
         p.is_deleted ,
-        b.name brandName , c1.name category1Name , c2.name category2Name , c3.name category3Name
+        p.feature,
+        p.description,
+        p.assemble_time,
+        b.name brandName ,
+        c1.name category1Name ,
+        c2.name category2Name ,
+        c3.name category3Name,
+        p.recommend_level,
+        ci.city_name startCityName,
+        ali.address startAddress,
+        ali.id placeToStartId
+
         from product p
         LEFT JOIN brand b on b.id = p.brand_id
         LEFT JOIN category c1 on c1.id = p.category1_id
         LEFT JOIN category c2 on c2.id = p.category2_id
         LEFT JOIN category c3 on c3.id = p.category3_id
+        LEFT JOIN assemble_location_info ali on ali.id = p.place_to_start_id
+        LEFT JOIN city_info ci on ci.id = ali.city_id
         <include refid="findPageWhere"/>
         order by id desc
     </select>
@@ -110,7 +165,12 @@
                              audit_message,
                              create_time,
                              update_time,
-                             is_deleted)
+                             is_deleted,
+                             recommend_level,
+                             place_to_start_id,
+                             feature,
+                             description,
+                             assemble_time)
         values (#{id},
                 #{name},
                 #{brandId},
@@ -125,7 +185,13 @@
                 #{auditMessage},
                 now(),
                 now(),
-                0)
+                0,
+                #{recommendLevel},
+                #{placeToStartId},
+                #{feature},
+                #{description},
+                #{assembleTime})
+
     </insert>
 
     <select id="selectById" resultType="com.travel.spzx.model.entity.product.Product">
@@ -144,15 +210,25 @@
                p.create_time,
                p.update_time,
                p.is_deleted,
+               p.feature,
+               p.description,
+               p.assemble_time,
                b.name  brandName,
                c1.name category1Name,
                c2.name category2Name,
-               c2.name category3Name
+               c2.name category3Name,
+               p.recommend_level,
+               ci.city_name startCityName,
+               ali.address startAddress,
+               ali.id placeToStartId
+
         from product p
                  LEFT JOIN brand b on b.id = p.brand_id
                  LEFT JOIN category c1 on c1.id = p.category1_id
                  LEFT JOIN category c2 on c2.id = p.category2_id
                  LEFT JOIN category c3 on c3.id = p.category3_id
+                 LEFT JOIN assemble_location_info ali on ali.id = p.place_to_start_id
+                 LEFT JOIN city_info ci on ci.id = ali.city_id
         where p.id = #{id}
     </select>
 </mapper>

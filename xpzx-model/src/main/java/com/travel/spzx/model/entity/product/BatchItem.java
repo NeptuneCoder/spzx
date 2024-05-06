@@ -1,8 +1,10 @@
 package com.travel.spzx.model.entity.product;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.travel.spzx.model.entity.base.BaseEntity;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -22,6 +24,8 @@ public class BatchItem extends BaseEntity {
     private Date endTime;
 
     private String[] time;
+    @Schema(description = "批次在商品详情界面中需要的字段")
+    private String dateStr;
 
     public String[] getTime() {
         // 创建SimpleDateFormat对象，并指定日期格式
@@ -45,5 +49,11 @@ public class BatchItem extends BaseEntity {
     }
 
     private int status;
+
+    @Schema(description = "行程状态：0:已成团 1:可报名 2:已满员")
+    private int tripStatus;
+
+    @Schema(description = "销量")
+    private Integer saleNum;
 
 }

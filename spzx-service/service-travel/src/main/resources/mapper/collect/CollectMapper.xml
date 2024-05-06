@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.spzx.travel.mapper.CollectMapper">
+
+    <resultMap id="collectResultMap" type="com.travel.spzx.model.entity.collect.Collect"/>
+    <sql id="collectColumns">
+        id
+        , user_id, product_id,status,update_time, create_time, is_deleted
+    </sql>
+    <insert id="insertCollect">
+        INSERT INTO collect_info
+        (id,
+         user_id,
+         product_id,
+         status,
+         update_time,
+         create_time,
+         is_deleted)
+        VALUES (#{id},
+                #{userId},
+                #{productId},
+                #{status},
+                now(),
+                now(),
+                0)
+    </insert>
+    <update id="updateCollect">
+        UPDATE collect_info
+        <set>
+            <if test="status!= null">
+                status = #{status},
+            </if>
+            update_time = now()
+        </set>
+        WHERE user_id = #{userId}
+        and product_id = #{productId}
+        and is_deleted = 0
+    </update>
+
+    <select id="queryCollectList" resultMap="collectResultMap">
+        SELECT
+        <include refid="collectColumns"/>
+        FROM collect_info
+        WHERE user_id = #{userId}
+        and product_id = #{productId}
+        and is_deleted = 0
+        order by create_time desc
+    </select>
+    <select id="queryCollect" resultType="com.travel.spzx.model.entity.collect.Collect">
+
+        SELECT
+        <include refid="collectColumns"/>
+        FROM collect_info
+        WHERE product_id = #{productId}
+        and user_id = #{userId}
+        and is_deleted = 0
+    </select>
+</mapper>

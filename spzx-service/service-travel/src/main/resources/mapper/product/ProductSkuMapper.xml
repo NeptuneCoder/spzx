@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.spzx.travel.mapper.ProductSkuMapper">
+
+
+
+
+
+    <resultMap id="productSkuMap" type="com.travel.spzx.model.entity.product.ProductSku"
+               autoMapping="true"></resultMap>
+
+    <!-- 用于select查询公用抽取的列 -->
+    <sql id="columns">
+        id,
+            sku_code,
+            sku_name,
+            product_id,
+            thumb_img,
+            sale_price,
+            sale_num,
+            child_sale_price,
+            market_price,
+            sku_spec,
+            status,
+            create_time,
+            update_time,
+            is_deleted
+    </sql>
+
+    <select id="selectByProductId" resultMap="productSkuMap">
+        select
+        <include refid="columns"/>
+        from product_sku
+        where product_id = #{productId}
+        and is_deleted = 0
+        order by id desc
+    </select>
+</mapper>

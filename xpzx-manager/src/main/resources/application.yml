@@ -3,3 +3,9 @@ spring:
     name: service-manager
   profiles:
     active: dev
+
+#  jackson:
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    time-zone: Asia/Shanghai
+#  spring.jackson.date-format=yyyy-MM-dd HH:mm:ss
+#  spring.jackson.time-zone=Asia/Shanghai

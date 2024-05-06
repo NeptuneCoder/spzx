@@ -3,6 +3,7 @@ package com.travel.spzx.travel.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.travel.spzx.common.constant.RedisConstantKey;
 import com.travel.spzx.common.exception.GuiguException;
+import com.travel.spzx.model.dto.h5.ProfileDto;
 import com.travel.spzx.model.dto.h5.UserLoginCodeDto;
 import com.travel.spzx.model.dto.h5.UserLoginDto;
 import com.travel.spzx.model.dto.h5.UserRegisterDto;
@@ -124,10 +125,13 @@ public class UserInfoServiceImpl implements UserInfoService {
             throw new GuiguException(ResultCodeEnum.VALIDATECODE_ERROR);
         }
         //校验验证码
-        String codeValueRedis = redisTemplate.opsForValue().get(RedisConstantKey.PHONE_CODE_KEY + userLogincodeDto.getPhone());
+        //TODO 验证码校验，上线前需要修改
+        String codeValueRedis = "8888";//redisTemplate.opsForValue().get(RedisConstantKey.PHONE_CODE_KEY + userLogincodeDto.getPhone());
         if (!userLogincodeDto.getCode().equals(codeValueRedis)) {
             throw new GuiguException(ResultCodeEnum.VALIDATECODE_ERROR);
         }
+        //从redis中删除验证码
+        redisTemplate.delete(RedisConstantKey.PHONE_CODE_KEY + userLogincodeDto.getPhone());
         //校验用户是否存在
         UserInfo userInfo = userInfoMapper.getByPhone(userLogincodeDto.getPhone());
         if (null == userInfo) {
@@ -155,7 +159,7 @@ public class UserInfoServiceImpl implements UserInfoService {
 
     // com.travel.spzx.user.service.impl.UserInfoServiceImpl
     @Override
-    public UserInfoVo getCurrentUserInfo(String token) {
+    public UserInfoVo getCurrentUserInfo() {
 //        String userInfoJSON = redisTemplate.opsForValue().get(RedisConstantKey.USER_TOKEN_KEY + token);
 //        if (StringUtils.isEmpty(userInfoJSON)) {
 //            throw new GuiguException(ResultCodeEnum.LOGIN_AUTH);
@@ -164,6 +168,17 @@ public class UserInfoServiceImpl implements UserInfoService {
         UserInfoVo userInfoVo = new UserInfoVo();
         BeanUtils.copyProperties(userInfo, userInfoVo);
         return userInfoVo;
+    }
+
+    @Override
+    public void updateUserAvatar(String token, UserInfo userInfo) {
+        //更新redis
+        redisTemplate.opsForValue().set(RedisConstantKey.USER_TOKEN_KEY + token, JSON.toJSONString(userInfo), 30, TimeUnit.DAYS);
+        //更新数据库
+        if (null == userInfo) {
+            throw new GuiguException(ResultCodeEnum.USER_NOT_EXISTS);
+        }
+        userInfoMapper.update(userInfo);
     }
 
     //注销账号
@@ -177,5 +192,29 @@ public class UserInfoServiceImpl implements UserInfoService {
         userInfo.setStatus(0);
         userInfoMapper.delete(userInfo);
 
+    }
+
+    @Override
+    public void putUserInfo(String token, ProfileDto profileDto) {
+        UserInfo userInfo = AuthContextUtil.getUserInfo();
+        if (null == userInfo) {
+            throw new GuiguException(ResultCodeEnum.LOGIN_AUTH);
+        }
+        userInfo.setNickName(profileDto.getNickName());
+        userInfo.setName(profileDto.getName());
+        userInfo.setBirthday(profileDto.getBirthday());
+        userInfo.setIdCardType(profileDto.getIdCardType());
+        userInfo.setIdCardNo(profileDto.getIdCardNo());
+        //更新redis
+        redisTemplate.opsForValue().set(RedisConstantKey.USER_TOKEN_KEY + token, JSON.toJSONString(userInfo), 30, TimeUnit.DAYS);
+        //更新数据库
+        userInfoMapper.update(userInfo);
+    }
+
+    @Override
+    public void logout(String token) {
+        //删除redis
+        System.out.println("logout token:" + token);
+        redisTemplate.delete(RedisConstantKey.USER_TOKEN_KEY + token);
     }
 }

@@ -14,12 +14,13 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://14.103.49.141:3306/db_spzx?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
-    password: 1234
+    password: spzxDbPwd@1234
   data:
     redis:
       host: 14.103.49.141
       port: 6379
       timeout: 20000
+      password: szpx123456
   config:
     import: application-alipay.yml
 
@@ -33,8 +34,9 @@ spzx:
       - '/api/user/sms/sendCode/*'
       - '/api/user/userInfo/login/code'
       - "/api/upload/fileUpload"
+      - '/api/travel/index'
+      - '/api/product/goods/**'
   config:
-    fileServiceInfo:
       url: "http://14.103.49.141:9001"
       bucketName: "spzx-bucket"
       account: "admin"

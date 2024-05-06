@@ -10,42 +10,53 @@ import java.util.Date;
 @Schema(description = "用户实体类")
 public class UserInfo extends BaseEntity {
 
-   private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-   @Schema(description = "用户名")
-   private String username;
+    @Schema(description = "用户名")
+    private String username;
 
-   @Schema(description = "密码")
-   private String password;
+    @Schema(description = "密码")
+    private String password;
 
-   @Schema(description = "昵称")
-   private String nickName;
+    @Schema(description = "昵称")
+    private String nickName;
 
-   @Schema(description = "头像")
-   private String avatar;
 
-   @Schema(description = "性别")
-   private Integer sex;
+    @Schema(description = "头像")
+    private String avatar;
 
-   @Schema(description = "电话号码")
-   private String phone;
+    @Schema(description = "性别")
+    private Integer sex;
 
-   @Schema(description = "备注")
-   private String memo;
+    @Schema(description = "电话号码")
+    private String phone;
 
-   @Schema(description = "微信open id")
-   private String openId;
+    @Schema(description = "备注")
+    private String memo;
 
-   @Schema(description = "微信开放平台unionID")
-   private String unionId;
+    @Schema(description = "微信open id")
+    private String openId;
 
-   @Schema(description = "最后一次登录ip")
-   private String lastLoginIp;
+    @Schema(description = "微信开放平台unionID")
+    private String unionId;
 
-   @Schema(description = "最后一次登录时间")
-   private Date lastLoginTime;
+    @Schema(description = "最后一次登录ip")
+    private String lastLoginIp;
 
-   @Schema(description = "状态：1为正常，0为禁止")
-   private Integer status;
+    @Schema(description = "最后一次登录时间")
+    private Date lastLoginTime;
+
+    @Schema(description = "状态：1为正常，0为禁止")
+    private Integer status;
+
+    @Schema(description = "姓名")
+    private String name;
+    @Schema(description = "出生日期")
+    private String birthday;
+    // 0:身份证 1:护照 2:其他
+    @Schema(description = "证件类型")
+    private String idCardType;
+    @Schema(description = "证件号码")
+    private String idCardNo;
 
 }

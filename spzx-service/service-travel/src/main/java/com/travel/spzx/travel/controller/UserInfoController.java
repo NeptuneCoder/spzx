@@ -1,5 +1,7 @@
 package com.travel.spzx.travel.controller;
 
+import com.alibaba.fastjson.JSON;
+import com.travel.spzx.model.dto.h5.ProfileDto;
 import com.travel.spzx.model.dto.h5.UserLoginCodeDto;
 import com.travel.spzx.model.dto.h5.UserLoginDto;
 import com.travel.spzx.model.dto.h5.UserRegisterDto;
@@ -44,6 +46,8 @@ public class UserInfoController {
         return Result.build(userInfoService.login(userLoginCodeDto), ResultCodeEnum.SUCCESS);
     }
 
+
+
     @Operation(summary = "注销账号")
     @DeleteMapping("/auth/closeAccount")
     public Result login() {
@@ -51,16 +55,30 @@ public class UserInfoController {
         return Result.build(null, ResultCodeEnum.SUCCESS);
     }
 
+    @Operation(summary = "退出登录")
+    @GetMapping("/logout")
+    public Result logout(HttpServletRequest request) {
+        userInfoService.logout(request.getHeader("token"));
+        return Result.build(null, ResultCodeEnum.SUCCESS);
+    }
 
     @Operation(summary = "获取当前登录用户信息")
     @GetMapping("auth/profile")
-    public Result<UserInfoVo> getCurrentUserInfo(HttpServletRequest request) {
-        String token = request.getHeader("token");
-        UserInfo userInfo = AuthContextUtil.getUserInfo();
-        System.out.println("profile 获取用户信息:" + userInfo);
-        UserInfoVo userInfoVo = userInfoService.getCurrentUserInfo(token);
+    public Result<UserInfoVo> getCurrentUserInfo() {
+
+        UserInfoVo userInfoVo = userInfoService.getCurrentUserInfo();
         return Result.build(userInfoVo, ResultCodeEnum.SUCCESS);
     }
+
+    @Operation(summary = "更新用户信息")
+    @PutMapping("auth/profile")
+    public Result<UserInfoVo> putUserInfo(@RequestBody ProfileDto profileDto, HttpServletRequest request) {
+        System.out.println("profile 更新用户信息:" + JSON.toJSONString(profileDto));
+        System.out.println("profile ip:" + request.getRemoteAddr());
+        userInfoService.putUserInfo(request.getHeader("token"), profileDto);
+        return Result.build(profileDto, ResultCodeEnum.SUCCESS);
+    }
+
 
 }
 

@@ -3,6 +3,7 @@ package com.travel.spzx.common.exception;
 import com.alibaba.fastjson.JSON;
 import com.travel.spzx.model.vo.common.Result;
 import com.travel.spzx.model.vo.common.ResultCodeEnum;
+import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -24,6 +25,7 @@ public class GlobalExceptionHandler {
         return Result.build(null, ResultCodeEnum.SYSTEM_ERROR, e.getMessage());
     }
 
+
     //处理ValidationException异常
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseBody
@@ -41,6 +43,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(GuiguException.class)
     @ResponseBody
     public Result handleException(GuiguException e) {
+        System.out.println("error message:" + e.getMessage());
         return Result.build(null, e.getResultCodeEnum());
     }
 }

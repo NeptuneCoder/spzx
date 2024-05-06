@@ -30,6 +30,8 @@ public class Product extends BaseEntity {
 
     @Schema(description = "轮播图url")
     private String sliderUrls;                // 轮播图
+    @Schema(description = "详情图url,用于返回给前端")
+    private List<String> sliderImageUrls;                         // 详情图
 
     @Schema(description = "商品规格值json串")
     private String specValue;                // 商品规格值json串
@@ -63,5 +65,29 @@ public class Product extends BaseEntity {
 
     @Schema(description = "图片详情列表")
     private String detailsImageUrls;                // 图片详情列表
+    @Schema(description = "推荐等级,用于banner和排序")
+    private String recommendLevel;                // 图片详情列表
+
+    @Schema(description = "出发地点id")
+    private Long placeToStartId;            // 推荐起点id
+
+    @Schema(description = "出发地点名字")
+    private String startAddress;            // 推荐起点id
+    @Schema(description = "出发地点名字")
+    private String startCityName;            // 推荐起点id
+
+    @Schema(description = "特点")
+    private String feature;                // 特点
+    @Schema(description = "简介信息")
+    private String description;                // 特点
+
+
+    /**
+     * 同类推荐的其他商品
+     */
+    @Schema(description = "同类推荐的其他商品")
+    private List<Product> similarProducts;                    // 价格
+    @Schema(description = "集合时间")
+    private String assembleTime;
 
 }

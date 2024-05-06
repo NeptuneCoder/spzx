@@ -6,12 +6,13 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://14.103.49.141:3306/db_spzx?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
-    password: 1234
+    password: spzxDbPwd@1234
   data:
     redis:
       host: 14.103.49.141
       port: 6379
       timeout: 20000 # milliseconds
+      password: szpx123456
       lettuce:
         pool:
           max-active: 10 # 连接池最大连接数

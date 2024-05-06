@@ -27,7 +27,6 @@ public class FileUploadServiceImpl implements FileUploadService {
     @Override
     public String upload(MultipartFile file) {
         // TODO Auto-generated method stub
-
         try {
             // 创建一个Minio的客户端对象
             String fileServiceUrl = fileServiceProperties.getUrl();
@@ -63,7 +62,7 @@ public class FileUploadServiceImpl implements FileUploadService {
 
             // 构建fileUrl
             String fileUrl = fileServiceUrl + "/" + bucketName + "/" + fileName;
-
+            
             return fileUrl;
         } catch (Exception e) {
             e.printStackTrace();

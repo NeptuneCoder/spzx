@@ -38,5 +38,15 @@ public class UserInfoVo {
     @Schema(description = "登录凭证")
     private String token;
 
+    @Schema(description = "姓名")
+    private String name;
+    @Schema(description = "出生日期")
+    private String birthday;
+    // 0:身份证 1:护照 2:其他
+    @Schema(description = "证件类型")
+    private String idCardType;
+    @Schema(description = "证件号码")
+    private String idCardNo;
+
 
 }

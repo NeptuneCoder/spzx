@@ -10,6 +10,8 @@ spring:
       host: 14.103.49.141
       port: 6379
       timeout: 20000
+      password: szpx123456
+
   cloud:
     nacos:
       discovery:

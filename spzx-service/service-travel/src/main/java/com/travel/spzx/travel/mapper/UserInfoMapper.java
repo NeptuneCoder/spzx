@@ -13,4 +13,6 @@ public interface UserInfoMapper {
     UserInfo getByPhone(@Param("phone") String phone);
 
     void delete(UserInfo userInfo);
+
+    void update(UserInfo userInfo);
 }

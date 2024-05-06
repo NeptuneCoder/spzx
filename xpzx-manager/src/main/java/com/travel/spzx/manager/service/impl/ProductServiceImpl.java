@@ -17,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -52,6 +53,9 @@ public class ProductServiceImpl implements ProductService {
         batchInfo.forEach(v -> {
             System.out.println("批次信息:" + v);
             v.setProductId(product.getId());
+            //处理一下开始时间爱你和结束时间
+            batchStartTimeSub8(v);
+
             batchInfoMapper.save(v);
             System.out.println("插入批次后返回id：" + v.getId());
         });
@@ -123,6 +127,7 @@ public class ProductServiceImpl implements ProductService {
                     System.out.println("批次信息:" + v);
                     if (v.getId() == null) {
                         v.setProductId(product.getId());
+                        batchStartTimeSub8(v);
                         batchInfoMapper.save(v);
                     } else {
                         batchInfoMapper.updateById(v);
@@ -133,6 +138,13 @@ public class ProductServiceImpl implements ProductService {
         ProductDetails productDetails = productDetailsMapper.selectByProductId(product.getId());
         productDetails.setImageUrls(product.getDetailsImageUrls());
         productDetailsMapper.updateById(productDetails);
+    }
+
+    private static void batchStartTimeSub8(BatchItem v) {
+        Date startTime = v.getStartTime();
+        Long startTimeLong = startTime.getTime() - 7 * 60 * 60 * 1000;
+        Date startTimeNew = new Date(startTimeLong);
+        v.setStartTime(startTimeNew);
     }
 
     @Transactional
@@ -146,6 +158,32 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public void updateAuditStatus(Long id, Integer auditStatus) {
         Product product = new Product();
+        //auditStatus == 1 审核通过，auditStatus == -1 审核不通过
+        //auditStatus == 1 审核通过，auditStatus == -1 审核不通过
+        if (auditStatus == 1) {
+            //检查参数是否合规
+            Product resProduct = productMapper.selectById(id);
+            //出发点点
+            if (resProduct == null) {
+                throw GuiguException.build("商品不存在");
+            }
+            //查询批次信息
+            List<BatchItem> batchItems = batchInfoMapper.selectByProductId(id);
+            if (batchItems == null || batchItems.size() == 0) {
+                throw GuiguException.build("批次信息不能为空");
+            }
+//            if (resProduct.getDetailsImageUrls() == null || resProduct.getDetailsImageUrls().split(",").length == 0) {
+//                throw GuiguException.build("商品详情图片不能为空");
+//            }
+            if (resProduct.getPlaceToStartId() == null || resProduct.getPlaceToStartId() == 0) {
+                throw GuiguException.build("出发点不能为空");
+            }
+            //批次信息是否完整
+            //商品详情图片是否完整
+            //商品是否存在未完成的批次
+        }
+
+
         product.setId(id);
         if (auditStatus == 1) {
             product.setAuditStatus(1);

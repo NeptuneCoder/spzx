@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.spzx.travel.mapper.BatchInfoMapper">
+
+    <sql id="columns">
+        id
+        ,product_id,total_num,success_num,audit,status,start_time,end_time,remark,create_time,update_time,is_deleted
+    </sql>
+
+    <resultMap id="batchMap" type="com.travel.spzx.model.entity.product.BatchItem"/>
+<!--    选择batch_info表中product_id为#{id}，start_time大于等于当前时间的记录，按id倒序排序，返回batchMap结果集-->
+    <select id="selectByProductId" resultMap="batchMap">
+        select
+        <include refid="columns"/>
+        from batch_info
+        where is_deleted = 0
+        and product_id=#{id}
+        and start_time > now()
+        order by start_time asc
+
+    </select>
+
+<!--    select * ,now() from batch_info where start_time > now() and product_id = 29 order by start_time desc limit 1-->
+    <select id="queryByProductIdLimitOne" resultMap="batchMap">
+        select
+        <include refid="columns"/>
+        from batch_info
+        where is_deleted = 0
+        and product_id=#{id}
+        and start_time > now()
+        order by start_time desc
+        limit 1
+    </select>
+    <!--    desc 按时间倒序，asc 按时间正序-->
+
+</mapper>
