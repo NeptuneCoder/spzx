@@ -44,6 +44,6 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public Result handleException(GuiguException e) {
         System.out.println("error message:" + e.getMessage());
-        return Result.build(null, e.getResultCodeEnum());
+        return Result.build(null, e.getCode(), e.getMessage());
     }
 }

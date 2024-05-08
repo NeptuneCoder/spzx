@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.spzx.travel.mapper.TripInfoMapper">
+    <resultMap id="TripInfoMap" type="com.travel.spzx.model.entity.trip.TripInfo"/>
+    <sql id="trip_info_columns">
+        id
+        ,user_id, `name`,id_card_type,id_card_no,sex,phone,birthday,default_trip,age_type,create_time,update_time,is_deleted
+    </sql>
+    <insert id="save">
+        insert into trip_info(id,
+                              user_id,
+                              `name`,
+                              id_card_no,
+                              id_card_type,
+                              sex,
+                              phone,
+                              birthday,
+                              default_trip,
+                              age_type,
+                              create_time,
+                              update_time,
+                              is_deleted)
+        values (#{id},
+                #{userId},
+                #{name},
+                #{idCardNo},
+                #{idCardType},
+                #{sex},
+                #{phone},
+                #{birthday},
+                #{defaultTrip},
+                #{ageType},
+                now(),
+                now(),
+                0)
+
+    </insert>
+
+
+    <select id="list" resultMap="TripInfoMap">
+        select
+        <include refid="trip_info_columns"/>
+        from trip_info
+        where is_deleted = 0
+    </select>
+    <select id="getDetail" resultType="com.travel.spzx.model.entity.trip.TripInfo">
+        select
+        <include refid="trip_info_columns"/>
+        from trip_info
+        where id = #{id}
+        and is_deleted = 0
+    </select>
+
+    <update id="update">
+        update trip_info
+        <set>
+            <if test="name!= null">
+                `name` = #{name},
+            </if>
+            <if test="idCardNo!= null">
+                id_card_no = #{idCardNo},
+            </if>
+            <if test="idCardType!= null">
+                id_card_type = #{idCardType},
+            </if>
+            <if test="sex!= null">
+                sex = #{sex},
+            </if>
+            <if test="phone!= null">
+                phone = #{phone},
+            </if>
+            <if test="birthday != null">
+                birthday = #{birthday},
+            </if>
+            <if test="defaultTrip != null">
+                default_trip = #{defaultTrip},
+            </if>
+            <if test="ageType != null">
+                age_type = #{ageType},
+            </if>
+            update_time = now()
+        </set>
+        where id = #{id}
+        and is_deleted = 0
+    </update>
+    <update id="delete">
+        update trip_info
+        set is_deleted  = 1,
+            update_time = now()
+        where id = #{id}
+    </update>
+</mapper>

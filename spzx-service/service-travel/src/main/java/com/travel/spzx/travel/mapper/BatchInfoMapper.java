@@ -11,6 +11,8 @@ public interface BatchInfoMapper {
 
     List<BatchItem> selectByProductId(Long id);
 
+    List<BatchItem> selectByProductIdAndBatchId(Long productId, Long batchId);
+
     List<BatchItem> queryByProductIdLimitOne(Long id);
 
 }

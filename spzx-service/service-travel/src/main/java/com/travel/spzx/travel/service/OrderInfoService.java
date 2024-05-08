@@ -8,7 +8,7 @@ import com.travel.spzx.model.vo.h5.TradeVo;
 public interface OrderInfoService {
     TradeVo getTrade();
 
-    Long submitOrder(OrderInfoDto orderInfoDto);
+    Long createOrder(OrderInfoDto orderInfoDto);
 
     OrderInfo getOrderInfo(Long orderId);
 

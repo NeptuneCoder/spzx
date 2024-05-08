@@ -1,5 +1,7 @@
 package com.travel.xpzx.utils;
 
+import java.util.Date;
+
 public class DateUtils {
     //根据年月日 2024-05-5 返回当前的周几
     public static String getCurrentWeek(String date) {
@@ -43,6 +45,14 @@ public class DateUtils {
             default:
                 return "星期日";
         }
+    }
+
+    public static String string2Date(String startDate) {
+        String[] dateArr = startDate.split("-");
+
+        int month = Integer.parseInt(dateArr[1]);
+        int day = Integer.parseInt(dateArr[2]);
+        return month + "/" + day;
     }
 
     //根据年月日

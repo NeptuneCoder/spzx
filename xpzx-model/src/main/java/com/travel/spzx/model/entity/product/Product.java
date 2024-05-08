@@ -90,4 +90,7 @@ public class Product extends BaseEntity {
     @Schema(description = "集合时间")
     private String assembleTime;
 
+
+
+
 }

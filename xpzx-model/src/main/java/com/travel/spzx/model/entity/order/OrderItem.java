@@ -10,24 +10,33 @@ import java.math.BigDecimal;
 @Schema(description = "订单项实体类")
 public class OrderItem extends BaseEntity {
 
-   private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-   @Schema(description = "订单id")
-   private Long orderId;
+    @Schema(description = "订单id")
+    private Long orderId;
 
-   @Schema(description = "商品sku编号")
-   private Long skuId;
+    @Schema(description = "商品sku编号")
+    private Long skuId;
 
-   @Schema(description = "商品sku名字")
-   private String skuName;
+    @Schema(description = "商品sku名字")
+    private String skuName;
 
-   @Schema(description = "商品sku图片")
-   private String thumbImg;
+    @Schema(description = "批次id")
+    private Long batchId;
 
-   @Schema(description = "商品sku价格")
-   private BigDecimal skuPrice;
+    @Schema(description = "批次id")
+    private Long productId;
 
-   @Schema(description = "商品购买的数量")
-   private Integer skuNum;
+    @Schema(description = "批次名字")
+    private String batchName;
+    @Schema(description = "商品sku图片")
+    private String thumbImg;
+
+    @Schema(description = "成人价格")
+    private BigDecimal adultPrice;
+    @Schema(description = "儿童价格")
+    private BigDecimal childPrice;
+    @Schema(description = "出行人id")
+    private Long tripId;
 
 }

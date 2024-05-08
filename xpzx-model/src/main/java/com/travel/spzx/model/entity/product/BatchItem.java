@@ -14,9 +14,9 @@ public class BatchItem extends BaseEntity {
     @Schema(description = "产品ID")
     private Long productId;
     @Schema(description = "总量")
-    private String totalNum;
+    private Integer totalNum;
     @Schema(description = "成团人数")
-    private String successNum;
+    private Integer successNum;
 
     @Schema(description = "批次开始时间")
     private Date startTime;
@@ -56,4 +56,17 @@ public class BatchItem extends BaseEntity {
     @Schema(description = "销量")
     private Integer saleNum;
 
+
+    @Schema(description = "持续时间")
+    private String duration;
+
+    @Schema(description = "出发时间")
+    private String startDate;
+    @Schema(description = "出发时间")
+    private String startWeak;
+
+    @Schema(description = "结束时间")
+    private String endDate;
+    @Schema(description = "结束时间")
+    private String endWeak;
 }

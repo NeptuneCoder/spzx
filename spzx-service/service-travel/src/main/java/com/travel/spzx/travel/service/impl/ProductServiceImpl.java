@@ -9,12 +9,14 @@ import com.travel.spzx.model.entity.product.BatchItem;
 import com.travel.spzx.model.entity.product.Product;
 import com.travel.spzx.model.entity.product.ProductDetails;
 import com.travel.spzx.model.entity.product.ProductSku;
+import com.travel.spzx.model.vo.product.OrderProductInfoVo;
 import com.travel.spzx.travel.mapper.BatchInfoMapper;
 import com.travel.spzx.travel.mapper.ProductDetailsMapper;
 import com.travel.spzx.travel.mapper.ProductMapper;
 import com.travel.spzx.travel.mapper.ProductSkuMapper;
 import com.travel.spzx.travel.service.ProductService;
 import com.travel.xpzx.utils.DateUtils;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -61,14 +63,7 @@ public class ProductServiceImpl implements ProductService {
                             .stream()
                             .map(BatchItem::getTime)
                             .filter(time -> time.length == 2)
-                            .map(strings -> {
-                                String[] startTimeSplit = strings[0].split("-");
-                                LocalDate date1 = LocalDate.of(Integer.valueOf(startTimeSplit[0]), Integer.valueOf(startTimeSplit[1]), Integer.valueOf(startTimeSplit[2]));
-                                String[] endTimeSplit = strings[1].split("-");
-                                LocalDate date2 = LocalDate.of(Integer.valueOf(endTimeSplit[0]), Integer.valueOf(endTimeSplit[1]), Integer.valueOf(endTimeSplit[2]));
-                                long between = ChronoUnit.DAYS.between(date1, date2) + 1;
-                                return between == 1 ? "1天" : between + "天" + (between - 1) + "夜";
-                            }).collect(Collectors.joining(", "));
+                            .map(strings -> computeDuration(strings)).collect(Collectors.joining(", "));
                     String feature = v.getFeature();
                     v.setFeature(StrUtil.isEmpty(feature) ? resultTime : (feature + "," + resultTime));
 
@@ -83,6 +78,16 @@ public class ProductServiceImpl implements ProductService {
 
 
         return new PageInfo(collect);
+    }
+
+    @NotNull
+    private static String computeDuration(String[] strings) {
+        String[] startTimeSplit = strings[0].split("-");
+        LocalDate date1 = LocalDate.of(Integer.valueOf(startTimeSplit[0]), Integer.valueOf(startTimeSplit[1]), Integer.valueOf(startTimeSplit[2]));
+        String[] endTimeSplit = strings[1].split("-");
+        LocalDate date2 = LocalDate.of(Integer.valueOf(endTimeSplit[0]), Integer.valueOf(endTimeSplit[1]), Integer.valueOf(endTimeSplit[2]));
+        long between = ChronoUnit.DAYS.between(date1, date2) + 1;
+        return between == 1 ? "1天" : between + "天" + (between - 1) + "夜";
     }
 
     @Override
@@ -101,47 +106,16 @@ public class ProductServiceImpl implements ProductService {
 
                     String[] timeArray = v.getTime();
                     if (timeArray.length == 2) {
-                        String startDate = timeArray[0];
-                        String currentWeek = DateUtils.getCurrentWeek(startDate);
-                        String[] startDateArray = startDate.split("-");
-                        String[] endDateArray = timeArray[1].split("-");
-                        String res = startDateArray[1] + "/" + startDateArray[2] + "(" + currentWeek + ")-" + endDateArray[1] + "/" + endDateArray[2];
-                        v.setDateStr(res);
+                        computeBaseInfo(v, timeArray);
+                        v.setDuration(computeDuration(v.getTime()));
                     }
-                    // TODO 已支付完成的报名人数
-                    int registeredNum = 0;
-                    v.setSaleNum(registeredNum);
-                    //TODO 处理成团状态
-                    Integer totalNum = Integer.valueOf(v.getTotalNum());
-                    Integer successNum = Integer.valueOf(v.getSuccessNum());
-                    //0:已成团 1:可报名 2:已满员
-                    if (registeredNum == totalNum) {
-                        v.setTripStatus(2);
-                        //已满员
-                    } else if (registeredNum > successNum) {
-                        v.setTripStatus(0);
-                        //已成团
-                    } else if (registeredNum < successNum) {
-                        //可以报名
-                        v.setTripStatus(1);
-                    }
+                    computeTripState(v);
                     return v;
                 }).collect(Collectors.toList());
         product.setBatchInfo(batchItems);
 
         String resultTime = batchItems.stream()
-                .findFirst()
-                .stream()
-                .map(BatchItem::getTime)
-                .filter(time -> time.length == 2)
-                .map(strings -> {
-                    String[] startTimeSplit = strings[0].split("-");
-                    LocalDate date1 = LocalDate.of(Integer.valueOf(startTimeSplit[0]), Integer.valueOf(startTimeSplit[1]), Integer.valueOf(startTimeSplit[2]));
-                    String[] endTimeSplit = strings[1].split("-");
-                    LocalDate date2 = LocalDate.of(Integer.valueOf(endTimeSplit[0]), Integer.valueOf(endTimeSplit[1]), Integer.valueOf(endTimeSplit[2]));
-                    long between = ChronoUnit.DAYS.between(date1, date2) + 1;
-                    return between == 1 ? "1天" : between + "天" + (between - 1) + "夜";
-                }).collect(Collectors.joining(", "));
+                .findFirst().get().getDuration();
         String feature = product.getFeature();
         System.out.println("feature = " + feature);
         product.setFeature(StrUtil.isEmpty(feature) ? resultTime : (feature + "," + resultTime));
@@ -153,6 +127,74 @@ public class ProductServiceImpl implements ProductService {
         PageInfo<Product> productList = getProductList(1, 4, productDto);
         product.setSimilarProducts(productList.getList());
         return product;
+    }
+
+    private static void computeTripState(BatchItem v) {
+        // TODO 已支付完成的报名人数
+        int registeredNum = 0;
+        v.setSaleNum(registeredNum);
+        //TODO 处理成团状态
+        Integer totalNum = Integer.valueOf(v.getTotalNum());
+        Integer successNum = Integer.valueOf(v.getSuccessNum());
+        //0:已成团 1:可报名 2:已满员
+        if (registeredNum == totalNum) {
+            v.setTripStatus(2);
+            //已满员
+        } else if (registeredNum > successNum) {
+            v.setTripStatus(0);
+            //已成团
+        } else if (registeredNum < successNum) {
+            //可以报名
+            v.setTripStatus(1);
+        }
+    }
+
+    private static void computeBaseInfo(BatchItem v, String[] timeArray) {
+        String startDate = timeArray[0];
+        String startWeek = DateUtils.getCurrentWeek(startDate);
+        String[] startDateArray = startDate.split("-");
+        String[] endDateArray = timeArray[1].split("-");
+        String res = startDateArray[1] + "/" + startDateArray[2] + "(" + startWeek + ")-" + endDateArray[1] + "/" + endDateArray[2];
+        v.setDateStr(res);
+        v.setStartDate(DateUtils.string2Date(startDate));
+        v.setStartWeak(startWeek);
+        String endDate = timeArray[1];
+        String endWeek = DateUtils.getCurrentWeek(endDate);
+        v.setEndDate(DateUtils.string2Date(endDate));
+        v.setEndWeak(endWeek);
+    }
+
+    @Override
+    public OrderProductInfoVo getDetailByProductIdAndBatchId(Long id, Long batchId) {
+        OrderProductInfoVo orderProductInfoVo = new OrderProductInfoVo();
+
+        Product product = productMapper.selectById(id);
+        orderProductInfoVo.setProductId(String.valueOf(product.getId()));
+        orderProductInfoVo.setName(product.getName());
+        orderProductInfoVo.setFeature(product.getFeature());
+
+        List<ProductSku> productSkus = productSkuMapper.selectByProductId(id);
+        orderProductInfoVo.setAdultPrice(productSkus.get(0).getSalePrice());
+        orderProductInfoVo.setChildPrice(productSkus.get(0).getSalePrice());
+
+        List<BatchItem> batchItems = batchInfoMapper.selectByProductIdAndBatchId(id, batchId);
+        batchItems.forEach(v -> {
+            computeBaseInfo(v, v.getTime());
+            v.setDuration(computeDuration(v.getTime()));
+            computeTripState(v);
+        });
+        if (!batchItems.isEmpty()) {
+            BatchItem batchItem = batchItems.get(0);
+            orderProductInfoVo.setStartDate(batchItem.getStartDate());
+            orderProductInfoVo.setEndDate(batchItem.getEndDate());
+            orderProductInfoVo.setStartWeak(batchItem.getStartWeak());
+            orderProductInfoVo.setEndWeak(batchItem.getEndWeak());
+            orderProductInfoVo.setDuration(batchItem.getDuration());
+            Integer res = Integer.valueOf(batchItem.getTotalNum()) - batchItem.getSaleNum();
+            orderProductInfoVo.setSurplusNum(res);
+        }
+
+        return orderProductInfoVo;
     }
 
     /**

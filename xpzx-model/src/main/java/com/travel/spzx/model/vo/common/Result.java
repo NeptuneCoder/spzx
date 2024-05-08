@@ -37,6 +37,10 @@ public class Result<T> {
         return build(body, resultCodeEnum.getCode(), resultCodeEnum.getMessage());
     }
 
+    public static <T> Result build(T body, int code, String msg) {
+        return build(body, code, msg);
+    }
+
     public static <T> Result build(T body, ResultCodeEnum resultCodeEnum, String otherErrorMsg) {
         return build(body, resultCodeEnum.getCode(), resultCodeEnum.getMessage() + "--" + otherErrorMsg);
     }

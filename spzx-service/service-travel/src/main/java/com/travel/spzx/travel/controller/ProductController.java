@@ -5,6 +5,7 @@ import com.travel.spzx.model.dto.product.PageInfoDto;
 import com.travel.spzx.model.dto.product.ProductDto;
 import com.travel.spzx.model.entity.product.Product;
 import com.travel.spzx.model.vo.common.Result;
+import com.travel.spzx.model.vo.product.OrderProductInfoVo;
 import com.travel.spzx.travel.service.ProductService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -35,6 +36,13 @@ public class ProductController {
     @RequestMapping("detail/{id}/{category2Id}")
     public Result<Product> getProductDetail(@PathVariable("id") Long id, @PathVariable("category2Id") Long category2Id) {
         Product product = productService.getProductDetail(id, category2Id);
+        return Result.success(product);
+    }
+
+    @Operation(summary = "获取产品详情", description = "获取产品详情")
+    @RequestMapping("detail/order/{id}/{batchId}")
+    public Result<OrderProductInfoVo> getDetailByProductIdAndBatchId(@PathVariable("id") Long id, @PathVariable("batchId") Long batchId) {
+        OrderProductInfoVo product = productService.getDetailByProductIdAndBatchId(id, batchId);
         return Result.success(product);
     }
 }

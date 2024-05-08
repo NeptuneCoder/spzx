@@ -4,7 +4,7 @@
 
     <sql id="columns">
         id
-        ,product_id,total_num,success_num,audit,status,start_time,end_time,remark,create_time,update_time,is_deleted
+        ,product_id,total_num,success_num,sale_num,audit,status,start_time,end_time,remark,create_time,update_time,is_deleted
     </sql>
 
     <resultMap id="batchMap" type="com.travel.spzx.model.entity.product.BatchItem"/>
@@ -28,6 +28,16 @@
         where is_deleted = 0
         and product_id=#{id}
         and start_time > now()
+        order by start_time desc
+        limit 1
+    </select>
+    <select id="selectByProductIdAndBatchId" resultMap="batchMap">
+        select
+        <include refid="columns"/>
+        from batch_info
+        where is_deleted = 0
+        and product_id=#{productId}
+        and id=#{batchId}
         order by start_time desc
         limit 1
     </select>

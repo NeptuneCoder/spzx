@@ -38,9 +38,9 @@ public class OrderInfoController {
     }
 
     @Operation(summary = "提交订单")
-    @PostMapping("auth/submitOrder")
+    @PostMapping("auth/createOrder")
     public Result<Long> submitOrder(@Parameter(name = "orderInfoDto", description = "请求参数实体类", required = true) @RequestBody OrderInfoDto orderInfoDto) {
-        Long orderId = orderInfoService.submitOrder(orderInfoDto);
+        Long orderId = orderInfoService.createOrder(orderInfoDto);
         return Result.build(orderId, ResultCodeEnum.SUCCESS);
     }
 

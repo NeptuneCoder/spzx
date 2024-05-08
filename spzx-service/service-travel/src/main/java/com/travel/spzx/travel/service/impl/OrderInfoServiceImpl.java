@@ -1,23 +1,26 @@
 package com.travel.spzx.travel.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.travel.spzx.common.exception.GuiguException;
 
 import com.travel.spzx.model.dto.h5.OrderInfoDto;
+import com.travel.spzx.model.dto.trip.TripInfoDto;
 import com.travel.spzx.model.entity.h5.CartInfo;
 import com.travel.spzx.model.entity.order.OrderInfo;
 import com.travel.spzx.model.entity.order.OrderItem;
 import com.travel.spzx.model.entity.order.OrderLog;
+import com.travel.spzx.model.entity.product.BatchItem;
+import com.travel.spzx.model.entity.product.Product;
 import com.travel.spzx.model.entity.product.ProductSku;
+import com.travel.spzx.model.entity.trip.TripInfo;
 import com.travel.spzx.model.entity.user.UserAddress;
 import com.travel.spzx.model.entity.user.UserInfo;
 import com.travel.spzx.model.vo.common.ResultCodeEnum;
 import com.travel.spzx.model.vo.h5.TradeVo;
 
-import com.travel.spzx.travel.mapper.OrderInfoMapper;
-import com.travel.spzx.travel.mapper.OrderItemMapper;
-import com.travel.spzx.travel.mapper.OrderLogMapper;
+import com.travel.spzx.travel.mapper.*;
 import com.travel.spzx.travel.service.OrderInfoService;
 import com.travel.xpzx.utils.AuthContextUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -68,6 +71,13 @@ public class OrderInfoServiceImpl implements OrderInfoService {
 
     @Autowired
     private OrderLogMapper orderLogMapper;
+    @Autowired
+    private ProductSkuMapper productSkuMapper;
+    @Autowired
+    private BatchInfoMapper batchInfoMapper;
+
+    @Autowired
+    private ProductMapper productMapper;
 
     /**
      * 这个是根据购物车界面中，点击立即下单调用的接口
@@ -109,61 +119,98 @@ public class OrderInfoServiceImpl implements OrderInfoService {
     //业务接口实现
     @Transactional
     @Override
-    public Long submitOrder(OrderInfoDto orderInfoDto) {
+    public Long createOrder(OrderInfoDto orderInfoDto) {
+
+        Product product = productMapper.selectById(orderInfoDto.getProductId());
+        if (product == null) {
+            throw GuiguException.build("商品不存在");
+        }
         // 数据校验
-        List<OrderItem> orderItemList = orderInfoDto.getOrderItemList();
-        if (CollectionUtils.isEmpty(orderItemList)) {
-            throw new GuiguException(ResultCodeEnum.DATA_ERROR);
+        List<TripInfoDto> tripsList = orderInfoDto.getTrips();
+        if (CollectionUtils.isEmpty(tripsList)) {
+            throw GuiguException.build("出行人不能为空");
+        }
+//        OrderItem
+        //校验商品数量是否充足
+
+        List<ProductSku> productSkus = productSkuMapper.selectByProductId(orderInfoDto.getProductId());
+        if (productSkus.isEmpty()) {
+            throw GuiguException.build("商品基本信息不存在");
         }
 
-        for (OrderItem orderItem : orderItemList) {
-            //TODO 校验商品是否存在
-//            ProductSku productSku = productFeignClient.getBySkuId(orderItem.getSkuId());
-//            if (null == productSku) {
-//                throw new GuiguException(ResultCodeEnum.DATA_ERROR);
-//            }
-            System.out.println(orderItem.toString());
-            //todo 校验库存
-//            if (orderItem.getSkuNum().intValue() > productSku.getStockNum().intValue()) {
-//                throw new GuiguException(ResultCodeEnum.STOCK_LESS);
-//            }
+        //校验库存是否充足
+        List<BatchItem> batchItems = batchInfoMapper.selectByProductId(Long.valueOf(orderInfoDto.getProductId()));
+        if (batchItems.isEmpty()) {
+            throw GuiguException.build("当前批次无库存");
+        }
+        BatchItem batchItem = batchItems.get(0);
+        System.out.println("batchItem == "+JSON.toJSONString(batchItem));
+        System.out.println(batchItem.getTotalNum());
+        System.out.println(batchItem.getSaleNum());
+        System.out.println(orderInfoDto.getAdultNum() );
+        System.out.println(orderInfoDto.getChildNum());
+        if ((batchItem.getTotalNum() - batchItem.getSaleNum()) < orderInfoDto.getAdultNum() + orderInfoDto.getChildNum()) {
+            throw GuiguException.build("剩余库存不足");
         }
 
+        ProductSku productSku = productSkus.get(0);
+
+        //TODO 构建订单项数据
+        OrderInfo orderInfo = new OrderInfo();
+        orderInfo.setProductId(orderInfoDto.getProductId());
         // 构建订单数据，保存订单
         UserInfo userInfo = AuthContextUtil.getUserInfo();
-        OrderInfo orderInfo = new OrderInfo();
-        //订单编号
-        orderInfo.setOrderNo(String.valueOf(System.currentTimeMillis()));
+
+
         //用户id
         orderInfo.setUserId(userInfo.getId());
         //用户昵称
         orderInfo.setNickName(userInfo.getNickName());
-        //TODO 用户收货地址信息
-//        UserAddress userAddress = userFeignClient.getUserAddress(orderInfoDto.getUserAddressId());
-//        orderInfo.setReceiverName(userAddress.getName());
-//        orderInfo.setReceiverPhone(userAddress.getPhone());
-//        orderInfo.setReceiverTagName(userAddress.getTagName());
-//        orderInfo.setReceiverProvince(userAddress.getProvinceCode());
-//        orderInfo.setReceiverCity(userAddress.getCityCode());
-//        orderInfo.setReceiverDistrict(userAddress.getDistrictCode());
-//        orderInfo.setReceiverAddress(userAddress.getFullAddress());
-        //订单金额
-        BigDecimal totalAmount = new BigDecimal(0);
-        for (OrderItem orderItem : orderItemList) {
-            totalAmount = totalAmount.add(orderItem.getSkuPrice().multiply(new BigDecimal(orderItem.getSkuNum())));
-        }
+        orderInfo.setProductId(orderInfoDto.getProductId());
+        orderInfo.setProductName(product.getName());
+        orderInfo.setSkuId(productSku.getId());
+        orderInfo.setSkuName(productSku.getSkuName());
+        orderInfo.setBatchId(batchItem.getId());
+        orderInfo.setLinkMan(orderInfo.getLinkMan());
+        orderInfo.setLinkTel(orderInfo.getLinkTel());
+        orderInfo.setAdultNum(orderInfoDto.getAdultNum());
+        orderInfo.setChildNum(orderInfoDto.getChildNum());
+        orderInfo.setTotalNum(orderInfoDto.getAdultNum() + orderInfoDto.getChildNum());
+        orderInfo.setAdultPrice(productSku.getSalePrice());
+        orderInfo.setChildPrice(productSku.getChildSalePrice());
+
+        //订单编号
+        orderInfo.setOrderNo(String.valueOf(System.currentTimeMillis()));
+
+        BigDecimal childSalePrice = productSku.getChildSalePrice();
+        BigDecimal salePrice = productSku.getSalePrice();
+        BigDecimal adultAmount = salePrice.multiply(new BigDecimal(orderInfoDto.getAdultNum()));
+        BigDecimal childAmount = childSalePrice.multiply(new BigDecimal(orderInfoDto.getChildNum()));
+        BigDecimal totalAmount = adultAmount.add(childAmount);
         orderInfo.setTotalAmount(totalAmount);
         orderInfo.setCouponAmount(new BigDecimal(0));
         orderInfo.setOriginalTotalAmount(totalAmount);
-        orderInfo.setFeightFee(orderInfoDto.getFeightFee());
-        orderInfo.setPayType(2);
+
+
+        orderInfo.setPayType(1);
         orderInfo.setOrderStatus(0);
+        orderInfo.setRemark(orderInfoDto.getRemark());
+
         orderInfoMapper.save(orderInfo);
 
+
         //保存订单明细
-        for (OrderItem orderItem : orderItemList) {
-            orderItem.setOrderId(orderInfo.getId());
-            orderItemMapper.save(orderItem);
+        for (TripInfoDto tripInfoDto : tripsList) {
+            OrderItem item = new OrderItem();
+            item.setOrderId(orderInfo.getId());
+            item.setBatchId(batchItem.getId());
+            item.setProductId(orderInfoDto.getProductId());
+            item.setSkuId(productSku.getId());
+            item.setSkuName(productSku.getSkuName());
+            item.setAdultPrice(productSku.getSalePrice());
+            item.setChildPrice(productSku.getChildSalePrice());
+            item.setTripId(tripInfoDto.getId());
+            orderItemMapper.save(item);
         }
 
         //记录日志
