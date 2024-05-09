@@ -43,9 +43,14 @@ public class ProtocolRuleServiceImpl implements ProtocolRuleService {
     }
 
     @Override
-    public void update(ProtocolInfo cityInfo) {
+    public void update(ProtocolInfo data) {
         // TODO Auto-generated method stub
-
-        protocolRuleMapper.update(cityInfo);
+        List<ProtocolInfo> res = protocolRuleMapper.findProtocolInfoByProtocolKey(data.getProtocolKey());
+        res.forEach(item -> {
+            if (!item.getId().equals(data.getId())) {
+                throw GuiguException.build("协议key名称重复");
+            }
+        });
+        protocolRuleMapper.update(data);
     }
 }
