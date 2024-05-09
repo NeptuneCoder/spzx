@@ -2,6 +2,7 @@ package com.travel.spzx.manager.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.travel.spzx.common.exception.GuiguException;
 import com.travel.spzx.manager.mapper.ProtocolRuleMapper;
 import com.travel.spzx.manager.mapper.RichTxtInfoMapper;
 import com.travel.spzx.manager.service.ProtocolRuleService;
@@ -21,6 +22,10 @@ public class ProtocolRuleServiceImpl implements ProtocolRuleService {
     @Override
     public void save(ProtocolInfo data) {
         // TODO Auto-generated method stub
+        List<ProtocolInfo> res = protocolRuleMapper.findProtocolInfoByProtocolKey(data.getProtocolKey());
+        if (res.size() > 0) {
+            throw GuiguException.build("协议key名称重复");
+        }
         protocolRuleMapper.save(data);
     }
 

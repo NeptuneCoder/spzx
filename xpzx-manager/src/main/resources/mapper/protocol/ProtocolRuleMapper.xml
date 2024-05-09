@@ -51,4 +51,11 @@
         where is_deleted = 0
 
     </select>
+    <select id="findProtocolInfoByProtocolKey" resultMap="protocolMap">
+        select
+        <include refid="columns"/>
+        from protocol_info
+        where protocol_key = #{protocolKey}
+        and is_deleted = 0
+    </select>
 </mapper>
