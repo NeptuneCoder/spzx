@@ -41436,3 +41436,2113 @@ Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations al
 2024-05-06 19:34:28 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5d742f52 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
 2024-05-06 19:34:28 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4514407a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
 2024-05-06 19:34:28 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@257179a0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 01:26:08 HV000001: Hibernate Validator 8.0.1.Final
+2024-05-09 01:26:08 Starting XpzxManagerApp using Java 17.0.5 with PID 78126 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-05-09 01:26:08 The following 1 profile is active: "dev"
+2024-05-09 01:26:09 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-09 01:26:09 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-09 01:26:09 Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-05-09 01:26:09 BeanFactory id=b4df6d2c-58f2-39e5-b742-73cffab4f868
+2024-05-09 01:26:10 Tomcat initialized with port 8501 (http)
+2024-05-09 01:26:10 Initializing ProtocolHandler ["http-nio-8501"]
+2024-05-09 01:26:10 Starting service [Tomcat]
+2024-05-09 01:26:10 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-09 01:26:10 Initializing Spring embedded WebApplicationContext
+2024-05-09 01:26:10 Root WebApplicationContext: initialization completed in 2260 ms
+2024-05-09 01:26:12 Starting ProtocolHandler ["http-nio-8501"]
+2024-05-09 01:26:12 Tomcat started on port 8501 (http) with context path ''
+2024-05-09 01:26:12 Started XpzxManagerApp in 4.562 seconds (process running for 5.156)
+2024-05-09 01:26:20 HikariPool-1 - Starting...
+2024-05-09 01:26:20 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46e84e02
+2024-05-09 01:26:20 HikariPool-1 - Start completed.
+2024-05-09 01:26:27 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09 01:26:27 Initializing Servlet 'dispatcherServlet'
+2024-05-09 01:26:27 Completed initialization in 1 ms
+2024-05-09 01:27:05 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:27:05 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:27:35 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:27:36 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:28:07 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:28:07 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:28:38 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:28:38 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:29:08 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:29:09 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:29:40 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:29:40 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:30:11 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:30:11 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:30:41 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:30:42 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:31:13 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:31:13 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:31:44 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:31:44 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:32:15 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:32:15 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:32:46 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:32:46 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:33:17 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:33:17 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:33:47 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:33:48 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:34:19 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:34:19 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:34:50 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:34:50 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:35:20 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:35:21 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:35:52 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:35:52 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:36:23 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:36:23 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:36:53 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:36:54 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:37:25 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:37:25 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:37:56 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:37:56 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:38:27 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:38:27 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:38:58 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:38:58 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:39:29 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:39:29 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:40:00 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:40:00 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:40:31 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:40:31 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:41:02 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:41:02 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:41:33 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:41:33 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:42:04 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:42:04 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:42:35 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:42:35 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:43:06 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:43:06 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:43:36 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:43:37 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:44:08 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:44:08 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:44:38 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:44:39 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:45:10 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:45:10 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:45:41 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:45:41 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:46:12 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:46:12 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:46:43 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:46:43 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:47:14 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:47:14 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:47:45 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:47:45 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:48:15 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:48:16 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:48:47 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:48:47 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:49:18 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:49:18 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:49:49 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:49:49 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:50:20 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:50:20 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:50:51 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:50:51 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:51:22 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:51:22 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:51:53 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:51:53 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:52:24 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:52:24 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:52:55 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:52:55 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:53:26 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:53:26 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:53:57 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:53:57 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:54:27 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:54:28 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:54:59 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:54:59 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:55:30 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:55:30 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:56:01 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:56:01 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:56:31 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:56:32 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:57:03 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:57:03 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:57:34 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:57:34 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:58:04 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:58:05 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:58:36 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:58:36 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:59:06 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:59:07 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 01:59:38 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 01:59:38 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:00:09 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:00:09 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:00:40 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:00:40 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:01:11 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:01:11 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:01:42 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:01:42 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:02:13 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:02:13 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:02:43 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:02:44 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:03:15 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:03:15 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:03:46 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:03:46 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:04:16 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:04:17 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:04:48 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:04:48 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:05:19 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:05:19 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:06:23 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:06:24 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:07:05 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:07:06 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:07:37 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:07:37 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:08:08 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:08:08 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:08:56 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:08:56 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:09:26 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:09:27 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:09:58 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:09:58 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:10:04 HV000001: Hibernate Validator 8.0.1.Final
+2024-05-09 02:10:04 Starting XpzxManagerApp using Java 17.0.5 with PID 80152 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-05-09 02:10:04 The following 1 profile is active: "dev"
+2024-05-09 02:10:05 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-09 02:10:05 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-09 02:10:05 Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-05-09 02:10:05 BeanFactory id=b4df6d2c-58f2-39e5-b742-73cffab4f868
+2024-05-09 02:10:06 Tomcat initialized with port 8501 (http)
+2024-05-09 02:10:06 Initializing ProtocolHandler ["http-nio-8501"]
+2024-05-09 02:10:06 Starting service [Tomcat]
+2024-05-09 02:10:06 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-09 02:10:06 Initializing Spring embedded WebApplicationContext
+2024-05-09 02:10:06 Root WebApplicationContext: initialization completed in 2081 ms
+2024-05-09 02:10:07 Starting ProtocolHandler ["http-nio-8501"]
+2024-05-09 02:10:07 Tomcat started on port 8501 (http) with context path ''
+2024-05-09 02:10:07 Started XpzxManagerApp in 4.221 seconds (process running for 4.813)
+2024-05-09 02:10:10 HikariPool-1 - Starting...
+2024-05-09 02:10:10 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5776677
+2024-05-09 02:10:10 HikariPool-1 - Start completed.
+2024-05-09 02:16:17 HV000001: Hibernate Validator 8.0.1.Final
+2024-05-09 02:16:17 Starting XpzxManagerApp using Java 17.0.5 with PID 80328 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-05-09 02:16:17 The following 1 profile is active: "dev"
+2024-05-09 02:16:17 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-09 02:16:17 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-09 02:16:17 Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-05-09 02:16:17 BeanFactory id=b4df6d2c-58f2-39e5-b742-73cffab4f868
+2024-05-09 02:16:18 Tomcat initialized with port 8501 (http)
+2024-05-09 02:16:18 Initializing ProtocolHandler ["http-nio-8501"]
+2024-05-09 02:16:18 Starting service [Tomcat]
+2024-05-09 02:16:18 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-09 02:16:18 Initializing Spring embedded WebApplicationContext
+2024-05-09 02:16:18 Root WebApplicationContext: initialization completed in 1343 ms
+2024-05-09 02:16:19 Starting ProtocolHandler ["http-nio-8501"]
+2024-05-09 02:16:19 Tomcat started on port 8501 (http) with context path ''
+2024-05-09 02:16:19 Started XpzxManagerApp in 3.0 seconds (process running for 3.406)
+2024-05-09 02:16:20 HikariPool-1 - Starting...
+2024-05-09 02:16:20 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f07d893
+2024-05-09 02:16:20 HikariPool-1 - Start completed.
+2024-05-09 02:16:34 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09 02:16:34 Initializing Servlet 'dispatcherServlet'
+2024-05-09 02:16:34 Completed initialization in 2 ms
+2024-05-09 02:17:25 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:17:25 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:17:56 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:17:56 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:18:27 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:18:27 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:18:58 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:18:58 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:19:28 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:19:28 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:20:00 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:20:00 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:20:31 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:20:31 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:21:49 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:21:49 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:22:19 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:22:19 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 02:22:51 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 02:22:51 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:34:09 HV000001: Hibernate Validator 8.0.1.Final
+2024-05-09 10:34:09 Starting XpzxManagerApp using Java 17.0.5 with PID 82249 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-05-09 10:34:09 The following 1 profile is active: "dev"
+2024-05-09 10:34:10 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-09 10:34:10 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-09 10:34:10 Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-05-09 10:34:10 BeanFactory id=b4df6d2c-58f2-39e5-b742-73cffab4f868
+2024-05-09 10:34:11 Tomcat initialized with port 8501 (http)
+2024-05-09 10:34:11 Initializing ProtocolHandler ["http-nio-8501"]
+2024-05-09 10:34:11 Starting service [Tomcat]
+2024-05-09 10:34:11 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-09 10:34:11 Initializing Spring embedded WebApplicationContext
+2024-05-09 10:34:11 Root WebApplicationContext: initialization completed in 1830 ms
+2024-05-09 10:34:13 Starting ProtocolHandler ["http-nio-8501"]
+2024-05-09 10:34:13 Tomcat started on port 8501 (http) with context path ''
+2024-05-09 10:34:13 Started XpzxManagerApp in 3.956 seconds (process running for 4.745)
+2024-05-09 10:34:20 HikariPool-1 - Starting...
+2024-05-09 10:34:20 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ff557e0
+2024-05-09 10:34:20 HikariPool-1 - Start completed.
+2024-05-09 10:34:39 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09 10:34:39 Initializing Servlet 'dispatcherServlet'
+2024-05-09 10:34:39 Completed initialization in 1 ms
+2024-05-09 10:35:24 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:35:24 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:36:02 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:36:02 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:36:40 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:36:40 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:37:11 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:37:11 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:37:42 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:37:42 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:38:13 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:38:13 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:38:44 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:38:44 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:39:15 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:39:15 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:39:47 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:39:47 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:40:17 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:40:17 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:40:48 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:40:48 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:41:19 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:41:19 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:41:50 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:41:50 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:42:21 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:42:21 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:42:52 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:42:52 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:43:24 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:43:24 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:43:54 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:43:54 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:44:26 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:44:26 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:44:57 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:44:57 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:45:28 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:45:28 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:45:59 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:45:59 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:46:30 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:46:30 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:47:01 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:47:01 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:47:32 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:47:32 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:48:03 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:48:03 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:48:34 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:48:34 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:49:04 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:49:04 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:49:36 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:49:36 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:50:07 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:50:07 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:50:38 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:50:38 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 10:51:09 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 10:51:09 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 11:07:30 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@ff557e0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:07:35 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2d6c231d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:07:40 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@52bc8d0a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:07:45 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2a773744 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:07:45 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s290ms).
+2024-05-09 11:07:50 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3a1424ae (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:07:55 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@c763a3b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:07:55 Unexpected error occurred in scheduled task
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.selectOrderStatistics(Unknown Source)
+	at com.travel.spzx.manager.task.OrderStatisticsTask.helloWorldTask(OrderStatisticsTask.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/order/OrderInfoMapper.xml]
+### The error may involve com.travel.spzx.manager.mapper.OrderInfoMapper.selectOrderStatistics
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at jdk.internal.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 22 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy148.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 29 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30028ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 41 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2496)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)
+	... 46 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:573)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2492)
+	... 49 common frames omitted
+2024-05-09 11:08:05 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7f05120d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:23:36 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3a4cb430 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:23:36 Unexpected error occurred in scheduled task
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.selectOrderStatistics(Unknown Source)
+	at com.travel.spzx.manager.task.OrderStatisticsTask.helloWorldTask(OrderStatisticsTask.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/order/OrderInfoMapper.xml]
+### The error may involve com.travel.spzx.manager.mapper.OrderInfoMapper.selectOrderStatistics
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at jdk.internal.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 22 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy148.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 29 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 936009ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 41 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2496)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)
+	... 46 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:573)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2492)
+	... 49 common frames omitted
+2024-05-09 11:23:40 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s432ms).
+2024-05-09 11:23:45 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@75978118 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:23:50 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@9ca823a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:23:55 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4aacbaf5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:24:00 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@37a6df9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:24:05 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7be29b11 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:24:10 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@930702e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:24:10 Unexpected error occurred in scheduled task
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.selectOrderStatistics(Unknown Source)
+	at com.travel.spzx.manager.task.OrderStatisticsTask.helloWorldTask(OrderStatisticsTask.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/order/OrderInfoMapper.xml]
+### The error may involve com.travel.spzx.manager.mapper.OrderInfoMapper.selectOrderStatistics
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at jdk.internal.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 22 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy148.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 29 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30013ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 41 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2496)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)
+	... 46 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:573)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2492)
+	... 49 common frames omitted
+2024-05-09 11:24:25 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2b460229 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:39:52 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@33434623 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:39:52 Unexpected error occurred in scheduled task
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.selectOrderStatistics(Unknown Source)
+	at com.travel.spzx.manager.task.OrderStatisticsTask.helloWorldTask(OrderStatisticsTask.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/order/OrderInfoMapper.xml]
+### The error may involve com.travel.spzx.manager.mapper.OrderInfoMapper.selectOrderStatistics
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at jdk.internal.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 22 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy148.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 29 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 932601ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 41 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2496)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)
+	... 46 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:573)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2492)
+	... 49 common frames omitted
+2024-05-09 11:40:04 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s383ms).
+2024-05-09 11:40:05 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@9d0ea56 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:40:10 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@11e6b8de (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:40:15 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4f1b7992 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:40:20 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4117b87d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:40:25 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6ef52d5e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:40:30 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4a715816 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:40:30 Unexpected error occurred in scheduled task
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.selectOrderStatistics(Unknown Source)
+	at com.travel.spzx.manager.task.OrderStatisticsTask.helloWorldTask(OrderStatisticsTask.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/order/OrderInfoMapper.xml]
+### The error may involve com.travel.spzx.manager.mapper.OrderInfoMapper.selectOrderStatistics
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at jdk.internal.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 22 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy148.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 29 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30017ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 41 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2496)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)
+	... 46 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:573)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2492)
+	... 49 common frames omitted
+2024-05-09 11:56:09 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@15e7038f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:56:09 Unexpected error occurred in scheduled task
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.selectOrderStatistics(Unknown Source)
+	at com.travel.spzx.manager.task.OrderStatisticsTask.helloWorldTask(OrderStatisticsTask.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/order/OrderInfoMapper.xml]
+### The error may involve com.travel.spzx.manager.mapper.OrderInfoMapper.selectOrderStatistics
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at jdk.internal.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 22 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy148.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 29 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 929357ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 41 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2496)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)
+	... 46 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:573)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2492)
+	... 49 common frames omitted
+2024-05-09 11:56:15 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3e22551a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:56:20 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6a35648f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:56:25 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@31aa5f85 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:56:29 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s341ms).
+2024-05-09 11:56:30 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7f14c75a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:56:35 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@634f73f5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:56:40 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7bfb96c8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:56:45 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@228ca0fa (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 11:56:45 Unexpected error occurred in scheduled task
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.selectOrderStatistics(Unknown Source)
+	at com.travel.spzx.manager.task.OrderStatisticsTask.helloWorldTask(OrderStatisticsTask.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/order/OrderInfoMapper.xml]
+### The error may involve com.travel.spzx.manager.mapper.OrderInfoMapper.selectOrderStatistics
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at jdk.internal.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 22 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy148.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 29 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 34996ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 41 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2496)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)
+	... 46 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:573)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2492)
+	... 49 common frames omitted
+2024-05-09 11:56:55 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@701cf125 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:12:25 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m56s77ms).
+2024-05-09 12:12:25 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2b2b2d24 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:12:25 Unexpected error occurred in scheduled task
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.selectOrderStatistics(Unknown Source)
+	at com.travel.spzx.manager.task.OrderStatisticsTask.helloWorldTask(OrderStatisticsTask.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/order/OrderInfoMapper.xml]
+### The error may involve com.travel.spzx.manager.mapper.OrderInfoMapper.selectOrderStatistics
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at jdk.internal.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 22 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy148.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 29 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 935184ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 41 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2496)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)
+	... 46 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:573)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2492)
+	... 49 common frames omitted
+2024-05-09 12:12:35 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@447b5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:12:40 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3955247 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:12:45 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@54408339 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:12:50 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@56b87caa (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:12:55 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7a127b4e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:13:00 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2a1b667e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:13:00 Unexpected error occurred in scheduled task
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.selectOrderStatistics(Unknown Source)
+	at com.travel.spzx.manager.task.OrderStatisticsTask.helloWorldTask(OrderStatisticsTask.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/order/OrderInfoMapper.xml]
+### The error may involve com.travel.spzx.manager.mapper.OrderInfoMapper.selectOrderStatistics
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at jdk.internal.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 22 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy148.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 29 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30014ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 41 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2496)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)
+	... 46 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:573)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2492)
+	... 49 common frames omitted
+2024-05-09 12:13:15 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@27df5d7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:26:12 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7570ea97 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:26:12 Unexpected error occurred in scheduled task
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.selectOrderStatistics(Unknown Source)
+	at com.travel.spzx.manager.task.OrderStatisticsTask.helloWorldTask(OrderStatisticsTask.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/order/OrderInfoMapper.xml]
+### The error may involve com.travel.spzx.manager.mapper.OrderInfoMapper.selectOrderStatistics
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at jdk.internal.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 22 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy148.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 29 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 782630ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 41 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2496)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)
+	... 46 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:573)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2492)
+	... 49 common frames omitted
+2024-05-09 12:26:19 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m24s382ms).
+2024-05-09 12:26:25 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6dc000b5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:26:30 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7c1c9b5b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:26:35 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@ba1c4cd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:26:40 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6609b8a4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:26:45 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1844c53c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:26:50 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1a532c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:26:50 Unexpected error occurred in scheduled task
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.selectOrderStatistics(Unknown Source)
+	at com.travel.spzx.manager.task.OrderStatisticsTask.helloWorldTask(OrderStatisticsTask.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/order/OrderInfoMapper.xml]
+### The error may involve com.travel.spzx.manager.mapper.OrderInfoMapper.selectOrderStatistics
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at jdk.internal.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 22 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy148.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 29 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30015ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 41 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2496)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)
+	... 46 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:573)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2492)
+	... 49 common frames omitted
+2024-05-09 12:42:22 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@141844 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:42:22 Unexpected error occurred in scheduled task
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.selectOrderStatistics(Unknown Source)
+	at com.travel.spzx.manager.task.OrderStatisticsTask.helloWorldTask(OrderStatisticsTask.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/order/OrderInfoMapper.xml]
+### The error may involve com.travel.spzx.manager.mapper.OrderInfoMapper.selectOrderStatistics
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at jdk.internal.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 22 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy148.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 29 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 922984ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 41 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2496)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)
+	... 46 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:573)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2492)
+	... 49 common frames omitted
+2024-05-09 12:42:34 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@75b510d3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:42:37 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m47s981ms).
+2024-05-09 12:42:39 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6f86c825 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:42:44 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7b04cdbc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:42:49 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@dd0d0f5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:42:54 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@544ef68a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:43:00 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7c295e7b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:43:00 Unexpected error occurred in scheduled task
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.selectOrderStatistics(Unknown Source)
+	at com.travel.spzx.manager.task.OrderStatisticsTask.helloWorldTask(OrderStatisticsTask.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/order/OrderInfoMapper.xml]
+### The error may involve com.travel.spzx.manager.mapper.OrderInfoMapper.selectOrderStatistics
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at jdk.internal.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 22 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy148.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 29 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 30004ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 41 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2496)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)
+	... 46 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:573)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2492)
+	... 49 common frames omitted
+2024-05-09 12:58:40 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3d39ade (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:58:40 Unexpected error occurred in scheduled task
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.selectOrderStatistics(Unknown Source)
+	at com.travel.spzx.manager.task.OrderStatisticsTask.helloWorldTask(OrderStatisticsTask.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/order/OrderInfoMapper.xml]
+### The error may involve com.travel.spzx.manager.mapper.OrderInfoMapper.selectOrderStatistics
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at jdk.internal.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 22 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy148.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 29 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 930241ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 41 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2496)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)
+	... 46 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:573)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2492)
+	... 49 common frames omitted
+2024-05-09 12:58:54 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2b7dd31d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:58:59 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@644afbaa (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:59:02 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s225ms).
+2024-05-09 12:59:04 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@323a1e15 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:59:09 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@67cec1a8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:59:14 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@546af150 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:59:19 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@36c2877e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:59:24 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@17ca5ea4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:59:24 Unexpected error occurred in scheduled task
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy99.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy126.selectOrderStatistics(Unknown Source)
+	at com.travel.spzx.manager.task.OrderStatisticsTask.helloWorldTask(OrderStatisticsTask.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor45.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+### The error may exist in file [/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/resources/main/mapper/order/OrderInfoMapper.xml]
+### The error may involve com.travel.spzx.manager.mapper.OrderInfoMapper.selectOrderStatistics
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at jdk.internal.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 22 common frames omitted
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:84)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy148.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 29 common frames omitted
+Caused by: java.sql.SQLTransientConnectionException: HikariPool-1 - Connection is not available, request timed out after 34999ms.
+	at com.zaxxer.hikari.pool.HikariPool.createTimeoutException(HikariPool.java:696)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:181)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:146)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	... 41 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:73)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2496)
+	at com.zaxxer.hikari.pool.PoolBase.setNetworkTimeout(PoolBase.java:561)
+	at com.zaxxer.hikari.pool.PoolBase.isConnectionDead(PoolBase.java:168)
+	at com.zaxxer.hikari.pool.HikariPool.getConnection(HikariPool.java:170)
+	... 46 common frames omitted
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at jdk.internal.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:1171)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:573)
+	at com.mysql.cj.jdbc.ConnectionImpl.setNetworkTimeout(ConnectionImpl.java:2492)
+	... 49 common frames omitted
+2024-05-09 12:59:35 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6a6dd3d2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 12:59:40 HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@46fefbe1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-05-09 13:00:18 HV000001: Hibernate Validator 8.0.1.Final
+2024-05-09 13:00:18 Starting XpzxManagerApp using Java 17.0.5 with PID 83041 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-05-09 13:00:18 The following 1 profile is active: "dev"
+2024-05-09 13:00:19 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-09 13:00:19 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-09 13:00:19 Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2024-05-09 13:00:19 BeanFactory id=b4df6d2c-58f2-39e5-b742-73cffab4f868
+2024-05-09 13:00:20 Tomcat initialized with port 8501 (http)
+2024-05-09 13:00:20 Initializing ProtocolHandler ["http-nio-8501"]
+2024-05-09 13:00:20 Starting service [Tomcat]
+2024-05-09 13:00:20 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-09 13:00:20 Initializing Spring embedded WebApplicationContext
+2024-05-09 13:00:20 Root WebApplicationContext: initialization completed in 1702 ms
+2024-05-09 13:00:21 Starting ProtocolHandler ["http-nio-8501"]
+2024-05-09 13:00:21 Tomcat started on port 8501 (http) with context path ''
+2024-05-09 13:00:21 Started XpzxManagerApp in 3.655 seconds (process running for 4.305)
+2024-05-09 13:00:30 HikariPool-1 - Starting...
+2024-05-09 13:00:30 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@550e5809
+2024-05-09 13:00:30 HikariPool-1 - Start completed.
+2024-05-09 13:00:39 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09 13:00:39 Initializing Servlet 'dispatcherServlet'
+2024-05-09 13:00:39 Completed initialization in 1 ms
+2024-05-09 13:01:10 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:01:11 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:02:58 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:02:59 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:04:10 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:04:11 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:04:41 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:04:42 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:05:12 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:05:13 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:05:43 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:05:44 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:06:14 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:06:15 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:06:46 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:06:46 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:07:16 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:07:17 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:07:48 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:07:48 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:08:18 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:08:19 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:08:49 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:08:50 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:09:21 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:09:21 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:09:51 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:09:52 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:10:22 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:10:22 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:10:54 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:10:54 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:11:25 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:11:25 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:12:07 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:12:08 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:13:43 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:13:44 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:14:42 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:14:42 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:15:12 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:15:13 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:15:44 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:15:44 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:16:14 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:16:15 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:16:45 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:16:46 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:17:16 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:17:17 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:17:47 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:17:48 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:18:19 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:18:19 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:18:49 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:18:50 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:19:20 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:19:20 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:19:51 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:19:52 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:20:22 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:20:23 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:20:53 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:20:54 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:21:25 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:21:25 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:22:28 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:22:28 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:23:00 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:23:00 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:23:30 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:23:31 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:24:01 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:24:02 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:24:33 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:24:33 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:25:03 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:25:04 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:25:34 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:25:35 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:26:05 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:26:06 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:26:36 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:26:37 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:27:07 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:27:07 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:27:38 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:27:39 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:28:15 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:28:16 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:28:46 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:28:47 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:29:17 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:29:17 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:29:48 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:29:49 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:30:19 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:30:20 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:30:50 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:30:51 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:31:21 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:31:22 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:31:52 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:31:53 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:32:23 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:32:24 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:32:54 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:32:55 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:33:25 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:33:26 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:33:56 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:33:56 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:34:27 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:34:28 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:34:58 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:34:59 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:35:29 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:35:29 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:36:00 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:36:01 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:36:31 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:36:31 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:38:14 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:38:14 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:38:51 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:38:51 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:39:21 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:39:21 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:39:52 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:39:53 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:40:23 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:40:24 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:40:54 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:40:54 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:41:25 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:41:25 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:41:56 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:41:57 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:42:27 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:42:28 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:42:58 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:42:59 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:43:29 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:43:30 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:44:00 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:44:01 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:44:31 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:44:31 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:45:03 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:45:03 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:45:33 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:45:34 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:46:04 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:46:04 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:46:35 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:46:36 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:47:06 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:47:07 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:47:37 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:47:38 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:48:08 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:48:09 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:48:40 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:48:40 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:49:10 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:49:11 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:49:41 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:49:42 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:50:12 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:50:13 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:50:43 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:50:44 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:51:14 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:51:15 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:51:45 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:51:46 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:52:16 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:52:16 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:52:47 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:52:48 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:53:18 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:53:19 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:53:49 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:53:50 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:54:20 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:54:20 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:54:51 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:54:52 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:55:22 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:55:23 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:55:53 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:55:53 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:56:25 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:56:25 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:56:56 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:56:56 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:57:26 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:57:26 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:57:58 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:57:58 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:58:29 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:58:29 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:59:00 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:59:00 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 13:59:31 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 13:59:31 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:00:02 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:00:02 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:00:33 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:00:33 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:01:04 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:01:04 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:01:35 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:01:35 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:02:05 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:02:05 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:02:37 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:02:37 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:03:08 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:03:08 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:03:38 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:03:38 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:04:10 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:04:10 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:04:41 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:04:41 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:05:11 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:05:11 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:05:43 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:05:43 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:06:13 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:06:13 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:06:44 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:06:44 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:07:15 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:07:15 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:07:47 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:07:47 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:08:18 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:08:18 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:08:49 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:08:49 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:09:20 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:09:20 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:09:50 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:09:50 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:10:21 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:10:21 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:10:53 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:10:53 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:11:24 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:11:24 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:11:54 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:11:54 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:12:26 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:12:26 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:12:56 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:12:56 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:13:27 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:13:27 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:14:35 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:14:35 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:15:10 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:15:10 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:15:42 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:15:42 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:16:13 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:16:13 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:16:43 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:16:43 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:17:14 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:17:14 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:17:46 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:17:46 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:18:16 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:18:16 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:18:47 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:18:47 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:19:19 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:19:19 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:19:50 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:19:50 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:20:20 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:20:20 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:21:08 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:21:08 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:21:39 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:21:39 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:23:34 HV000001: Hibernate Validator 8.0.1.Final
+2024-05-09 14:23:34 Starting XpzxManagerApp using Java 17.0.5 with PID 86094 (/Users/yh/AndroidStudioProjects/spzx-parent/xpzx-manager/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-05-09 14:23:34 The following 1 profile is active: "dev"
+2024-05-09 14:23:34 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-09 14:23:35 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-09 14:23:35 Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2024-05-09 14:23:35 BeanFactory id=a6c5b31b-07bf-3ea1-87ea-28e24aa1d6bc
+2024-05-09 14:23:35 Tomcat initialized with port 8501 (http)
+2024-05-09 14:23:35 Initializing ProtocolHandler ["http-nio-8501"]
+2024-05-09 14:23:35 Starting service [Tomcat]
+2024-05-09 14:23:35 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-09 14:23:35 Initializing Spring embedded WebApplicationContext
+2024-05-09 14:23:35 Root WebApplicationContext: initialization completed in 1809 ms
+2024-05-09 14:23:37 Starting ProtocolHandler ["http-nio-8501"]
+2024-05-09 14:23:37 Tomcat started on port 8501 (http) with context path ''
+2024-05-09 14:23:37 Started XpzxManagerApp in 3.878 seconds (process running for 4.382)
+2024-05-09 14:23:40 HikariPool-1 - Starting...
+2024-05-09 14:23:40 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e6a99c7
+2024-05-09 14:23:40 HikariPool-1 - Start completed.
+2024-05-09 14:23:45 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09 14:23:45 Initializing Servlet 'dispatcherServlet'
+2024-05-09 14:23:45 Completed initialization in 1 ms
+2024-05-09 14:24:17 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:24:17 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:24:47 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:24:47 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:25:19 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:25:19 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:25:49 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:25:49 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:26:20 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:26:20 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:26:52 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:26:52 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:27:22 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:27:22 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:28:26 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:28:26 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:29:15 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:29:15 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:29:47 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:29:47 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:31:16 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:31:16 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-09 14:32:26 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-09 14:32:26 Reconnected to 14.103.49.141/<unresolved>:6379

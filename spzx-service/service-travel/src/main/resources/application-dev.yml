@@ -36,6 +36,7 @@ spzx:
       - "/api/upload/fileUpload"
       - '/api/travel/index'
       - '/api/product/goods/**'
+      - '/api/protocol/**'
   config:
       url: "http://14.103.49.141:9001"
       bucketName: "spzx-bucket"

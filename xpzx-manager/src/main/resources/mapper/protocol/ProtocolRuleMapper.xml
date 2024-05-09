@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.spzx.manager.mapper.ProtocolRuleMapper">
+    <resultMap id="protocolMap" type="com.travel.spzx.model.entity.protocol.ProtocolInfo"/>
+    <sql id="columns">
+        id
+        , title, protocol_key,content,remark,create_time,update_time, is_deleted
+    </sql>
+    <insert id="save">
+        insert into protocol_info
+        (id, title,protocol_key, content, remark, create_time, update_time, is_deleted)
+        values (#{id},
+                #{title},
+                #{protocolKey},
+                #{content},
+                #{remark},
+                now(),
+                now(),
+                0)
+    </insert>
+
+    <update id="delete">
+        update protocol_info
+        set is_deleted = 1
+        where id = #{id}
+    </update>
+    <update id="update">
+        update protocol_info
+        <set>
+            <if test="title!= null">
+                title = #{title},
+            </if>
+            <if test="protocolKey!= null">
+                protocol_key = #{protocolKey},
+            </if>
+            <if test="content!= null">
+                content = #{content},
+            </if>
+            <if test="remark!= null">
+                remark = #{remark},
+            </if>
+            update_time = now()
+        </set>
+        where id = #{id}
+    </update>
+
+    <select id="findAll" resultMap="protocolMap">
+        select
+        <include refid="columns"/>
+        from protocol_info
+        where is_deleted = 0
+
+    </select>
+</mapper>

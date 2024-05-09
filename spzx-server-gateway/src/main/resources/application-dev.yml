@@ -53,3 +53,4 @@ spring:
           predicates:
             - Path=/api/**
 
+
