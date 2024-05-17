@@ -10,4 +10,100 @@
         where DATE_FORMAT(oi.create_time, '%Y-%m-%d') = #{createTime}
         group by DATE_FORMAT(oi.create_time, '%Y-%m-%d')
     </select>
+
+    <resultMap id="orderInfoResultMap" type="com.travel.spzx.model.vo.order.OrderInfoVo"/>
+    <sql id="orderInfoColumns">
+        id
+        ,user_id,
+            nick_name,
+                product_id,
+                sku_id,
+                batch_id,
+                link_man,
+                link_tel,
+                adult_price,
+                child_price,
+                adult_num,
+                child_num,
+            order_no,
+            coupon_id,
+            total_amount,
+            coupon_amount,
+            original_total_amount,
+                insurance,
+                insurance_no,
+            pay_type,
+            order_status,
+                evaluate_id,
+            payment_time,
+            consume_time,
+            remark,
+            cancel_time,
+            cancel_reason,
+            create_time,
+            update_time,
+            is_deleted
+
+    </sql>
+    <select id="findList" resultMap="orderInfoResultMap">
+        select
+        oi.id,
+        oi.user_id,
+        oi.nick_name,
+        oi.product_id,
+        oi.sku_id,
+        oi.batch_id,
+        oi.link_man,
+        oi.link_tel,
+        oi.adult_price,
+        oi.child_price,
+        oi.adult_num,
+        oi.child_num,
+        oi.order_no,
+        oi.coupon_id,
+        oi.total_amount,
+        oi.coupon_amount,
+        oi.original_total_amount,
+        oi.insurance,
+        oi.insurance_no,
+        oi.pay_type,
+        oi.order_status,
+        oi.evaluate_id,
+        oi.payment_time,
+        oi.consume_time,
+        oi.remark,
+        oi.cancel_time,
+        oi.cancel_reason,
+        oi.create_time,
+        oi.update_time,
+        oi.is_deleted,
+        p.name as product_name,
+        bi.start_time as start_time,
+        bi.end_time as end_time,
+        ps.sku_name as sku_name
+        from order_info oi
+        left join product p on oi.product_id = p.id
+        left join batch_info bi on oi.batch_id = bi.id
+        left join product_sku ps on oi.sku_id = ps.id
+        <where>
+            <if test="productId!= null">
+                and oi.product_id = #{productId}
+            </if>
+            <if test="batchId != null">
+                and oi.batch_id = #{batchId}
+            </if>
+            <if test="orderStatus != null">
+                and oi.order_status = #{orderStatus}
+            </if>
+            <if test="startTime != null">
+                and oi.create_time &gt;= #{startTime}
+            </if>
+            <if test="endTime != null">
+                and oi.create_time &lt;= #{endTime}
+            </if>
+
+        </where>
+
+        order by id desc
+    </select>
 </mapper>

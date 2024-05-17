@@ -9,8 +9,11 @@ import lombok.Data;
 public class ProtocolInfo extends BaseEntity {
     @Schema(description = "标题")
     private String title;
+
     @Schema(description = "key")
     private String protocolKey;
+    @Schema(description = "baseUrl")
+    private String baseUrl;
     @Schema(description = "内容")
     private String content;
     @Schema(description = "备注")

@@ -18,8 +18,6 @@ public class OrderItem extends BaseEntity {
     @Schema(description = "商品sku编号")
     private Long skuId;
 
-    @Schema(description = "商品sku名字")
-    private String skuName;
 
     @Schema(description = "批次id")
     private Long batchId;
@@ -27,16 +25,13 @@ public class OrderItem extends BaseEntity {
     @Schema(description = "批次id")
     private Long productId;
 
-    @Schema(description = "批次名字")
-    private String batchName;
-    @Schema(description = "商品sku图片")
-    private String thumbImg;
-
-    @Schema(description = "成人价格")
-    private BigDecimal adultPrice;
-    @Schema(description = "儿童价格")
-    private BigDecimal childPrice;
     @Schema(description = "出行人id")
     private Long tripId;
+    @Schema(description = "出行人姓名")
+    private String tripName;
+    @Schema(description = "出行人身份证号")
+    private String tripCardNo;
 
+    private String sex;
+    private String ageType;
 }

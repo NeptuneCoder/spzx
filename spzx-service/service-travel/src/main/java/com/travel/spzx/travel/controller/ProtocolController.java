@@ -1,6 +1,7 @@
 package com.travel.spzx.travel.controller;
 
 import com.travel.spzx.model.vo.common.Result;
+import com.travel.spzx.model.vo.protocol.ProtocolVo;
 import com.travel.spzx.travel.service.ProtocolService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.ServletOutputStream;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
+import java.util.List;
 
 @Tag(name = "协议相关接口")
 @RestController
@@ -33,7 +35,9 @@ public class ProtocolController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
         return "";
     }
+
+
+
 }

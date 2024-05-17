@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.spzx.travel.mapper.RichTxtMapper">
+    <sql id="columns">
+        id
+        , title,  content, `type`,remark,create_time,update_time, is_deleted
+    </sql>
+    <resultMap id="richInfoMap" type="com.travel.spzx.model.entity.richTxt.RichTxtInfo"/>
+    <select id="getProtocolByName" resultMap="richInfoMap">
+        select
+        <include refid="columns"/>
+        from desc_info
+        where is_deleted = 0
+        and title = #{title}
+    </select>
+
+
+</mapper>

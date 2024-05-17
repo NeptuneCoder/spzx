@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.spzx.tour.guide.mapper.UserInfoMapper">
+    <resultMap id="userInfoMap" type="com.travel.spzx.model.entity.tour.TourUserInfo" autoMapping="true">
+    </resultMap>
+
+    <!-- 用于select查询公用抽取的列 -->
+    <!-- `name` varchar(20) DEFAULT NULL COMMENT '导游名字',
+    `nickname` varchar(20) DEFAULT NULL COMMENT '导游昵称',
+    `avatar` varchar(200) DEFAULT NULL COMMENT '头像',
+    `phone` varchar(20) DEFAULT NULL COMMENT '导游电话号码',
+    `id_type` varchar(4) DEFAULT NULL COMMENT '证件类型',
+    `id_type_no` varchar(30) DEFAULT NULL COMMENT '身份证号码',
+    `tour_certificate` bigint DEFAULT 0 COMMENT '导游证书[0 没有 1 有]',
+    `tour_certificate_no` varchar(30) DEFAULT NULL COMMENT '导游编号',
+    `level` varchar(4) DEFAULT NULL COMMENT '导游星级，自己定义的导游等级',
+    `audit_status` bigint DEFAULT 0 COMMENT '当前导游是否认证0,未认证，1 认证通过',
+    `score` decimal(10,2) DEFAULT 0.0 COMMENT '评分',
+    `lead_times` bigint DEFAULT 0 COMMENT '带队次数',
+    `remark` varchar(200) DEFAULT NULL COMMENT '备注信息',
+      `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+    `is_deleted` tinyint NOT NULL DEFAULT '0' COMMENT '删除标记（0:不可用 1:可用）',
+     -->
+    <sql id="columns">
+        id,
+        `name`,
+        `nickname`,
+        `avatar`,
+        `phone`,
+        `id_type`,
+        `id_type_no`,
+        `tour_certificate`,
+        `tour_certificate_no`,
+        `level`,
+        `audit_status`,
+        `score`,
+        `lead_times`,
+        `remark`,
+        `create_time`,
+        `update_time`,
+        `is_deleted`
+
+
+    </sql>
+
+
+    <select id="getByPhone" resultMap="userInfoMap">
+        select
+        <include refid="columns"/>
+        from tour_guide_info
+        where
+        phone = #{phone}
+        and is_deleted = 0
+    </select>
+
+    <update id="update">
+        update tour_guide_info
+        <set>
+            <if test="name!= null">
+                name = #{name},
+            </if>
+            <if test="nickname != null">
+                nickname = #{nickname},
+            </if>
+            <if test="avatar != null">
+                avatar = #{avatar},
+            </if>
+            <if test="phone != null">
+                phone = #{phone},
+            </if>
+            <if test="id_type != null">
+                id_type = #{id_type},
+            </if>
+            <if test="id_type_no != null">
+                id_type_no = #{id_type_no},
+            </if>
+            <if test="tour_certificate != null">
+                tour_certificate = #{tour_certificate},
+            </if>
+            <if test="tour_certificate_no != null">
+                tour_certificate_no = #{tour_certificate_no},
+            </if>
+            <if test="level != null">
+                level = #{level},
+            </if>
+            <if test="audit_status != null">
+                audit_status = #{audit_status},
+            </if>
+            <if test="score != null">
+                score = #{score},
+            </if>
+            <if test="lead_times != null">
+                lead_times = #{lead_times},
+            </if>
+            <if test="remark != null">
+                remark = #{remark},
+            </if>
+            update_time = now(),
+        </set>
+        where id = #{id}
+        and is_deleted = 0
+    </update>
+</mapper>

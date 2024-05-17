@@ -57,4 +57,33 @@ public class DateUtils {
 
     //根据年月日
 
+
+    public static int calculateIsAdult(Date birthDate, Date currentDate) {
+        int age = 0;
+        if (birthDate.after(currentDate)) {
+            throw new IllegalArgumentException("出生日期晚于当前日期");
+        }
+
+        // 获取出生日期的年、月、日
+        int birthYear = birthDate.getYear();
+        int birthMonth = birthDate.getMonth();
+        int birthDay = birthDate.getDay();
+
+        // 获取当前日期的年、月、日
+        int currentYear = currentDate.getYear();
+        int currentMonth = currentDate.getMonth();
+        int currentDay = currentDate.getDay();
+
+        // 计算年龄
+        age = currentYear - birthYear;
+
+        // 考虑月份和日期的影响
+        if (currentMonth < birthMonth) {
+            age--;
+        } else if (currentMonth == birthMonth && currentDay < birthDay) {
+            age--;
+        }
+
+        return age;
+    }
 }

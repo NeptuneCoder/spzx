@@ -4,6 +4,7 @@ import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
 import com.travel.spzx.common.constant.RedisConstantKey;
 import com.travel.spzx.model.entity.system.SysUser;
+import com.travel.spzx.model.entity.user.UserInfo;
 import com.travel.spzx.model.vo.common.Result;
 import com.travel.spzx.model.vo.common.ResultCodeEnum;
 import com.travel.xpzx.utils.AuthContextUtil;
@@ -50,8 +51,9 @@ public class LoginAuthInterceptor implements HandlerInterceptor {
         }
 
         // 将用户数据存储到ThreadLocal中
-        SysUser sysUser = JSON.parseObject(sysUserInfoJson, SysUser.class);
-        AuthContextUtil.set(sysUser);
+        UserInfo sysUser = JSON.parseObject(sysUserInfoJson, UserInfo.class);
+        System.out.println("travel中sysUser:" + sysUser.getUsername());
+        AuthContextUtil.setUserInfo(sysUser);
 
         // 重置Redis中的用户数据的有效时间
         redisTemplate.expire(RedisConstantKey.USER_TOKEN_KEY + token, 7, TimeUnit.DAYS);

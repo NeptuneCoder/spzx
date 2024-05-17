@@ -117,23 +117,23 @@ public class OrderInfoServiceImpl implements OrderInfoService {
         //用户昵称
         orderInfo.setNickName(userInfo.getNickName());
         //用户收货地址信息
-        UserAddress userAddress = userFeignClient.getUserAddress(orderInfoDto.getUserAddressId());
-        orderInfo.setReceiverName(userAddress.getName());
-        orderInfo.setReceiverPhone(userAddress.getPhone());
-        orderInfo.setReceiverTagName(userAddress.getTagName());
-        orderInfo.setReceiverProvince(userAddress.getProvinceCode());
-        orderInfo.setReceiverCity(userAddress.getCityCode());
-        orderInfo.setReceiverDistrict(userAddress.getDistrictCode());
-        orderInfo.setReceiverAddress(userAddress.getFullAddress());
+//        UserAddress userAddress = userFeignClient.getUserAddress(orderInfoDto.getUserAddressId());
+//        orderInfo.setReceiverName(userAddress.getName());
+//        orderInfo.setReceiverPhone(userAddress.getPhone());
+//        orderInfo.setReceiverTagName(userAddress.getTagName());
+//        orderInfo.setReceiverProvince(userAddress.getProvinceCode());
+//        orderInfo.setReceiverCity(userAddress.getCityCode());
+//        orderInfo.setReceiverDistrict(userAddress.getDistrictCode());
+//        orderInfo.setReceiverAddress(userAddress.getFullAddress());
         //订单金额
         BigDecimal totalAmount = new BigDecimal(0);
         for (OrderItem orderItem : orderItemList) {
-            totalAmount = totalAmount.add(orderItem.getSkuPrice().multiply(new BigDecimal(orderItem.getSkuNum())));
+//            totalAmount = totalAmount.add(orderItem.getSkuPrice().multiply(new BigDecimal(orderItem.getSkuNum())));
         }
         orderInfo.setTotalAmount(totalAmount);
         orderInfo.setCouponAmount(new BigDecimal(0));
         orderInfo.setOriginalTotalAmount(totalAmount);
-        orderInfo.setFeightFee(orderInfoDto.getFeightFee());
+//        orderInfo.setFeightFee(orderInfoDto.getFeightFee());
         orderInfo.setPayType(2);
         orderInfo.setOrderStatus(0);
         orderInfoMapper.save(orderInfo);
@@ -168,10 +168,10 @@ public class OrderInfoServiceImpl implements OrderInfoService {
         List<OrderItem> orderItemList = new ArrayList<>();
         OrderItem orderItem = new OrderItem();
         orderItem.setSkuId(skuId);
-        orderItem.setSkuName(productSku.getSkuName());
-        orderItem.setSkuNum(1);
-        orderItem.setSkuPrice(productSku.getSalePrice());
-        orderItem.setThumbImg(productSku.getThumbImg());
+//        orderItem.setSkuName(productSku.getSkuName());
+//        orderItem.setSkuNum(1);
+//        orderItem.setSkuPrice(productSku.getSalePrice());
+//        orderItem.setThumbImg(productSku.getThumbImg());
         orderItemList.add(orderItem);
 
         // 计算总金额

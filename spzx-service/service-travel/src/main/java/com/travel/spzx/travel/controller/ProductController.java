@@ -42,6 +42,7 @@ public class ProductController {
     @Operation(summary = "获取产品详情", description = "获取产品详情")
     @RequestMapping("detail/order/{id}/{batchId}")
     public Result<OrderProductInfoVo> getDetailByProductIdAndBatchId(@PathVariable("id") Long id, @PathVariable("batchId") Long batchId) {
+        System.out.println("id:" + id + " batchId:" + batchId);
         OrderProductInfoVo product = productService.getDetailByProductIdAndBatchId(id, batchId);
         return Result.success(product);
     }

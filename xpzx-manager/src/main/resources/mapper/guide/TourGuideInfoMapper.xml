@@ -7,7 +7,7 @@
             `name`,
             nickname,
             phone,
-            id_type_id,
+            id_type,
             id_type_no,
             tour_certificate,
             tour_certificate_no,
@@ -21,7 +21,7 @@
     </sql>
 
     <insert id="save">
-        INSERT INTO tourist_guide_info (
+        INSERT INTO tour_guide_info (
         <include refid="columns"/>
         ) VALUES (
         #{id},
@@ -43,12 +43,12 @@
 
     </insert>
     <update id="delete">
-        UPDATE tourist_guide_info
+        UPDATE tour_guide_info
         SET is_deleted = 1
         WHERE id = #{id}
     </update>
     <update id="update" keyProperty="id" useGeneratedKeys="true">
-        UPDATE tourist_guide_info
+        UPDATE tour_guide_info
         <set>
             <if test="name != null">
                 name = #{name},
@@ -62,7 +62,7 @@
 
             </if>
             <if test="idTypeId != null">
-                id_type_id = #{idTypeId},
+                id_type = #{idTypeId},
             </if>
 
             <if test="idTypeNo != null">
@@ -111,11 +111,11 @@
         tgi.remark,
         tgi.create_time,
         tgi.update_time,
-        iti.id as id_type_id,
+        iti.id as id_type,
         tgl.name as level_name,
         iti.id_type_name
-        FROM tourist_guide_info tgi
-        inner join id_type_info iti on tgi.id_type_id = iti.id
+        FROM tour_guide_info tgi
+        inner join id_type_info iti on tgi.id_type = iti.id
         inner join tour_guide_level tgl on tgl.level = tgi.level
         <where>
             <if test="name!= null and name!= ''">
@@ -137,20 +137,20 @@
     <select id="queryGuideByLevel" resultMap="tourGuideInfoMap">
         SELECT
         <include refid="columns"/>
-        FROM tourist_guide_info tgi
+        FROM tour_guide_info tgi
         WHERE tgi.level = #{level} AND tgi.is_deleted = 0
     </select>
     <select id="findByNickname" resultType="com.travel.spzx.model.entity.guide.TourGuideInfo">
         SELECT
         <include refid="columns"/>
-        FROM tourist_guide_info tgi
+        FROM tour_guide_info tgi
         WHERE tgi.nickname = #{nickname}
         AND tgi.is_deleted = 0
     </select>
     <select id="findByTourCertificateNo" resultType="com.travel.spzx.model.entity.guide.TourGuideInfo">
         SELECT
         <include refid="columns"/>
-        FROM tourist_guide_info tgi
+        FROM tour_guide_info tgi
         WHERE tgi.tour_certificate_no = #{tourCertificateNo}
         AND tgi.is_deleted = 0
     </select>
@@ -158,7 +158,7 @@
 
         SELECT
         <include refid="columns"/>
-        FROM tourist_guide_info tgi
+        FROM tour_guide_info tgi
         WHERE tgi.id_type_no = #{idTypeNo}
         AND tgi.is_deleted = 0
     </select>

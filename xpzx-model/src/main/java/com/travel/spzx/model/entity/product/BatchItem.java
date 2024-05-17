@@ -8,18 +8,23 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 @Data
 public class BatchItem extends BaseEntity {
+
     @Schema(description = "产品ID")
     private Long productId;
+    @Schema(description = "产品名称")
+    private String productName;
     @Schema(description = "总量")
     private Integer totalNum;
     @Schema(description = "成团人数")
     private Integer successNum;
-
+    @JsonFormat(pattern = "yyyy-MM-dd")
     @Schema(description = "批次开始时间")
     private Date startTime;
+    @JsonFormat(pattern = "yyyy-MM-dd")
     @Schema(description = "批次结束时间")
     private Date endTime;
 
@@ -27,14 +32,18 @@ public class BatchItem extends BaseEntity {
     @Schema(description = "批次在商品详情界面中需要的字段")
     private String dateStr;
 
+
     public String[] getTime() {
-        // 创建SimpleDateFormat对象，并指定日期格式
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        // 创建SimpleDateFormat对象，并指定日期格式
         // 使用SimpleDateFormat对象将日期对象格式化为字符串
-        String startDate = sdf.format(startTime);
-        String endDate = sdf.format(endTime);
-        time = new String[]{startDate, endDate};
-        return time;
+        if (startTime != null && endTime != null) {
+            String startDate = sdf.format(startTime);
+            String endDate = sdf.format(endTime);
+            time = new String[]{startDate, endDate};
+            return time;
+        }
+        return new String[0];
     }
 
     private String remark;
@@ -69,4 +78,8 @@ public class BatchItem extends BaseEntity {
     private String endDate;
     @Schema(description = "结束时间")
     private String endWeak;
+
+    private List<BatchItem> children;
+    private boolean hasChildren;
+
 }

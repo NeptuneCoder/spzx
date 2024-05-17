@@ -4,6 +4,7 @@ import com.github.pagehelper.PageInfo;
 import com.travel.spzx.model.entity.trip.TripInfo;
 import com.travel.spzx.model.vo.common.Result;
 import com.travel.spzx.travel.service.TripService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,7 +15,7 @@ public class TripController {
     private TripService tripService;
 
     @PostMapping("/addTrip")
-    public Result addTrip(@RequestBody TripInfo tripInfo) {
+    public Result addTrip(@RequestBody @Valid TripInfo tripInfo) {
         tripService.addTrip(tripInfo);
         return Result.success();
     }

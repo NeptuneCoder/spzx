@@ -6,6 +6,7 @@ import com.travel.spzx.travel.service.IndexService;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,10 +22,10 @@ public class IndexController {
         IndexDto indexDto = indexService.index();
         return Result.success(indexDto);
     }
-    //home/goods/guessLike
+
     @Operation(description = "首页的基本信息:banner,category")
-    @GetMapping("/guessLike")
-    public Result guessLike() {
+    @GetMapping("/guessLike/{page}/{limit}")
+    public Result guessLike(@PathVariable("page") int page, @PathVariable("limit") int limit) {
         IndexDto indexDto = indexService.index();
         return Result.success(indexDto);
     }

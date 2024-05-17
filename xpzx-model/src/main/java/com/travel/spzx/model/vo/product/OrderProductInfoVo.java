@@ -1,9 +1,11 @@
 package com.travel.spzx.model.vo.product;
 
+import com.travel.spzx.model.vo.protocol.ProtocolVo;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Data
 public class OrderProductInfoVo {
@@ -20,5 +22,10 @@ public class OrderProductInfoVo {
     @Schema(description = "剩余数量")
     private int surplusNum;
 
+    private String assembleAddress;
+    private String assembleTime;
+
+
+    private List<ProtocolVo> protocolVoList;
 
 }

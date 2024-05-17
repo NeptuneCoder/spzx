@@ -42,6 +42,8 @@
         <include refid="trip_info_columns"/>
         from trip_info
         where is_deleted = 0
+        and user_id = #{userId}
+        order by create_time desc
     </select>
     <select id="getDetail" resultType="com.travel.spzx.model.entity.trip.TripInfo">
         select

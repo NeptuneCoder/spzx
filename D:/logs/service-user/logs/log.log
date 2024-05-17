@@ -194,3 +194,817 @@
 2024-04-29 19:20:03 [HttpClientBeanHolder] Start destroying common HttpClient
 2024-04-29 19:20:03 [NotifyCenter] Destruction of the end
 2024-04-29 19:20:03 [HttpClientBeanHolder] Destruction of the end
+2024-05-15 10:18:35 Starting TourGuideApplication using Java 17.0.5 with PID 74101 (/Users/yh/AndroidStudioProjects/spzx-parent/spzx-service/service-tour-guide/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-05-15 10:18:35 The following 1 profile is active: "dev"
+2024-05-15 10:18:36 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-15 10:18:36 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-15 10:18:36 Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-05-15 10:18:36 No MyBatis mapper was found in '[com.travel.spzx.tour.guide]' package. Please check your configuration.
+2024-05-15 10:18:36 BeanFactory id=f1c7a26d-d86b-38ac-88b6-7f61777a438f
+2024-05-15 10:18:37 Tomcat initialized with port 8518 (http)
+2024-05-15 10:18:37 Initializing ProtocolHandler ["http-nio-8518"]
+2024-05-15 10:18:37 Starting service [Tomcat]
+2024-05-15 10:18:37 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-15 10:18:37 Initializing Spring embedded WebApplicationContext
+2024-05-15 10:18:37 Root WebApplicationContext: initialization completed in 1659 ms
+2024-05-15 10:18:38 Starting ProtocolHandler ["http-nio-8518"]
+2024-05-15 10:18:38 Tomcat started on port 8518 (http) with context path ''
+2024-05-15 10:18:38 initializer namespace from ans.namespace attribute : null
+2024-05-15 10:18:38 initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2024-05-15 10:18:38 initializer namespace from namespace attribute :null
+2024-05-15 10:18:38 null No credential found
+2024-05-15 10:18:38 [settings] [req-serv] nacos-server port:8848
+2024-05-15 10:18:38 [settings] [http-client] connect timeout:1000
+2024-05-15 10:18:38 PER_TASK_CONFIG_SIZE: 3000.0
+2024-05-15 10:18:38 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-05-15 10:18:38 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-05-15 10:18:38 [RpcClientFactory] create a new rpc client of c9edbc09-ceaf-46b7-b4ca-57e66a405e21
+2024-05-15 10:18:38 Create naming rpc client for uuid->c9edbc09-ceaf-46b7-b4ca-57e66a405e21
+2024-05-15 10:18:38 [c9edbc09-ceaf-46b7-b4ca-57e66a405e21] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-05-15 10:18:38 [c9edbc09-ceaf-46b7-b4ca-57e66a405e21] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-05-15 10:18:38 [c9edbc09-ceaf-46b7-b4ca-57e66a405e21] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-05-15 10:18:38 [c9edbc09-ceaf-46b7-b4ca-57e66a405e21] Try to connect to server on start up, server: {serverIp = '14.103.49.141', server main port = 8848}
+2024-05-15 10:18:38 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 10:18:39 Ready to get current node abilities...
+2024-05-15 10:18:39 Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2024-05-15 10:18:39 Initialize current abilities finish...
+2024-05-15 10:18:39 [AbilityControlManager] Successfully initialize AbilityControlManager
+2024-05-15 10:18:39 [c9edbc09-ceaf-46b7-b4ca-57e66a405e21] Success to connect to server [14.103.49.141:8848] on start up, connectionId = 1715739519210_183.192.230.83_1319
+2024-05-15 10:18:39 [c9edbc09-ceaf-46b7-b4ca-57e66a405e21] Notify connected event to listeners.
+2024-05-15 10:18:39 Grpc connection connect
+2024-05-15 10:18:39 [c9edbc09-ceaf-46b7-b4ca-57e66a405e21] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-05-15 10:18:39 [c9edbc09-ceaf-46b7-b4ca-57e66a405e21] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1238/0x0000000801449f30
+2024-05-15 10:18:39 [REGISTER-SERVICE] public registering service service-tour-guide with instance Instance{instanceId='null', ip='192.168.1.3', port=8518, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2024-05-15 10:18:39 nacos registry, DEFAULT_GROUP service-tour-guide 192.168.1.3:8518 register finished
+2024-05-15 10:18:39 Started TourGuideApplication in 4.304 seconds (process running for 4.958)
+2024-05-15 10:19:01 [NotifyCenter] Start destroying Publisher
+2024-05-15 10:19:01 [HttpClientBeanHolder] Start destroying common HttpClient
+2024-05-15 10:19:01 [NotifyCenter] Destruction of the end
+2024-05-15 10:19:01 [HttpClientBeanHolder] Destruction of the end
+2024-05-15 10:19:23 Starting TourGuideApplication using Java 17.0.5 with PID 74186 (/Users/yh/AndroidStudioProjects/spzx-parent/spzx-service/service-tour-guide/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-05-15 10:19:23 The following 1 profile is active: "dev"
+2024-05-15 10:19:23 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-15 10:19:23 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-15 10:19:23 Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2024-05-15 10:19:24 No MyBatis mapper was found in '[com.travel.spzx.tour.guide]' package. Please check your configuration.
+2024-05-15 10:19:24 BeanFactory id=f1c7a26d-d86b-38ac-88b6-7f61777a438f
+2024-05-15 10:19:24 Tomcat initialized with port 8518 (http)
+2024-05-15 10:19:24 Initializing ProtocolHandler ["http-nio-8518"]
+2024-05-15 10:19:24 Starting service [Tomcat]
+2024-05-15 10:19:24 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-15 10:19:24 Initializing Spring embedded WebApplicationContext
+2024-05-15 10:19:24 Root WebApplicationContext: initialization completed in 1132 ms
+2024-05-15 10:19:25 Starting ProtocolHandler ["http-nio-8518"]
+2024-05-15 10:19:25 Tomcat started on port 8518 (http) with context path ''
+2024-05-15 10:19:25 initializer namespace from ans.namespace attribute : null
+2024-05-15 10:19:25 initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2024-05-15 10:19:25 initializer namespace from namespace attribute :null
+2024-05-15 10:19:25 [settings] [req-serv] nacos-server port:8848
+2024-05-15 10:19:25 [settings] [http-client] connect timeout:1000
+2024-05-15 10:19:25 PER_TASK_CONFIG_SIZE: 3000.0
+2024-05-15 10:19:25 null No credential found
+2024-05-15 10:19:25 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-05-15 10:19:25 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-05-15 10:19:25 [RpcClientFactory] create a new rpc client of e8ed1d3a-0da2-4727-8a1d-816902de4b35
+2024-05-15 10:19:25 Create naming rpc client for uuid->e8ed1d3a-0da2-4727-8a1d-816902de4b35
+2024-05-15 10:19:25 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-05-15 10:19:25 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-05-15 10:19:25 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-05-15 10:19:25 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Try to connect to server on start up, server: {serverIp = '14.103.49.141', server main port = 8848}
+2024-05-15 10:19:25 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 10:19:25 Ready to get current node abilities...
+2024-05-15 10:19:25 Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2024-05-15 10:19:25 Initialize current abilities finish...
+2024-05-15 10:19:25 [AbilityControlManager] Successfully initialize AbilityControlManager
+2024-05-15 10:19:25 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Success to connect to server [14.103.49.141:8848] on start up, connectionId = 1715739565888_183.192.230.83_1357
+2024-05-15 10:19:25 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify connected event to listeners.
+2024-05-15 10:19:25 Grpc connection connect
+2024-05-15 10:19:25 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-05-15 10:19:25 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1238/0x000000080144ac50
+2024-05-15 10:19:25 [REGISTER-SERVICE] public registering service service-tour-guide with instance Instance{instanceId='null', ip='192.168.1.3', port=8518, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2024-05-15 10:19:25 nacos registry, DEFAULT_GROUP service-tour-guide 192.168.1.3:8518 register finished
+2024-05-15 10:19:26 Started TourGuideApplication in 3.089 seconds (process running for 3.499)
+2024-05-15 11:04:10 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Server healthy check fail, currentConnection = 1715739565888_183.192.230.83_1357
+2024-05-15 11:04:10 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 11:04:10 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 11:04:11 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Success to connect a server [14.103.49.141:8848], connectionId = 1715742251080_183.192.230.83_1078
+2024-05-15 11:04:11 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715739565888_183.192.230.83_1357
+2024-05-15 11:04:11 Close current connection 1715739565888_183.192.230.83_1357
+2024-05-15 11:04:11 [1715739565888_183.192.230.83_1357]Ignore error event,isRunning:false,isAbandon=true
+2024-05-15 11:04:11 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify disconnected event to listeners
+2024-05-15 11:04:11 Grpc connection disconnect, mark to redo
+2024-05-15 11:04:11 mark to redo completed
+2024-05-15 11:04:11 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify connected event to listeners.
+2024-05-15 11:04:11 Grpc connection connect
+2024-05-15 11:04:13 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 11:20:29 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Server healthy check fail, currentConnection = 1715742251080_183.192.230.83_1078
+2024-05-15 11:20:29 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 11:20:29 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 11:20:29 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Success to connect a server [14.103.49.141:8848], connectionId = 1715743229454_183.192.230.83_1431
+2024-05-15 11:20:29 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715742251080_183.192.230.83_1078
+2024-05-15 11:20:29 Close current connection 1715742251080_183.192.230.83_1078
+2024-05-15 11:20:29 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify disconnected event to listeners
+2024-05-15 11:20:29 Grpc connection disconnect, mark to redo
+2024-05-15 11:20:29 mark to redo completed
+2024-05-15 11:20:29 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify connected event to listeners.
+2024-05-15 11:20:29 Grpc connection connect
+2024-05-15 11:20:29 [1715742251080_183.192.230.83_1078]Ignore error event,isRunning:true,isAbandon=true
+2024-05-15 11:20:29 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 11:36:43 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Server healthy check fail, currentConnection = 1715743229454_183.192.230.83_1431
+2024-05-15 11:36:43 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 11:36:43 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 11:36:43 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Success to connect a server [14.103.49.141:8848], connectionId = 1715744203957_183.192.230.83_1227
+2024-05-15 11:36:43 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715743229454_183.192.230.83_1431
+2024-05-15 11:36:43 Close current connection 1715743229454_183.192.230.83_1431
+2024-05-15 11:36:43 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify disconnected event to listeners
+2024-05-15 11:36:43 Grpc connection disconnect, mark to redo
+2024-05-15 11:36:43 mark to redo completed
+2024-05-15 11:36:43 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify connected event to listeners.
+2024-05-15 11:36:43 Grpc connection connect
+2024-05-15 11:36:43 [1715743229454_183.192.230.83_1431]Ignore error event,isRunning:true,isAbandon=true
+2024-05-15 11:36:46 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 11:53:02 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Server healthy check fail, currentConnection = 1715744203957_183.192.230.83_1227
+2024-05-15 11:53:02 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 11:53:02 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 11:53:02 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Success to connect a server [14.103.49.141:8848], connectionId = 1715745182950_183.192.230.83_1039
+2024-05-15 11:53:03 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715744203957_183.192.230.83_1227
+2024-05-15 11:53:03 Close current connection 1715744203957_183.192.230.83_1227
+2024-05-15 11:53:03 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify disconnected event to listeners
+2024-05-15 11:53:03 Grpc connection disconnect, mark to redo
+2024-05-15 11:53:03 mark to redo completed
+2024-05-15 11:53:03 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify connected event to listeners.
+2024-05-15 11:53:03 Grpc connection connect
+2024-05-15 11:53:03 [1715744203957_183.192.230.83_1227]Ignore error event,isRunning:true,isAbandon=true
+2024-05-15 11:53:05 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 12:09:16 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Server healthy check fail, currentConnection = 1715745182950_183.192.230.83_1039
+2024-05-15 12:09:16 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 12:09:16 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 12:09:16 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Success to connect a server [14.103.49.141:8848], connectionId = 1715746156594_183.192.230.83_1440
+2024-05-15 12:09:16 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715745182950_183.192.230.83_1039
+2024-05-15 12:09:16 Close current connection 1715745182950_183.192.230.83_1039
+2024-05-15 12:09:16 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify disconnected event to listeners
+2024-05-15 12:09:16 Grpc connection disconnect, mark to redo
+2024-05-15 12:09:16 mark to redo completed
+2024-05-15 12:09:16 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify connected event to listeners.
+2024-05-15 12:09:16 Grpc connection connect
+2024-05-15 12:09:16 [1715745182950_183.192.230.83_1039]Ignore error event,isRunning:true,isAbandon=true
+2024-05-15 12:09:19 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 12:25:35 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Server healthy check fail, currentConnection = 1715746156594_183.192.230.83_1440
+2024-05-15 12:25:35 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 12:25:35 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 12:25:35 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Success to connect a server [14.103.49.141:8848], connectionId = 1715747135546_183.192.230.83_1290
+2024-05-15 12:25:35 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715746156594_183.192.230.83_1440
+2024-05-15 12:25:35 Close current connection 1715746156594_183.192.230.83_1440
+2024-05-15 12:25:35 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify disconnected event to listeners
+2024-05-15 12:25:35 Grpc connection disconnect, mark to redo
+2024-05-15 12:25:35 mark to redo completed
+2024-05-15 12:25:35 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify connected event to listeners.
+2024-05-15 12:25:35 [1715746156594_183.192.230.83_1440]Ignore error event,isRunning:true,isAbandon=true
+2024-05-15 12:25:35 Grpc connection connect
+2024-05-15 12:25:35 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 12:37:34 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Server healthy check fail, currentConnection = 1715747135546_183.192.230.83_1290
+2024-05-15 12:37:34 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 12:37:34 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 12:37:34 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Success to connect a server [14.103.49.141:8848], connectionId = 1715747854704_183.192.230.83_1241
+2024-05-15 12:37:34 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715747135546_183.192.230.83_1290
+2024-05-15 12:37:34 Close current connection 1715747135546_183.192.230.83_1290
+2024-05-15 12:37:34 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify disconnected event to listeners
+2024-05-15 12:37:34 Grpc connection disconnect, mark to redo
+2024-05-15 12:37:34 mark to redo completed
+2024-05-15 12:37:34 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify connected event to listeners.
+2024-05-15 12:37:34 Grpc connection connect
+2024-05-15 12:37:34 [1715747135546_183.192.230.83_1290]Ignore error event,isRunning:true,isAbandon=true
+2024-05-15 12:37:37 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 12:53:53 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Server healthy check fail, currentConnection = 1715747854704_183.192.230.83_1241
+2024-05-15 12:53:53 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 12:53:53 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 12:53:53 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Success to connect a server [14.103.49.141:8848], connectionId = 1715748833311_183.192.230.83_1123
+2024-05-15 12:53:53 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715747854704_183.192.230.83_1241
+2024-05-15 12:53:53 Close current connection 1715747854704_183.192.230.83_1241
+2024-05-15 12:53:53 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify disconnected event to listeners
+2024-05-15 12:53:53 Grpc connection disconnect, mark to redo
+2024-05-15 12:53:53 mark to redo completed
+2024-05-15 12:53:53 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify connected event to listeners.
+2024-05-15 12:53:53 Grpc connection connect
+2024-05-15 12:53:53 [1715747854704_183.192.230.83_1241]Ignore error event,isRunning:true,isAbandon=true
+2024-05-15 12:53:53 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 13:10:07 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Server healthy check fail, currentConnection = 1715748833311_183.192.230.83_1123
+2024-05-15 13:10:07 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 13:10:07 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 13:10:07 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Success to connect a server [14.103.49.141:8848], connectionId = 1715749807721_183.192.230.83_1069
+2024-05-15 13:10:07 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715748833311_183.192.230.83_1123
+2024-05-15 13:10:07 Close current connection 1715748833311_183.192.230.83_1123
+2024-05-15 13:10:07 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify disconnected event to listeners
+2024-05-15 13:10:07 Grpc connection disconnect, mark to redo
+2024-05-15 13:10:07 mark to redo completed
+2024-05-15 13:10:07 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify connected event to listeners.
+2024-05-15 13:10:07 Grpc connection connect
+2024-05-15 13:10:07 [1715748833311_183.192.230.83_1123]Ignore error event,isRunning:true,isAbandon=true
+2024-05-15 13:10:10 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 13:15:33 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Server healthy check fail, currentConnection = 1715749807721_183.192.230.83_1069
+2024-05-15 13:15:33 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 13:15:33 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 13:15:33 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Success to connect a server [14.103.49.141:8848], connectionId = 1715750133210_183.192.230.83_1351
+2024-05-15 13:15:33 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715749807721_183.192.230.83_1069
+2024-05-15 13:15:33 Close current connection 1715749807721_183.192.230.83_1069
+2024-05-15 13:15:33 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify disconnected event to listeners
+2024-05-15 13:15:33 Grpc connection disconnect, mark to redo
+2024-05-15 13:15:33 mark to redo completed
+2024-05-15 13:15:33 [e8ed1d3a-0da2-4727-8a1d-816902de4b35] Notify connected event to listeners.
+2024-05-15 13:15:33 Grpc connection connect
+2024-05-15 13:15:33 [1715749807721_183.192.230.83_1069]Ignore error event,isRunning:true,isAbandon=true
+2024-05-15 13:15:34 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 13:19:01 [HttpClientBeanHolder] Start destroying common HttpClient
+2024-05-15 13:19:01 [NotifyCenter] Start destroying Publisher
+2024-05-15 13:19:01 [NotifyCenter] Destruction of the end
+2024-05-15 13:19:01 [HttpClientBeanHolder] Destruction of the end
+2024-05-15 13:26:57 Starting TourGuideApplication using Java 17.0.5 with PID 77407 (/Users/yh/AndroidStudioProjects/spzx-parent/spzx-service/service-tour-guide/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-05-15 13:26:57 The following 1 profile is active: "dev"
+2024-05-15 13:26:58 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-15 13:26:58 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-15 13:26:58 Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-05-15 13:26:58 No MyBatis mapper was found in '[com.travel.spzx.tour.guide]' package. Please check your configuration.
+2024-05-15 13:26:58 BeanFactory id=f1c7a26d-d86b-38ac-88b6-7f61777a438f
+2024-05-15 13:26:58 Tomcat initialized with port 8518 (http)
+2024-05-15 13:26:58 Initializing ProtocolHandler ["http-nio-8518"]
+2024-05-15 13:26:58 Starting service [Tomcat]
+2024-05-15 13:26:58 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-15 13:26:58 Initializing Spring embedded WebApplicationContext
+2024-05-15 13:26:58 Root WebApplicationContext: initialization completed in 1362 ms
+2024-05-15 13:26:59 Starting ProtocolHandler ["http-nio-8518"]
+2024-05-15 13:26:59 Tomcat started on port 8518 (http) with context path ''
+2024-05-15 13:26:59 initializer namespace from ans.namespace attribute : null
+2024-05-15 13:26:59 initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2024-05-15 13:26:59 initializer namespace from namespace attribute :null
+2024-05-15 13:26:59 [settings] [req-serv] nacos-server port:8848
+2024-05-15 13:26:59 [settings] [http-client] connect timeout:1000
+2024-05-15 13:26:59 null No credential found
+2024-05-15 13:26:59 PER_TASK_CONFIG_SIZE: 3000.0
+2024-05-15 13:26:59 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-05-15 13:26:59 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-05-15 13:26:59 [RpcClientFactory] create a new rpc client of 57b264fe-d621-4ed3-93ca-2e13a64ea7b2
+2024-05-15 13:26:59 Create naming rpc client for uuid->57b264fe-d621-4ed3-93ca-2e13a64ea7b2
+2024-05-15 13:26:59 [57b264fe-d621-4ed3-93ca-2e13a64ea7b2] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-05-15 13:26:59 [57b264fe-d621-4ed3-93ca-2e13a64ea7b2] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-05-15 13:26:59 [57b264fe-d621-4ed3-93ca-2e13a64ea7b2] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-05-15 13:26:59 [57b264fe-d621-4ed3-93ca-2e13a64ea7b2] Try to connect to server on start up, server: {serverIp = '14.103.49.141', server main port = 8848}
+2024-05-15 13:26:59 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 13:27:00 Ready to get current node abilities...
+2024-05-15 13:27:00 Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2024-05-15 13:27:00 Initialize current abilities finish...
+2024-05-15 13:27:00 [AbilityControlManager] Successfully initialize AbilityControlManager
+2024-05-15 13:27:00 [57b264fe-d621-4ed3-93ca-2e13a64ea7b2] Success to connect to server [14.103.49.141:8848] on start up, connectionId = 1715750820374_183.192.230.83_1307
+2024-05-15 13:27:00 [57b264fe-d621-4ed3-93ca-2e13a64ea7b2] Notify connected event to listeners.
+2024-05-15 13:27:00 Grpc connection connect
+2024-05-15 13:27:00 [57b264fe-d621-4ed3-93ca-2e13a64ea7b2] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-05-15 13:27:00 [57b264fe-d621-4ed3-93ca-2e13a64ea7b2] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1238/0x000000080144ac50
+2024-05-15 13:27:00 [REGISTER-SERVICE] public registering service service-tour-guide with instance Instance{instanceId='null', ip='192.168.1.3', port=8518, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2024-05-15 13:27:00 nacos registry, DEFAULT_GROUP service-tour-guide 192.168.1.3:8518 register finished
+2024-05-15 13:27:00 Started TourGuideApplication in 3.647 seconds (process running for 4.115)
+2024-05-15 13:51:05 [HttpClientBeanHolder] Start destroying common HttpClient
+2024-05-15 13:51:05 [NotifyCenter] Start destroying Publisher
+2024-05-15 13:51:05 [NotifyCenter] Destruction of the end
+2024-05-15 13:51:05 [HttpClientBeanHolder] Destruction of the end
+2024-05-15 13:51:38 Starting TourGuideApplication using Java 17.0.5 with PID 79517 (/Users/yh/AndroidStudioProjects/spzx-parent/spzx-service/service-tour-guide/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-05-15 13:51:38 The following 1 profile is active: "dev"
+2024-05-15 13:51:38 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-15 13:51:38 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-15 13:51:38 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-05-15 13:51:39 No MyBatis mapper was found in '[com.travel.spzx.tour.guide]' package. Please check your configuration.
+2024-05-15 13:51:39 BeanFactory id=b9f6f41c-c994-3fde-9fef-bd2ab904fcf6
+2024-05-15 13:51:39 Tomcat initialized with port 8518 (http)
+2024-05-15 13:51:39 Initializing ProtocolHandler ["http-nio-8518"]
+2024-05-15 13:51:39 Starting service [Tomcat]
+2024-05-15 13:51:39 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-15 13:51:39 Initializing Spring embedded WebApplicationContext
+2024-05-15 13:51:39 Root WebApplicationContext: initialization completed in 1358 ms
+2024-05-15 13:51:40 Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'welcomePageHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping]: Factory method 'welcomePageHandlerMapping' threw exception with message: Cannot invoke "java.util.List.size()" because "patterns" is null
+2024-05-15 13:51:40 Stopping service [Tomcat]
+2024-05-15 13:51:40 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-15 13:51:40 Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'welcomePageHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Failed to instantiate [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping]: Factory method 'welcomePageHandlerMapping' threw exception with message: Cannot invoke "java.util.List.size()" because "patterns" is null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.travel.spzx.tour.guide.TourGuideApplication.main(TourGuideApplication.java:21)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping]: Factory method 'welcomePageHandlerMapping' threw exception with message: Cannot invoke "java.util.List.size()" because "patterns" is null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 19 common frames omitted
+Caused by: java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "patterns" is null
+	at org.springframework.web.servlet.config.annotation.InterceptorRegistration.excludePathPatterns(InterceptorRegistration.java:104)
+	at com.travel.spzx.tour.guide.config.WebMvcConfiguration.addInterceptors(WebMvcConfiguration.java:35)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurerComposite.addInterceptors(WebMvcConfigurerComposite.java:88)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration.addInterceptors(DelegatingWebMvcConfiguration.java:83)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.getInterceptors(WebMvcConfigurationSupport.java:358)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration.createWelcomePageHandlerMapping(WebMvcAutoConfiguration.java:439)
+	at org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration.welcomePageHandlerMapping(WebMvcAutoConfiguration.java:419)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 20 common frames omitted
+2024-05-15 13:53:34 Starting TourGuideApplication using Java 17.0.5 with PID 79645 (/Users/yh/AndroidStudioProjects/spzx-parent/spzx-service/service-tour-guide/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-05-15 13:53:34 The following 1 profile is active: "dev"
+2024-05-15 13:53:35 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-15 13:53:35 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-15 13:53:35 Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2024-05-15 13:53:35 No MyBatis mapper was found in '[com.travel.spzx.tour.guide]' package. Please check your configuration.
+2024-05-15 13:53:35 BeanFactory id=b9f6f41c-c994-3fde-9fef-bd2ab904fcf6
+2024-05-15 13:53:36 Tomcat initialized with port 8518 (http)
+2024-05-15 13:53:36 Initializing ProtocolHandler ["http-nio-8518"]
+2024-05-15 13:53:36 Starting service [Tomcat]
+2024-05-15 13:53:36 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-15 13:53:36 Initializing Spring embedded WebApplicationContext
+2024-05-15 13:53:36 Root WebApplicationContext: initialization completed in 1206 ms
+2024-05-15 13:53:36 Starting ProtocolHandler ["http-nio-8518"]
+2024-05-15 13:53:36 Tomcat started on port 8518 (http) with context path ''
+2024-05-15 13:53:37 initializer namespace from ans.namespace attribute : null
+2024-05-15 13:53:37 initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2024-05-15 13:53:37 initializer namespace from namespace attribute :null
+2024-05-15 13:53:37 null No credential found
+2024-05-15 13:53:37 [settings] [req-serv] nacos-server port:8848
+2024-05-15 13:53:37 [settings] [http-client] connect timeout:1000
+2024-05-15 13:53:37 PER_TASK_CONFIG_SIZE: 3000.0
+2024-05-15 13:53:37 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-05-15 13:53:37 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-05-15 13:53:37 [RpcClientFactory] create a new rpc client of c5f7700c-98d8-4823-b5c2-e87ff89765cc
+2024-05-15 13:53:37 Create naming rpc client for uuid->c5f7700c-98d8-4823-b5c2-e87ff89765cc
+2024-05-15 13:53:37 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-05-15 13:53:37 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-05-15 13:53:37 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-05-15 13:53:37 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Try to connect to server on start up, server: {serverIp = '14.103.49.141', server main port = 8848}
+2024-05-15 13:53:37 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 13:53:37 Ready to get current node abilities...
+2024-05-15 13:53:37 Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2024-05-15 13:53:37 Initialize current abilities finish...
+2024-05-15 13:53:37 [AbilityControlManager] Successfully initialize AbilityControlManager
+2024-05-15 13:53:37 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Success to connect to server [14.103.49.141:8848] on start up, connectionId = 1715752417570_183.192.230.83_1087
+2024-05-15 13:53:37 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Notify connected event to listeners.
+2024-05-15 13:53:37 Grpc connection connect
+2024-05-15 13:53:37 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-05-15 13:53:37 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1248/0x00000008014342f0
+2024-05-15 13:53:37 [REGISTER-SERVICE] public registering service service-tour-guide with instance Instance{instanceId='null', ip='192.168.1.3', port=8518, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2024-05-15 13:53:37 nacos registry, DEFAULT_GROUP service-tour-guide 192.168.1.3:8518 register finished
+2024-05-15 13:53:37 Started TourGuideApplication in 3.325 seconds (process running for 3.761)
+2024-05-15 15:19:30 [1715752417570_183.192.230.83_1087]Request stream error, switch server,error={}
+com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: Network closed for unknown reason
+	at com.alibaba.nacos.shaded.io.grpc.Status.asRuntimeException(Status.java:537)
+	at com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:491)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:567)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:71)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:735)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:716)
+	at com.alibaba.nacos.shaded.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at com.alibaba.nacos.shaded.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-05-15 15:19:30 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 15:19:30 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 15:19:30 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Success to connect a server [14.103.49.141:8848], connectionId = 1715757570499_183.192.230.83_1347
+2024-05-15 15:19:30 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715752417570_183.192.230.83_1087
+2024-05-15 15:19:30 Close current connection 1715752417570_183.192.230.83_1087
+2024-05-15 15:19:30 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Notify disconnected event to listeners
+2024-05-15 15:19:30 Grpc connection disconnect, mark to redo
+2024-05-15 15:19:30 mark to redo completed
+2024-05-15 15:19:30 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Notify connected event to listeners.
+2024-05-15 15:19:30 Grpc connection connect
+2024-05-15 15:19:33 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 16:09:32 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Server healthy check fail, currentConnection = 1715757570499_183.192.230.83_1347
+2024-05-15 16:09:32 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 16:09:32 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 16:09:32 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Success to connect a server [14.103.49.141:8848], connectionId = 1715760572727_183.192.230.83_1494
+2024-05-15 16:09:32 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715757570499_183.192.230.83_1347
+2024-05-15 16:09:32 Close current connection 1715757570499_183.192.230.83_1347
+2024-05-15 16:09:32 [1715757570499_183.192.230.83_1347]Ignore error event,isRunning:false,isAbandon=true
+2024-05-15 16:09:32 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Notify disconnected event to listeners
+2024-05-15 16:09:32 Grpc connection disconnect, mark to redo
+2024-05-15 16:09:32 mark to redo completed
+2024-05-15 16:09:32 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Notify connected event to listeners.
+2024-05-15 16:09:32 Grpc connection connect
+2024-05-15 16:09:32 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 17:47:09 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Server healthy check fail, currentConnection = 1715760572727_183.192.230.83_1494
+2024-05-15 17:47:09 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 17:47:09 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 17:47:10 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Success to connect a server [14.103.49.141:8848], connectionId = 1715766430235_183.192.230.83_1288
+2024-05-15 17:47:10 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715760572727_183.192.230.83_1494
+2024-05-15 17:47:10 Close current connection 1715760572727_183.192.230.83_1494
+2024-05-15 17:47:10 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Notify disconnected event to listeners
+2024-05-15 17:47:10 [1715760572727_183.192.230.83_1494]Ignore error event,isRunning:true,isAbandon=true
+2024-05-15 17:47:10 Grpc connection disconnect, mark to redo
+2024-05-15 17:47:10 mark to redo completed
+2024-05-15 17:47:10 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Notify connected event to listeners.
+2024-05-15 17:47:10 Grpc connection connect
+2024-05-15 17:47:11 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 19:40:25 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Server healthy check fail, currentConnection = 1715766430235_183.192.230.83_1288
+2024-05-15 19:40:25 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 19:40:25 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 19:40:26 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Success to connect a server [14.103.49.141:8848], connectionId = 1715773226025_183.192.230.83_1492
+2024-05-15 19:40:26 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715766430235_183.192.230.83_1288
+2024-05-15 19:40:26 Close current connection 1715766430235_183.192.230.83_1288
+2024-05-15 19:40:26 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Notify disconnected event to listeners
+2024-05-15 19:40:26 Grpc connection disconnect, mark to redo
+2024-05-15 19:40:26 [1715766430235_183.192.230.83_1288]Ignore error event,isRunning:true,isAbandon=true
+2024-05-15 19:40:26 mark to redo completed
+2024-05-15 19:40:26 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Notify connected event to listeners.
+2024-05-15 19:40:26 Grpc connection connect
+2024-05-15 19:40:28 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 19:56:39 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Server healthy check fail, currentConnection = 1715773226025_183.192.230.83_1492
+2024-05-15 19:56:39 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 19:56:39 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 19:56:39 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Success to connect a server [14.103.49.141:8848], connectionId = 1715774199863_183.192.230.83_1227
+2024-05-15 19:56:39 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715773226025_183.192.230.83_1492
+2024-05-15 19:56:39 Close current connection 1715773226025_183.192.230.83_1492
+2024-05-15 19:56:39 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Notify disconnected event to listeners
+2024-05-15 19:56:39 Grpc connection disconnect, mark to redo
+2024-05-15 19:56:39 mark to redo completed
+2024-05-15 19:56:39 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Notify connected event to listeners.
+2024-05-15 19:56:39 Grpc connection connect
+2024-05-15 19:56:39 [1715773226025_183.192.230.83_1492]Ignore error event,isRunning:true,isAbandon=true
+2024-05-15 19:56:42 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 20:12:51 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Server healthy check fail, currentConnection = 1715774199863_183.192.230.83_1227
+2024-05-15 20:12:51 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 20:12:51 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 20:12:52 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Success to connect a server [14.103.49.141:8848], connectionId = 1715775172202_183.192.230.83_1082
+2024-05-15 20:12:52 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715774199863_183.192.230.83_1227
+2024-05-15 20:12:52 Close current connection 1715774199863_183.192.230.83_1227
+2024-05-15 20:12:52 [1715774199863_183.192.230.83_1227]Ignore error event,isRunning:true,isAbandon=true
+2024-05-15 20:12:52 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Notify disconnected event to listeners
+2024-05-15 20:12:52 Grpc connection disconnect, mark to redo
+2024-05-15 20:12:52 mark to redo completed
+2024-05-15 20:12:52 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Notify connected event to listeners.
+2024-05-15 20:12:52 Grpc connection connect
+2024-05-15 20:12:52 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 21:29:07 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Server healthy check fail, currentConnection = 1715775172202_183.192.230.83_1082
+2024-05-15 21:29:07 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 21:29:07 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 21:29:08 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Success to connect a server [14.103.49.141:8848], connectionId = 1715779748301_183.192.230.83_1477
+2024-05-15 21:29:08 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715775172202_183.192.230.83_1082
+2024-05-15 21:29:08 Close current connection 1715775172202_183.192.230.83_1082
+2024-05-15 21:29:08 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Notify disconnected event to listeners
+2024-05-15 21:29:08 [1715775172202_183.192.230.83_1082]Ignore error event,isRunning:true,isAbandon=true
+2024-05-15 21:29:08 Grpc connection disconnect, mark to redo
+2024-05-15 21:29:08 mark to redo completed
+2024-05-15 21:29:08 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Notify connected event to listeners.
+2024-05-15 21:29:08 Grpc connection connect
+2024-05-15 21:29:09 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 21:45:23 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Server healthy check fail, currentConnection = 1715779748301_183.192.230.83_1477
+2024-05-15 21:45:23 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-15 21:45:23 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 21:45:23 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Success to connect a server [14.103.49.141:8848], connectionId = 1715780723374_183.192.230.83_1241
+2024-05-15 21:45:23 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1715779748301_183.192.230.83_1477
+2024-05-15 21:45:23 Close current connection 1715779748301_183.192.230.83_1477
+2024-05-15 21:45:23 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Notify disconnected event to listeners
+2024-05-15 21:45:23 Grpc connection disconnect, mark to redo
+2024-05-15 21:45:23 mark to redo completed
+2024-05-15 21:45:23 [c5f7700c-98d8-4823-b5c2-e87ff89765cc] Notify connected event to listeners.
+2024-05-15 21:45:23 Grpc connection connect
+2024-05-15 21:45:23 [1715779748301_183.192.230.83_1477]Ignore error event,isRunning:true,isAbandon=true
+2024-05-15 21:45:26 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-15 22:16:28 [HttpClientBeanHolder] Start destroying common HttpClient
+2024-05-15 22:16:28 [NotifyCenter] Start destroying Publisher
+2024-05-15 22:16:28 [NotifyCenter] Destruction of the end
+2024-05-15 22:16:28 [HttpClientBeanHolder] Destruction of the end
+2024-05-15 22:24:53 Starting TourGuideApplication using Java 17.0.5 with PID 16993 (/Users/yh/AndroidStudioProjects/spzx-parent/spzx-service/service-tour-guide/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-05-15 22:24:53 The following 1 profile is active: "dev"
+2024-05-15 22:24:54 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-15 22:24:54 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-15 22:24:54 Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-05-15 22:24:54 BeanFactory id=ec6769cb-cf44-3e84-a648-be7839c057c9
+2024-05-15 22:24:54 Tomcat initialized with port 8518 (http)
+2024-05-15 22:24:54 Initializing ProtocolHandler ["http-nio-8518"]
+2024-05-15 22:24:54 Starting service [Tomcat]
+2024-05-15 22:24:54 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-15 22:24:54 Initializing Spring embedded WebApplicationContext
+2024-05-15 22:24:54 Root WebApplicationContext: initialization completed in 1364 ms
+2024-05-15 22:24:56 Starting ProtocolHandler ["http-nio-8518"]
+2024-05-15 22:24:56 Tomcat started on port 8518 (http) with context path ''
+2024-05-15 22:24:56 initializer namespace from ans.namespace attribute : null
+2024-05-15 22:24:56 initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2024-05-15 22:24:56 initializer namespace from namespace attribute :null
+2024-05-15 22:24:56 null No credential found
+2024-05-15 22:24:56 [settings] [req-serv] nacos-server port:8848
+2024-05-15 22:24:56 [settings] [http-client] connect timeout:1000
+2024-05-15 22:24:56 PER_TASK_CONFIG_SIZE: 3000.0
+2024-05-15 22:24:56 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-05-15 22:24:56 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-05-15 22:24:56 [RpcClientFactory] create a new rpc client of 2aa8186a-00c7-448d-901a-53c2607e583d
+2024-05-15 22:24:56 Create naming rpc client for uuid->2aa8186a-00c7-448d-901a-53c2607e583d
+2024-05-15 22:24:56 [2aa8186a-00c7-448d-901a-53c2607e583d] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-05-15 22:24:56 [2aa8186a-00c7-448d-901a-53c2607e583d] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-05-15 22:24:56 [2aa8186a-00c7-448d-901a-53c2607e583d] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-05-15 22:24:56 [2aa8186a-00c7-448d-901a-53c2607e583d] Try to connect to server on start up, server: {serverIp = '14.103.49.141', server main port = 8848}
+2024-05-15 22:24:56 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 22:24:56 Ready to get current node abilities...
+2024-05-15 22:24:56 Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2024-05-15 22:24:56 Initialize current abilities finish...
+2024-05-15 22:24:56 [AbilityControlManager] Successfully initialize AbilityControlManager
+2024-05-15 22:24:56 [2aa8186a-00c7-448d-901a-53c2607e583d] Success to connect to server [14.103.49.141:8848] on start up, connectionId = 1715783096741_183.192.230.83_1281
+2024-05-15 22:24:56 [2aa8186a-00c7-448d-901a-53c2607e583d] Notify connected event to listeners.
+2024-05-15 22:24:56 [2aa8186a-00c7-448d-901a-53c2607e583d] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-05-15 22:24:56 Grpc connection connect
+2024-05-15 22:24:56 [2aa8186a-00c7-448d-901a-53c2607e583d] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1261/0x0000000801473ad0
+2024-05-15 22:24:56 [REGISTER-SERVICE] public registering service service-tour-guide with instance Instance{instanceId='null', ip='192.168.1.3', port=8518, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2024-05-15 22:24:56 nacos registry, DEFAULT_GROUP service-tour-guide 192.168.1.3:8518 register finished
+2024-05-15 22:24:56 Started TourGuideApplication in 3.649 seconds (process running for 4.094)
+2024-05-15 22:27:58 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 22:27:58 Initializing Servlet 'dispatcherServlet'
+2024-05-15 22:27:58 Completed initialization in 1 ms
+2024-05-15 22:29:07 [NotifyCenter] Start destroying Publisher
+2024-05-15 22:29:07 [NotifyCenter] Destruction of the end
+2024-05-15 22:29:07 [HttpClientBeanHolder] Start destroying common HttpClient
+2024-05-15 22:29:07 [HttpClientBeanHolder] Destruction of the end
+2024-05-15 22:29:10 Starting TourGuideApplication using Java 17.0.5 with PID 17395 (/Users/yh/AndroidStudioProjects/spzx-parent/spzx-service/service-tour-guide/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-05-15 22:29:10 The following 1 profile is active: "dev"
+2024-05-15 22:29:11 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-15 22:29:11 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-15 22:29:11 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-05-15 22:29:11 BeanFactory id=ec6769cb-cf44-3e84-a648-be7839c057c9
+2024-05-15 22:29:12 Tomcat initialized with port 8518 (http)
+2024-05-15 22:29:12 Initializing ProtocolHandler ["http-nio-8518"]
+2024-05-15 22:29:12 Starting service [Tomcat]
+2024-05-15 22:29:12 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-15 22:29:12 Initializing Spring embedded WebApplicationContext
+2024-05-15 22:29:12 Root WebApplicationContext: initialization completed in 1386 ms
+2024-05-15 22:29:13 Starting ProtocolHandler ["http-nio-8518"]
+2024-05-15 22:29:13 Tomcat started on port 8518 (http) with context path ''
+2024-05-15 22:29:13 initializer namespace from ans.namespace attribute : null
+2024-05-15 22:29:13 initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2024-05-15 22:29:13 initializer namespace from namespace attribute :null
+2024-05-15 22:29:13 null No credential found
+2024-05-15 22:29:13 [settings] [req-serv] nacos-server port:8848
+2024-05-15 22:29:13 [settings] [http-client] connect timeout:1000
+2024-05-15 22:29:13 PER_TASK_CONFIG_SIZE: 3000.0
+2024-05-15 22:29:13 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-05-15 22:29:13 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-05-15 22:29:13 [RpcClientFactory] create a new rpc client of 2324b591-d80d-4418-8ac6-8b1dd9e7b4b6
+2024-05-15 22:29:13 Create naming rpc client for uuid->2324b591-d80d-4418-8ac6-8b1dd9e7b4b6
+2024-05-15 22:29:13 [2324b591-d80d-4418-8ac6-8b1dd9e7b4b6] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-05-15 22:29:13 [2324b591-d80d-4418-8ac6-8b1dd9e7b4b6] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-05-15 22:29:13 [2324b591-d80d-4418-8ac6-8b1dd9e7b4b6] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-05-15 22:29:13 [2324b591-d80d-4418-8ac6-8b1dd9e7b4b6] Try to connect to server on start up, server: {serverIp = '14.103.49.141', server main port = 8848}
+2024-05-15 22:29:13 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 22:29:13 Ready to get current node abilities...
+2024-05-15 22:29:13 Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2024-05-15 22:29:13 Initialize current abilities finish...
+2024-05-15 22:29:13 [AbilityControlManager] Successfully initialize AbilityControlManager
+2024-05-15 22:29:13 [2324b591-d80d-4418-8ac6-8b1dd9e7b4b6] Success to connect to server [14.103.49.141:8848] on start up, connectionId = 1715783353919_183.192.230.83_1495
+2024-05-15 22:29:13 [2324b591-d80d-4418-8ac6-8b1dd9e7b4b6] Notify connected event to listeners.
+2024-05-15 22:29:13 Grpc connection connect
+2024-05-15 22:29:13 [2324b591-d80d-4418-8ac6-8b1dd9e7b4b6] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-05-15 22:29:13 [2324b591-d80d-4418-8ac6-8b1dd9e7b4b6] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1261/0x00000008014723d0
+2024-05-15 22:29:13 [REGISTER-SERVICE] public registering service service-tour-guide with instance Instance{instanceId='null', ip='192.168.1.3', port=8518, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2024-05-15 22:29:13 nacos registry, DEFAULT_GROUP service-tour-guide 192.168.1.3:8518 register finished
+2024-05-15 22:29:13 Started TourGuideApplication in 3.633 seconds (process running for 4.094)
+2024-05-15 22:29:31 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 22:29:31 Initializing Servlet 'dispatcherServlet'
+2024-05-15 22:29:31 Completed initialization in 1 ms
+2024-05-15 22:30:28 [HttpClientBeanHolder] Start destroying common HttpClient
+2024-05-15 22:30:28 [NotifyCenter] Start destroying Publisher
+2024-05-15 22:30:28 [NotifyCenter] Destruction of the end
+2024-05-15 22:30:28 [HttpClientBeanHolder] Destruction of the end
+2024-05-15 22:30:31 Starting TourGuideApplication using Java 17.0.5 with PID 17504 (/Users/yh/AndroidStudioProjects/spzx-parent/spzx-service/service-tour-guide/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-05-15 22:30:31 The following 1 profile is active: "dev"
+2024-05-15 22:30:32 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-15 22:30:32 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-15 22:30:32 Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-05-15 22:30:32 BeanFactory id=ec6769cb-cf44-3e84-a648-be7839c057c9
+2024-05-15 22:30:32 Tomcat initialized with port 8518 (http)
+2024-05-15 22:30:32 Initializing ProtocolHandler ["http-nio-8518"]
+2024-05-15 22:30:32 Starting service [Tomcat]
+2024-05-15 22:30:32 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-15 22:30:32 Initializing Spring embedded WebApplicationContext
+2024-05-15 22:30:32 Root WebApplicationContext: initialization completed in 1389 ms
+2024-05-15 22:30:33 Starting ProtocolHandler ["http-nio-8518"]
+2024-05-15 22:30:33 Tomcat started on port 8518 (http) with context path ''
+2024-05-15 22:30:33 initializer namespace from ans.namespace attribute : null
+2024-05-15 22:30:33 initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2024-05-15 22:30:33 initializer namespace from namespace attribute :null
+2024-05-15 22:30:34 null No credential found
+2024-05-15 22:30:34 [settings] [req-serv] nacos-server port:8848
+2024-05-15 22:30:34 [settings] [http-client] connect timeout:1000
+2024-05-15 22:30:34 PER_TASK_CONFIG_SIZE: 3000.0
+2024-05-15 22:30:34 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-05-15 22:30:34 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-05-15 22:30:34 [RpcClientFactory] create a new rpc client of 2f60c503-4744-40fc-abe8-1eb35329d1ff
+2024-05-15 22:30:34 Create naming rpc client for uuid->2f60c503-4744-40fc-abe8-1eb35329d1ff
+2024-05-15 22:30:34 [2f60c503-4744-40fc-abe8-1eb35329d1ff] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-05-15 22:30:34 [2f60c503-4744-40fc-abe8-1eb35329d1ff] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-05-15 22:30:34 [2f60c503-4744-40fc-abe8-1eb35329d1ff] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-05-15 22:30:34 [2f60c503-4744-40fc-abe8-1eb35329d1ff] Try to connect to server on start up, server: {serverIp = '14.103.49.141', server main port = 8848}
+2024-05-15 22:30:34 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 22:30:34 Ready to get current node abilities...
+2024-05-15 22:30:34 Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2024-05-15 22:30:34 Initialize current abilities finish...
+2024-05-15 22:30:34 [AbilityControlManager] Successfully initialize AbilityControlManager
+2024-05-15 22:30:34 [2f60c503-4744-40fc-abe8-1eb35329d1ff] Success to connect to server [14.103.49.141:8848] on start up, connectionId = 1715783434666_183.192.230.83_1027
+2024-05-15 22:30:34 [2f60c503-4744-40fc-abe8-1eb35329d1ff] Notify connected event to listeners.
+2024-05-15 22:30:34 Grpc connection connect
+2024-05-15 22:30:34 [2f60c503-4744-40fc-abe8-1eb35329d1ff] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-05-15 22:30:34 [2f60c503-4744-40fc-abe8-1eb35329d1ff] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1261/0x0000000801472a50
+2024-05-15 22:30:34 [REGISTER-SERVICE] public registering service service-tour-guide with instance Instance{instanceId='null', ip='192.168.1.3', port=8518, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2024-05-15 22:30:34 nacos registry, DEFAULT_GROUP service-tour-guide 192.168.1.3:8518 register finished
+2024-05-15 22:30:34 Started TourGuideApplication in 3.654 seconds (process running for 4.099)
+2024-05-15 22:30:41 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 22:30:41 Initializing Servlet 'dispatcherServlet'
+2024-05-15 22:30:41 Completed initialization in 1 ms
+2024-05-15 22:30:41 HikariPool-1 - Starting...
+2024-05-15 22:30:42 HikariPool-1 - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'183.192.230.83' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:829)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:242)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:160)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:118)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:348)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:89)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:64)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:132)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy142.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy92.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy93.getByPhone(Unknown Source)
+	at com.travel.spzx.tour.guide.service.impl.UserInfoServiceImpl.login(UserInfoServiceImpl.java:137)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:713)
+	at com.travel.spzx.tour.guide.service.impl.UserInfoServiceImpl$$SpringCGLIB$$0.login(<generated>)
+	at com.travel.spzx.tour.guide.controller.UserInfoController.login(UserInfoController.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:925)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-05-15 22:31:11 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-15 22:31:11 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-15 22:31:40 [HttpClientBeanHolder] Start destroying common HttpClient
+2024-05-15 22:31:40 [NotifyCenter] Start destroying Publisher
+2024-05-15 22:31:40 [NotifyCenter] Destruction of the end
+2024-05-15 22:31:40 [HttpClientBeanHolder] Destruction of the end
+2024-05-15 22:31:43 Starting TourGuideApplication using Java 17.0.5 with PID 17551 (/Users/yh/AndroidStudioProjects/spzx-parent/spzx-service/service-tour-guide/build/classes/java/main started by yh in /Users/yh/AndroidStudioProjects/spzx-parent)
+2024-05-15 22:31:43 The following 1 profile is active: "dev"
+2024-05-15 22:31:44 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-15 22:31:44 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-15 22:31:44 Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-05-15 22:31:44 BeanFactory id=ec6769cb-cf44-3e84-a648-be7839c057c9
+2024-05-15 22:31:44 Tomcat initialized with port 8518 (http)
+2024-05-15 22:31:44 Initializing ProtocolHandler ["http-nio-8518"]
+2024-05-15 22:31:44 Starting service [Tomcat]
+2024-05-15 22:31:44 Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-05-15 22:31:44 Initializing Spring embedded WebApplicationContext
+2024-05-15 22:31:44 Root WebApplicationContext: initialization completed in 1393 ms
+2024-05-15 22:31:45 Starting ProtocolHandler ["http-nio-8518"]
+2024-05-15 22:31:45 Tomcat started on port 8518 (http) with context path ''
+2024-05-15 22:31:45 initializer namespace from ans.namespace attribute : null
+2024-05-15 22:31:45 initializer namespace from ALIBABA_ALIWARE_NAMESPACE attribute :null
+2024-05-15 22:31:45 initializer namespace from namespace attribute :null
+2024-05-15 22:31:45 [settings] [req-serv] nacos-server port:8848
+2024-05-15 22:31:45 [settings] [http-client] connect timeout:1000
+2024-05-15 22:31:45 null No credential found
+2024-05-15 22:31:45 PER_TASK_CONFIG_SIZE: 3000.0
+2024-05-15 22:31:45 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-05-15 22:31:45 [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-05-15 22:31:45 [RpcClientFactory] create a new rpc client of 40396535-dd88-4997-91fa-efadb046b137
+2024-05-15 22:31:45 Create naming rpc client for uuid->40396535-dd88-4997-91fa-efadb046b137
+2024-05-15 22:31:45 [40396535-dd88-4997-91fa-efadb046b137] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+2024-05-15 22:31:45 [40396535-dd88-4997-91fa-efadb046b137] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+2024-05-15 22:31:45 [40396535-dd88-4997-91fa-efadb046b137] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+2024-05-15 22:31:45 [40396535-dd88-4997-91fa-efadb046b137] Try to connect to server on start up, server: {serverIp = '14.103.49.141', server main port = 8848}
+2024-05-15 22:31:45 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-15 22:31:46 Ready to get current node abilities...
+2024-05-15 22:31:46 Ready to initialize current node abilities, support modes: [SDK_CLIENT]
+2024-05-15 22:31:46 Initialize current abilities finish...
+2024-05-15 22:31:46 [AbilityControlManager] Successfully initialize AbilityControlManager
+2024-05-15 22:31:46 [40396535-dd88-4997-91fa-efadb046b137] Success to connect to server [14.103.49.141:8848] on start up, connectionId = 1715783506517_183.192.230.83_1051
+2024-05-15 22:31:46 [40396535-dd88-4997-91fa-efadb046b137] Notify connected event to listeners.
+2024-05-15 22:31:46 Grpc connection connect
+2024-05-15 22:31:46 [40396535-dd88-4997-91fa-efadb046b137] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-05-15 22:31:46 [40396535-dd88-4997-91fa-efadb046b137] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1261/0x0000000801473ad0
+2024-05-15 22:31:46 [REGISTER-SERVICE] public registering service service-tour-guide with instance Instance{instanceId='null', ip='192.168.1.3', port=8518, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={IPv6=null, preserved.register.source=SPRING_CLOUD}}
+2024-05-15 22:31:46 nacos registry, DEFAULT_GROUP service-tour-guide 192.168.1.3:8518 register finished
+2024-05-15 22:31:46 Started TourGuideApplication in 3.621 seconds (process running for 4.091)
+2024-05-15 22:31:53 Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-15 22:31:53 Initializing Servlet 'dispatcherServlet'
+2024-05-15 22:31:53 Completed initialization in 1 ms
+2024-05-15 22:31:54 HikariPool-1 - Starting...
+2024-05-15 22:31:54 HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11c65977
+2024-05-15 22:31:54 HikariPool-1 - Start completed.
+2024-05-15 22:32:24 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-15 22:32:24 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-15 22:32:55 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-15 22:32:55 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-15 22:33:26 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-15 22:33:26 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-15 22:33:59 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-15 22:33:59 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-15 22:34:30 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-15 22:34:30 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-15 22:35:01 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-15 22:35:01 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-15 22:35:54 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-15 22:35:54 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-15 22:36:25 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-15 22:36:25 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-15 22:36:56 [NotifyCenter] Start destroying Publisher
+2024-05-15 22:36:56 [HttpClientBeanHolder] Start destroying common HttpClient
+2024-05-15 22:36:56 [NotifyCenter] Destruction of the end
+2024-05-15 22:36:56 [HttpClientBeanHolder] Destruction of the end
+2024-05-15 22:36:56 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-15 22:36:56 Reconnected to 14.103.49.141/<unresolved>:6379

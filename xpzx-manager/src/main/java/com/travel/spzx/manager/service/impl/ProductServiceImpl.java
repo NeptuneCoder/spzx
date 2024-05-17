@@ -34,6 +34,7 @@ public class ProductServiceImpl implements ProductService {
     @Autowired
     private ProductDetailsMapper productDetailsMapper;
 
+
     @Override
     public PageInfo<Product> findByPage(Integer page, Integer limit, ProductDto productDto) {
         PageHelper.startPage(page, limit);
@@ -206,5 +207,10 @@ public class ProductServiceImpl implements ProductService {
             product.setStatus(-1);
         }
         productMapper.updateById(product);
+    }
+
+    @Override
+    public List<Product> findAll() {
+        return productMapper.findAll();
     }
 }

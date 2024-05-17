@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.spzx.manager.mapper.BatchBusMapper">
+
+
+    <resultMap id="busMap" type="com.travel.spzx.model.entity.bus.BusInfo" autoMapping="true">
+    </resultMap>
+
+    <!-- 用于select查询公用抽取的列 -->
+    <sql id="columns">
+        id
+        ,
+       car_no,seat_num,driver_name,driver_phone,remark,create_time,update_time,is_deleted
+    </sql>
+    <insert id="insertSelective">
+        insert into bus_info (id,
+                              car_no,
+                              seat_num,
+                              driver_name,
+                              driver_phone,
+                              remark,
+                              create_time,
+                              update_time,
+                              is_deleted)
+        values (#{id},
+                #{carNo},
+                #{seatNum},
+                #{driverName},
+                #{driverPhone},
+                #{remark},
+                now(),
+                now(),
+                0)
+    </insert>
+
+
+    <select id="findByPage" resultMap="busMap">
+        select
+        <include refid="columns"/>
+        from bus_info
+
+        <where>
+            <if test="carNo!= null and carNo != ''">
+                and car_no like concat('%',#{carNo},'%')
+            </if>
+
+            <if test="driverName!= null and driverName != ''">
+                and driver_name like concat('%',#{driverName},'%')
+            </if>
+
+            and is_deleted = 0
+        </where>
+        order by id desc
+    </select>
+    <select id="findAll" resultMap="busMap">
+        select
+        <include refid="columns"/>
+        from bus_info
+        where is_deleted = 0
+        order by id desc
+    </select>
+
+    <update id="deleteByPrimaryKey">
+        update bus_info
+        set is_deleted = 1
+        where id = #{id}
+    </update>
+    <update id="updateByPrimaryKeySelective">
+        update bus_info
+        <set>
+            <if test="carNo != null">
+                car_no = #{carNo},
+            </if>
+            <if test="seatNum != null">
+                seat_num = #{seatNum},
+            </if>
+            <if test="driverName != null">
+                driver_name = #{driverName},
+            </if>
+            <if test="driverPhone != null">
+                driver_phone = #{driverPhone},
+            </if>
+            <if test="remark != null">
+                remark = #{remark},
+            </if>
+            update_time = now()
+        </set>
+
+        where id = #{id}
+    </update>
+</mapper>

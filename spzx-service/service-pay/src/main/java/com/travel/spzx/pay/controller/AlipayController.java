@@ -43,7 +43,7 @@ public class AlipayController {
     public String alipayNotify(@RequestParam Map<String, String> paramMap, HttpServletRequest request) {
         System.out.println("AlipayController...alipayNotify方法执行了...");
 
-        boolean signVerified = false; //调用SDK验证签名
+        boolean signVerified = false; //TODO 调用SDK验证签名
         try {
             signVerified = AlipaySignature.rsaCheckV1(paramMap, alipayProperties.getAlipayPublicKey(), AlipayProperties.charset, AlipayProperties.sign_type);
         } catch (AlipayApiException e) {

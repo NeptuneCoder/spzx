@@ -4,13 +4,14 @@
     <resultMap id="protocolMap" type="com.travel.spzx.model.entity.protocol.ProtocolInfo"/>
     <sql id="columns">
         id
-        , title, protocol_key,content,remark,create_time,update_time, is_deleted
+        , title,base_url, protocol_key,content,remark,create_time,update_time, is_deleted
     </sql>
     <insert id="save">
         insert into protocol_info
-        (id, title,protocol_key, content, remark, create_time, update_time, is_deleted)
+        (id, title,base_url, protocol_key, content, remark, create_time, update_time, is_deleted)
         values (#{id},
                 #{title},
+                #{baseUrl},
                 #{protocolKey},
                 #{content},
                 #{remark},
@@ -29,6 +30,9 @@
         <set>
             <if test="title!= null">
                 title = #{title},
+            </if>
+            <if test="baseUrl!= null">
+                base_url = #{baseUrl},
             </if>
             <if test="protocolKey!= null">
                 protocol_key = #{protocolKey},

@@ -18,4 +18,13 @@ public interface OrderInfoMapper {
     OrderInfo getByOrderNo(String orderNo);
 
     void updateById(OrderInfo orderInfo);
+
+    void updateOrderStatus(@Param("id") Long id, @Param("orderStatus") Integer orderStatus, @Param("cancelReason") String cancelReason);
+
+
+    List<OrderInfo> findWaitPayOrder();
+
+    void mockPaySuccess(@Param("orderId") Long id, @Param("status") Integer status);
+
+    int findOrderStatusById(@Param("orderId")  Long orderId);
 }

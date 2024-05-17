@@ -22,5 +22,6 @@ public class UserWebMvcConfiguration implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(userLoginAuthInterceptor)
                 .addPathPatterns("/api/**");
+
     }
 }

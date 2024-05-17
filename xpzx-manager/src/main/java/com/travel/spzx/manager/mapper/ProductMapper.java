@@ -17,4 +17,6 @@ public interface ProductMapper {
     void updateById(Product product);
 
     void deleteById(Long id);
+
+    List<Product> findAll();
 }

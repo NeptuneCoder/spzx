@@ -4,6 +4,8 @@ import com.travel.spzx.model.dto.product.ProductDto;
 import com.travel.spzx.model.entity.product.Product;
 import com.github.pagehelper.PageInfo;
 
+import java.util.List;
+
 public interface ProductService {
     PageInfo<Product> findByPage(Integer page, Integer limit, ProductDto productDto);
 
@@ -18,4 +20,6 @@ public interface ProductService {
     void updateAuditStatus(Long id, Integer auditStatus);
 
     void updateStatus(Long id, Integer status);
+
+    List<Product> findAll();
 }

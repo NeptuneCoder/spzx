@@ -4,7 +4,9 @@ import com.travel.spzx.model.entity.base.BaseEntity;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 @Data
 @Schema(description = "商品实体类")
@@ -91,6 +93,21 @@ public class Product extends BaseEntity {
     private String assembleTime;
 
 
+    /**
+     * 处理前端需要的照片信息
+     */
+    public void parserImage() {
+        String sliderUrls = this.getSliderUrls();
+        System.out.println("sliderUrls.contains(\",\") = " + sliderUrls.contains(","));
+        if (sliderUrls.contains(",")) {
+            String[] urls = sliderUrls.split(",");
+            this.setSliderImageUrls(Arrays.stream(urls).toList());
+            this.setSliderUrls(urls[0]);
+        } else {
+            this.setSliderImageUrls(Stream.of(sliderUrls).toList());
+            this.setSliderUrls(sliderUrls);
+        }
+    }
 
 
 }

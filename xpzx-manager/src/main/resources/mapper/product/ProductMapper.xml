@@ -231,4 +231,10 @@
                  LEFT JOIN city_info ci on ci.id = ali.city_id
         where p.id = #{id}
     </select>
+    <select id="findAll" resultType="com.travel.spzx.model.entity.product.Product">
+        select p.id,
+               p.name
+        from product p
+        where p.is_deleted = 0
+    </select>
 </mapper>

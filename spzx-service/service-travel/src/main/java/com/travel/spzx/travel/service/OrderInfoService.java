@@ -3,6 +3,7 @@ package com.travel.spzx.travel.service;
 import com.github.pagehelper.PageInfo;
 import com.travel.spzx.model.dto.h5.OrderInfoDto;
 import com.travel.spzx.model.entity.order.OrderInfo;
+import com.travel.spzx.model.status.OrderStateEnum;
 import com.travel.spzx.model.vo.h5.TradeVo;
 
 public interface OrderInfoService {
@@ -19,4 +20,14 @@ public interface OrderInfoService {
     OrderInfo getOrderInfoByOrderNo(String orderNo);
 
     void updateOrderStatus(String orderNo, Integer orderStatus);
+
+    void updateOrderInfo(Long orderId, OrderStateEnum orderStatus);
+
+    OrderInfo orderDetail(Long orderId);
+
+    void cancelTimeOutOrder();
+
+    OrderInfo cancelOrder(Long orderId, String cancelReason);
+
+    void mockPay(Long id);
 }

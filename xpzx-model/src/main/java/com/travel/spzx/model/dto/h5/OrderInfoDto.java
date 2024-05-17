@@ -19,14 +19,16 @@ public class OrderInfoDto {
      * trips: string[]
      */
     //送货地址id
+    @Schema(description = "倒计时")
+    private Long countdown;
     @Schema(description = "产品id")
     private Long productId;
     @Schema(description = "批次id")
     private String batchId;
     @Schema(description = "联系人")
-    private String linkman;
+    private String linkMan;
     @Schema(description = "联系电话")
-    private String phone;
+    private String linkTel;
     @Schema(description = "成人数量")
     private Integer adultNum;
     @Schema(description = "儿童数量")

@@ -216,5 +216,6 @@ public class UserInfoServiceImpl implements UserInfoService {
         //删除redis
         System.out.println("logout token:" + token);
         redisTemplate.delete(RedisConstantKey.USER_TOKEN_KEY + token);
+        AuthContextUtil.removeUserInfo();
     }
 }

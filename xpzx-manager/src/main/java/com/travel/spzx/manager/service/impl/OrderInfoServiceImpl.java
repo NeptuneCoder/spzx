@@ -1,10 +1,16 @@
 package com.travel.spzx.manager.service.impl;
 
 import cn.hutool.core.date.DateUtil;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.travel.spzx.manager.mapper.OrderInfoMapper;
 import com.travel.spzx.manager.mapper.OrderStatisticsMapper;
 import com.travel.spzx.manager.service.OrderInfoService;
+import com.travel.spzx.model.dto.order.OrderDto;
 import com.travel.spzx.model.dto.order.OrderStatisticsDto;
+import com.travel.spzx.model.entity.order.OrderInfo;
 import com.travel.spzx.model.entity.order.OrderStatistics;
+import com.travel.spzx.model.vo.order.OrderInfoVo;
 import com.travel.spzx.model.vo.order.OrderStatisticsVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,6 +24,9 @@ public class OrderInfoServiceImpl implements OrderInfoService {
 
     @Autowired
     private OrderStatisticsMapper orderStatisticsMapper;
+
+    @Autowired
+    private OrderInfoMapper orderInfoMapper;
 
     @Override
     public OrderStatisticsVo getOrderStatisticsData(OrderStatisticsDto orderStatisticsDto) {
@@ -38,5 +47,12 @@ public class OrderInfoServiceImpl implements OrderInfoService {
 
         // 返回数据
         return orderStatisticsVo;
+    }
+
+    @Override
+    public PageInfo<OrderInfoVo> list(int page, int limit, OrderDto orderDto) {
+        PageHelper.startPage(page, limit);
+        List<OrderInfoVo> res = orderInfoMapper.findList(orderDto);
+        return new PageInfo<>(res);
     }
 }

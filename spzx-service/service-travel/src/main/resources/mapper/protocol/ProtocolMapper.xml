@@ -3,15 +3,16 @@
 <mapper namespace="com.travel.spzx.travel.mapper.ProtocolMapper">
     <sql id="columns">
         id
-        , title, content,`type`, remark,create_time,update_time, is_deleted
+        , title,base_url, protocol_key, content, remark,create_time,update_time, is_deleted
     </sql>
-    <resultMap id="richTxtMap" type="com.travel.spzx.model.entity.richTxt.RichTxtInfo"/>
-    <select id="getProtocolByName" resultMap="richTxtMap">
+    <resultMap id="protocolMap" type="com.travel.spzx.model.entity.protocol.ProtocolInfo"/>
+
+    <select id="getProtocolByKey" resultMap="protocolMap">
         select
         <include refid="columns"/>
-        from desc_info
+        from protocol_info
         where is_deleted = 0
-        and title = #{title}
+        and protocol_key = #{protocolKey}
     </select>
 
 </mapper>

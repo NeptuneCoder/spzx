@@ -4,7 +4,7 @@
 
     <sql id="columns">
         id
-        ,product_id,total_num,success_num,audit,status,start_time,end_time,remark,create_time,update_time,is_deleted
+        ,product_id,total_num,success_num,audit,status,sale_num,start_time,end_time,remark,create_time,update_time,is_deleted
     </sql>
     <insert id="save" useGeneratedKeys="true" keyProperty="id">
         insert into batch_info (id,
@@ -44,6 +44,36 @@
         order by id desc
 
     </select>
+    <select id="findAll" resultType="com.travel.spzx.model.entity.product.BatchItem">
+        select
+        <include refid="columns"/>
+        from batch_info
+        where is_deleted = 0
+        and product_id = #{productId}
+        order by id desc
+    </select>
+    <select id="getDetailByBatchId" resultMap="batchMap">
+        select bi.id,
+               bi.product_id,
+               bi.total_num,
+               bi.success_num,
+               bi.audit,
+               bi.status,
+               bi.sale_num,
+               bi.start_time,
+               bi.end_time,
+               bi.remark,
+               bi.create_time,
+               bi.update_time,
+               bi.is_deleted,
+               p.name as product_name
+        from batch_info bi
+                 left join product p on bi.product_id = p.id
+        where bi.is_deleted = 0
+          and bi.id = #{id}
+
+    </select>
+
 
     <update id="updateById">
         update batch_info

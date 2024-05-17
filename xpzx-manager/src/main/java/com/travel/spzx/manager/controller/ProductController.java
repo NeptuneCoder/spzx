@@ -10,6 +10,8 @@ import io.swagger.v3.oas.annotations.Parameter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping(value = "/admin/product/product")
 public class ProductController {
@@ -63,6 +65,12 @@ public class ProductController {
     public Result updateStatus(@PathVariable("id") Long id, @PathVariable("status") Integer status) {
         productService.updateStatus(id, status);
         return Result.build(null, ResultCodeEnum.SUCCESS);
+    }
+
+    @GetMapping("/findAll")
+    public Result findAll() {
+        List<Product> pageInfo = productService.findAll();
+        return Result.build(pageInfo, ResultCodeEnum.SUCCESS);
     }
 
 }

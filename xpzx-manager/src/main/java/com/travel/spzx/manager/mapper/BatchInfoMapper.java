@@ -2,6 +2,7 @@ package com.travel.spzx.manager.mapper;
 
 import com.travel.spzx.model.entity.product.BatchItem;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -12,4 +13,8 @@ public interface BatchInfoMapper {
     List<BatchItem> selectByProductId(Long id);
 
     void updateById(BatchItem v);
+
+    List<BatchItem> findAll(@Param("productId") String productId);
+
+    BatchItem getDetailByBatchId(@Param("id") String batchId);
 }

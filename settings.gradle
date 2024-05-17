@@ -38,5 +38,6 @@ include 'spzx-service:service-pay'
 findProject(':spzx-service:service-pay')?.name = 'service-pay'
 include 'spzx-service-client:service-order-client'
 findProject(':spzx-service-client:service-order-client')?.name = 'service-order-client'
-
+include 'spzx-service:service-tour-guide'
+findProject(':spzx-service:service-tour-guide')?.name = 'service-tour-guide'
 

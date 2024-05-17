@@ -39,11 +39,11 @@ public class PaymentInfoServiceImpl implements PaymentInfoService {
             paymentInfo = new PaymentInfo();
             paymentInfo.setUserId(orderInfo.getUserId());
             paymentInfo.setPayType(orderInfo.getPayType());
-            String content = "";
+            StringBuilder content = new StringBuilder();
             for (OrderItem item : orderInfo.getOrderItemList()) {
-                content += item.getSkuName() + " ";
+                content.append(item.getTripName()).append(" ");
             }
-            paymentInfo.setContent(content);
+            paymentInfo.setContent(content.toString());
             paymentInfo.setAmount(orderInfo.getTotalAmount());
             paymentInfo.setOrderNo(orderNo);
             paymentInfo.setPaymentStatus(0);
@@ -74,7 +74,7 @@ public class PaymentInfoServiceImpl implements PaymentInfoService {
         List<SkuSaleDto> skuSaleDtoList = orderInfo.getOrderItemList().stream().map(item -> {
             SkuSaleDto skuSaleDto = new SkuSaleDto();
             skuSaleDto.setSkuId(item.getSkuId());
-            skuSaleDto.setNum(item.getSkuNum());
+//            skuSaleDto.setNum(item.getSkuNum());
             return skuSaleDto;
         }).collect(Collectors.toList());
         productFeignClient.updateSkuSaleNum(skuSaleDtoList);
