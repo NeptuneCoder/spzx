@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.spzx.manager.mapper.BatchBusMapper">
+
+
+    <resultMap id="batchBusMap" type="com.travel.spzx.model.entity.order.BatchBusInfo" autoMapping="true">
+    </resultMap>
+
+    <!-- 用于select查询公用抽取的列 -->
+    <sql id="columns">
+        id
+        ,
+       car_id,
+            batch_id,
+            create_time,update_time,is_deleted
+    </sql>
+    <!--    //car_ids 车辆id数组-->
+    <insert id="insertSelective">
+        insert into batch_bus_info (id,
+                                    car_id,
+                                    batch_id,
+                                    create_time,
+                                    update_time,
+                                    is_deleted)
+
+        values (#{id},
+                #{carId},
+                #{batchId},
+                now(),
+                now(),
+                0)
+
+    </insert>
+    <update id="deleteByBatchId">
+        update batch_bus_info
+        set is_deleted = 1
+        where batch_id = #{batchId}
+          and is_deleted = 0
+    </update>
+
+    <!-- 根据batchId查询车辆信息 -->
+    <select id="findByBatchId" resultMap="batchBusMap">
+        select
+        distinct bbi.id,
+        bbi.id,
+        bbi.car_id,
+        bbi.batch_id,
+        bbi.create_time,
+        bbi.update_time,
+        bbi.is_deleted,
+        bi.car_no,
+        bi.seat_num,
+        bi.driver_name,
+        bi.driver_phone,
+        bi.remark
+        from batch_bus_info bbi
+        left join bus_info bi on bbi.car_id = bi.id
+        <where>
+            <if test="batchId!= null and batchId != ''">
+                and bbi.batch_id = #{batchId}
+            </if>
+            and bbi.is_deleted = 0
+        </where>
+
+        order by bbi.id desc
+
+    </select>
+
+
+    <!-- 根据batchId查询车辆分配了几个导游 -->
+    <select id="queryTourGuideNumByCarIdBatchId" resultType="int">
+        select count(distinct btgi.id) as tour_guide_num
+        from bus_tour_guide_info btgi
+        where btgi.car_id = #{carId}
+          and btgi.batch_id = #{batchId}
+          and btgi.is_deleted = 0
+
+    </select>
+    <!-- 根据batchId查询车辆分配了几个游客 -->
+    <select id="queryTouristNumByCarIdBatchId" resultType="int">
+        select count(distinct bti.id) as tour_num
+        from bus_tour_info bti
+        where bti.car_id = #{carId}
+          and bti.batch_id = #{batchId}
+          and bti.is_deleted = 0
+
+    </select>
+    <!-- 删除批次的车辆信息 -->
+    <update id="deleteByPrimaryKey">
+        update batch_bus_info
+        set is_deleted = 1
+        where id = #{id}
+          and batch_id = #{batchId}
+    </update>
+    <update id="updateByPrimaryKeySelective">
+        update batch_bus_info
+        <set>
+            <if test="carNo != null">
+                car_no = #{carNo},
+            </if>
+            <if test="seatNum != null">
+                seat_num = #{seatNum},
+            </if>
+            <if test="driverName != null">
+                driver_name = #{driverName},
+            </if>
+            <if test="driverPhone != null">
+                driver_phone = #{driverPhone},
+            </if>
+            <if test="remark != null">
+                remark = #{remark},
+            </if>
+            update_time = now()
+        </set>
+
+        where id = #{id}
+    </update>
+</mapper>

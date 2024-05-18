@@ -40,4 +40,6 @@ public class BatchInfoController {
         return Result.success(all);
     }
 
+
+
 }

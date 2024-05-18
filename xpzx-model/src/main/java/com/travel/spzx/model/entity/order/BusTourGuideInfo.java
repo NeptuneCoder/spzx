@@ -5,6 +5,11 @@ import lombok.Data;
 
 @Data
 public class BusTourGuideInfo extends BaseEntity {
-    private String bus_id;
-    private int tour_guide_id;
+    private String tourGuideId;
+
+    private String carId;
+    private String nickname;
+    private String batchId;
+
+    private String carNo;
 }

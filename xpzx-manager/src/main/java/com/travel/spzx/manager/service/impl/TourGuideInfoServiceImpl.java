@@ -1,5 +1,6 @@
 package com.travel.spzx.manager.service.impl;
 
+import cn.hutool.core.util.StrUtil;
 import com.travel.spzx.common.exception.GuiguException;
 import com.travel.spzx.manager.mapper.TourGuideInfoMapper;
 import com.travel.spzx.manager.service.TourGuideInfoService;
@@ -31,11 +32,15 @@ public class TourGuideInfoServiceImpl implements TourGuideInfoService {
         if (info != null && info.getId() != tourGuideInfo.getId()) {
             throw GuiguException.build("昵称重复");
         }
-        //判断导游证件号是否重复
-        info = tourGuideInfoMapper.findByTourCertificateNo(tourGuideInfo.getTourCertificateNo());
-        if (info != null && info.getId() != tourGuideInfo.getId()) {
-            throw GuiguException.build("身份证号重复");
+        String tourCertificateNo = tourGuideInfo.getTourCertificateNo();
+        if (!StrUtil.isEmpty(tourCertificateNo)) {
+            //判断导游证件号是否重复
+            info = tourGuideInfoMapper.findByTourCertificateNo(tourGuideInfo.getTourCertificateNo());
+            if (info != null && info.getId() != tourGuideInfo.getId()) {
+                throw GuiguException.build("导游证不能重复");
+            }
         }
+
 
         //判断身份证号是否重复
         info = tourGuideInfoMapper.findByIdTypeNo(tourGuideInfo.getIdTypeNo());

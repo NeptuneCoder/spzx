@@ -98,7 +98,7 @@
     <select id="findList" resultMap="tourGuideInfoMap">
 
         SELECT
-        DISTINCT tgi.id tgi_id,
+        DISTINCT tgi.id as id,
         tgi.name,
         tgi.nickname,
         tgi.phone,
@@ -111,7 +111,7 @@
         tgi.remark,
         tgi.create_time,
         tgi.update_time,
-        iti.id as id_type,
+        iti.id as id_type_id,
         tgl.name as level_name,
         iti.id_type_name
         FROM tour_guide_info tgi

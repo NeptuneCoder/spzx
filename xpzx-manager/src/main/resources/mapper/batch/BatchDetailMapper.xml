@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.spzx.manager.mapper.BatchDetailMapper">
+
+    <!-- 根据批次ID查询用户列表 -->
+    <resultMap id="touristResultMap" type="com.travel.spzx.model.vo.batch.TouristVO"/>
+
+
+    <select id="querySuccessTouristByBatchId" resultMap="touristResultMap">
+        SELECT ti.id,
+        ti.name,
+        ti.id_card_no,
+        ti.sex,
+        ti.phone,
+        ti.age_type,
+        bti.car_id,
+        bi.car_no
+        FROM trip_info ti
+        left join order_item oi on oi.trip_id = ti.id
+        and oi.is_deleted = 0
+        left join order_info o on oi.order_id = o.id
+        and o.is_deleted = 0
+        and o.order_status = 1
+        left join bus_tour_info bti on ti.id = bti.tour_id
+        and bti.is_deleted = 0 and bti.batch_id = #{batchId}
+        left join bus_info bi on bti.car_id = bi.id
+        <where>
+            <if test="touristName!= null and touristName!= ''">
+                AND ti.name like concat('%', #{touristName}, '%')
+            </if>
+            <if test="batchId!= null and batchId!= ''">
+                AND o.batch_id = #{batchId}
+            </if>
+
+        </where>
+        order by ti.id desc
+    </select>
+    <!--    BusTouristInfo-->
+    <select id="queryAssignedCarTourist" resultType="com.travel.spzx.model.entity.order.BusTouristInfo">
+
+        select ti.id as tour_id,
+        bti.car_id as car_id,
+        bi.car_no as car_no
+        from bus_tour_info bti
+        left join trip_info ti on ti.id = bti.tour_id
+        left join bus_info bi on bi.id = bti.car_id
+        <where>
+            <if test="batchId!= null and batchId!= ''">
+                AND bti.batch_id = #{batchId}
+            </if>
+
+            and bti.is_deleted = 0
+        </where>
+        order by ti.id desc
+    </select>
+
+
+    <!--删除用户分配的汽车信息-->
+    <update id="deleteBusTouristGuide">
+        update bus_tour_guide_info
+        set is_deleted = 1
+        <where>
+            <if test="batchId!= null and batchId!= ''">
+                AND batch_id = #{batchId}
+            </if>
+            <if test="carId!= null and carId!= ''">
+                AND car_id = #{carId}
+            </if>
+        </where>
+    </update>
+
+    <insert id="saveBusTouristGuide">
+        insert into bus_tour_guide_info(id,
+                                        batch_id,
+                                        tour_guide_id,
+                                        car_id,
+                                        create_time,
+                                        update_time,
+                                        is_deleted)
+        values (#{id},
+                #{batchId},
+                #{touristId},
+                #{carId},
+                now(),
+                now(),
+                0)
+    </insert>
+
+    <!--删除用户分配的汽车信息-->
+    <update id="deleteBusTourist">
+        update bus_tour_info
+        set is_deleted = 1
+        <where>
+            <if test="batchId!= null and batchId!= ''">
+                AND batch_id = #{batchId}
+            </if>
+            <if test="carId!= null and carId!= ''">
+                AND car_id = #{carId}
+            </if>
+        </where>
+    </update>
+
+    <insert id="saveBusTourist">
+        insert into bus_tour_info(id,
+                                  batch_id,
+                                  tour_id,
+                                  car_id,
+                                  create_time,
+                                  update_time,
+                                  is_deleted)
+        values (#{id},
+                #{batchId},
+                #{tourId},
+                #{carId},
+                now(),
+                now(),
+                0)
+    </insert>
+    <!-- 查询当前车辆的导游数量 -->
+    <select id="queryTourGuideNumByCarAndBatchId" resultType="java.lang.Integer">
+        SELECT COUNT(*)
+        FROM bus_tour_guide_info
+        <where>
+            <if test="batchId!= null and batchId!= ''">
+                AND batch_id = #{batchId}
+            </if>
+            <if test="carId!= null and carId!= ''">
+                AND car_id = #{carId}
+            </if>
+            AND is_deleted = 0
+        </where>
+    </select>
+
+
+    <update id="delAssignOhterBusTourist">
+        update bus_tour_info
+        set is_deleted = 1
+        <where>
+            <if test="batchId!= null and batchId!= ''">
+                AND batch_id = #{batchId}
+            </if>
+            <if test="carId!= null and carId!= ''">
+                AND car_id = #{carId}
+            </if>
+            <if test="tourId!= null and tourId!= ''">
+                AND tour_id = #{tourId}
+            </if>
+            AND is_deleted = 0
+        </where>
+    </update>
+    <!--查询导游信息-->
+    <select id="queryTourGuideList" resultType="com.travel.spzx.model.vo.guide.TourGuideVO">
+        SELECT distinct tgi.id,
+        tgi.nickname,
+        tgi.name,
+        tgi.phone,
+        tgi.level,
+        btg.car_id,
+        bi.car_no
+        from tour_guide_info tgi
+        left join bus_tour_guide_info btg on btg.tour_guide_id = tgi.id
+        and btg.is_deleted = 0 and btg.batch_id = #{batchId}
+        left join bus_info bi on bi.id = btg.car_id
+        <where>
+            <if test="tourGuideName!= null and tourGuideName!= ''">
+                AND (tgi.nickname like concat('%', #{tourGuideName}, '%')
+                OR `tgi.name` like concat('%', #{tourGuideName}, '%'))
+            </if>
+
+        </where>
+
+        order by tgi.id desc
+    </select>
+    <select id="queryTouristNumByCarAndBatchId" resultType="java.lang.Integer">
+        SELECT COUNT(*)
+        FROM bus_tour_info
+        <where>
+            <if test="batchId!= null and batchId!= ''">
+                AND batch_id = #{batchId}
+            </if>
+            <if test="carId!= null and carId!= ''">
+                AND car_id = #{carId}
+            </if>
+            AND is_deleted = 0
+        </where>
+    </select>
+    <select id="queryAssignedCarTourGuide" resultType="com.travel.spzx.model.entity.order.BusTourGuideInfo">
+        select tgi.id as tour_guide_id,
+        tgi.nickname as nickname,
+        bi.car_no as car_no,
+        bi.id as car_id
+        from bus_tour_guide_info btgi
+        left join tour_guide_info tgi on tgi.id = btgi.tour_guide_id
+        left join bus_info bi on bi.id = btgi.car_id
+        <where>
+            <if test="batchId!= null and batchId!= ''">
+                AND btgi.batch_id = #{batchId}
+            </if>
+
+            and btgi.is_deleted = 0
+        </where>
+        order by btgi.id desc
+    </select>
+
+
+    <update id="delAssignOtherBusTourGuide">
+        update bus_tour_guide_info
+        set is_deleted = 1
+        <where>
+            <if test="batchId!= null and batchId!= ''">
+                AND batch_id = #{batchId}
+            </if>
+            <if test="carId!= null and carId!= ''">
+                AND car_id = #{carId}
+            </if>
+            <if test="tourGuideId!= null and tourGuideId!= ''">
+                AND tour_guide_id = #{tourGuideId}
+            </if>
+            AND is_deleted = 0
+        </where>
+    </update>
+    <!-- 删除车辆分配的导游信息 -->
+    <update id="deleteBusTourGuide">
+        update bus_tour_guide_info
+        set is_deleted = 1
+        <where>
+            <if test="batchId!= null and batchId!= ''">
+                AND batch_id = #{batchId}
+            </if>
+            <if test="carId!= null and carId!= ''">
+                AND car_id = #{carId}
+            </if>
+            and is_deleted = 0
+        </where>
+    </update>
+
+    <insert id="saveBusTourGuide">
+        insert into bus_tour_guide_info(id,
+                                        batch_id,
+                                        tour_guide_id,
+                                        car_id,
+                                        create_time,
+                                        update_time,
+                                        is_deleted)
+        values (#{id},
+                #{batchId},
+                #{tourGuideId},
+                #{carId},
+                now(),
+                now(),
+                0)
+    </insert>
+</mapper>
