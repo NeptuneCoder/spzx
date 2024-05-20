@@ -42,7 +42,7 @@ public class LoginAuthInterceptor implements HandlerInterceptor {
         }
 
         // 如果token不为空，那么此时验证token的合法性
-        String sysUserInfoJson = redisTemplate.opsForValue().get(RedisConstantKey.USER_TOKEN_KEY + token);
+        String sysUserInfoJson = redisTemplate.opsForValue().get(RedisConstantKey.TOUR_USER_TOKEN_KEY + token);
         System.out.println("travel中sysUserInfoJson:" + sysUserInfoJson);
         if (StrUtil.isEmpty(sysUserInfoJson)) {
             responseNoLoginInfo(response);

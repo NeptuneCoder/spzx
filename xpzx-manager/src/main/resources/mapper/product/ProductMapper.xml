@@ -3,26 +3,7 @@
 <mapper namespace="com.travel.spzx.manager.mapper.ProductMapper">
     <resultMap id="productMap" type="com.travel.spzx.model.entity.product.Product" autoMapping="true"></resultMap>
 
-    <!-- 用于select查询公用抽取的列 -->
-    <sql id="columns">
-        id
-        ,name,
-            brand_id,
-            category1_id,
-            category2_id,
-            category3_id,
-            unit_name,
-            slider_urls,
-            spec_value,
-            status,
-            audit_status,
-            audit_message,
-            create_time,
-            update_time,
-            is_deleted,
-            recommend_level,
 
-    </sql>
 
 
     <sql id="findPageWhere">
@@ -90,8 +71,11 @@
         <if test="description != null and description != ''">
             description = #{description},
         </if>
-            <if test="assembleTime != null and assembleTime != ''">
+        <if test="assembleTime != null and assembleTime != ''">
             assemble_time = #{assembleTime},
+        </if>
+        <if test="departureTime != null and departureTime != ''">
+            departure_time = #{departureTime},
         </if>
         update_time = now()
         where
@@ -125,6 +109,7 @@
         p.feature,
         p.description,
         p.assemble_time,
+        p.departure_time,
         b.name brandName ,
         c1.name category1Name ,
         c2.name category2Name ,
@@ -170,7 +155,8 @@
                              place_to_start_id,
                              feature,
                              description,
-                             assemble_time)
+                             assemble_time,
+                             departure_time)
         values (#{id},
                 #{name},
                 #{brandId},
@@ -190,7 +176,8 @@
                 #{placeToStartId},
                 #{feature},
                 #{description},
-                #{assembleTime})
+                #{assembleTime},
+                #{departureTime})
 
     </insert>
 
@@ -213,6 +200,7 @@
                p.feature,
                p.description,
                p.assemble_time,
+               p.departure_time,
                b.name  brandName,
                c1.name category1Name,
                c2.name category2Name,

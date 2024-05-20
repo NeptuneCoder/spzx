@@ -11,4 +11,7 @@ public interface OrderItemMapper {
     void save(OrderItem orderItem);
 
     List<OrderItem> findByOrderId(@Param("orderId") Long id);
+
+
+    void cancelOrderItem(@Param("orderId") Long orderId);
 }

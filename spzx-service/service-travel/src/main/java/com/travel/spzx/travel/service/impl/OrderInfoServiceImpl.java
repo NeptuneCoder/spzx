@@ -356,8 +356,9 @@ public class OrderInfoServiceImpl implements OrderInfoService {
 
     @Override
     public OrderInfo cancelOrder(Long orderId, String cancelReason) {
-
         this.updateOrderStatus(orderId, OrderStateEnum.UserCancel, cancelReason);
+        //取消item
+        orderItemMapper.cancelOrderItem(orderId);
         return this.orderDetail(orderId);
     }
 
@@ -378,6 +379,7 @@ public class OrderInfoServiceImpl implements OrderInfoService {
             int saleNum = orderInfo.getAdultNum() + orderInfo.getChildNum();
             //TODO 将库存回滚
             batchInfoMapper.updateSaleNum(orderInfo.getBatchId(), -saleNum);
+            orderItemMapper.cancelOrderItem(orderId);
 
         }
         OrderLog orderLog = new OrderLog();

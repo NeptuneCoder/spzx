@@ -33,6 +33,20 @@ public class BatchBusServiceImpl implements BatchBusService {
     @Override
     public void save(BatchBusInfoDto data) {
         System.out.println(JSON.toJSONString(data));
+        //查询当前批次已经绑定的车辆
+
+        List<BatchBusInfo> batchBusList = batchBusMapper.findByBatchId(data.getBatchId());
+        //如果删除了之前的车辆，则需要将之前绑定的用户也要一起删除
+        batchBusList.forEach(batchBus -> {
+            if (!data.getCarIds().contains(batchBus.getCarId())) {
+                System.out.println("删除车辆" + batchBus.getCarId());
+//                batchBusMapper.deleteByPrimaryKey(batchBus.getCarId(), data.getBatchId());
+                //删除当前批次中已经绑定的游客信息
+                batchDetailMapper.deleteBusTourist(batchBus.getCarId(), data.getBatchId());
+                batchDetailMapper.deleteBusTourGuide(batchBus.getCarId(), data.getBatchId());
+            }
+        });
+
         // 先删除原有数据
         batchBusMapper.deleteByBatchId(data.getBatchId());
 

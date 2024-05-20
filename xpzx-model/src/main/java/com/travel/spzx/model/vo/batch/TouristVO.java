@@ -1,6 +1,7 @@
 package com.travel.spzx.model.vo.batch;
 
 import com.travel.spzx.model.entity.base.BaseEntity;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 @Data
@@ -22,5 +23,7 @@ public class TouristVO extends BaseEntity {
 
     private String carId;
     private String carNo;
+    @Schema(description = "签到状态")
+    private String checkStatus;
 
 }

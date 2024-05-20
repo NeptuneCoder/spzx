@@ -91,6 +91,8 @@ public class Product extends BaseEntity {
     private List<Product> similarProducts;                    // 价格
     @Schema(description = "集合时间")
     private String assembleTime;
+    @Schema(description = "出发时间")
+    private String departureTime;
 
 
     /**

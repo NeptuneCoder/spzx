@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.spzx.tour.guide.mapper.GuideBatchMapper">
+
+
+    <!--    select btgi.batch_id,-->
+    <!--    bi2.car_no,-->
+    <!--    bi2.id                   as car_id,-->
+    <!--    btgi.tour_guide_id,-->
+
+    <!--    btgi.car_id,-->
+    <!--    p.name                   as product_name,-->
+    <!--    YEAR(bi.start_time)      as start_year,-->
+    <!--    YEAR(bi.end_time)        AS end_year,-->
+    <!--    DAYOFWEEK(bi.start_time) as start_week,-->
+    <!--    DAYOFWEEK(bi.end_time)   as end_week,-->
+    <!--    bi.start_time,-->
+    <!--    bi.end_time,-->
+    <!--    bi.status                as batch_status,-->
+    <!--    p.assemble_time,-->
+    <!--    p.departure_time,-->
+    <!--    ali.address,-->
+    <!--    ci.city_name,-->
+    <!--    count(ti.age_type) as 总数量,-->
+    <!--    SUM(CASE WHEN ti.age_type = '成人' THEN 1 ELSE 0 END) AS 成人数量,  &#45;&#45; 成人数量-->
+    <!--    SUM(CASE WHEN ti.age_type = '儿童' THEN 1 ELSE 0 END) AS 儿童数量  &#45;&#45; 儿童数量-->
+
+
+    <!--    from bus_tour_guide_info btgi-->
+    <!--    left join batch_info bi on bi.id = btgi.batch_id-->
+    <!--    left join product p on p.id = bi.product_id-->
+    <!--    left join bus_info bi2 on bi2.id = btgi.car_id-->
+    <!--    left join assemble_location_info ali on ali.id = p.place_to_start_id-->
+    <!--    left join city_info ci on ci.id = ali.city_id-->
+    <!--    left join order_info oi on oi.batch_id = bi.id-->
+    <!--    and oi.is_deleted = 0-->
+    <!--    and oi.order_status = 1-->
+    <!--    left join order_item oi2 on oi.id = oi2.order_id-->
+    <!--    and oi2.is_deleted = 0-->
+    <!--    left join trip_info ti on ti.id = oi2.trip_id-->
+
+    <!--    where btgi.tour_guide_id = 9995-->
+    <!--    and btgi.is_deleted = 0-->
+    <!--    group by btgi.batch_id, btgi.tour_guide_id, btgi.car_id;-->
+    <select id="getLeaderBatchList" resultType="com.travel.spzx.model.vo.batch.GuideBatchDetailVo">
+        select btgi.batch_id,
+        bi.car_no,
+        bi.id as car_id,
+        YEAR (bi2.start_time) as start_year,
+        YEAR (bi2.end_time) AS end_year,
+        DAYOFWEEK(bi2.start_time) as start_week,
+        DAYOFWEEK(bi2.end_time) as end_week,
+        bi2.start_time,
+        bi2.end_time,
+        DATE_FORMAT(bi2.start_time,'%m/%d') as start_date_str,
+        DATE_FORMAT(bi2.end_time, '%m/%d') as end_date_str,
+        bi2.status as batch_status,
+        p.assemble_time,
+        p.departure_time,
+        p.name as product_name,
+        ali.address,
+        ci.city_name,
+        COUNT(ti.age_type) as total_num,
+        SUM(case WHEN ti.age_type = '成人' THEN 1 ELSE 0 END) as adult_num,
+        SUM(case WHEN ti.age_type = '儿童' THEN 1 ELSE 0 END) as child_num
+
+        from bus_tour_guide_info btgi
+        left join bus_info bi
+        on btgi.car_id = bi.id
+        left join bus_tour_info bti on bti.car_id = bi.id
+        and bti.is_deleted = 0
+        left join batch_info bi2 on bi2.id = btgi.batch_id
+        left join product p on p.id = bi2.product_id
+        left join assemble_location_info ali on ali.id = p.place_to_start_id
+        left join city_info ci on ci.id = ali.city_id
+        left join order_item oi on oi.batch_id = bi2.id
+        left join trip_info ti on ti.id = oi.trip_id
+        and bti.tour_id = ti.id
+        and oi.is_deleted = 0
+        <where>
+            <if test="batchId != null and batchId != ''">
+                and btgi.batch_id = #{batchId}
+            </if>
+            <if test="tourGuideId != null and tourGuideId != ''">
+                and btgi.tour_guide_id = #{tourGuideId}
+            </if>
+            and btgi.is_deleted = 0
+        </where>
+
+        group by btgi.batch_id, bi.id
+    </select>
+    <select id="getCurrentBatchTripList" resultType="com.travel.spzx.model.vo.batch.TouristDetailVo">
+        select ti.id as trip_id,
+        oi2.id as item_id,
+        ti.name ,
+        ti.sex,
+        ti.age_type,
+        oi2.check_status,
+        ti.id_card_no as card_no,
+        ti.phone
+
+        from bus_tour_info bti
+        left join trip_info ti on ti.id = bti.tour_id
+        left join order_info oi on oi.batch_id = bti.batch_id
+        and oi.is_deleted = 0
+        and oi.order_status = 1
+        left join order_item oi2 on oi2.order_id = oi.id
+        and oi2.trip_id = ti.id
+        and oi2.is_deleted = 0
+
+
+        <where>
+            <if test="batchId != null and batchId != ''">
+                and bti.batch_id = #{batchId}
+            </if>
+
+            <if test="carId != null and carId != ''">
+                and bti.car_id = #{carId}
+            </if>
+            <if test="checkStatus != null">
+                and oi2.check_status = #{checkStatus}
+            </if>
+            <if test="name != null and name != ''">
+                and ti.name like concat('%', #{name}, '%')
+            </if>
+
+        </where>
+        group by ti.id, oi2.id
+    </select>
+
+    <!--返回修改的行数-->
+    <update id="touristSign">
+        update order_item
+        set check_status = 1
+        where id = #{orderItemId}
+          and batch_id = #{batchId}
+          and trip_id = #{tripId}
+
+    </update>
+
+    <select id="getCurrentBatchTourGuideList" resultType="com.travel.spzx.model.vo.batch.TourGuideVo">
+        select tgi.nickname,
+               tgi.phone
+        from bus_tour_guide_info btgi
+                 left join tour_guide_info tgi on tgi.id = btgi.tour_guide_id
+        where btgi.batch_id = #{batchId}
+          and btgi.is_deleted = 0
+          and btgi.car_id = #{carId}
+
+    </select>
+</mapper>

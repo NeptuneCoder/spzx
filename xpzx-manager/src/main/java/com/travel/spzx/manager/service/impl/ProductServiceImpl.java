@@ -45,6 +45,23 @@ public class ProductServiceImpl implements ProductService {
     @Transactional
     @Override
     public void save(Product product) {
+        // 检查参数是否合规
+        if (product.getName() == null || product.getName().trim().length() == 0) {
+            throw GuiguException.build("商品名称不能为空");
+        }
+
+
+        if (product.getDetailsImageUrls() == null || product.getDetailsImageUrls().trim().length() == 0) {
+            throw GuiguException.build("商品详情图片不能为空");
+        }
+        //出发时间，出发地点，集合时间不能为空
+        if (product.getDepartureTime() == null) {
+            throw GuiguException.build("出发时间不能为空");
+        }
+
+        if (product.getAssembleTime() == null) {
+            throw GuiguException.build("集合时间不能为空");
+        }
         // 保存商品数据
         product.setStatus(0);              // 设置上架状态为0
         product.setAuditStatus(0);         // 设置审核状态为0

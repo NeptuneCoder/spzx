@@ -14,13 +14,17 @@
         ti.phone,
         ti.age_type,
         bti.car_id,
-        bi.car_no
+        bi.car_no,
+        oi2.check_status
         FROM trip_info ti
         left join order_item oi on oi.trip_id = ti.id
         and oi.is_deleted = 0
         left join order_info o on oi.order_id = o.id
         and o.is_deleted = 0
         and o.order_status = 1
+        left join order_item oi2 on oi2.order_id = o.id
+        and oi2.is_deleted = 0
+        and oi2.trip_id = ti.id
         left join bus_tour_info bti on ti.id = bti.tour_id
         and bti.is_deleted = 0 and bti.batch_id = #{batchId}
         left join bus_info bi on bti.car_id = bi.id

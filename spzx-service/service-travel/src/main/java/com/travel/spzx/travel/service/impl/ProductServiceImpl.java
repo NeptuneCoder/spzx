@@ -114,7 +114,7 @@ public class ProductServiceImpl implements ProductService {
 
         List<ProductSku> productSkus = productSkuMapper.selectByProductId(id);
         orderProductInfoVo.setAdultPrice(productSkus.get(0).getSalePrice());
-        orderProductInfoVo.setChildPrice(productSkus.get(0).getSalePrice());
+        orderProductInfoVo.setChildPrice(productSkus.get(0).getChildSalePrice());
 
         BatchItem batchItem = batchService.getBatchItem(id, batchId);
         if (batchItem != null) {
@@ -123,7 +123,7 @@ public class ProductServiceImpl implements ProductService {
             orderProductInfoVo.setStartWeak(batchItem.getStartWeak());
             orderProductInfoVo.setEndWeak(batchItem.getEndWeak());
             orderProductInfoVo.setDuration(batchItem.getDuration());
-            Integer res = Integer.valueOf(batchItem.getTotalNum()) - batchItem.getSaleNum();
+            Integer res = batchItem.getTotalNum() - batchItem.getSaleNum();
             orderProductInfoVo.setSurplusNum(res);
         }
 
