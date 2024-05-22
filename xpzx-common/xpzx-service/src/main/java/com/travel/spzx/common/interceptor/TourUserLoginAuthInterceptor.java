@@ -26,8 +26,15 @@ public class TourUserLoginAuthInterceptor implements HandlerInterceptor {
         // 如果token不为空，那么此时验证token的合法性
         String userInfoJSON = redisTemplate.opsForValue().get(RedisConstantKey.TOUR_USER_TOKEN_KEY + request.getHeader("token"));
         AuthContextUtil.setTourUserInfo(JSON.parseObject(userInfoJSON, TourUserInfo.class));
-        return true;
 
+        return true;
+    }
+
+    // 该函数什么意思？
+    @Override
+    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
+        AuthContextUtil.removeTourUserInfo();
+        System.out.println("global interceptor tour user login auth interceptor after completion");
     }
 
 }

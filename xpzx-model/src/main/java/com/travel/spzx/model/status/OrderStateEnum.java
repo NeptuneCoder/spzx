@@ -18,12 +18,35 @@ public enum OrderStateEnum {
 
     //待消费
     PayFailed(2, "支付失败"), //
-    SignInSuccess(3, "签到完成"),
+
+
+    UserCancel(-1, "用户取消"), //
+
+    PayTimeOut(-2, "超时未支付取消"), //
+
+
+    SignInSuccess(3, "已签到"),
+    //部分签到（order_info和order_item存一对多的关系时，order_info的状态为部分签到，order_item的状态为未签到
+    PartSignIn(16, "部分签到"), // 在订单中显示几人签到，几人未签到
 
     UnSignIn(4, "未签到"), //
 
-    //待评价
+    //待评价,该状态由领队触发，表示当前行程已经结束，用户可以进行评价功能
+    //出行完成
+    TravelComplete(14, "出行完成"), //
+    //部分出现完成
+    PartTravelComplete(19, "部分出行完成"), //
+
+    OperatorCancelRefund(12, "操作员取消退款"), //
+    //未成团取消退款
+    GroupCancelRefund(13, "未成团取消退款"), //
+
+    //订单完成
+    OrderTimeOut(15, "订单超时"), //
+
     WaitComment(5, "待评价"), //
+    PartComment(17, "部分评价"), //
+    PartCommentSuccess(18, "部分评价成功"), //
 
     CommentSuccess(6, "评价成功"), //
 
@@ -38,19 +61,12 @@ public enum OrderStateEnum {
 
     RefundSuccess(11, "退款成功"), //
     //操作员取消退款
-    OperatorCancelRefund(12, "操作员取消退款"), //
-    //未成团取消退款
-    GroupCancelRefund(13, "未成团取消退款"), //
-    //出行完成
-    TravelComplete(14, "出行完成"), //
-    //订单完成
-    OrderTimeOut(15, "订单超时"), //
 
 
-    UserCancel(-1, "用户取消"), //
+
     //未成团取消
 
-    PayTimeOut(-2, "超时未支付取消"), //
+
     RefundFailed(-3, "退款失败"), //
     //操作员取消
     OperatorCancel(-4, "操作员取消"), //

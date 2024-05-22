@@ -296,7 +296,7 @@
     <select id="findOrderStatusById" resultType="java.lang.Integer">
         select order_status
         from order_info
-        where id = #{id}
+        where id = #{orderId}
     </select>
 
     <update id="mockPaySuccess">
@@ -306,4 +306,6 @@
             update_time  = now()
         where id = #{orderId}
     </update>
+
+
 </mapper>

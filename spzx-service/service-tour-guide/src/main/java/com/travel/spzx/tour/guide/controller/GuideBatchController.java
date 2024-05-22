@@ -52,11 +52,12 @@ public class GuideBatchController {
     //TODO : 根据当前批次和车辆信息或去改批次的领队信息
 
 
-    @PutMapping("/tourist/sign/{batchId}/{tripId}/{orderItemId}")
+    @PutMapping("/tourist/sign/{batchId}/{tripId}/{orderItemId}/{orderId}")
     public Result sign(@PathVariable("batchId") String batchId,
                        @PathVariable("tripId") String tripId,
+                       @PathVariable("orderId") String orderId,
                        @PathVariable("orderItemId") String orderItemId) {
-        Long rowId = orderService.touristSign(batchId, tripId, orderItemId);
+        Long rowId = orderService.touristSign(batchId, tripId, orderId, orderItemId);
         return Result.success(rowId);
     }
 
@@ -68,5 +69,12 @@ public class GuideBatchController {
         // TODO: 根据当前批次获取当前领队列表
         List<TourGuideVo> tourGuideDetailVoList = orderService.getCurrentBatchTourGuideList(batchId, carId);
         return Result.success(tourGuideDetailVoList);
+    }
+
+    //行程完成接口
+    @PutMapping("finished/{batchId}/{carId}")
+    public Result tripFinished(@PathVariable("batchId") String batchId, @PathVariable("carId") String carId) {
+        orderService.tripFinished(batchId,carId);
+        return Result.success();
     }
 }

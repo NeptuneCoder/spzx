@@ -80,6 +80,7 @@ public class LoginAuthInterceptor implements HandlerInterceptor {
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
-        AuthContextUtil.remove();  // 移除threadLocal中的数据
+//        AuthContextUtil.remove();  // 移除threadLocal中的数据
+        AuthContextUtil.removeUserInfo();  // 移除threadLocal中的用户数据
     }
 }

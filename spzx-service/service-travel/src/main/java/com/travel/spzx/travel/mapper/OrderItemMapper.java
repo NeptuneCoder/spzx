@@ -12,6 +12,7 @@ public interface OrderItemMapper {
 
     List<OrderItem> findByOrderId(@Param("orderId") Long id);
 
+    void updateOrderItemOrderStatus(@Param("orderId") Long orderId, @Param("orderStatus") Integer orderStatus);
 
-    void cancelOrderItem(@Param("orderId") Long orderId);
+    List<OrderItem> queryCurBatchAllOrderItem(@Param("batchId") Long batchId);
 }

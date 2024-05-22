@@ -3,6 +3,7 @@ package com.travel.spzx.tour.guide.interceptor;
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
 import com.travel.spzx.common.constant.RedisConstantKey;
+import com.travel.spzx.model.entity.tour.TourUserInfo;
 import com.travel.spzx.model.entity.user.UserInfo;
 import com.travel.spzx.model.vo.common.Result;
 import com.travel.spzx.model.vo.common.ResultCodeEnum;
@@ -17,6 +18,7 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 @Component
 public class LoginAuthInterceptor implements HandlerInterceptor {
@@ -26,16 +28,13 @@ public class LoginAuthInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-
         // 获取请求方式
         String method = request.getMethod();
         if ("OPTIONS".equals(method)) {      // 如果是跨域预检请求，直接放行
             return true;
         }
-
         // 获取token
         String token = request.getHeader("token");
-        System.out.println("travel中token:" + token);
         if (StrUtil.isEmpty(token)) {
             responseNoLoginInfo(response);//返回208状态码给前端
             return false;
@@ -43,19 +42,16 @@ public class LoginAuthInterceptor implements HandlerInterceptor {
 
         // 如果token不为空，那么此时验证token的合法性
         String sysUserInfoJson = redisTemplate.opsForValue().get(RedisConstantKey.TOUR_USER_TOKEN_KEY + token);
-        System.out.println("travel中sysUserInfoJson:" + sysUserInfoJson);
         if (StrUtil.isEmpty(sysUserInfoJson)) {
             responseNoLoginInfo(response);
             return false;
         }
 
         // 将用户数据存储到ThreadLocal中
-        UserInfo sysUser = JSON.parseObject(sysUserInfoJson, UserInfo.class);
-        System.out.println("travel中sysUser:" + sysUser.getUsername());
-        AuthContextUtil.setUserInfo(sysUser);
-
+        TourUserInfo tourUserInfo = JSON.parseObject(sysUserInfoJson, TourUserInfo.class);
+        AuthContextUtil.setTourUserInfo(tourUserInfo);
         // 重置Redis中的用户数据的有效时间
-        redisTemplate.expire(RedisConstantKey.USER_TOKEN_KEY + token, 7, TimeUnit.DAYS);
+        redisTemplate.expire(RedisConstantKey.TOUR_USER_TOKEN_KEY + token, 7, TimeUnit.DAYS);
 
         // 放行
         return true;
@@ -79,6 +75,7 @@ public class LoginAuthInterceptor implements HandlerInterceptor {
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
-        AuthContextUtil.remove();  // 移除threadLocal中的数据
+        AuthContextUtil.removeTourUserInfo(); // 移除threadLocal中的数据
+
     }
 }

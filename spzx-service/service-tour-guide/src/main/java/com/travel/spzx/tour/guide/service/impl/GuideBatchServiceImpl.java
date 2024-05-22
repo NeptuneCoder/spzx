@@ -2,18 +2,23 @@ package com.travel.spzx.tour.guide.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.travel.spzx.model.entity.order.OrderInfo;
 import com.travel.spzx.model.entity.order.OrderItem;
+import com.travel.spzx.model.entity.order.OrderLog;
 import com.travel.spzx.model.entity.tour.TourUserInfo;
+import com.travel.spzx.model.status.OrderStateEnum;
 import com.travel.spzx.model.vo.batch.GuideBatchDetailVo;
 import com.travel.spzx.model.vo.batch.TourGuideVo;
 import com.travel.spzx.model.vo.batch.TouristDetailVo;
 import com.travel.spzx.tour.guide.mapper.GuideBatchMapper;
+import com.travel.spzx.tour.guide.mapper.OrderLogMapper;
 import com.travel.spzx.tour.guide.service.GuideBatchService;
 import com.travel.xpzx.utils.AuthContextUtil;
 import com.travel.xpzx.utils.BatchUtils;
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -27,6 +32,9 @@ public class GuideBatchServiceImpl implements GuideBatchService {
     private GuideBatchMapper guideBatchMapper;
 
 
+    @Autowired
+    private OrderLogMapper orderLogMapper;
+
     @Override
     public PageInfo<GuideBatchDetailVo> getLeaderBatchList(Integer page, Integer limit) {
         PageHelper.startPage(page, limit);
@@ -36,7 +44,6 @@ public class GuideBatchServiceImpl implements GuideBatchService {
         List<GuideBatchDetailVo> res = guideBatchMapper.getLeaderBatchList(tourGuideId, null)
                 .stream().map(
                         guideBatch -> {
-
                             String duration = BatchUtils.computeDuration(guideBatch.getTime());
                             guideBatch.setDuration(duration);
                             guideBatch.setStartWeekStr(convertWeek(guideBatch.getStartWeek()));
@@ -84,24 +91,69 @@ public class GuideBatchServiceImpl implements GuideBatchService {
         return new PageInfo<>(res);
     }
 
-
+    @Transactional(rollbackFor = Exception.class)
     @Override
-
-    public Long touristSign(String batchId, String tripId, String orderItemId) {
-        if (Strings.isEmpty(batchId) || Strings.isEmpty(tripId) || Strings.isEmpty(orderItemId)) {
+    public Long touristSign(String batchId, String tripId, String orderId, String orderItemId) {
+        if (Strings.isEmpty(batchId) || Strings.isEmpty(tripId) || Strings.isEmpty(orderId) || Strings.isEmpty(orderItemId)) {
             throw new IllegalArgumentException("参数不能为空");
         }
 
+        //更新订单签到状态，
+        //如果order_item和order_info为一对一的关系，则order_info的status更新为已签到
+        //如果order_item和order_info为多对一的关系 ，部分签到时则显示部分签到，全部签到时则显示已签到
+        //todo 订单签到状态更新逻辑
         //todo 签到逻辑
-        guideBatchMapper.touristSign(batchId, tripId, orderItemId);
+        ;
+        guideBatchMapper.touristSign(OrderStateEnum.SignInSuccess.getCode(),
+                batchId,
+                tripId,
+                orderId,
+                orderItemId,
+                1);//1 表示签到成功
+        //todo 增加日志记录
 
+        //查询当前的order_item 是否还存在未签到的item，如果有则显示部分签到，如果没有则显示已签到
+        List<OrderItem> res = guideBatchMapper.queryCurrentOrderIsAllSign(orderId, batchId);
+        if (res.isEmpty()) {
+            guideBatchMapper.updateOrderStatus(OrderStateEnum.SignInSuccess.getCode(), orderId);
+            OrderLog orderLog = new OrderLog();
+            orderLog.setOrderId(Long.parseLong(orderId));
+            orderLog.setProcessStatus(OrderStateEnum.SignInSuccess.getCode());
+            orderLogMapper.save(orderLog);
+        } else {
+            guideBatchMapper.updateOrderStatus(OrderStateEnum.PartSignIn.getCode(), orderId);
+            OrderLog orderLog = new OrderLog();
+            orderLog.setOrderId(Long.parseLong(orderId));
+            orderLog.setProcessStatus(OrderStateEnum.PartSignIn.getCode());
+            orderLog.setNote(orderItemId + " 签到成功");
+            orderLogMapper.save(orderLog);
+        }
+        //TODO  增加日志记录
         return 0L;
     }
 
     @Override
-    public List<TourGuideVo> getCurrentBatchTourGuideList(String batchId,String carId) {
-        List<TourGuideVo> res = guideBatchMapper.getCurrentBatchTourGuideList(batchId,carId);
+    public List<TourGuideVo> getCurrentBatchTourGuideList(String batchId, String carId) {
+        List<TourGuideVo> res = guideBatchMapper.getCurrentBatchTourGuideList(batchId, carId);
         return res;
+    }
+
+    @Override
+    public void tripFinished(String batchId, String carId) {
+        //该状态由领队触发，表示当前行程已经结束：OrderStateEnum.WaitComment
+        //这里涉及到多车的问题，只有一车的领队才能进行该操作，所以这里需要判断当前用户是否为领队，如果不是则抛出异常
+        TourUserInfo tourUserInfo = AuthContextUtil.getTourUserInfo();
+        //TODO 通过获取当前批次的车次信息batch_bus_info，查出第一辆车，再根据第一辆车的id，从bus_tour_guide_info 查出第一个领队
+        //如果当前用户不是领队，则抛出异常
+        //判断当前用户是否为一车的领队，如果是则可以进行关闭该批次
+//        guideBatchMapper.updateBatchStatus(batchId, OrderStateEnum.WaitComment.getCode());
+
+        //更新订单状态为已完成，order_status
+        //查询所有
+        List<OrderInfo> orderInfoList = guideBatchMapper.queryCurBatchAllOrder(batchId);
+
+        //更新该批次中所有订单状态为待评价，如果用户未签到则可以申请退款，如果部分签到了则可以申请部分退款，如果全部签到了则进入待评价状态
+
     }
 
     /**

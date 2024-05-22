@@ -1,6 +1,7 @@
 package com.travel.spzx.travel.service.impl;
 
 import cn.hutool.core.util.StrUtil;
+import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.travel.spzx.common.constant.RedisConstantKey;
@@ -107,6 +108,8 @@ public class OrderInfoServiceImpl implements OrderInfoService {
         if (CollectionUtils.isEmpty(tripsList)) {
             throw GuiguException.build("出行人不能为空");
         }
+
+
 //        OrderItem
         //校验商品数量是否充足
 
@@ -133,6 +136,18 @@ public class OrderInfoServiceImpl implements OrderInfoService {
         }
         if (orderInfoDto.getChildNum() < 0 || orderInfoDto.getChildNum() < 0) {
             throw GuiguException.build("购买数量异常");
+        }
+        //查询当前批次所有有效的出行人
+        List<OrderItem> tripUsers = orderItemMapper.queryCurBatchAllOrderItem(batchItem.getId());
+        List<Long> dbTripsIds = tripUsers.stream().map(OrderItem::getTripId).toList();
+        System.out.println("dbTripsIds==" + JSON.toJSONString(dbTripsIds));
+        List<Long> submitTripsIds = orderInfoDto.getTrips().stream().map(TripInfoDto::getId).toList();
+        System.out.println("用户提价的订单==" + JSON.toJSONString(submitTripsIds));
+        //判断两个集合中是否有交集
+        boolean hasIntersection = dbTripsIds.stream().anyMatch(submitTripsIds::contains);
+        System.out.println("hasIntersection==" + hasIntersection);
+        if (hasIntersection) {
+            throw GuiguException.build("出行人已经购买该商品");
         }
 
         //校验是否有优惠券
@@ -187,6 +202,7 @@ public class OrderInfoServiceImpl implements OrderInfoService {
             item.setSkuId(productSku.getId());
             item.setBatchId(batchItem.getId());
             item.setTripId(tripInfoDto.getId());
+            item.setOrderStatus(OrderStateEnum.WaitPay.getCode());
             orderItemMapper.save(item);
         }
         //TODO 将订单保存到redis中
@@ -278,7 +294,7 @@ public class OrderInfoServiceImpl implements OrderInfoService {
     }
 
     /**
-     * 用于支付完成后，第三方支付回调更新订单状态
+     * TODO 用于支付完成后，第三方支付回调更新订单状态
      *
      * @param orderNo
      * @param orderStatus
@@ -291,6 +307,8 @@ public class OrderInfoServiceImpl implements OrderInfoService {
         orderInfo.setPayType(1);
         orderInfo.setPaymentTime(new Date());
         orderInfoMapper.updateById(orderInfo);
+        // 更新订单明细状态
+        orderItemMapper.updateOrderItemOrderStatus(orderInfo.getId(), orderStatus);
 
         // 记录日志
         OrderLog orderLog = new OrderLog();
@@ -310,15 +328,11 @@ public class OrderInfoServiceImpl implements OrderInfoService {
         long time = orderInfo.getCreateTime().getTime();
         long now = new Date().getTime();
         //计算订单创建时间到现在是否超过30分钟
-        if (now - time > 1800000) {
-            orderInfo.setOrderStatus(OrderStateEnum.PayTimeOut.getCode());
-        }
+
         long timeDiff = (now - time) / 1000;
         //30分钟
         long timeLeft = 1800 - timeDiff;
-        if (timeLeft < 0) {
-            orderInfo.setOrderStatus(OrderStateEnum.PayTimeOut.getCode());
-        }
+
         orderInfo.setCountdown(timeLeft > 0 ? timeLeft : 0);
 
         computeSliderUrl(orderInfo);
@@ -349,16 +363,15 @@ public class OrderInfoServiceImpl implements OrderInfoService {
         // 查询超时订单
         List<OrderInfo> waitPayOrder = orderInfoMapper.findWaitPayOrder();
         for (OrderInfo orderInfo : waitPayOrder) {
-            this.updateOrderInfo(orderInfo.getId(), OrderStateEnum.PayTimeOut);
+            this.updateOrderInfo(orderInfo.getId(), OrderStateEnum.PayTimeOut, OrderStateEnum.PayTimeOut.getMessage());
         }
 
     }
 
     @Override
     public OrderInfo cancelOrder(Long orderId, String cancelReason) {
-        this.updateOrderStatus(orderId, OrderStateEnum.UserCancel, cancelReason);
-        //取消item
-        orderItemMapper.cancelOrderItem(orderId);
+        this.updateOrderInfo(orderId, OrderStateEnum.UserCancel, cancelReason);
+
         return this.orderDetail(orderId);
     }
 
@@ -370,24 +383,17 @@ public class OrderInfoServiceImpl implements OrderInfoService {
      */
     @Transactional
     @Override
-    public void updateOrderInfo(Long orderId, OrderStateEnum orderStatus) {
+    public void updateOrderInfo(Long orderId, OrderStateEnum orderStatus, String note) {
 
-        this.updateOrderStatus(orderId, orderStatus, "");
+        this.updateOrderStatus(orderId, orderStatus, note);
         // 记录日志
         if (orderStatus == OrderStateEnum.PayTimeOut || orderStatus == OrderStateEnum.UserCancel || orderStatus == OrderStateEnum.PayFailed) {
             OrderInfo orderInfo = orderInfoMapper.getById(orderId);
             int saleNum = orderInfo.getAdultNum() + orderInfo.getChildNum();
-            //TODO 将库存回滚
+            //TODO 那些情况需要回滚库存？待支付订单，用户取消订单，支付失败订单
             batchInfoMapper.updateSaleNum(orderInfo.getBatchId(), -saleNum);
-            orderItemMapper.cancelOrderItem(orderId);
-
         }
-        OrderLog orderLog = new OrderLog();
-        orderLog.setOrderId(orderId);
-        orderLog.setProcessStatus(orderStatus.getCode());
-        orderLog.setNote(orderStatus.getMessage());
-        orderLogMapper.save(orderLog);
-        //TODO 发送超时未支付通知
+
     }
 
     @Autowired
@@ -398,7 +404,12 @@ public class OrderInfoServiceImpl implements OrderInfoService {
         int orderStatusCode = orderInfoMapper.findOrderStatusById(orderId);
         orderStatusHelper.isValidNextStatus(orderStatusCode, orderStatus.getCode());
         orderInfoMapper.updateOrderStatus(orderId, orderStatus.getCode(), StrUtil.isEmpty(note) ? orderStatus.getMessage() : note);
-
+        orderItemMapper.updateOrderItemOrderStatus(orderId, orderStatus.getCode());
+        OrderLog orderLog = new OrderLog();
+        orderLog.setOrderId(orderId);
+        orderLog.setProcessStatus(orderStatus.getCode());
+        orderLog.setNote(StrUtil.isEmpty(note) ? orderStatus.getMessage() : note);
+        orderLogMapper.save(orderLog);
     }
 
     @Override
@@ -408,6 +419,7 @@ public class OrderInfoServiceImpl implements OrderInfoService {
         Integer orderStatus = orderInfo.getOrderStatus();
         orderStatusHelper.isValidNextStatus(orderStatus, OrderStateEnum.PaySuccess.getCode());
         orderInfoMapper.mockPaySuccess(id, OrderStateEnum.PaySuccess.getCode());
+        orderItemMapper.updateOrderItemOrderStatus(id, OrderStateEnum.PaySuccess.getCode());
         OrderLog orderLog = new OrderLog();
         orderLog.setOrderId(id);
         orderLog.setProcessStatus(OrderStateEnum.PaySuccess.getCode());

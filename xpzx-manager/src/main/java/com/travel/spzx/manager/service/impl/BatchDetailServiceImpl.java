@@ -42,6 +42,7 @@ public class BatchDetailServiceImpl implements BatchDetailService {
     @Override
     public void touristAssignCar(BusTouristDto busTouristDto) {
 
+        //TODO 判断当前批次是否结束，如果结束了则不能进行分配
         //TODO  查询当前批次的所有车辆信息
         List<BatchBusInfo> carList = batchBusMapper.findByBatchId(busTouristDto.getBatchId());
         carList.forEach(bus -> {

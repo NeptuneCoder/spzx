@@ -41,7 +41,7 @@
         from batch_info
         where is_deleted = 0
         and product_id=#{id}
-        order by id desc
+        order by start_time asc
 
     </select>
     <select id="findAll" resultType="com.travel.spzx.model.entity.product.BatchItem">

@@ -38,4 +38,6 @@ public class OrderInfoDto {
     private String remark;
     @Schema(description = "出行人信息")
     private List<TripInfoDto> trips;
+
+
 }

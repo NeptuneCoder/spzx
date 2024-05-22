@@ -22,6 +22,10 @@ public class OrderItem extends BaseEntity {
     @Schema(description = "批次id")
     private Long batchId;
 
+    @Schema(description = "订单状态")
+    private Integer orderStatus;
+    @Schema(description = "签到状态")
+    private String checkStatus;
     @Schema(description = "批次id")
     private Long productId;
 

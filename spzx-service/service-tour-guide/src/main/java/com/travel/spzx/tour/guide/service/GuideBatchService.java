@@ -14,8 +14,9 @@ public interface GuideBatchService {
 
     PageInfo<TouristDetailVo> getCurrentBatchTripList(Integer page, Integer limit, String type, String batchId, String name, String carId);
 
-    Long touristSign(String batchId, String tripId, String orderItemId);
+    Long touristSign(String batchId, String tripId, String orderId, String orderItemId);
 
     List<TourGuideVo> getCurrentBatchTourGuideList(String batchId,String carId);
 
+    void tripFinished(String batchId,String carId);
 }

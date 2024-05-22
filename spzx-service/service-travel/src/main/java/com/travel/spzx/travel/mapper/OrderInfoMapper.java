@@ -27,4 +27,5 @@ public interface OrderInfoMapper {
     void mockPaySuccess(@Param("orderId") Long id, @Param("status") Integer status);
 
     int findOrderStatusById(@Param("orderId")  Long orderId);
+
 }

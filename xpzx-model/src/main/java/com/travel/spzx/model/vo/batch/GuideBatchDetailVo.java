@@ -42,7 +42,7 @@ public class GuideBatchDetailVo {
     private int adultNum;
     private int childNum;
     // 批次状态（是否结束，待出行）出发地点，集合时间，出发时间
-    @Schema(description = "批次状态")//待出行，已结束，进行中，签到中，根据时间进行判断
+    @Schema(description = "批次状态")// -待出行，1-出行中，2-已结束,3-未成团,4-管理员取消
     private String batchStatus;
     private String statusStr;
     @Schema(description = "集合时间")

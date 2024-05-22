@@ -1,6 +1,7 @@
 package com.travel.spzx.tour.guide;
 
-import com.travel.spzx.common.anno.EnableUserLoginAuthInterceptor;
+//import com.travel.spzx.common.anno.EnableTourUserLoginAuthInterceptor;
+//import com.travel.spzx.common.anno.EnableUserLoginAuthInterceptor;
 import com.travel.spzx.common.anno.EnableUserTokenFeignInterceptor;
 import com.travel.spzx.tour.guide.properties.FileServiceProperties;
 import com.travel.spzx.tour.guide.properties.UserAuthProperties;
@@ -9,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
 
-@EnableUserLoginAuthInterceptor
+//@EnableTourUserLoginAuthInterceptor
 @EnableUserTokenFeignInterceptor
 //@EnableCaching
 //@EnableScheduling

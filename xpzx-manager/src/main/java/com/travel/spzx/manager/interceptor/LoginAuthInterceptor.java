@@ -17,6 +17,7 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 @Component
 public class LoginAuthInterceptor implements HandlerInterceptor {
@@ -43,6 +44,7 @@ public class LoginAuthInterceptor implements HandlerInterceptor {
         // 如果token不为空，那么此时验证token的合法性
         String sysUserInfoJson = redisTemplate.opsForValue().get(RedisConstantKey.USER_TOKEN_KEY + token);
         System.out.println("tokesysUserInfoJsonn  ：" + sysUserInfoJson);
+
         if (StrUtil.isEmpty(sysUserInfoJson)) {
             responseNoLoginInfo(response);
             return false;

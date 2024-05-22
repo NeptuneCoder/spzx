@@ -21,7 +21,7 @@ public interface OrderInfoService {
 
     void updateOrderStatus(String orderNo, Integer orderStatus);
 
-    void updateOrderInfo(Long orderId, OrderStateEnum orderStatus);
+    void updateOrderInfo(Long orderId, OrderStateEnum orderStatus,String note);
 
     OrderInfo orderDetail(Long orderId);
 
