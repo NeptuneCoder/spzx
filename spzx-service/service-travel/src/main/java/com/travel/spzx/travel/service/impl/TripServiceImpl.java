@@ -47,7 +47,7 @@ public class TripServiceImpl implements TripService {
                 Date birthday = dateFormat.parse(birthDay);
                 int age = DateUtils.calculateIsAdult(birthday, new Date());
                 String ageType = tripInfo.getAgeType();
-                if (age < 18 && ageType.equals("成人")) {
+                if (age < 18 && ageType.equals("adult")) {
                     throw GuiguException.build("请检查证件号码是否为成年人");
                 }
 
@@ -55,6 +55,7 @@ public class TripServiceImpl implements TripService {
                 throw GuiguException.build("请检查身份证号码格式");
             }
         }
+        tripInfo.convertAgeType();
         tripInfoMapper.save(tripInfo);
     }
 

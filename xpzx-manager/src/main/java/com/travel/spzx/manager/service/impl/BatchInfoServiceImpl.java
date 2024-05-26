@@ -1,6 +1,7 @@
 package com.travel.spzx.manager.service.impl;
 
 import cn.hutool.db.PageResult;
+import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.travel.spzx.manager.mapper.BatchInfoMapper;
@@ -45,8 +46,9 @@ public class BatchInfoServiceImpl implements BatchInfoService {
             batchInfoVo.setId(product.getId());
             batchInfoVo.setProductName(product.getName());
             List<BatchItem> batchItems = batchInfoMapper.selectByProductId(product.getId());
-            batchItems.forEach(batchItem -> {
 
+            batchItems.forEach(batchItem -> {
+                System.out.println("batchItems JSON:" + product.getName() + " startTime:" + batchItem.getStartTime() + " endTime:" + batchItem.getEndTime());
                 BatchUtils.computeBaseInfo(batchItem, batchItem.getTime());
                 batchItem.setDuration(BatchUtils.computeDuration(batchItem.getTime()));
                 BatchUtils.computeTripState(batchItem);

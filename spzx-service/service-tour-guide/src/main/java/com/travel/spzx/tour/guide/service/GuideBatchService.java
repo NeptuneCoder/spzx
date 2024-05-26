@@ -18,5 +18,8 @@ public interface GuideBatchService {
 
     List<TourGuideVo> getCurrentBatchTourGuideList(String batchId,String carId);
 
-    void tripFinished(String batchId,String carId);
+    void tripComplete(String batchId);
+
+    Long touristUnSign(String batchId, String tripId, String orderId, String orderItemId);
+
 }

@@ -53,6 +53,8 @@ public class GuideBatchDetailVo {
     private String address;
     @Schema(description = "出发时间")
     private String departureTime;
+    @Schema(description = "是否是主领队")
+    private Boolean mainLeader;
 
 
     public String[] getTime() {

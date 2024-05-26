@@ -42,9 +42,16 @@ public class TripInfo extends BaseEntity {
 
     @Schema(description = "是否默认出行人")
     private int defaultTrip;
-    @Pattern(regexp = "^(儿童|成人)$", message = "年龄类型格式错误")
+    @Pattern(regexp = "^(child|adult)$", message = "年龄类型格式错误")
     @Schema(description = "年龄类型:儿童，成人")
     private String ageType;
 
 
+    public void convertAgeType() {
+        if (ageType.equals("儿童")) {
+            ageType = "child";
+        } else if (ageType.equals("成人")) {
+            ageType = "adult";
+        }
+    }
 }

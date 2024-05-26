@@ -17,6 +17,8 @@
                                 sku_id,
                                 batch_id,
                                 trip_id,
+                                order_amount,
+                                age_type,
                                 create_time,
                                 update_time,
                                 is_deleted)
@@ -26,6 +28,8 @@
                 #{skuId},
                 #{batchId},
                 #{tripId},
+                #{orderAmount},
+                #{ageType},
                 now(),
                 now(),
                 0)

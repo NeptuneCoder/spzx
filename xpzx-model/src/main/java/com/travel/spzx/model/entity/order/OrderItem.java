@@ -21,6 +21,8 @@ public class OrderItem extends BaseEntity {
 
     @Schema(description = "批次id")
     private Long batchId;
+    @Schema(description = "金额")
+    private BigDecimal orderAmount;
 
     @Schema(description = "订单状态")
     private Integer orderStatus;
@@ -38,4 +40,8 @@ public class OrderItem extends BaseEntity {
 
     private String sex;
     private String ageType;
+
+    public void converAgeType() {
+
+    }
 }

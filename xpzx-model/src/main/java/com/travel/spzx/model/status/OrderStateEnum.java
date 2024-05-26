@@ -1,8 +1,6 @@
 package com.travel.spzx.model.status;
 
-import lombok.Data;
 import lombok.Getter;
-import lombok.Setter;
 
 /**
  * summary: 支付状态枚举
@@ -33,35 +31,58 @@ public enum OrderStateEnum {
 
     //待评价,该状态由领队触发，表示当前行程已经结束，用户可以进行评价功能
     //出行完成
-    TravelComplete(14, "出行完成"), //
+    /**
+     * --------------------------这三个状态标识当前批次已经结束----------------------------------------------
+     */
+    TravelComplete(14, "全部出行完成"), //
     //部分出现完成
     PartTravelComplete(19, "部分出行完成"), //
+    //未出行
 
+    NotTravel(20, "全部未出行完成"), //
+    /**
+     * --------------------------这三个状态标识当前批次已经结束----------------------------------------------
+     */
     OperatorCancelRefund(12, "操作员取消退款"), //
     //未成团取消退款
     GroupCancelRefund(13, "未成团取消退款"), //
 
     //订单完成
     OrderTimeOut(15, "订单超时"), //
-
+    NotSupportComment(28, "不支持评价，订单没有消费项"), //
     WaitComment(5, "待评价"), //
     PartComment(17, "部分评价"), //
     PartCommentSuccess(18, "部分评价成功"), //
 
     CommentSuccess(6, "评价成功"), //
 
-    ApplyRefund(7, "申请退款"), //
+    /**
+     * ---------------------------------------------/
+     */
+    SupportPartRefund(25, "支持部分退款"), //
+    ApplyPartRefund(21, "申请部分退款"), //
     //同意退款
-    RefundAgree(8, "同意退款"), //
+    PartRefundAgree(22, "同意部分退款"), //
+
+    //拒绝退款
+    PartRefundRefuse(23, "拒绝部分退款"), //
+
+    PartRefundSuccess(24, "部分退款成功"), //
+
+    /*****/
+    NotSupportRefund(27, "不支持退款"), //
+    SupportAllRefund(26, "支持全部退款,没有消费项"), //
+    ApplyAllRefund(7, "申请退款"), //
+    //同意退款
+    AllRefundAgree(8, "同意退款"), //
 
 
     Refunding(9, "退款中"), //
     //拒绝退款
-    RefundRefuse(10, "拒绝退款"), //
+    AllRefundRefuse(10, "拒绝退款"), //
 
-    RefundSuccess(11, "退款成功"), //
+    AllRefundSuccess(11, "退款成功"), //
     //操作员取消退款
-
 
 
     //未成团取消
@@ -73,6 +94,7 @@ public enum OrderStateEnum {
     CommentTimeOut(-5, "评价超时"), //
 
     ;
+
 
     private Integer code;      // 业务状态码
     private String message;    // 响应消息

@@ -29,7 +29,7 @@ public class GuideBatchController {
         return Result.success(batchVOList);
     }
 
-    @Operation(description = "查询当前批次信息")
+    @Operation(description = "通过批次id查询当前批次信息")
     @GetMapping("/detail/{batchId}")
     public Result getBatchInfo(@PathVariable("batchId") String batchId) {
         GuideBatchDetailVo batchVO = orderService.getBatchInfo(batchId);
@@ -61,6 +61,15 @@ public class GuideBatchController {
         return Result.success(rowId);
     }
 
+    @PutMapping("/tourist/unsign/{batchId}/{tripId}/{orderItemId}/{orderId}")
+    public Result unSign(@PathVariable("batchId") String batchId,
+                       @PathVariable("tripId") String tripId,
+                       @PathVariable("orderId") String orderId,
+                       @PathVariable("orderItemId") String orderItemId) {
+        Long rowId = orderService.touristUnSign(batchId, tripId, orderId, orderItemId);
+        return Result.success(rowId);
+    }
+
     ///api/v1/batch/guide/list
 //    current/batch/tourGuide/list
     @GetMapping("current/batch/tourGuide/list")
@@ -72,9 +81,9 @@ public class GuideBatchController {
     }
 
     //行程完成接口
-    @PutMapping("finished/{batchId}/{carId}")
-    public Result tripFinished(@PathVariable("batchId") String batchId, @PathVariable("carId") String carId) {
-        orderService.tripFinished(batchId,carId);
+    @PutMapping("completed/{batchId}")
+    public Result tripComplete(@PathVariable("batchId") String batchId) {
+        orderService.tripComplete(batchId);
         return Result.success();
     }
 }

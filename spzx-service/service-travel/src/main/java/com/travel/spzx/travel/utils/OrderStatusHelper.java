@@ -68,27 +68,27 @@ public class OrderStatusHelper {
                         OrderStateEnum.OrderTimeOut.getCode()));
 
         sysStatusMap.put(OrderStateEnum.PaySuccess.getCode(),
-                Arrays.asList(OrderStateEnum.ApplyRefund.getCode(),
+                Arrays.asList(OrderStateEnum.ApplyAllRefund.getCode(),
                         OrderStateEnum.SignInSuccess.getCode(),
                         OrderStateEnum.UnSignIn.getCode(),
                         OrderStateEnum.GroupCancelRefund.getCode(),
                         OrderStateEnum.OperatorCancel.getCode()));
 
         //申请退款
-        sysStatusMap.put(OrderStateEnum.ApplyRefund.getCode(),
-                Arrays.asList(OrderStateEnum.RefundAgree.getCode(),
-                        OrderStateEnum.RefundRefuse.getCode()));
+        sysStatusMap.put(OrderStateEnum.ApplyAllRefund.getCode(),
+                Arrays.asList(OrderStateEnum.AllRefundAgree.getCode(),
+                        OrderStateEnum.AllRefundRefuse.getCode()));
 
-        sysStatusMap.put(OrderStateEnum.RefundAgree.getCode(),
-                Arrays.asList(OrderStateEnum.RefundSuccess.getCode()));
-        sysStatusMap.put(OrderStateEnum.RefundRefuse.getCode(),
+        sysStatusMap.put(OrderStateEnum.AllRefundAgree.getCode(),
+                Arrays.asList(OrderStateEnum.AllRefundSuccess.getCode()));
+        sysStatusMap.put(OrderStateEnum.AllRefundRefuse.getCode(),
                 Arrays.asList(OrderStateEnum.RefundFailed.getCode()));
         //签到成功
         sysStatusMap.put(OrderStateEnum.SignInSuccess.getCode(),
                 Arrays.asList(OrderStateEnum.TravelComplete.getCode()));
         //未签到
         sysStatusMap.put(OrderStateEnum.UnSignIn.getCode(),
-                Arrays.asList(OrderStateEnum.ApplyRefund.getCode()));
+                Arrays.asList(OrderStateEnum.ApplyAllRefund.getCode()));
 
         //已完成
         sysStatusMap.put(OrderStateEnum.TravelComplete.getCode(),

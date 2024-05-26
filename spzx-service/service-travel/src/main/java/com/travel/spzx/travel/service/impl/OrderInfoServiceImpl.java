@@ -202,6 +202,11 @@ public class OrderInfoServiceImpl implements OrderInfoService {
             item.setSkuId(productSku.getId());
             item.setBatchId(batchItem.getId());
             item.setTripId(tripInfoDto.getId());
+            BigDecimal res = "child".equals(tripInfoDto.getAgeType()) ? childAmount : adultAmount;
+            System.out.println("tripInfoDto.getAgeType()==" + tripInfoDto.getAgeType());
+            System.out.println("res==" + "child".equals(tripInfoDto.getAgeType()));
+            item.setOrderAmount(res);
+            item.setAgeType("child".equals(tripInfoDto.getAgeType()) ? "1" : "0");
             item.setOrderStatus(OrderStateEnum.WaitPay.getCode());
             orderItemMapper.save(item);
         }

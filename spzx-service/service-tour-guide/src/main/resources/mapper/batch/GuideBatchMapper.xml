@@ -61,8 +61,8 @@
         ali.address,
         ci.city_name,
         COUNT(ti.age_type) as total_num,
-        SUM(case WHEN ti.age_type = '成人' THEN 1 ELSE 0 END) as adult_num,
-        SUM(case WHEN ti.age_type = '儿童' THEN 1 ELSE 0 END) as child_num
+        SUM(case WHEN ti.age_type = 'adult' THEN 1 ELSE 0 END) as adult_num,
+        SUM(case WHEN ti.age_type = 'child' THEN 1 ELSE 0 END) as child_num
 
         from bus_tour_guide_info btgi
         left join bus_info bi
@@ -74,6 +74,7 @@
         left join assemble_location_info ali on ali.id = p.place_to_start_id
         left join city_info ci on ci.id = ali.city_id
         left join order_item oi on oi.batch_id = bi2.id
+        and oi.order_status in (1, 3, 16,4,14,19)
         left join trip_info ti on ti.id = oi.trip_id
         and bti.tour_id = ti.id
         and oi.is_deleted = 0
@@ -108,6 +109,7 @@
         and oi.is_deleted = 0
         left join order_item oi2 on oi2.order_id = oi.id
         and oi2.trip_id = ti.id
+        and oi2.order_status in (1, 3,4, 16)
         and oi2.is_deleted = 0
 
 
@@ -120,10 +122,11 @@
                 and bti.car_id = #{carId}
             </if>
             <if test="checkStatus != null">
+                <!-- 0表示还未签到，4表示用户没有参加未签到 -->
                 and oi2.check_status = #{checkStatus}
             </if>
             <if test="checkStatus == null">
-                and oi2.check_status in (0,1)
+                and oi2.check_status in (0,1,3,4, 16)
             </if>
             <if test="name != null and name != ''">
                 and ti.name like concat('%', #{name}, '%')
@@ -157,15 +160,39 @@
         where id = #{orderId}
           and is_deleted = 0
     </update>
+    <update id="batchStopApply">
+        update batch_info
+        set status = ${status}
+        where id = #{batchId}
+    </update>
+    <update id="travelFinished">
+
+        update order_info
+        <set>
+            <if test="orderStatus != null">
+                order_status = #{orderStatus},
+            </if>
+            <if test="commentStatus != null">
+                comment_status = #{commentStatus},
+            </if>
+            <if test="refundStatus != null">
+                refund_status = #{refundStatus},
+            </if>
+            <if test="refundAmount != null">
+                refund_amount = #{refundAmount},
+            </if>
+        </set>
+        where id = #{orderId}
+    </update>
 
 
-    <select id="queryCurrentOrderIsAllSign" resultType="com.travel.spzx.model.entity.order.OrderItem">
+    <select id="queryCurrentOrderItemIsAllSign" resultType="com.travel.spzx.model.entity.order.OrderItem">
         select oi.*
         from order_item oi
         where oi.batch_id = #{batchId}
           and oi.order_id = #{orderId}
           and oi.is_deleted = 0
-          and oi.order_status = 1
+          and oi.order_status in (1, 3, 4, 16)
     </select>
     <select id="getCurrentBatchTourGuideList" resultType="com.travel.spzx.model.vo.batch.TourGuideVo">
         select tgi.nickname,
@@ -183,6 +210,41 @@
         from order_info oi
         where oi.batch_id = #{batchId}
           and oi.order_status in (1, 3, 16)
+          and oi.is_deleted = 0
+    </select>
+    <select id="queryCurBatchCars" resultType="java.lang.String">
+        select car_id
+        from batch_bus_info
+        where batch_id = #{batchId}
+          and is_deleted = 0
+        order by id desc
+    </select>
+    <select id="getOrderItemByOrderId" resultType="com.travel.spzx.model.entity.order.OrderItem">
+        select id, order_status, check_status
+        from order_item oi
+        where oi.order_id = #{orderId}
+          and oi.is_deleted = 0
+    </select>
+    <select id="getCurBatchStatus" resultType="java.lang.Integer">
+        select status
+        from batch_info
+        where id = #{batchId}
+          and is_deleted = 0
+    </select>
+    <!-- 用于在点待未签到时使用-->
+    <select id="queryCurOrderAllItem" resultType="com.travel.spzx.model.entity.order.OrderItem">
+        select oi.*
+        from order_item oi
+        where oi.order_id = #{orderId}
+          and batch_id = #{batchId}
+          and order_status in (1)
+          and oi.is_deleted = 0
+    </select>
+    <select id="queryCurBatchPayedOrder" resultType="com.travel.spzx.model.entity.order.OrderItem">
+        select oi.*
+        from order_item oi
+        where batch_id = #{batchId}
+          and order_status = 1
           and oi.is_deleted = 0
     </select>
 
