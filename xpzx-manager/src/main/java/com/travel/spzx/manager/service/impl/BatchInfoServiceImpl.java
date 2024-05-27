@@ -30,9 +30,20 @@ public class BatchInfoServiceImpl implements BatchInfoService {
     private ProductMapper productMapper;
 
     @Override
-    public List<BatchItem> getBatchInfoByProductId(Long productId) {
-
-        return batchInfoMapper.selectByProductId(productId);
+    public PageInfo<BatchItem> getBatchInfoByProductId(Long productId, int page, int limit) {
+        PageHelper.startPage(page, limit);
+        List<BatchItem> batchItems = batchInfoMapper.selectByProductId(productId);
+        batchItems.forEach(item -> {
+            if (item.getStatus() == 0) {
+                BatchUtils.computeTripState(item);
+            } else if (item.getStatus() == 1) {
+                item.setStatusStr("行程已结束");
+            } else {
+                item.setStatusStr("新状态，待开发");
+            }
+            item.setDuration(BatchUtils.computeDuration(item.getTime()));
+        });
+        return new PageInfo<>(batchItems);
     }
 
     @Override

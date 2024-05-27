@@ -7,7 +7,7 @@ import com.travel.spzx.model.vo.product.BatchInfoVo;
 import java.util.List;
 
 public interface BatchInfoService {
-    List<BatchItem> getBatchInfoByProductId(Long productId);
+    PageInfo<BatchItem> getBatchInfoByProductId(Long productId, int page, int limit);
 
     PageInfo<BatchInfoVo> list(Integer page, Integer limit);
 

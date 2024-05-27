@@ -17625,3 +17625,1419 @@ com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: Network cl
 2024-05-26 23:11:13 Reconnected to 14.103.49.141/<unresolved>:6379
 2024-05-26 23:11:44 Reconnecting, last destination was /14.103.49.141:6379
 2024-05-26 23:11:44 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:12:15 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:12:15 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:12:46 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:12:46 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:13:17 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:13:17 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:13:47 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:13:47 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:14:19 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:14:19 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:14:50 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:14:50 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:15:20 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:15:20 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:15:51 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:15:51 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:16:23 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:16:23 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:16:53 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:16:53 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:17:24 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:17:24 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:17:56 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:17:56 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:18:27 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:18:27 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:18:57 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:18:57 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:19:29 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:19:29 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:20:00 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:20:00 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:20:31 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:20:31 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:21:02 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:21:02 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:21:32 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:21:32 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:22:03 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:22:03 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:22:35 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:22:35 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:23:05 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:23:05 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:23:37 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:23:37 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:24:08 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:24:08 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:24:38 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:24:38 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:25:09 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:25:09 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:25:41 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:25:41 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:26:11 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:26:11 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:26:42 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:26:42 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:27:14 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:27:14 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:27:45 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:27:45 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:28:16 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:28:16 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:28:46 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:28:46 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:29:17 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:29:17 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:29:49 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:29:49 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:30:20 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:30:20 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:30:50 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:30:50 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:31:22 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:31:22 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:31:53 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:31:53 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:32:23 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:32:23 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:32:55 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:32:55 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:33:26 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:33:26 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:33:56 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:33:56 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:34:28 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:34:28 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:34:58 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:34:58 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:35:30 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:35:30 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:36:01 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:36:01 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:36:31 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:36:31 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:37:02 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:37:02 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:37:34 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:37:34 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:38:05 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:38:05 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:38:35 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:38:35 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:39:07 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:39:07 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:39:37 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:39:37 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:40:08 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:40:08 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:40:40 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:40:40 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:41:11 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:41:11 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:41:42 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:41:42 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:42:12 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:42:12 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:42:43 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:42:43 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:43:15 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:43:15 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:43:46 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:43:46 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:44:17 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:44:17 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:44:47 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:44:47 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:45:19 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:45:19 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:45:50 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:45:50 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:46:21 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:46:21 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:46:51 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:46:51 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:47:23 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:47:23 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:47:54 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:47:54 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:48:25 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:48:25 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:48:56 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:48:56 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:49:27 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:49:27 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:49:58 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:49:58 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:50:28 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:50:28 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:51:00 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:51:00 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:51:31 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:51:31 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:52:01 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:52:01 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:52:33 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:52:33 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:53:03 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:53:03 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:53:34 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:53:34 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:54:06 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:54:06 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:54:36 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:54:36 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:55:08 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:55:08 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:55:39 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:55:39 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:56:10 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:56:10 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:56:40 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:56:40 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:57:12 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:57:12 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:57:43 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:57:43 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:58:13 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:58:13 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:58:45 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:58:45 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:59:16 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:59:16 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-26 23:59:46 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-26 23:59:46 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:00:18 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:00:18 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:00:48 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:00:48 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:01:19 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:01:20 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:01:50 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:01:50 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:02:21 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:02:21 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:02:53 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:02:53 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:03:24 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:03:24 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:03:54 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:03:54 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:04:26 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:04:26 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:04:56 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:04:56 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:05:27 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:05:27 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:05:59 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:05:59 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:06:29 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:06:29 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:07:01 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:07:01 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:07:31 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:07:31 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:08:02 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:08:02 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:08:33 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:08:33 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:09:04 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:09:04 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:09:35 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:09:35 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:10:06 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:10:06 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:10:38 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:10:38 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:11:08 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:11:08 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:11:39 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:11:39 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:12:10 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:12:10 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:12:42 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:12:42 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:13:13 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:13:13 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:13:44 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:13:44 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:14:14 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:14:14 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:14:46 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:14:46 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:15:17 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:15:17 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:15:47 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:15:47 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:16:19 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:16:19 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:16:49 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:16:49 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:17:20 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:17:20 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:17:51 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:17:51 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:18:23 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:18:23 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:18:53 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:18:53 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:19:24 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:19:24 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:19:55 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:19:55 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:20:27 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:20:27 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:20:58 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:20:58 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:21:28 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:21:29 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:22:00 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:22:00 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:22:31 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:22:31 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:23:01 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:23:02 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:23:32 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:23:33 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:24:03 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:24:04 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:24:35 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:24:35 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:25:05 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:25:06 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:25:36 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:25:37 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:26:08 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:26:08 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:26:39 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:26:39 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:27:10 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:27:10 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:27:40 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:27:41 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:28:11 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:28:12 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:28:43 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:28:43 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:29:13 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:29:14 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:29:44 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:29:45 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:30:15 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:30:16 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:30:46 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:30:47 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:31:17 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:31:18 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:31:48 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:31:49 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:32:19 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:32:20 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:32:50 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:32:51 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:33:21 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:33:22 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:33:52 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:33:53 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:34:24 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:34:24 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:34:54 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:34:55 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:35:25 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:35:26 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:35:57 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:35:57 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:36:27 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:36:28 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:36:58 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:36:58 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:37:29 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:37:29 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:38:01 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:38:01 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:38:31 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:38:31 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:39:02 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:39:02 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:39:33 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:39:33 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:40:04 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:40:04 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:40:35 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:40:35 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:41:06 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:41:06 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:41:37 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:41:37 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:42:08 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:42:08 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:42:39 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:42:39 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:43:32 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s611ms).
+2024-05-27 00:43:37 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:43:37 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:44:07 Reconnecting, last destination was /14.103.49.141:6379
+2024-05-27 00:44:07 Reconnected to 14.103.49.141/<unresolved>:6379
+2024-05-27 00:59:56 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716734295833_183.192.230.96_2718
+2024-05-27 00:59:56 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 00:59:56 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 00:59:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716742797052_183.192.230.96_3011
+2024-05-27 00:59:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716734295833_183.192.230.96_2718
+2024-05-27 00:59:57 Close current connection 1716734295833_183.192.230.96_2718
+2024-05-27 00:59:57 [1716734295833_183.192.230.96_2718]Ignore error event,isRunning:false,isAbandon=true
+2024-05-27 00:59:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 00:59:57 Grpc connection disconnect, mark to redo
+2024-05-27 00:59:57 mark to redo completed
+2024-05-27 00:59:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 00:59:57 Grpc connection connect
+2024-05-27 00:59:57 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s282ms).
+2024-05-27 00:59:59 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 01:16:16 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716742797052_183.192.230.96_3011
+2024-05-27 01:16:16 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 01:16:16 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 01:16:16 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716743776259_183.192.230.96_2679
+2024-05-27 01:16:16 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716742797052_183.192.230.96_3011
+2024-05-27 01:16:16 Close current connection 1716742797052_183.192.230.96_3011
+2024-05-27 01:16:16 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 01:16:16 Grpc connection disconnect, mark to redo
+2024-05-27 01:16:16 mark to redo completed
+2024-05-27 01:16:16 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 01:16:16 Grpc connection connect
+2024-05-27 01:16:16 [1716742797052_183.192.230.96_3011]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 01:16:16 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 01:16:23 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s251ms).
+2024-05-27 01:32:17 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s450ms).
+2024-05-27 01:32:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716743776259_183.192.230.96_2679
+2024-05-27 01:32:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 01:32:30 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 01:32:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716744750129_183.192.230.96_2857
+2024-05-27 01:32:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716743776259_183.192.230.96_2679
+2024-05-27 01:32:30 Close current connection 1716743776259_183.192.230.96_2679
+2024-05-27 01:32:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 01:32:30 Grpc connection disconnect, mark to redo
+2024-05-27 01:32:30 mark to redo completed
+2024-05-27 01:32:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 01:32:30 Grpc connection connect
+2024-05-27 01:32:30 [1716743776259_183.192.230.96_2679]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 01:32:32 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 01:48:42 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s373ms).
+2024-05-27 01:48:48 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716744750129_183.192.230.96_2857
+2024-05-27 01:48:48 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 01:48:48 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 01:48:48 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716745728545_183.192.230.96_3035
+2024-05-27 01:48:48 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716744750129_183.192.230.96_2857
+2024-05-27 01:48:48 Close current connection 1716744750129_183.192.230.96_2857
+2024-05-27 01:48:48 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 01:48:48 Grpc connection disconnect, mark to redo
+2024-05-27 01:48:48 mark to redo completed
+2024-05-27 01:48:48 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 01:48:48 Grpc connection connect
+2024-05-27 01:48:48 [1716744750129_183.192.230.96_2857]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 01:48:48 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 02:05:02 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716745728545_183.192.230.96_3035
+2024-05-27 02:05:02 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 02:05:02 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 02:05:02 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716746702564_183.192.230.96_3020
+2024-05-27 02:05:02 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716745728545_183.192.230.96_3035
+2024-05-27 02:05:02 Close current connection 1716745728545_183.192.230.96_3035
+2024-05-27 02:05:02 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 02:05:02 Grpc connection disconnect, mark to redo
+2024-05-27 02:05:02 mark to redo completed
+2024-05-27 02:05:02 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 02:05:02 Grpc connection connect
+2024-05-27 02:05:02 [1716745728545_183.192.230.96_3035]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 02:05:05 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 02:05:06 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s402ms).
+2024-05-27 02:21:21 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716746702564_183.192.230.96_3020
+2024-05-27 02:21:21 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 02:21:21 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 02:21:21 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716747681521_183.192.230.96_2750
+2024-05-27 02:21:21 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716746702564_183.192.230.96_3020
+2024-05-27 02:21:21 Close current connection 1716746702564_183.192.230.96_3020
+2024-05-27 02:21:21 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 02:21:21 Grpc connection disconnect, mark to redo
+2024-05-27 02:21:21 mark to redo completed
+2024-05-27 02:21:21 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 02:21:21 Grpc connection connect
+2024-05-27 02:21:21 [1716746702564_183.192.230.96_3020]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 02:21:24 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 02:21:31 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s341ms).
+2024-05-27 02:33:30 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m59s206ms).
+2024-05-27 02:33:39 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716747681521_183.192.230.96_2750
+2024-05-27 02:33:39 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 02:33:39 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 02:33:39 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716748419793_183.192.230.96_2921
+2024-05-27 02:33:39 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716747681521_183.192.230.96_2750
+2024-05-27 02:33:39 Close current connection 1716747681521_183.192.230.96_2750
+2024-05-27 02:33:39 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 02:33:39 Grpc connection disconnect, mark to redo
+2024-05-27 02:33:39 mark to redo completed
+2024-05-27 02:33:39 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 02:33:39 Grpc connection connect
+2024-05-27 02:33:39 [1716747681521_183.192.230.96_2750]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 02:33:42 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 02:43:58 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m58s130ms).
+2024-05-27 02:44:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716748419793_183.192.230.96_2921
+2024-05-27 02:44:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 02:44:07 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 02:44:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716749047662_183.192.230.96_2609
+2024-05-27 02:44:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716748419793_183.192.230.96_2921
+2024-05-27 02:44:07 Close current connection 1716748419793_183.192.230.96_2921
+2024-05-27 02:44:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 02:44:07 Grpc connection disconnect, mark to redo
+2024-05-27 02:44:07 mark to redo completed
+2024-05-27 02:44:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 02:44:07 Grpc connection connect
+2024-05-27 02:44:07 [1716748419793_183.192.230.96_2921]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 02:44:10 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 03:00:28 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m59s789ms).
+2024-05-27 03:00:34 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716749047662_183.192.230.96_2609
+2024-05-27 03:00:34 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 03:00:34 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 03:00:34 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716750034206_183.192.230.96_2876
+2024-05-27 03:00:34 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716749047662_183.192.230.96_2609
+2024-05-27 03:00:34 Close current connection 1716749047662_183.192.230.96_2609
+2024-05-27 03:00:34 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 03:00:34 Grpc connection disconnect, mark to redo
+2024-05-27 03:00:34 mark to redo completed
+2024-05-27 03:00:34 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 03:00:34 Grpc connection connect
+2024-05-27 03:00:34 [1716749047662_183.192.230.96_2609]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 03:00:36 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 03:16:57 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s746ms).
+2024-05-27 03:16:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716750034206_183.192.230.96_2876
+2024-05-27 03:16:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 03:16:57 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 03:16:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716751017778_183.192.230.96_2578
+2024-05-27 03:16:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716750034206_183.192.230.96_2876
+2024-05-27 03:16:57 Close current connection 1716750034206_183.192.230.96_2876
+2024-05-27 03:16:57 [1716750034206_183.192.230.96_2876]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 03:16:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 03:16:57 Grpc connection disconnect, mark to redo
+2024-05-27 03:16:57 mark to redo completed
+2024-05-27 03:16:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 03:16:57 Grpc connection connect
+2024-05-27 03:16:59 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 03:33:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716751017778_183.192.230.96_2578
+2024-05-27 03:33:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 03:33:18 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 03:33:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716751998276_183.192.230.96_2793
+2024-05-27 03:33:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716751017778_183.192.230.96_2578
+2024-05-27 03:33:18 Close current connection 1716751017778_183.192.230.96_2578
+2024-05-27 03:33:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 03:33:18 Grpc connection disconnect, mark to redo
+2024-05-27 03:33:18 mark to redo completed
+2024-05-27 03:33:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 03:33:18 Grpc connection connect
+2024-05-27 03:33:18 [1716751017778_183.192.230.96_2578]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 03:33:20 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 03:33:25 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s743ms).
+2024-05-27 03:49:27 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m1s685ms).
+2024-05-27 03:49:41 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716751998276_183.192.230.96_2793
+2024-05-27 03:49:41 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 03:49:41 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 03:49:41 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716752981215_183.192.230.96_3064
+2024-05-27 03:49:41 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716751998276_183.192.230.96_2793
+2024-05-27 03:49:41 Close current connection 1716751998276_183.192.230.96_2793
+2024-05-27 03:49:41 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 03:49:41 Grpc connection disconnect, mark to redo
+2024-05-27 03:49:41 mark to redo completed
+2024-05-27 03:49:41 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 03:49:41 Grpc connection connect
+2024-05-27 03:49:41 [1716751998276_183.192.230.96_2793]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 03:49:42 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 04:05:56 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s746ms).
+2024-05-27 04:06:01 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716752981215_183.192.230.96_3064
+2024-05-27 04:06:01 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 04:06:01 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 04:06:01 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716753961443_183.192.230.96_2802
+2024-05-27 04:06:01 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716752981215_183.192.230.96_3064
+2024-05-27 04:06:01 Close current connection 1716752981215_183.192.230.96_3064
+2024-05-27 04:06:01 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 04:06:01 Grpc connection disconnect, mark to redo
+2024-05-27 04:06:01 mark to redo completed
+2024-05-27 04:06:01 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 04:06:01 Grpc connection connect
+2024-05-27 04:06:01 [1716752981215_183.192.230.96_3064]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 04:06:04 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 04:22:23 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716753961443_183.192.230.96_2802
+2024-05-27 04:22:23 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 04:22:23 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 04:22:23 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716754943262_183.192.230.96_3002
+2024-05-27 04:22:23 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716753961443_183.192.230.96_2802
+2024-05-27 04:22:23 Close current connection 1716753961443_183.192.230.96_2802
+2024-05-27 04:22:23 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 04:22:23 Grpc connection disconnect, mark to redo
+2024-05-27 04:22:23 mark to redo completed
+2024-05-27 04:22:23 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 04:22:23 Grpc connection connect
+2024-05-27 04:22:23 [1716753961443_183.192.230.96_2802]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 04:22:25 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s769ms).
+2024-05-27 04:22:26 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 04:34:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716754943262_183.192.230.96_3002
+2024-05-27 04:34:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 04:34:47 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 04:34:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716755687297_183.192.230.96_2673
+2024-05-27 04:34:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716754943262_183.192.230.96_3002
+2024-05-27 04:34:47 Close current connection 1716754943262_183.192.230.96_3002
+2024-05-27 04:34:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 04:34:47 Grpc connection disconnect, mark to redo
+2024-05-27 04:34:47 mark to redo completed
+2024-05-27 04:34:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 04:34:47 Grpc connection connect
+2024-05-27 04:34:47 [1716754943262_183.192.230.96_3002]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 04:34:48 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 04:34:54 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m59s648ms).
+2024-05-27 04:50:55 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m683ms).
+2024-05-27 04:51:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716755687297_183.192.230.96_2673
+2024-05-27 04:51:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 04:51:07 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 04:51:08 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716756668000_183.192.230.96_2890
+2024-05-27 04:51:08 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716755687297_183.192.230.96_2673
+2024-05-27 04:51:08 Close current connection 1716755687297_183.192.230.96_2673
+2024-05-27 04:51:08 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 04:51:08 Grpc connection disconnect, mark to redo
+2024-05-27 04:51:08 mark to redo completed
+2024-05-27 04:51:08 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 04:51:08 Grpc connection connect
+2024-05-27 04:51:08 [1716755687297_183.192.230.96_2673]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 04:51:10 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 05:07:24 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s759ms).
+2024-05-27 05:07:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716756668000_183.192.230.96_2890
+2024-05-27 05:07:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 05:07:30 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 05:07:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716757650622_183.192.230.96_2582
+2024-05-27 05:07:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716756668000_183.192.230.96_2890
+2024-05-27 05:07:30 Close current connection 1716756668000_183.192.230.96_2890
+2024-05-27 05:07:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 05:07:30 Grpc connection disconnect, mark to redo
+2024-05-27 05:07:30 mark to redo completed
+2024-05-27 05:07:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 05:07:30 Grpc connection connect
+2024-05-27 05:07:30 [1716756668000_183.192.230.96_2890]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 05:07:32 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 05:23:53 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s771ms).
+2024-05-27 05:23:53 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716757650622_183.192.230.96_2582
+2024-05-27 05:23:53 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 05:23:53 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 05:23:53 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716758633219_183.192.230.96_2782
+2024-05-27 05:23:53 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716757650622_183.192.230.96_2582
+2024-05-27 05:23:53 Close current connection 1716757650622_183.192.230.96_2582
+2024-05-27 05:23:53 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 05:23:53 [1716757650622_183.192.230.96_2582]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 05:23:53 Grpc connection disconnect, mark to redo
+2024-05-27 05:23:53 mark to redo completed
+2024-05-27 05:23:53 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 05:23:53 Grpc connection connect
+2024-05-27 05:23:54 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 05:35:52 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716758633219_183.192.230.96_2782
+2024-05-27 05:35:52 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 05:35:52 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 05:35:52 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716759352172_183.192.230.96_2949
+2024-05-27 05:35:52 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716758633219_183.192.230.96_2782
+2024-05-27 05:35:52 Close current connection 1716758633219_183.192.230.96_2782
+2024-05-27 05:35:52 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 05:35:52 Grpc connection disconnect, mark to redo
+2024-05-27 05:35:52 mark to redo completed
+2024-05-27 05:35:52 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 05:35:52 Grpc connection connect
+2024-05-27 05:35:52 [1716758633219_183.192.230.96_2782]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 05:35:54 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 05:35:59 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m36s821ms).
+2024-05-27 05:52:01 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m1s430ms).
+2024-05-27 05:52:13 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716759352172_183.192.230.96_2949
+2024-05-27 05:52:13 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 05:52:13 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 05:52:14 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716760334830_183.192.230.96_2677
+2024-05-27 05:52:14 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716759352172_183.192.230.96_2949
+2024-05-27 05:52:14 Close current connection 1716759352172_183.192.230.96_2949
+2024-05-27 05:52:14 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 05:52:14 Grpc connection disconnect, mark to redo
+2024-05-27 05:52:14 mark to redo completed
+2024-05-27 05:52:14 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 05:52:14 Grpc connection connect
+2024-05-27 05:52:14 [1716759352172_183.192.230.96_2949]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 05:52:16 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 06:08:30 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s775ms).
+2024-05-27 06:08:35 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716760334830_183.192.230.96_2677
+2024-05-27 06:08:35 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 06:08:35 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 06:08:35 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716761315454_183.192.230.96_2878
+2024-05-27 06:08:35 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716760334830_183.192.230.96_2677
+2024-05-27 06:08:35 Close current connection 1716760334830_183.192.230.96_2677
+2024-05-27 06:08:35 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 06:08:35 Grpc connection disconnect, mark to redo
+2024-05-27 06:08:35 [1716760334830_183.192.230.96_2677]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 06:08:35 mark to redo completed
+2024-05-27 06:08:35 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 06:08:35 Grpc connection connect
+2024-05-27 06:08:38 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 06:24:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716761315454_183.192.230.96_2878
+2024-05-27 06:24:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 06:24:58 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 06:24:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716762298401_183.192.230.96_3055
+2024-05-27 06:24:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716761315454_183.192.230.96_2878
+2024-05-27 06:24:58 Close current connection 1716761315454_183.192.230.96_2878
+2024-05-27 06:24:58 [1716761315454_183.192.230.96_2878]Ignore error event,isRunning:false,isAbandon=true
+2024-05-27 06:24:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 06:24:58 Grpc connection disconnect, mark to redo
+2024-05-27 06:24:58 mark to redo completed
+2024-05-27 06:24:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 06:24:58 Grpc connection connect
+2024-05-27 06:24:58 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s760ms).
+2024-05-27 06:25:00 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 06:36:59 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716762298401_183.192.230.96_3055
+2024-05-27 06:36:59 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 06:36:59 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 06:37:00 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716763020123_183.192.230.96_2684
+2024-05-27 06:37:00 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716762298401_183.192.230.96_3055
+2024-05-27 06:37:00 Close current connection 1716762298401_183.192.230.96_3055
+2024-05-27 06:37:00 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 06:37:00 Grpc connection disconnect, mark to redo
+2024-05-27 06:37:00 mark to redo completed
+2024-05-27 06:37:00 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 06:37:00 Grpc connection connect
+2024-05-27 06:37:00 [1716762298401_183.192.230.96_3055]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 06:37:02 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 06:37:08 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m39s909ms).
+2024-05-27 06:53:09 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m618ms).
+2024-05-27 06:53:23 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716763020123_183.192.230.96_2684
+2024-05-27 06:53:23 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 06:53:23 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 06:53:23 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716764003358_183.192.230.96_2963
+2024-05-27 06:53:23 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716763020123_183.192.230.96_2684
+2024-05-27 06:53:23 Close current connection 1716763020123_183.192.230.96_2684
+2024-05-27 06:53:23 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 06:53:23 Grpc connection disconnect, mark to redo
+2024-05-27 06:53:23 mark to redo completed
+2024-05-27 06:53:23 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 06:53:23 Grpc connection connect
+2024-05-27 06:53:23 [1716763020123_183.192.230.96_2684]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 06:53:24 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 07:09:38 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s739ms).
+2024-05-27 07:09:43 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716764003358_183.192.230.96_2963
+2024-05-27 07:09:43 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 07:09:43 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 07:09:43 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716764983719_183.192.230.96_2703
+2024-05-27 07:09:43 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716764003358_183.192.230.96_2963
+2024-05-27 07:09:43 Close current connection 1716764003358_183.192.230.96_2963
+2024-05-27 07:09:43 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 07:09:43 Grpc connection disconnect, mark to redo
+2024-05-27 07:09:43 mark to redo completed
+2024-05-27 07:09:43 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 07:09:43 Grpc connection connect
+2024-05-27 07:09:43 [1716764003358_183.192.230.96_2963]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 07:09:46 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 07:26:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716764983719_183.192.230.96_2703
+2024-05-27 07:26:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 07:26:07 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 07:26:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716765967276_183.192.230.96_2950
+2024-05-27 07:26:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716764983719_183.192.230.96_2703
+2024-05-27 07:26:07 Close current connection 1716764983719_183.192.230.96_2703
+2024-05-27 07:26:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 07:26:07 Grpc connection disconnect, mark to redo
+2024-05-27 07:26:07 mark to redo completed
+2024-05-27 07:26:07 [1716764983719_183.192.230.96_2703]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 07:26:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 07:26:07 Grpc connection connect
+2024-05-27 07:26:07 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m59s729ms).
+2024-05-27 07:26:09 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 07:34:22 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716765967276_183.192.230.96_2950
+2024-05-27 07:34:22 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 07:34:22 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 07:34:22 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716766462213_183.192.230.96_2622
+2024-05-27 07:34:22 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716765967276_183.192.230.96_2950
+2024-05-27 07:34:22 Close current connection 1716765967276_183.192.230.96_2950
+2024-05-27 07:34:22 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 07:34:22 Grpc connection disconnect, mark to redo
+2024-05-27 07:34:22 mark to redo completed
+2024-05-27 07:34:22 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 07:34:22 Grpc connection connect
+2024-05-27 07:34:22 [1716765967276_183.192.230.96_2950]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 07:34:24 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 07:34:30 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m52s669ms).
+2024-05-27 07:37:53 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m23s258ms).
+2024-05-27 07:54:22 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s745ms).
+2024-05-27 07:54:28 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716766462213_183.192.230.96_2622
+2024-05-27 07:54:28 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 07:54:28 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 07:54:28 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716767668836_183.192.230.96_2947
+2024-05-27 07:54:28 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716766462213_183.192.230.96_2622
+2024-05-27 07:54:28 Close current connection 1716766462213_183.192.230.96_2622
+2024-05-27 07:54:28 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 07:54:28 Grpc connection disconnect, mark to redo
+2024-05-27 07:54:28 mark to redo completed
+2024-05-27 07:54:28 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 07:54:28 Grpc connection connect
+2024-05-27 07:54:28 [1716766462213_183.192.230.96_2622]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 07:54:31 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 08:14:28 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m36s266ms).
+2024-05-27 08:14:36 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716767668836_183.192.230.96_2947
+2024-05-27 08:14:36 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 08:14:36 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 08:14:36 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716768876555_183.192.230.96_2756
+2024-05-27 08:14:36 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716767668836_183.192.230.96_2947
+2024-05-27 08:14:36 Close current connection 1716767668836_183.192.230.96_2947
+2024-05-27 08:14:36 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 08:14:36 Grpc connection disconnect, mark to redo
+2024-05-27 08:14:36 mark to redo completed
+2024-05-27 08:14:36 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 08:14:36 Grpc connection connect
+2024-05-27 08:14:36 [1716767668836_183.192.230.96_2947]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 08:14:39 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 08:30:53 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s370ms).
+2024-05-27 08:30:54 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716768876555_183.192.230.96_2756
+2024-05-27 08:30:54 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 08:30:54 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 08:30:54 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716769854317_183.192.230.96_2943
+2024-05-27 08:30:54 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716768876555_183.192.230.96_2756
+2024-05-27 08:30:54 Close current connection 1716768876555_183.192.230.96_2756
+2024-05-27 08:30:54 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 08:30:54 [1716768876555_183.192.230.96_2756]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 08:30:54 Grpc connection disconnect, mark to redo
+2024-05-27 08:30:54 mark to redo completed
+2024-05-27 08:30:54 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 08:30:54 Grpc connection connect
+2024-05-27 08:30:55 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 08:39:08 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716769854317_183.192.230.96_2943
+2024-05-27 08:39:08 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 08:39:08 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 08:39:08 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716770348861_183.192.230.96_3035
+2024-05-27 08:39:08 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716769854317_183.192.230.96_2943
+2024-05-27 08:39:08 Close current connection 1716769854317_183.192.230.96_2943
+2024-05-27 08:39:08 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 08:39:08 Grpc connection disconnect, mark to redo
+2024-05-27 08:39:08 mark to redo completed
+2024-05-27 08:39:08 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 08:39:08 Grpc connection connect
+2024-05-27 08:39:08 [1716769854317_183.192.230.96_2943]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 08:39:11 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 08:39:17 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m54s266ms).
+2024-05-27 08:55:12 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s223ms).
+2024-05-27 08:55:27 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716770348861_183.192.230.96_3035
+2024-05-27 08:55:27 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 08:55:27 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 08:55:27 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716771327741_183.192.230.96_2680
+2024-05-27 08:55:27 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716770348861_183.192.230.96_3035
+2024-05-27 08:55:27 Close current connection 1716770348861_183.192.230.96_3035
+2024-05-27 08:55:27 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 08:55:27 Grpc connection disconnect, mark to redo
+2024-05-27 08:55:27 mark to redo completed
+2024-05-27 08:55:27 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 08:55:27 [1716770348861_183.192.230.96_3035]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 08:55:27 Grpc connection connect
+2024-05-27 08:55:30 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 09:11:37 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s372ms).
+2024-05-27 09:11:41 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716771327741_183.192.230.96_2680
+2024-05-27 09:11:41 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 09:11:41 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 09:11:41 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716772301251_183.192.230.96_2852
+2024-05-27 09:11:41 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716771327741_183.192.230.96_2680
+2024-05-27 09:11:41 Close current connection 1716771327741_183.192.230.96_2680
+2024-05-27 09:11:41 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 09:11:41 Grpc connection disconnect, mark to redo
+2024-05-27 09:11:41 mark to redo completed
+2024-05-27 09:11:41 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 09:11:41 Grpc connection connect
+2024-05-27 09:11:41 [1716771327741_183.192.230.96_2680]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 09:11:44 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 09:27:59 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716772301251_183.192.230.96_2852
+2024-05-27 09:27:59 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 09:27:59 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 09:28:00 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716773280012_183.192.230.96_2727
+2024-05-27 09:28:00 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716772301251_183.192.230.96_2852
+2024-05-27 09:28:00 Close current connection 1716772301251_183.192.230.96_2852
+2024-05-27 09:28:00 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 09:28:00 Grpc connection disconnect, mark to redo
+2024-05-27 09:28:00 mark to redo completed
+2024-05-27 09:28:00 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 09:28:00 Grpc connection connect
+2024-05-27 09:28:00 [1716772301251_183.192.230.96_2852]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 09:28:00 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 09:28:01 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s364ms).
+2024-05-27 09:40:09 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716773280012_183.192.230.96_2727
+2024-05-27 09:40:09 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 09:40:09 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 09:40:09 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716774009528_183.192.230.96_2611
+2024-05-27 09:40:09 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716773280012_183.192.230.96_2727
+2024-05-27 09:40:09 Close current connection 1716773280012_183.192.230.96_2727
+2024-05-27 09:40:09 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 09:40:09 Grpc connection disconnect, mark to redo
+2024-05-27 09:40:09 mark to redo completed
+2024-05-27 09:40:09 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 09:40:09 Grpc connection connect
+2024-05-27 09:40:09 [1716773280012_183.192.230.96_2727]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 09:40:12 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 09:40:21 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m50s201ms).
+2024-05-27 09:56:16 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s326ms).
+2024-05-27 09:56:28 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716774009528_183.192.230.96_2611
+2024-05-27 09:56:28 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 09:56:28 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 09:56:28 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716774988188_183.192.230.96_2817
+2024-05-27 09:56:28 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716774009528_183.192.230.96_2611
+2024-05-27 09:56:28 Close current connection 1716774009528_183.192.230.96_2611
+2024-05-27 09:56:28 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 09:56:28 Grpc connection disconnect, mark to redo
+2024-05-27 09:56:28 mark to redo completed
+2024-05-27 09:56:28 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 09:56:28 Grpc connection connect
+2024-05-27 09:56:28 [1716774009528_183.192.230.96_2611]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 09:56:28 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 09:57:31 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s134ms).
+2024-05-27 10:19:55 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s671ms).
+2024-05-27 10:35:23 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m58s496ms).
+2024-05-27 10:35:28 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716774988188_183.192.230.96_2817
+2024-05-27 10:35:28 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 10:35:28 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 10:35:29 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716777329062_183.192.230.96_2735
+2024-05-27 10:35:29 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716774988188_183.192.230.96_2817
+2024-05-27 10:35:29 Close current connection 1716774988188_183.192.230.96_2817
+2024-05-27 10:35:29 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 10:35:29 [1716774988188_183.192.230.96_2817]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 10:35:29 Grpc connection disconnect, mark to redo
+2024-05-27 10:35:29 mark to redo completed
+2024-05-27 10:35:29 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 10:35:29 Grpc connection connect
+2024-05-27 10:35:30 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 11:10:47 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s551ms).
+2024-05-27 11:27:11 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716777329062_183.192.230.96_2735
+2024-05-27 11:27:11 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 11:27:11 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 11:27:11 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716780431531_183.192.230.96_2804
+2024-05-27 11:27:11 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716777329062_183.192.230.96_2735
+2024-05-27 11:27:11 Close current connection 1716777329062_183.192.230.96_2735
+2024-05-27 11:27:11 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 11:27:11 Grpc connection disconnect, mark to redo
+2024-05-27 11:27:11 mark to redo completed
+2024-05-27 11:27:11 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 11:27:11 Grpc connection connect
+2024-05-27 11:27:11 [1716777329062_183.192.230.96_2735]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 11:27:12 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s404ms).
+2024-05-27 11:27:13 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 11:43:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716780431531_183.192.230.96_2804
+2024-05-27 11:43:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 11:43:30 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 11:43:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716781410815_183.192.230.96_2838
+2024-05-27 11:43:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716780431531_183.192.230.96_2804
+2024-05-27 11:43:30 Close current connection 1716780431531_183.192.230.96_2804
+2024-05-27 11:43:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 11:43:30 Grpc connection disconnect, mark to redo
+2024-05-27 11:43:30 mark to redo completed
+2024-05-27 11:43:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 11:43:30 Grpc connection connect
+2024-05-27 11:43:30 [1716780431531_183.192.230.96_2804]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 11:43:31 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 11:43:37 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s317ms).
+2024-05-27 11:59:33 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s778ms).
+2024-05-27 11:59:45 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716781410815_183.192.230.96_2838
+2024-05-27 11:59:45 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 11:59:45 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 11:59:45 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716782385937_183.192.230.96_2704
+2024-05-27 11:59:45 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716781410815_183.192.230.96_2838
+2024-05-27 11:59:45 Close current connection 1716781410815_183.192.230.96_2838
+2024-05-27 11:59:45 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 11:59:45 Grpc connection disconnect, mark to redo
+2024-05-27 11:59:45 mark to redo completed
+2024-05-27 11:59:45 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 11:59:45 Grpc connection connect
+2024-05-27 11:59:45 [1716781410815_183.192.230.96_2838]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 11:59:48 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 12:15:58 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s375ms).
+2024-05-27 12:16:03 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716782385937_183.192.230.96_2704
+2024-05-27 12:16:03 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 12:16:03 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 12:16:03 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716783363995_183.192.230.96_2947
+2024-05-27 12:16:03 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716782385937_183.192.230.96_2704
+2024-05-27 12:16:03 Close current connection 1716782385937_183.192.230.96_2704
+2024-05-27 12:16:03 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 12:16:03 Grpc connection disconnect, mark to redo
+2024-05-27 12:16:03 mark to redo completed
+2024-05-27 12:16:03 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 12:16:03 Grpc connection connect
+2024-05-27 12:16:03 [1716782385937_183.192.230.96_2704]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 12:16:04 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 12:32:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716783363995_183.192.230.96_2947
+2024-05-27 12:32:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 12:32:18 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 12:32:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716784338388_183.192.230.96_2686
+2024-05-27 12:32:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716783363995_183.192.230.96_2947
+2024-05-27 12:32:18 Close current connection 1716783363995_183.192.230.96_2947
+2024-05-27 12:32:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 12:32:18 Grpc connection disconnect, mark to redo
+2024-05-27 12:32:18 mark to redo completed
+2024-05-27 12:32:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 12:32:18 Grpc connection connect
+2024-05-27 12:32:18 [1716783363995_183.192.230.96_2947]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 12:32:20 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 12:32:22 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s380ms).
+2024-05-27 12:48:37 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716784338388_183.192.230.96_2686
+2024-05-27 12:48:37 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 12:48:37 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 12:48:37 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716785317307_183.192.230.96_3046
+2024-05-27 12:48:37 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716784338388_183.192.230.96_2686
+2024-05-27 12:48:37 Close current connection 1716784338388_183.192.230.96_2686
+2024-05-27 12:48:37 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 12:48:37 Grpc connection disconnect, mark to redo
+2024-05-27 12:48:37 mark to redo completed
+2024-05-27 12:48:37 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 12:48:37 Grpc connection connect
+2024-05-27 12:48:37 [1716784338388_183.192.230.96_2686]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 12:48:40 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 12:48:46 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s359ms).
+2024-05-27 13:00:47 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m1s134ms).
+2024-05-27 13:00:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716785317307_183.192.230.96_3046
+2024-05-27 13:00:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 13:00:57 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 13:00:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716786057823_183.192.230.96_2795
+2024-05-27 13:00:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716785317307_183.192.230.96_3046
+2024-05-27 13:00:57 Close current connection 1716785317307_183.192.230.96_3046
+2024-05-27 13:00:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 13:00:57 Grpc connection disconnect, mark to redo
+2024-05-27 13:00:57 mark to redo completed
+2024-05-27 13:00:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 13:00:57 Grpc connection connect
+2024-05-27 13:00:57 [1716785317307_183.192.230.96_3046]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 13:01:00 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 13:17:12 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s363ms).
+2024-05-27 13:17:15 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716786057823_183.192.230.96_2795
+2024-05-27 13:17:15 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 13:17:15 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 13:17:15 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716787035910_183.192.230.96_2935
+2024-05-27 13:17:15 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716786057823_183.192.230.96_2795
+2024-05-27 13:17:15 Close current connection 1716786057823_183.192.230.96_2795
+2024-05-27 13:17:15 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 13:17:15 Grpc connection disconnect, mark to redo
+2024-05-27 13:17:15 mark to redo completed
+2024-05-27 13:17:15 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 13:17:15 Grpc connection connect
+2024-05-27 13:17:15 [1716786057823_183.192.230.96_2795]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 13:17:16 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 13:33:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716787035910_183.192.230.96_2935
+2024-05-27 13:33:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 13:33:30 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 13:33:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716788010296_183.192.230.96_3052
+2024-05-27 13:33:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716787035910_183.192.230.96_2935
+2024-05-27 13:33:30 Close current connection 1716787035910_183.192.230.96_2935
+2024-05-27 13:33:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 13:33:30 Grpc connection disconnect, mark to redo
+2024-05-27 13:33:30 mark to redo completed
+2024-05-27 13:33:30 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 13:33:30 Grpc connection connect
+2024-05-27 13:33:30 [1716787035910_183.192.230.96_2935]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 13:33:32 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 13:33:36 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s356ms).
+2024-05-27 13:49:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716788010296_183.192.230.96_3052
+2024-05-27 13:49:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 13:49:47 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 13:49:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716788987982_183.192.230.96_2778
+2024-05-27 13:49:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716788010296_183.192.230.96_3052
+2024-05-27 13:49:47 Close current connection 1716788010296_183.192.230.96_3052
+2024-05-27 13:49:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 13:49:47 Grpc connection disconnect, mark to redo
+2024-05-27 13:49:47 mark to redo completed
+2024-05-27 13:49:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 13:49:47 Grpc connection connect
+2024-05-27 13:49:47 [1716788010296_183.192.230.96_3052]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 13:49:49 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 13:50:00 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m54s381ms).
+2024-05-27 14:01:51 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m50s291ms).
+2024-05-27 14:01:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716788987982_183.192.230.96_2778
+2024-05-27 14:01:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 14:01:58 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 14:01:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716789718858_183.192.230.96_2991
+2024-05-27 14:01:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716788987982_183.192.230.96_2778
+2024-05-27 14:01:58 Close current connection 1716788987982_183.192.230.96_2778
+2024-05-27 14:01:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 14:01:58 Grpc connection disconnect, mark to redo
+2024-05-27 14:01:58 mark to redo completed
+2024-05-27 14:01:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 14:01:58 Grpc connection connect
+2024-05-27 14:01:58 [1716788987982_183.192.230.96_2778]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 14:02:01 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 14:11:01 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m40s475ms).
+2024-05-27 14:11:10 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716789718858_183.192.230.96_2991
+2024-05-27 14:11:10 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 14:11:10 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 14:11:11 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716790271043_183.192.230.96_2616
+2024-05-27 14:11:11 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716789718858_183.192.230.96_2991
+2024-05-27 14:11:11 Close current connection 1716789718858_183.192.230.96_2991
+2024-05-27 14:11:11 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 14:11:11 Grpc connection disconnect, mark to redo
+2024-05-27 14:11:11 mark to redo completed
+2024-05-27 14:11:11 [1716789718858_183.192.230.96_2991]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 14:11:11 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 14:11:11 Grpc connection connect
+2024-05-27 14:11:13 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 14:27:30 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s514ms).
+2024-05-27 14:27:35 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716790271043_183.192.230.96_2616
+2024-05-27 14:27:35 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 14:27:35 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 14:27:35 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716791255698_183.192.230.96_2791
+2024-05-27 14:27:35 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716790271043_183.192.230.96_2616
+2024-05-27 14:27:35 Close current connection 1716790271043_183.192.230.96_2616
+2024-05-27 14:27:35 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 14:27:35 Grpc connection disconnect, mark to redo
+2024-05-27 14:27:35 mark to redo completed
+2024-05-27 14:27:35 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 14:27:35 Grpc connection connect
+2024-05-27 14:27:35 [1716790271043_183.192.230.96_2616]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 14:27:38 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 14:43:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716791255698_183.192.230.96_2791
+2024-05-27 14:43:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 14:43:58 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 14:43:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716792238783_183.192.230.96_2976
+2024-05-27 14:43:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716791255698_183.192.230.96_2791
+2024-05-27 14:43:58 Close current connection 1716791255698_183.192.230.96_2791
+2024-05-27 14:43:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 14:43:58 Grpc connection disconnect, mark to redo
+2024-05-27 14:43:58 mark to redo completed
+2024-05-27 14:43:58 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 14:43:58 Grpc connection connect
+2024-05-27 14:43:58 [1716791255698_183.192.230.96_2791]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 14:43:58 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s541ms).
+2024-05-27 14:43:59 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 15:00:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716792238783_183.192.230.96_2976
+2024-05-27 15:00:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 15:00:18 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 15:00:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716793218633_183.192.230.96_2573
+2024-05-27 15:00:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716792238783_183.192.230.96_2976
+2024-05-27 15:00:18 Close current connection 1716792238783_183.192.230.96_2976
+2024-05-27 15:00:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 15:00:18 Grpc connection disconnect, mark to redo
+2024-05-27 15:00:18 mark to redo completed
+2024-05-27 15:00:18 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 15:00:18 [1716792238783_183.192.230.96_2976]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 15:00:18 Grpc connection connect
+2024-05-27 15:00:21 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 15:00:27 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s573ms).
+2024-05-27 15:02:52 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m24s718ms).
+2024-05-27 15:19:20 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s529ms).
+2024-05-27 15:19:26 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716793218633_183.192.230.96_2573
+2024-05-27 15:19:26 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 15:19:26 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 15:19:26 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716794366819_183.192.230.96_3022
+2024-05-27 15:19:26 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716793218633_183.192.230.96_2573
+2024-05-27 15:19:26 Close current connection 1716793218633_183.192.230.96_2573
+2024-05-27 15:19:26 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 15:19:26 [1716793218633_183.192.230.96_2573]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 15:19:26 Grpc connection disconnect, mark to redo
+2024-05-27 15:19:26 mark to redo completed
+2024-05-27 15:19:26 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 15:19:26 Grpc connection connect
+2024-05-27 15:19:28 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 15:35:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716794366819_183.192.230.96_3022
+2024-05-27 15:35:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 15:35:47 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 15:35:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716795347917_183.192.230.96_2773
+2024-05-27 15:35:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716794366819_183.192.230.96_3022
+2024-05-27 15:35:47 Close current connection 1716794366819_183.192.230.96_3022
+2024-05-27 15:35:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 15:35:47 Grpc connection disconnect, mark to redo
+2024-05-27 15:35:47 mark to redo completed
+2024-05-27 15:35:47 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 15:35:47 Grpc connection connect
+2024-05-27 15:35:47 [1716794366819_183.192.230.96_3022]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 15:35:49 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s583ms).
+2024-05-27 15:35:50 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 15:47:29 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716795347917_183.192.230.96_2773
+2024-05-27 15:47:29 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 15:47:29 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 15:47:29 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716796049800_183.192.230.96_2944
+2024-05-27 15:47:29 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716795347917_183.192.230.96_2773
+2024-05-27 15:47:29 Close current connection 1716795347917_183.192.230.96_2773
+2024-05-27 15:47:29 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 15:47:29 Grpc connection disconnect, mark to redo
+2024-05-27 15:47:29 mark to redo completed
+2024-05-27 15:47:29 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 15:47:29 Grpc connection connect
+2024-05-27 15:47:29 [1716795347917_183.192.230.96_2773]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 15:47:31 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 15:47:37 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m18s253ms).
+2024-05-27 16:03:37 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m222ms).
+2024-05-27 16:03:50 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716796049800_183.192.230.96_2944
+2024-05-27 16:03:50 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 16:03:50 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 16:03:50 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716797030403_183.192.230.96_2852
+2024-05-27 16:03:50 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716796049800_183.192.230.96_2944
+2024-05-27 16:03:50 Close current connection 1716796049800_183.192.230.96_2944
+2024-05-27 16:03:50 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 16:03:50 [1716796049800_183.192.230.96_2944]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 16:03:50 Grpc connection disconnect, mark to redo
+2024-05-27 16:03:50 mark to redo completed
+2024-05-27 16:03:50 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 16:03:50 Grpc connection connect
+2024-05-27 16:03:52 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 16:20:06 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s564ms).
+2024-05-27 16:20:12 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716797030403_183.192.230.96_2852
+2024-05-27 16:20:12 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 16:20:12 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 16:20:12 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716798012158_183.192.230.96_2707
+2024-05-27 16:20:12 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716797030403_183.192.230.96_2852
+2024-05-27 16:20:12 Close current connection 1716797030403_183.192.230.96_2852
+2024-05-27 16:20:12 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 16:20:12 Grpc connection disconnect, mark to redo
+2024-05-27 16:20:12 mark to redo completed
+2024-05-27 16:20:12 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 16:20:12 Grpc connection connect
+2024-05-27 16:20:12 [1716797030403_183.192.230.96_2852]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 16:20:14 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 16:36:34 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716798012158_183.192.230.96_2707
+2024-05-27 16:36:34 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 16:36:34 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 16:36:34 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716798994680_183.192.230.96_2823
+2024-05-27 16:36:34 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716798012158_183.192.230.96_2707
+2024-05-27 16:36:34 Close current connection 1716798012158_183.192.230.96_2707
+2024-05-27 16:36:34 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 16:36:34 [1716798012158_183.192.230.96_2707]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 16:36:34 Grpc connection disconnect, mark to redo
+2024-05-27 16:36:34 mark to redo completed
+2024-05-27 16:36:34 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 16:36:34 Grpc connection connect
+2024-05-27 16:36:35 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s528ms).
+2024-05-27 16:36:36 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 16:52:56 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716798994680_183.192.230.96_2823
+2024-05-27 16:52:56 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 16:52:56 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 16:52:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716799977039_183.192.230.96_3009
+2024-05-27 16:52:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716798994680_183.192.230.96_2823
+2024-05-27 16:52:57 Close current connection 1716798994680_183.192.230.96_2823
+2024-05-27 16:52:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 16:52:57 [1716798994680_183.192.230.96_2823]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 16:52:57 Grpc connection disconnect, mark to redo
+2024-05-27 16:52:57 mark to redo completed
+2024-05-27 16:52:57 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 16:52:57 Grpc connection connect
+2024-05-27 16:52:57 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 16:53:03 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s550ms).
+2024-05-27 17:04:44 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m40s564ms).
+2024-05-27 17:04:56 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716799977039_183.192.230.96_3009
+2024-05-27 17:04:56 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 17:04:56 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 17:04:56 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716800696579_183.192.230.96_2856
+2024-05-27 17:04:56 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716799977039_183.192.230.96_3009
+2024-05-27 17:04:56 Close current connection 1716799977039_183.192.230.96_3009
+2024-05-27 17:04:56 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 17:04:56 Grpc connection disconnect, mark to redo
+2024-05-27 17:04:56 mark to redo completed
+2024-05-27 17:04:56 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 17:04:56 Grpc connection connect
+2024-05-27 17:04:56 [1716799977039_183.192.230.96_3009]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 17:04:59 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 17:21:12 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s556ms).
+2024-05-27 17:21:19 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716800696579_183.192.230.96_2856
+2024-05-27 17:21:19 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 17:21:19 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 17:21:19 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716801679481_183.192.230.96_2935
+2024-05-27 17:21:19 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716800696579_183.192.230.96_2856
+2024-05-27 17:21:19 Close current connection 1716800696579_183.192.230.96_2856
+2024-05-27 17:21:19 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 17:21:19 Grpc connection disconnect, mark to redo
+2024-05-27 17:21:19 mark to redo completed
+2024-05-27 17:21:19 [1716800696579_183.192.230.96_2856]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 17:21:19 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 17:21:19 Grpc connection connect
+2024-05-27 17:21:20 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 17:37:39 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716801679481_183.192.230.96_2935
+2024-05-27 17:37:39 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 17:37:39 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 17:37:39 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716802659312_183.192.230.96_2902
+2024-05-27 17:37:39 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716801679481_183.192.230.96_2935
+2024-05-27 17:37:39 Close current connection 1716801679481_183.192.230.96_2935
+2024-05-27 17:37:39 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 17:37:39 Grpc connection disconnect, mark to redo
+2024-05-27 17:37:39 mark to redo completed
+2024-05-27 17:37:39 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 17:37:39 Grpc connection connect
+2024-05-27 17:37:39 [1716801679481_183.192.230.96_2935]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 17:37:41 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s571ms).
+2024-05-27 17:37:42 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 17:54:01 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716802659312_183.192.230.96_2902
+2024-05-27 17:54:01 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 17:54:01 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 17:54:02 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716803641972_183.192.230.96_2999
+2024-05-27 17:54:02 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716802659312_183.192.230.96_2902
+2024-05-27 17:54:02 Close current connection 1716802659312_183.192.230.96_2902
+2024-05-27 17:54:02 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 17:54:02 Grpc connection disconnect, mark to redo
+2024-05-27 17:54:02 mark to redo completed
+2024-05-27 17:54:02 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 17:54:02 Grpc connection connect
+2024-05-27 17:54:02 [1716802659312_183.192.230.96_2902]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 17:54:04 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 17:54:09 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s549ms).
+2024-05-27 18:05:50 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m40s328ms).
+2024-05-27 18:06:02 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716803641972_183.192.230.96_2999
+2024-05-27 18:06:02 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 18:06:02 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 18:06:02 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716804362675_183.192.230.96_2804
+2024-05-27 18:06:02 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716803641972_183.192.230.96_2999
+2024-05-27 18:06:02 Close current connection 1716803641972_183.192.230.96_2999
+2024-05-27 18:06:02 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 18:06:02 Grpc connection disconnect, mark to redo
+2024-05-27 18:06:02 mark to redo completed
+2024-05-27 18:06:02 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 18:06:02 Grpc connection connect
+2024-05-27 18:06:02 [1716803641972_183.192.230.96_2999]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 18:06:05 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 18:22:18 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s580ms).
+2024-05-27 18:22:25 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716804362675_183.192.230.96_2804
+2024-05-27 18:22:25 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 18:22:25 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 18:22:25 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716805345161_183.192.230.96_3040
+2024-05-27 18:22:25 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716804362675_183.192.230.96_2804
+2024-05-27 18:22:25 Close current connection 1716804362675_183.192.230.96_2804
+2024-05-27 18:22:25 [1716804362675_183.192.230.96_2804]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 18:22:25 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 18:22:25 Grpc connection disconnect, mark to redo
+2024-05-27 18:22:25 mark to redo completed
+2024-05-27 18:22:25 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 18:22:25 Grpc connection connect
+2024-05-27 18:22:26 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 18:38:45 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716805345161_183.192.230.96_3040
+2024-05-27 18:38:45 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 18:38:45 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 18:38:45 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716806325086_183.192.230.96_2809
+2024-05-27 18:38:45 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716805345161_183.192.230.96_3040
+2024-05-27 18:38:45 Close current connection 1716805345161_183.192.230.96_3040
+2024-05-27 18:38:45 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 18:38:45 Grpc connection disconnect, mark to redo
+2024-05-27 18:38:45 mark to redo completed
+2024-05-27 18:38:45 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 18:38:45 Grpc connection connect
+2024-05-27 18:38:45 [1716805345161_183.192.230.96_3040]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 18:38:47 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s551ms).
+2024-05-27 18:38:47 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 18:55:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716806325086_183.192.230.96_2809
+2024-05-27 18:55:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 18:55:07 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 18:55:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716807307840_183.192.230.96_2684
+2024-05-27 18:55:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716806325086_183.192.230.96_2809
+2024-05-27 18:55:07 Close current connection 1716806325086_183.192.230.96_2809
+2024-05-27 18:55:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 18:55:07 Grpc connection disconnect, mark to redo
+2024-05-27 18:55:07 mark to redo completed
+2024-05-27 18:55:07 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 18:55:07 Grpc connection connect
+2024-05-27 18:55:07 [1716806325086_183.192.230.96_2809]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 18:55:09 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 18:55:15 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s554ms).
+2024-05-27 19:06:56 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m40s402ms).
+2024-05-27 19:07:10 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716807307840_183.192.230.96_2684
+2024-05-27 19:07:10 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 19:07:10 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 19:07:10 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716808030245_183.192.230.96_2650
+2024-05-27 19:07:10 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716807307840_183.192.230.96_2684
+2024-05-27 19:07:10 Close current connection 1716807307840_183.192.230.96_2684
+2024-05-27 19:07:10 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 19:07:10 Grpc connection disconnect, mark to redo
+2024-05-27 19:07:10 mark to redo completed
+2024-05-27 19:07:10 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 19:07:10 Grpc connection connect
+2024-05-27 19:07:10 [1716807307840_183.192.230.96_2684]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 19:07:11 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 19:23:24 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s545ms).
+2024-05-27 19:23:29 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716808030245_183.192.230.96_2650
+2024-05-27 19:23:29 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 19:23:29 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 19:23:29 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716809009498_183.192.230.96_2753
+2024-05-27 19:23:29 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716808030245_183.192.230.96_2650
+2024-05-27 19:23:29 Close current connection 1716808030245_183.192.230.96_2650
+2024-05-27 19:23:29 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 19:23:29 Grpc connection disconnect, mark to redo
+2024-05-27 19:23:29 mark to redo completed
+2024-05-27 19:23:29 [1716808030245_183.192.230.96_2650]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 19:23:29 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 19:23:29 Grpc connection connect
+2024-05-27 19:23:32 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 19:39:51 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716809009498_183.192.230.96_2753
+2024-05-27 19:39:51 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 19:39:51 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 19:39:52 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716809992065_183.192.230.96_2699
+2024-05-27 19:39:52 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716809009498_183.192.230.96_2753
+2024-05-27 19:39:52 Close current connection 1716809009498_183.192.230.96_2753
+2024-05-27 19:39:52 [1716809009498_183.192.230.96_2753]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 19:39:52 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 19:39:52 Grpc connection disconnect, mark to redo
+2024-05-27 19:39:52 mark to redo completed
+2024-05-27 19:39:52 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 19:39:52 Grpc connection connect
+2024-05-27 19:39:53 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s528ms).
+2024-05-27 19:39:53 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 19:56:15 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716809992065_183.192.230.96_2699
+2024-05-27 19:56:15 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 19:56:15 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 19:56:15 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716810975184_183.192.230.96_2613
+2024-05-27 19:56:15 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716809992065_183.192.230.96_2699
+2024-05-27 19:56:15 Close current connection 1716809992065_183.192.230.96_2699
+2024-05-27 19:56:15 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 19:56:15 [1716809992065_183.192.230.96_2699]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 19:56:15 Grpc connection disconnect, mark to redo
+2024-05-27 19:56:15 mark to redo completed
+2024-05-27 19:56:15 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 19:56:15 Grpc connection connect
+2024-05-27 19:56:16 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 19:56:22 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m59s302ms).
+2024-05-27 20:08:02 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m39s352ms).
+2024-05-27 20:08:14 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716810975184_183.192.230.96_2613
+2024-05-27 20:08:14 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 20:08:14 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 20:08:14 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716811694756_183.192.230.96_2924
+2024-05-27 20:08:14 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716810975184_183.192.230.96_2613
+2024-05-27 20:08:14 Close current connection 1716810975184_183.192.230.96_2613
+2024-05-27 20:08:14 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 20:08:14 Grpc connection disconnect, mark to redo
+2024-05-27 20:08:14 mark to redo completed
+2024-05-27 20:08:14 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 20:08:14 [1716810975184_183.192.230.96_2613]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 20:08:14 Grpc connection connect
+2024-05-27 20:08:17 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 20:24:30 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m58s688ms).
+2024-05-27 20:24:37 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716811694756_183.192.230.96_2924
+2024-05-27 20:24:37 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 20:24:37 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 20:24:37 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716812677418_183.192.230.96_3057
+2024-05-27 20:24:37 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716811694756_183.192.230.96_2924
+2024-05-27 20:24:37 Close current connection 1716811694756_183.192.230.96_2924
+2024-05-27 20:24:37 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 20:24:37 [1716811694756_183.192.230.96_2924]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 20:24:37 Grpc connection disconnect, mark to redo
+2024-05-27 20:24:37 mark to redo completed
+2024-05-27 20:24:37 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 20:24:37 Grpc connection connect
+2024-05-27 20:24:38 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 20:40:59 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716812677418_183.192.230.96_3057
+2024-05-27 20:40:59 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 20:40:59 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 20:40:59 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716813659807_183.192.230.96_2698
+2024-05-27 20:40:59 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716812677418_183.192.230.96_3057
+2024-05-27 20:40:59 Close current connection 1716812677418_183.192.230.96_3057
+2024-05-27 20:40:59 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 20:40:59 Grpc connection disconnect, mark to redo
+2024-05-27 20:40:59 mark to redo completed
+2024-05-27 20:40:59 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 20:40:59 [1716812677418_183.192.230.96_3057]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 20:40:59 Grpc connection connect
+2024-05-27 20:41:00 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m59s470ms).
+2024-05-27 20:41:02 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 20:49:52 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Server healthy check fail, currentConnection = 1716813659807_183.192.230.96_2698
+2024-05-27 20:49:52 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-05-27 20:49:52 grpc client connection server:14.103.49.141 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-05-27 20:49:52 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Success to connect a server [14.103.49.141:8848], connectionId = 1716814192406_183.192.230.96_3062
+2024-05-27 20:49:52 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Abandon prev connection, server is 14.103.49.141:8848, connectionId is 1716813659807_183.192.230.96_2698
+2024-05-27 20:49:52 Close current connection 1716813659807_183.192.230.96_2698
+2024-05-27 20:49:52 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify disconnected event to listeners
+2024-05-27 20:49:52 Grpc connection disconnect, mark to redo
+2024-05-27 20:49:52 mark to redo completed
+2024-05-27 20:49:52 [dac767e4-b902-4cac-b579-fac0bd7a1ef5] Notify connected event to listeners.
+2024-05-27 20:49:52 Grpc connection connect
+2024-05-27 20:49:52 [1716813659807_183.192.230.96_2698]Ignore error event,isRunning:true,isAbandon=true
+2024-05-27 20:49:54 Redo instance operation REGISTER for DEFAULT_GROUP@@service-tour-guide
+2024-05-27 20:49:58 HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m28s573ms).
+2024-05-27 20:50:33 [NotifyCenter] Start destroying Publisher
+2024-05-27 20:50:33 [HttpClientBeanHolder] Start destroying common HttpClient
+2024-05-27 20:50:33 [NotifyCenter] Destruction of the end
+2024-05-27 20:50:33 [HttpClientBeanHolder] Destruction of the end

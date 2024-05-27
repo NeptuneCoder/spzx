@@ -6,6 +6,23 @@
         id
         ,product_id,total_num,success_num,audit,status,sale_num,start_time,end_time,remark,create_time,update_time,is_deleted
     </sql>
+
+    <sql id="batchColumns">
+        bi.id,
+            bi.product_id,
+            bi.total_num,bi.success_num,
+            bi.audit,
+            bi.status,
+            bi.sale_num,
+            bi.start_time,
+
+            bi.end_time,
+            bi.remark,
+            bi.create_time,
+            bi.update_time,
+            bi.is_deleted,
+            p.name as product_name
+    </sql>
     <insert id="save" useGeneratedKeys="true" keyProperty="id">
         insert into batch_info (id,
                                 product_id,
@@ -37,11 +54,12 @@
     <resultMap id="batchMap" type="com.travel.spzx.model.entity.product.BatchItem"/>
     <select id="selectByProductId" resultMap="batchMap">
         select
-        <include refid="columns"/>
-        from batch_info
-        where is_deleted = 0
-        and product_id=#{id}
-        order by start_time asc
+        <include refid="batchColumns"/>
+        from batch_info bi
+        left join product p on bi.product_id = p.id
+        where bi.is_deleted = 0
+        and bi.product_id=#{productId}
+        order by bi.start_time asc
 
     </select>
     <select id="findAll" resultType="com.travel.spzx.model.entity.product.BatchItem">

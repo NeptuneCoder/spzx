@@ -18,13 +18,16 @@ public class BatchUtils {
         //0:已成团 1:可报名 2:已满员
         if (Objects.equals(v.getSaleNum(), totalNum)) {
             v.setTripStatus(2);
+            v.setStatusStr("已满员");
             //已满员
         } else if (v.getSaleNum() >= successNum) {
             v.setTripStatus(0);
+            v.setStatusStr("已成团");
             //已成团
         } else {
             //可以报名
             v.setTripStatus(1);
+            v.setStatusStr("可报名");
         }
     }
 

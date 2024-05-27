@@ -17,9 +17,11 @@ public class BatchInfoController {
     private BatchInfoService batchInfoService;
 
     // 批量添加批次信息
-    @GetMapping(value = "/getBatchInfoByProductId/{productId}")
-    public Result getBatchInfoByProductId(@PathVariable("productId") Long productId) {
-        return Result.success(batchInfoService.getBatchInfoByProductId(productId));
+    @GetMapping(value = "/getBatchInfoByProductId/{productId}/{page}/{limit}")
+    public Result getBatchInfoByProductId(@PathVariable("productId") Long productId,
+                                          @PathVariable("page") int page,
+                                          @PathVariable("limit") int limit) {
+        return Result.success(batchInfoService.getBatchInfoByProductId(productId, page, limit));
     }
 
     @GetMapping(value = "/list/{page}/{limit}")
@@ -39,7 +41,6 @@ public class BatchInfoController {
         BatchItem all = batchInfoService.getDetailByBatchId(batchId);
         return Result.success(all);
     }
-
 
 
 }

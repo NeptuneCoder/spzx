@@ -10,7 +10,7 @@ import java.util.List;
 public interface BatchInfoMapper {
     void save(BatchItem v);
 
-    List<BatchItem> selectByProductId(Long id);
+    List<BatchItem> selectByProductId(@Param("productId") Long id);
 
     void updateById(BatchItem v);
 

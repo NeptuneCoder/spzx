@@ -59,6 +59,8 @@ public class BatchItem extends BaseEntity {
 
     private int status;
 
+    private String statusStr;
+
     @Schema(description = "行程状态：0:已成团 1:可报名 2:已满员")
     private int tripStatus;
 

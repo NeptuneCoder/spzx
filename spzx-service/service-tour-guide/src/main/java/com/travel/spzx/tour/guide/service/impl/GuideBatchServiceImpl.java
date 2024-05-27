@@ -234,7 +234,7 @@ public class GuideBatchServiceImpl implements GuideBatchService {
                 commentStatus = OrderStateEnum.NotSupportComment.getCode();
                 refundStatus = OrderStateEnum.SupportAllRefund.getCode();
                 nextOrderStatus = OrderStateEnum.NotTravel.getCode();
-                refundAmount = orderItems.stream().filter(v -> Objects.equals(v.getOrderStatus(), OrderStateEnum.UnSignIn.getCode())).map(OrderItem::getAmount).reduce(BigDecimal.ZERO, BigDecimal::add);
+                refundAmount = orderItems.stream().filter(v -> Objects.equals(v.getOrderStatus(), OrderStateEnum.UnSignIn.getCode())).map(OrderItem::getOrderAmount).reduce(BigDecimal.ZERO, BigDecimal::add);
                 System.out.println("全部完成");
 
             } else {
@@ -242,7 +242,7 @@ public class GuideBatchServiceImpl implements GuideBatchService {
                 refundStatus = OrderStateEnum.SupportPartRefund.getCode();
                 nextOrderStatus = OrderStateEnum.PartTravelComplete.getCode();
                 Stream<OrderItem> orderItemStream = orderItems.stream().filter(v -> Objects.equals(v.getOrderStatus(), OrderStateEnum.UnSignIn.getCode()));
-                refundAmount = orderItemStream.map(OrderItem::getAmount).reduce(BigDecimal.ZERO, BigDecimal::add);
+                refundAmount = orderItemStream.map(OrderItem::getOrderAmount).reduce(BigDecimal.ZERO, BigDecimal::add);
             }
             guideBatchMapper.travelFinished(orderInfo.getId(), nextOrderStatus, commentStatus, refundStatus, refundAmount);
 
@@ -252,7 +252,6 @@ public class GuideBatchServiceImpl implements GuideBatchService {
         //更新该批次中所有订单状态为待评价，如果用户未签到则可以申请退款，如果部分签到了则可以申请部分退款，如果全部签到了则进入待评价状态
 
     }
-
 
 
     /**
