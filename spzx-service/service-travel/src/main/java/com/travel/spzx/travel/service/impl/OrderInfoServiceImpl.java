@@ -35,6 +35,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 @Service
@@ -132,9 +133,12 @@ public class OrderInfoServiceImpl implements OrderInfoService {
         }
 
         if (orderInfoDto.getAdultNum() == 0) {
-            throw GuiguException.build("成人数量不能为空");
+            throw GuiguException.build("需要有成人才能出行");
         }
         if (orderInfoDto.getChildNum() < 0 || orderInfoDto.getChildNum() < 0) {
+            throw GuiguException.build("购买数量异常");
+        }
+        if (orderInfoDto.getChildNum() + orderInfoDto.getAdultNum() < orderInfoDto.getTrips().size()) {
             throw GuiguException.build("购买数量异常");
         }
         //查询当前批次所有有效的出行人
@@ -203,9 +207,10 @@ public class OrderInfoServiceImpl implements OrderInfoService {
             item.setBatchId(batchItem.getId());
             item.setTripId(tripInfoDto.getId());
             BigDecimal res = "child".equals(tripInfoDto.getAgeType()) ? childAmount : adultAmount;
-            System.out.println("tripInfoDto.getAgeType()==" + tripInfoDto.getAgeType());
-            System.out.println("res==" + "child".equals(tripInfoDto.getAgeType()));
+//            System.out.println("tripInfoDto.getAgeType()==" + tripInfoDto.getAgeType());
+//            System.out.println("res==" + "child".equals(tripInfoDto.getAgeType()));
             item.setOrderAmount(res);
+
             item.setAgeType("child".equals(tripInfoDto.getAgeType()) ? "1" : "0");
             item.setOrderStatus(OrderStateEnum.WaitPay.getCode());
             orderItemMapper.save(item);
@@ -270,22 +275,22 @@ public class OrderInfoServiceImpl implements OrderInfoService {
         PageHelper.startPage(page, limit);
         Long userId = AuthContextUtil.getUserInfo().getId();
         String orderState = orderStatus.equals("-1") ? null : orderStatus;
-        System.out.println("orderState==" + orderState);
+//        System.out.println("orderState==" + orderState);
         List<OrderInfo> orderInfoList = orderInfoMapper.findUserPage(userId, orderState);
 
-        orderInfoList.forEach(orderInfo -> {
-            computeSliderUrl(orderInfo);
-            List<OrderItem> orderItem = orderItemMapper.findByOrderId(orderInfo.getId());
-            orderItem.forEach(item -> {
-                String tripCardNo = item.getTripCardNo();
-                if (tripCardNo != null && !tripCardNo.isEmpty()) {
-                    String res = tripCardNo.replaceAll("(\\d{4})\\d{10}(\\d{4})", "$1****$2");
-                    System.out.println("tripCardNo==" + res);
-                    item.setTripCardNo(res);
-                }
-            });
-            orderInfo.setOrderItemList(orderItem);
-        });
+//        orderInfoList.forEach(orderInfo -> {
+//            computeSliderUrl(orderInfo);
+//            List<OrderItem> orderItem = orderItemMapper.findByOrderId(orderInfo.getId());
+//            orderItem.forEach(item -> {
+//                String tripCardNo = item.getTripCardNo();
+//                if (tripCardNo != null && !tripCardNo.isEmpty()) {
+//                    String res = tripCardNo.replaceAll("(\\d{4})\\d{10}(\\d{4})", "$1****$2");
+//                    System.out.println("tripCardNo==" + res);
+//                    item.setTripCardNo(res);
+//                }
+//            });
+//            orderInfo.setOrderItemList(orderItem);
+//        });
 
         return new PageInfo<>(orderInfoList);
     }
@@ -293,7 +298,7 @@ public class OrderInfoServiceImpl implements OrderInfoService {
     @Override
     public OrderInfo getOrderInfoByOrderNo(String orderNo) {
         OrderInfo orderInfo = orderInfoMapper.getByOrderNo(orderNo);
-        List<OrderItem> orderItemList = orderItemMapper.findByOrderId(orderInfo.getId());
+        List<OrderItem> orderItemList = orderItemMapper.findOrderItemByOrderId(orderInfo.getId());
         orderInfo.setOrderItemList(orderItemList);
         return orderInfo;
     }
@@ -341,7 +346,7 @@ public class OrderInfoServiceImpl implements OrderInfoService {
         orderInfo.setCountdown(timeLeft > 0 ? timeLeft : 0);
 
         computeSliderUrl(orderInfo);
-        List<OrderItem> orderItemList = orderItemMapper.findByOrderId(orderInfo.getId());
+        List<OrderItem> orderItemList = orderItemMapper.findOrderItemByOrderId(orderInfo.getId());
         orderItemList.forEach(v -> {
             String tripCardNo = v.getTripCardNo();
             if (tripCardNo != null && !tripCardNo.isEmpty()) {
@@ -425,10 +430,37 @@ public class OrderInfoServiceImpl implements OrderInfoService {
         orderStatusHelper.isValidNextStatus(orderStatus, OrderStateEnum.PaySuccess.getCode());
         orderInfoMapper.mockPaySuccess(id, OrderStateEnum.PaySuccess.getCode());
         orderItemMapper.updateOrderItemOrderStatus(id, OrderStateEnum.PaySuccess.getCode());
+        // 更新产品售卖数量
+        productMapper.updateSaleNum(orderInfo.getProductId(), orderInfo.getAdultNum() + orderInfo.getChildNum());
         OrderLog orderLog = new OrderLog();
         orderLog.setOrderId(id);
         orderLog.setProcessStatus(OrderStateEnum.PaySuccess.getCode());
         orderLog.setNote("模拟支付成功");
         orderLogMapper.save(orderLog);
+    }
+
+    @Override
+    public boolean receipt(Long orderId) {
+        //首先查询订单的状态，只有支付且未签到的订单才能退款
+
+        OrderInfo orderInfo = orderInfoMapper.getById(orderId);
+        Integer orderStatus = orderInfo.getOrderStatus();
+        System.out.println("orderStatus==" + orderStatus);
+        List<OrderItem> orderItems = orderItemMapper.findOrderItemByOrderId(orderInfo.getId());
+
+        //TODO 获取商品退款比例，根据时间计算退款比例
+        if (Objects.equals(orderStatus, OrderStateEnum.PaySuccess.getCode())) {
+        //所有的订单都支付但是没有签到，
+        } else if (Objects.equals(orderStatus, OrderStateEnum.PartSignIn.getCode())) {
+            //行程已经开始，退款的比例会修改，同时该订单需要审核
+
+        } else if (Objects.equals(orderStatus, OrderStateEnum.NotTravel.getCode())) {
+            //如果部分签到了，则只退款部分
+        } else if (Objects.equals(orderStatus, OrderStateEnum.TravelComplete.getCode())) {
+
+            throw GuiguException.build("订单已完成，不能退款");
+        }
+
+        return false;
     }
 }

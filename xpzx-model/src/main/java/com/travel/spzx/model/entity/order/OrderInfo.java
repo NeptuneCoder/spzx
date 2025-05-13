@@ -80,6 +80,7 @@ public class OrderInfo extends BaseEntity {
 
     @Schema(description = "订单状态【0->待付款；1->已付款；2->未核验；3->已完成；-1->取消,-2->退款, -3->支付超时】")
     private Integer orderStatus;
+
     //评价详情id
     private Long evaluateId;
     @Schema(description = "支付时间")

@@ -44,12 +44,12 @@ public class GuideBatchServiceImpl implements GuideBatchService {
 
 
     @Override
-    public PageInfo<GuideBatchDetailVo> getLeaderBatchList(Integer page, Integer limit) {
+    public PageInfo<GuideBatchDetailVo> getLeaderBatchList(Integer page, Integer limit, String type) {
         PageHelper.startPage(page, limit);
         TourUserInfo tourUserInfo = AuthContextUtil.getTourUserInfo();
         Long tourGuideId = tourUserInfo.getId();
-        System.out.println("tourGuideId == " + tourGuideId);
-        List<GuideBatchDetailVo> res = guideBatchMapper.getLeaderBatchList(tourGuideId, null)
+
+        List<GuideBatchDetailVo> res = guideBatchMapper.getLeaderBatchList(tourGuideId, null, type)
                 .stream().map(
                         guideBatch -> {
                             String duration = BatchUtils.computeDuration(guideBatch.getTime());
@@ -68,7 +68,7 @@ public class GuideBatchServiceImpl implements GuideBatchService {
     @Override
     public GuideBatchDetailVo getBatchInfo(String batchId) {
         TourUserInfo tourUserInfo = AuthContextUtil.getTourUserInfo();
-        List<GuideBatchDetailVo> guideBatchDetailVos = guideBatchMapper.getLeaderBatchList(tourUserInfo.getId(), batchId)
+        List<GuideBatchDetailVo> guideBatchDetailVos = guideBatchMapper.getLeaderBatchList(tourUserInfo.getId(), batchId, null)
                 .stream().map(
                         guideBatch -> {
                             String duration = BatchUtils.computeDuration(guideBatch.getTime());
@@ -198,7 +198,7 @@ public class GuideBatchServiceImpl implements GuideBatchService {
         TourUserInfo tourUserInfo = AuthContextUtil.getTourUserInfo();
         //TODO 通过获取当前批次的车次信息batch_bus_info，查出第一辆车，再根据第一辆车的id，从bus_tour_guide_info 查出第一个领队
         int curBatchStatus = guideBatchMapper.getCurBatchStatus(batchId);
-        if (curBatchStatus == BatchStatusEnum.STOP_APPLY.getCode()) {
+        if (curBatchStatus == BatchStatusEnum.TRAVELING.getCode()) {
             throw GuiguException.build("当前批次行程已结束");
         }
         List<OrderItem> payedOrderList = guideBatchMapper.queryCurBatchPayedOrder(batchId);
@@ -248,7 +248,10 @@ public class GuideBatchServiceImpl implements GuideBatchService {
 
 
         }
-
+        //更新当前批次所有的领队带队次数
+        //从bus_tour_info表中查出所有的领队信息，然后遍历，更新每个领队的带队次数
+        guideBatchMapper.updateCurGuideTimes(batchId);
+        //更新当前领队带队次数
         //更新该批次中所有订单状态为待评价，如果用户未签到则可以申请退款，如果部分签到了则可以申请部分退款，如果全部签到了则进入待评价状态
 
     }

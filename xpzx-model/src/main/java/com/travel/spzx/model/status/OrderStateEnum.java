@@ -2,6 +2,9 @@ package com.travel.spzx.model.status;
 
 import lombok.Getter;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * summary: 支付状态枚举
  * author: 杨海
@@ -9,6 +12,14 @@ import lombok.Getter;
  */
 @Getter // 提供获取属性值的getter方法
 public enum OrderStateEnum {
+
+    UserCancel(-1, "用户取消"), //
+
+    PayTimeOut(-2, "超时未支付取消"), //
+    RefundFailed(-3, "退款失败"), //
+    //操作员取消
+    OperatorCancel(-4, "操作员取消"), //
+    CommentTimeOut(-5, "评价超时"), //
     WaitPay(0, "待支付"), //
     PaySuccess(1, "支付成功"), //
     //订单过期
@@ -16,11 +27,6 @@ public enum OrderStateEnum {
 
     //待消费
     PayFailed(2, "支付失败"), //
-
-
-    UserCancel(-1, "用户取消"), //
-
-    PayTimeOut(-2, "超时未支付取消"), //
 
 
     SignInSuccess(3, "已签到"),
@@ -72,26 +78,18 @@ public enum OrderStateEnum {
     /*****/
     NotSupportRefund(27, "不支持退款"), //
     SupportAllRefund(26, "支持全部退款,没有消费项"), //
-    ApplyAllRefund(7, "申请退款"), //
+    ApplyAllRefund(7, "申请全额退款"), //
     //同意退款
-    AllRefundAgree(8, "同意退款"), //
+    AllRefundAgree(8, "同意全额退款"), //
 
 
     Refunding(9, "退款中"), //
     //拒绝退款
-    AllRefundRefuse(10, "拒绝退款"), //
+    AllRefundRefuse(10, "拒绝全额退款"), //
 
-    AllRefundSuccess(11, "退款成功"), //
+    AllRefundSuccess(11, "全额退款成功"), //
     //操作员取消退款
 
-
-    //未成团取消
-
-
-    RefundFailed(-3, "退款失败"), //
-    //操作员取消
-    OperatorCancel(-4, "操作员取消"), //
-    CommentTimeOut(-5, "评价超时"), //
 
     ;
 
@@ -102,6 +100,18 @@ public enum OrderStateEnum {
     private OrderStateEnum(Integer code, String message) {
         this.code = code;
         this.message = message;
+    }
+
+    private static final Map<Integer, String> codeMessageMap = new HashMap<>();
+
+    public static String getMessage(Integer code) {
+        return codeMessageMap.getOrDefault(code, "未知状态");
+    }
+
+    static {
+        for (OrderStateEnum state : OrderStateEnum.values()) {
+            codeMessageMap.put(state.code, state.message);
+        }
     }
 
 }

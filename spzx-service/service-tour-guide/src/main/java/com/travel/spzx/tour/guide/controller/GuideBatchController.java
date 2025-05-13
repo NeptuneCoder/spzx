@@ -24,8 +24,8 @@ public class GuideBatchController {
     // TODO: 获取当前领队（id）的已经带过的和即将带的批次列表
     @Operation(description = "获取当前领队（id）的已经带过的和即将带的批次列表")
     @GetMapping("/leader/batchList/{page}/{limit}")
-    public Result leaderBatchList(@PathVariable("page") Integer page, @PathVariable("limit") Integer limit) {
-        PageInfo<GuideBatchDetailVo> batchVOList = orderService.getLeaderBatchList(page, limit);
+    public Result leaderBatchList(@PathVariable("page") Integer page, @PathVariable("limit") Integer limit, @RequestParam("type") String type) {
+        PageInfo<GuideBatchDetailVo> batchVOList = orderService.getLeaderBatchList(page, limit, type);
         return Result.success(batchVOList);
     }
 
@@ -63,9 +63,9 @@ public class GuideBatchController {
 
     @PutMapping("/tourist/unsign/{batchId}/{tripId}/{orderItemId}/{orderId}")
     public Result unSign(@PathVariable("batchId") String batchId,
-                       @PathVariable("tripId") String tripId,
-                       @PathVariable("orderId") String orderId,
-                       @PathVariable("orderItemId") String orderItemId) {
+                         @PathVariable("tripId") String tripId,
+                         @PathVariable("orderId") String orderId,
+                         @PathVariable("orderItemId") String orderItemId) {
         Long rowId = orderService.touristUnSign(batchId, tripId, orderId, orderItemId);
         return Result.success(rowId);
     }

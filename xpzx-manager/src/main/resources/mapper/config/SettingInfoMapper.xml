@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.travel.spzx.manager.mapper.SettingInfoMapper">
+
+
+    <insert id="saveSettingInfo">
+        INSERT INTO setting_info ( `key`, content, remark)
+        VALUES (#{key}, #{content}, #{remark})
+    </insert>
+    <update id="updateSettingInfo">
+        UPDATE setting_info
+        SET content = #{content},
+            remark  = #{remark}
+        WHERE `key` = #{key}
+    </update>
+    <select id="getSettingInfoByKey" resultType="com.travel.spzx.model.entity.config.SettingInfo">
+        SELECT *
+        FROM setting_info
+        WHERE `key` = #{key}
+    </select>
+
+</mapper>

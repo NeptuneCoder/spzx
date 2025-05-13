@@ -14,4 +14,5 @@ public interface OrderInfoService {
 
     PageInfo<OrderInfoVo> list(int page, int limit, OrderDto orderDto);
 
+    OrderInfoVo orderItemList(String orderId);
 }

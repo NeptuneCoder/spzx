@@ -31,7 +31,8 @@ public class BatchItem extends BaseEntity {
     private String[] time;
     @Schema(description = "批次在商品详情界面中需要的字段")
     private String dateStr;
-
+    @Schema(description = "是否是节假日")
+    private int holidays;
 
     public String[] getTime() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");

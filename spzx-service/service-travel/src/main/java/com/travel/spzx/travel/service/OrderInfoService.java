@@ -30,4 +30,6 @@ public interface OrderInfoService {
     OrderInfo cancelOrder(Long orderId, String cancelReason);
 
     void mockPay(Long id);
+
+    boolean receipt(Long orderId);
 }

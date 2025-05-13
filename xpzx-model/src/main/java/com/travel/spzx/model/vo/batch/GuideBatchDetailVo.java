@@ -13,6 +13,10 @@ import java.util.Date;
 public class GuideBatchDetailVo {
     @Schema(description = "批次id")
     private Integer batchId;
+    @Schema(description = "司机名字")
+    private String driverName;
+    @Schema(description = "司机号码")
+    private String driverPhone;
     @Schema(description = "车型No")
     private String carNo;
     @Schema(description = "汽车id")

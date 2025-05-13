@@ -45,6 +45,8 @@
     <select id="getLeaderBatchList" resultType="com.travel.spzx.model.vo.batch.GuideBatchDetailVo">
         select btgi.batch_id,
         bi.car_no,
+        bi.driver_name,
+        bi.driver_phone,
         bi.id as car_id,
         YEAR (bi2.start_time) as start_year,
         YEAR (bi2.end_time) AS end_year,
@@ -85,6 +87,20 @@
             <if test="tourGuideId != null and tourGuideId != ''">
                 and btgi.tour_guide_id = #{tourGuideId}
             </if>
+
+            <choose>
+                <when test="type != null and type == 'all'">
+                    and bi2.status in (0,1,2,4)
+                </when>
+                <when test="type == 'wait'">
+                    and bi2.status in (0,2)
+                </when>
+                <when test="type == 'complete'">
+                    and bi2.status = 4
+                </when>
+
+            </choose>
+
             and btgi.is_deleted = 0
         </where>
 
@@ -247,6 +263,13 @@
           and order_status = 1
           and oi.is_deleted = 0
     </select>
-
+    <update id="updateCurGuideTimes">
+        update tour_guide_info
+        set lead_times = lead_times + 1
+        where id in (select tour_id
+                     from bus_tour_info
+                     where batch_id = #{batchId}
+                       and is_deleted = 0)
+    </update>
 
 </mapper>

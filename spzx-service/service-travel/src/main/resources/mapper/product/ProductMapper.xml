@@ -39,6 +39,11 @@
             and p.audit_status = 1
         </where>
     </sql>
+    <update id="updateSaleNum">
+        update product
+        set sale_num = sale_num + #{saleNum}
+        where id = #{productId}
+    </update>
 
 
     <select id="findByPage" resultMap="productMap">
@@ -68,7 +73,8 @@
         ali.address startAddress,
         ali.id placeToStartId,
         p.feature,
-        p.description
+        p.description,
+        p.sale_num
         from product p
         LEFT JOIN brand b on b.id = p.brand_id
         LEFT JOIN category c1 on c1.id = p.category1_id
@@ -110,7 +116,8 @@
                ali.id placeToStartId,
                p.feature,
                p.description,
-               p.assemble_time
+               p.assemble_time,
+               p.sale_num
         from product p
                  LEFT JOIN brand b on b.id = p.brand_id
                  LEFT JOIN category c1 on c1.id = p.category1_id

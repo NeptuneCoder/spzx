@@ -80,7 +80,8 @@
         p.name as product_name,
         bi.start_time as start_time,
         bi.end_time as end_time,
-        ps.sku_name as sku_name
+        ps.sku_name as sku_name,
+        bi.status as batch_status
         from order_info oi
         left join product p on oi.product_id = p.id
         left join batch_info bi on oi.batch_id = bi.id
@@ -92,8 +93,8 @@
             <if test="batchId != null">
                 and oi.batch_id = #{batchId}
             </if>
-            <if test="orderStatus != null">
-                and oi.order_status = #{orderStatus}
+            <if test="orderStatus != null and orderStatus == 'all'">
+                -- and oi.order_status = #{orderStatus}
             </if>
             <if test="startTime != null">
                 and oi.create_time &gt;= #{startTime}
@@ -101,7 +102,9 @@
             <if test="endTime != null">
                 and oi.create_time &lt;= #{endTime}
             </if>
-
+            <if test="orderId != null">
+                and oi.id = #{orderId}
+            </if>
         </where>
 
         order by id desc

@@ -10,7 +10,7 @@ import java.util.List;
 public interface OrderItemMapper {
     void save(OrderItem orderItem);
 
-    List<OrderItem> findByOrderId(@Param("orderId") Long id);
+    List<OrderItem> findOrderItemByOrderId(@Param("orderId") Long id);
 
     void updateOrderItemOrderStatus(@Param("orderId") Long orderId, @Param("orderStatus") Integer orderStatus);
 

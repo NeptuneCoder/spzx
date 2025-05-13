@@ -15,4 +15,5 @@ public class OrderDto {
     private Date startTime;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date endTime;
+    private String orderId;
 }

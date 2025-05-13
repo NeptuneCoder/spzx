@@ -15,7 +15,7 @@ import java.util.List;
 
 @Mapper
 public interface GuideBatchMapper {
-    List<GuideBatchDetailVo> getLeaderBatchList(@Param("tourGuideId") Long userId, @Param("batchId") String batchId);
+    List<GuideBatchDetailVo> getLeaderBatchList(@Param("tourGuideId") Long userId, @Param("batchId") String batchId, @Param("type") String type);
 
     List<TouristDetailVo> getCurrentBatchTripList(@Param("checkStatus") Integer checkStatus,
                                                   @Param("batchId") String batchId,
@@ -65,4 +65,6 @@ public interface GuideBatchMapper {
     void travelFinished(@Param("orderId") Long orderId, @Param("orderStatus") Integer nextOrderStatus, @Param("commentStatus") Integer commentStatus, @Param("refundStatus") Integer refundStatus, @Param("refundAmount") BigDecimal refundAmount);
 
     List<OrderItem> queryCurBatchPayedOrder(String batchId);
+
+    void updateCurGuideTimes(String batchId);
 }

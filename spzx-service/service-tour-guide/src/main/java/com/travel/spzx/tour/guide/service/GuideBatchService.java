@@ -8,7 +8,7 @@ import com.travel.spzx.model.vo.batch.TouristDetailVo;
 import java.util.List;
 
 public interface GuideBatchService {
-    PageInfo<GuideBatchDetailVo> getLeaderBatchList(Integer page, Integer limit);
+    PageInfo<GuideBatchDetailVo> getLeaderBatchList(Integer page, Integer limit, String type);
 
     GuideBatchDetailVo getBatchInfo(String batchId);
 
@@ -16,7 +16,7 @@ public interface GuideBatchService {
 
     Long touristSign(String batchId, String tripId, String orderId, String orderItemId);
 
-    List<TourGuideVo> getCurrentBatchTourGuideList(String batchId,String carId);
+    List<TourGuideVo> getCurrentBatchTourGuideList(String batchId, String carId);
 
     void tripComplete(String batchId);
 

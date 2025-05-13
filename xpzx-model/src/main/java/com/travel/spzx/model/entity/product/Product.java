@@ -93,7 +93,8 @@ public class Product extends BaseEntity {
     private String assembleTime;
     @Schema(description = "出发时间")
     private String departureTime;
-
+    @Schema(description = "已经售卖的数量")
+    private int saleNum;
 
     /**
      * 处理前端需要的照片信息

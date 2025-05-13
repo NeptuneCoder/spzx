@@ -4,7 +4,7 @@
 
     <sql id="columns">
         id
-        ,product_id,total_num,success_num,audit,status,sale_num,start_time,end_time,remark,create_time,update_time,is_deleted
+        ,product_id,total_num,success_num,audit,status,sale_num,holidays,start_time,end_time,remark,create_time,update_time,is_deleted
     </sql>
 
     <sql id="batchColumns">
@@ -21,6 +21,7 @@
             bi.create_time,
             bi.update_time,
             bi.is_deleted,
+            bi.holidays,
             p.name as product_name
     </sql>
     <insert id="save" useGeneratedKeys="true" keyProperty="id">
@@ -32,6 +33,7 @@
                                 status,
                                 start_time,
                                 end_time,
+                                holidays,
                                 remark,
                                 create_time,
                                 update_time,
@@ -44,6 +46,7 @@
                 #{status},
                 #{startTime},
                 #{endTime},
+                #{holidays},
                 #{remark},
                 now(),
                 now(),
@@ -84,6 +87,7 @@
                bi.create_time,
                bi.update_time,
                bi.is_deleted,
+               bi.holidays,
                p.name as product_name
         from batch_info bi
                  left join product p on bi.product_id = p.id
@@ -100,6 +104,7 @@
             <if test="successNum!= null">success_num=#{successNum},</if>
             <if test="audit!= null">audit=#{audit},</if>
             <if test="status!= null">status=#{status},</if>
+            <if test="holidays != null">holidays=#{holidays},</if>
             <if test="startTime!= null">start_time=#{startTime},</if>
             <if test="endTime!= null">end_time=#{endTime},</if>
             <if test="remark!= null">remark=#{remark},</if>

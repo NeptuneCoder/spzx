@@ -32,4 +32,9 @@ public class OrderInfoController {
     public Result<PageInfo<OrderInfoVo>> list(@PathVariable("page") int page, @PathVariable("limit") int limit, OrderDto orderDto) {
         return Result.build(orderInfoService.list(page, limit, orderDto), ResultCodeEnum.SUCCESS);
     }
+
+    @GetMapping("/detail/item/list/{orderId}")
+    public Result<OrderInfoVo> orderItemList(@PathVariable("orderId") String orderNo) {
+        return Result.build(orderInfoService.orderItemList(orderNo), ResultCodeEnum.SUCCESS);
+    }
 }

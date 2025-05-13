@@ -18,4 +18,6 @@ public class BannerDto {
     private String id;
     @Schema(description = "类型icon")
     private String imgUrl;
+    @Schema(description = "分类")
+    private String category2Id;
 }

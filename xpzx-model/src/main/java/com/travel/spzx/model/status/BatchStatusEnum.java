@@ -30,5 +30,13 @@ public enum BatchStatusEnum {
         this.desc = desc;
     }
 
+    public static String getEnumDesc(int code) {
+        for (BatchStatusEnum e : BatchStatusEnum.values()) {
+            if (e.getCode() == code) {
+                return e.desc;
+            }
+        }
+        return "未知状态";
+    }
 
 }

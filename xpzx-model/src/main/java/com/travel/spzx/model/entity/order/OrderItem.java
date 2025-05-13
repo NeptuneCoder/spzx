@@ -1,6 +1,7 @@
 package com.travel.spzx.model.entity.order;
 
 import com.travel.spzx.model.entity.base.BaseEntity;
+import com.travel.spzx.model.status.OrderStateEnum;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
@@ -28,6 +29,9 @@ public class OrderItem extends BaseEntity {
     private Integer orderStatus;
     @Schema(description = "签到状态")
     private String checkStatus;
+
+    @Schema(description = "订单状态描述")
+    private String orderStatusText;
     @Schema(description = "批次id")
     private Long productId;
 
@@ -39,9 +43,19 @@ public class OrderItem extends BaseEntity {
     private String tripCardNo;
 
     private String sex;
+
     private String ageType;
 
-    public void converAgeType() {
 
+    public void convertStatusText() {
+        this.orderStatusText = OrderStateEnum.getMessage(this.orderStatus);
     }
+
+    @Schema(description = "分配的车牌号")
+    private String carNo;
+    @Schema(description = "导游昵称")
+    private String guideNickname;
+    @Schema(description = "导游手机号")
+    private String guidePhone;
+
 }

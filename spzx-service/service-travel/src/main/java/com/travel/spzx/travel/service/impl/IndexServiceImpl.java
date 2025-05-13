@@ -5,9 +5,11 @@ import com.alibaba.fastjson.JSON;
 import com.travel.spzx.model.dto.product.BannerDto;
 import com.travel.spzx.model.dto.product.CategoryDto;
 import com.travel.spzx.model.dto.product.IndexDto;
+import com.travel.spzx.model.entity.product.BatchItem;
 import com.travel.spzx.model.entity.product.Category;
 import com.travel.spzx.model.entity.product.Product;
 import com.travel.spzx.travel.mapper.IndexMapper;
+import com.travel.spzx.travel.service.BatchService;
 import com.travel.spzx.travel.service.IndexService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,6 +23,7 @@ import java.util.stream.Collectors;
 public class IndexServiceImpl implements IndexService {
     @Autowired
     private IndexMapper indexMapper;
+
 
     @Override
     public IndexDto index() {
@@ -39,6 +42,7 @@ public class IndexServiceImpl implements IndexService {
                 }
             }
             bannerDto.setId(String.valueOf(product.getId()));
+            bannerDto.setCategory2Id(String.valueOf(product.getCategory2Id()));
             bannerList.add(bannerDto);
         });
 

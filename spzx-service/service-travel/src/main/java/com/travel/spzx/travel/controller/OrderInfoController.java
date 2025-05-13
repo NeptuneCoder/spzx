@@ -11,6 +11,7 @@ import com.travel.spzx.travel.service.OrderInfoService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,10 +31,11 @@ public class OrderInfoController {
     public Result<OrderInfo> getOrderInfoByOrderNo(@PathVariable("orderNo") String orderNo) {
         return Result.build(orderInfoService.getOrderInfoByOrderNo(orderNo), ResultCodeEnum.SUCCESS);
     }
+
     @Operation(summary = "提交订单")
     @PostMapping("auth/createOrder")
     public Result<Long> submitOrder
-            (@Parameter(name = "orderInfoDto", description = "请求参数实体类", required = true) @RequestBody OrderInfoDto
+            (@Parameter(name = "orderInfoDto", description = "请求参数实体类", required = true) @RequestBody @Valid OrderInfoDto
                      orderInfoDto) {
         Long orderId = orderInfoService.createOrder(orderInfoDto);
         return Result.build(orderId, ResultCodeEnum.SUCCESS);
@@ -46,7 +48,6 @@ public class OrderInfoController {
         OrderInfo orderInfo = orderInfoService.orderDetail(orderId);
         return Result.build(orderInfo, ResultCodeEnum.SUCCESS);
     }
-
 
 
     @Operation(summary = "获取订单信息")
@@ -63,6 +64,14 @@ public class OrderInfoController {
     public Result<OrderInfo> cancelOrder
     (@Parameter(name = "orderId", description = "订单id", required = true) @PathVariable("orderId") Long orderId, @RequestBody CancelReasonDto cancelReason) {
         OrderInfo orderInfo = orderInfoService.cancelOrder(orderId, cancelReason.getCancelReason());
+        return Result.build(orderInfo, ResultCodeEnum.SUCCESS);
+    }
+
+    @Operation(summary = "申请退款")
+    @PutMapping("auth/{orderId}/receipt")
+    public Result receipt
+            (@Parameter(name = "orderId", description = "订单id", required = true) @PathVariable("orderId") Long orderId) {
+        boolean orderInfo = orderInfoService.receipt(orderId);
         return Result.build(orderInfo, ResultCodeEnum.SUCCESS);
     }
 
